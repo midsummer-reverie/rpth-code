@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Besley:ital,wght@0,400..900;1,400..900&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.elytimes-bg {
+    width: 90%;
+    margin: auto;
+    padding: 2.6vw 4.2vw 4vw;
+    box-sizing: border-box;
+    background: #f1f0ec;
+}
+.elytimes-headgrid {
+    width: 100%;
+    border-width: 0.14vw 0vw;
+    border-style: solid;
+    border-color: #000000;
+    padding: 1vw 0vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+.elytimes-add {
+    width: 100%;
+    font: 0.8vw 'Besley';
+    color: #000000;
+    font-weight: 500;
+    font-style: italic;
+    align-self: center;
+}
+.elytimes-add::before {
+    content: "Elysian Village, South Lake Tahoe, CA USA";
+}
+.elytimes-logo {
+    width: 80%;
+    margin: auto;
+    aspect-ratio: 6.366 / 1;
+    background: url(https://i.imgur.com/d7fzCcQ.png) center / cover;
+}
+.elytimes-date {
+    width: 100%;
+    font: 0.8vw 'Besley';
+    color: #000000;
+    font-weight: 500;
+    font-style: italic;
+    text-align: right;
+    align-self: center;
+}
+.elytimes-month {
+    width: 100%;
+    margin-top: 1vw;
+    padding-bottom: 1vw;
+    background: #000000;
+    background-clip: content-box;
+    border-bottom: 0.14vw solid #000000;
+    font: 24pt 'Taviraj';
+    font-weight: 600;
+    color: #f1f0ec;
+    text-align: center;
+}
+.elytimes-title {
+    width: 100%;
+    margin: 1.25vw 0vw 1vw;
+    font: 30pt 'Taviraj';
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    line-height: 1.4;
+}
+.elytimes-pic {
+    width: fit-content;
+    margin: auto;
+    padding: 1vw;
+    border: 0.14vw solid #000000;
+}
+.elytimes-news {
+    width: 95%;
+    margin: 2vw auto;
+    text-indent: 3vw;
+    font: 14pt 'Bai Jamjuree';
+    color: #000000;
+    line-height: 1.6;
+    text-align: justify;
+}
+.elytimes-author {
+    width: 100%;
+    padding: 0vw 2vw 2vw 0vw;
+    box-sizing: border-box;
+    border-bottom: 0.14vw solid #000000;
+    font: 14pt 'Bai Jamjuree';
+    font-weight: 700;
+    text-align: right;
+    color: #000000;
+}
+.elytimes-author::before {
+    content: "- ";
+}
+.elytimes-act {
+    width: 100%;
+    margin: 1vw 0vw;
+    background: #000000;
+    font: 1.5vw 'Taviraj';
+    font-weight: 600;
+    text-align: center;
+}
+.elytimes-act::before {
+    content: "กิจกรรมท้ายฉบับ";
+}
+.elytimes-text {
+    width: 100%;
+    padding: 1.2vw;
+    box-sizing: border-box;
+    font: 14pt 'Bai Jamjuree';
+    line-height: 1.4;
+    color: #000000;
+}
