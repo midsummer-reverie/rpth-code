@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gothic+A1&family=Maitree:wght@200;300;400;500;600;700&family=Sawarabi+Gothic&display=swap');
+
+.vv26th-cover {
+    width: 100%;
+    position: relative;
+}
+.vv26th-banner {
+    width: 80%;
+    margin: auto;
+    aspect-ratio: 4.2 / 1;
+    background: var(--vv26th-banner);
+} 
+.vv26th-navtab {
+    width: 80%;
+    margin: auto;
+    padding: 0.6vw 4vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    background: var(--vv26th-bgcl)
+}
+.vv26th-nav {
+    width: fit-content;
+    font: 1vw 'DM Sans';
+    color: var(--vv26th-accent);
+    font-weight: 500;
+    font-style: italic;
+}
+.vv26th-mainbox {
+    width: 80%;
+    margin: auto;
+    padding: 1vw 2vw 1.6vw;
+    box-sizing: border-box;
+    background: var(--vv26th-bgcl);
+}
+.vv26th-header {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.vv26th-headl {
+    width: 60%;
+}
+.vv26th-userflex {
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+}
+.vv26th-icon {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: var(--vv26th-accent);
+    mask: var(--vv26th-icon);
+}
+.vv26th-username {
+    width: 85%;
+    font: 1.8vw 'Chonburi';
+    color: var(--vv26th-accent);
+}
+.vv26th-name {
+    width: 100%;
+    margin-left: 14%;
+    font: 1vw 'DM Sans';
+    color: var(--vv26th-accent);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.vv26th-status {
+    width: 100%;
+    margin-left: 14%;
+    font: 0.9vw 'DM Sans', 'Maitree', 'Sawarabi Gothic', 'Gothic A1';
+    color: var(--vv26th-accent);
+    font-weight: 400;
+}
+.vv26th-pfpic {
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid var(--vv26th-accent);
+    border-radius: 1000px;
+    background: var(--vv26th-pfpic);
+}
+.vv26th-vibesbox {
+    width: 85%;
+    margin: auto;
+}
+.vv26th-vibesflex {
+    width: 100%;
+    margin: 1.2vw 0vw 0.3vw;
+    display: flex;
+    gap: 0.8vw;
+    justify-content: center;
+}
+.vv26th-vibes {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--vv26th-accent);
+}
+.vv26th-title {
+    width: 80%;
+    margin: 2vw auto 0.5vw;
+    font: 1.5vw 'Chonburi';
+    color: var(--vv26th-accent);
+    text-align: center;
+}
+.vv26th-infoflex {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 2.2vw;
+    justify-content: center;
+}
+.vv26th-info {
+    width: 50%;
+    padding: 0.8vw;
+    box-sizing: border-box;
+    font: 1vw 'DM Sans', 'Maitree';
+    color: var(--vv26th-accent);
+}
+.vv26th-rltflex {
+    width: 85%;
+    margin: 0vw auto 0.5vw;
+    display: flex;
+    gap: 0.5vw;
+    justify-content: center;
+    align-items: center;
+}
+.vv26th-rltpic {
+    width: 16.2%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--vv26th-accent);
+    border-radius: 1000px;
+
+}
+.vv26th-rltname {
+    width: 16.2%;
+    font: 1vw 'Chonburi';
+    color: var(--vv26th-accent);
+}
+.vv26th-rltinfo {
+    font: 0.8vw 'DM Sans', 'Maitree';
+}
+.vv26th-musicbar {
+    width: 100%;
+    margin: 1vw 0vw 0.6vw;
+    padding: 0.2vw;
+    box-sizing: border-box;
+    background: var(--vv26th-accent);
+}
+.vv26th-musictext {
+    width: 80%;
+    margin: auto;
+    font: 0.8vw 'DM Sans', 'Maitree', 'Sawarabi Gothic', 'Gothic A1';
+    color: var(--vv26th-bgcl);
+    text-align: center;
+}
+.vv26th-charflex {
+    width: 90%;
+    margin: 0.3vw auto;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.3vw;
+}
+.vv26th-charbox {
+    width: 19%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--vv26th-accent);
+    position: relative;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.charname {
+    font: 0.7vw 'DM Sans', 'Maitree';
+    font-weight: 600;
+    text-align: center;
+}
+.chardesc {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    position: absolute;  
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--vv26th-accent);
+    color: var(--vv26th-bgcl);
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 1.2vw 0.8vw 0.8vw;
+    font: 0.6vw 'DM Sans', 'Maitree';
+    text-align: center;
+}
+.vv26th-charbox:hover .chardesc {
+  opacity: 1;
+}
