@@ -1,0 +1,139 @@
+@import url(https://dl.dropbox.com/scl/fi/ub8d1083558sf8t0k0p73/FkDoodle.css?rlkey=lenzgh66ktxqtxrtw7qfmjhhs&st=wivf1bhl);
+.pnktopic-logo {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: #f9f9fa;
+    mask: url(https://iili.io/FlWHsqJ.png) center / cover;
+    margin: 0vw auto 0.5vw;
+}
+.pnktopic-box {
+    width: 80%;
+    margin: auto;
+    padding: 1.8vw 1vw 0.5vw;
+    box-sizing: border-box;
+    background: #f9f9fa;
+    border: 0.8vw solid #8c8d90;
+    border-radius: 0.75vw;
+}
+.pnktopic-headgrid {
+    width: fit-content;
+    max-width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: minmax(4.5vw, 15%) max-content minmax(4.5vw, 15%);
+    grid-template-rows: auto auto;
+}
+.pnktopic-deco1 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: url(https://iili.io/FljjC8B.png) center / cover;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.pnktopic-title {
+    width: fit-content;
+    font: 2.25vw 'FkDoodle';
+    color: #000000;
+    text-align: center;
+    grid-area: 1 / 2 / 1 / 3;
+    font-weight: 500;
+    align-self: end;
+    line-height: 1;
+    margin-bottom: 0.65vw;
+    justify-self: center;
+}
+.pnktopic-deco2 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: url(https://iili.io/FlWVq8u.png) center / cover;
+    grid-area: 1 / 3 / 1 / 4;
+    margin-left: 0.4vw;
+}
+.pnktopic-midgrid {
+    width: 100%;
+    margin: 1vw auto;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1.3vw 8.6vw auto 1.3vw;
+    column-gap: 1vw;
+}
+.pnktopic-pic {
+    width: 100%;
+    aspect-ratio: 1.547 / 1;
+    grid-area: 2 / 2 / 4 / 3;
+    background: var(--pnktopic-pic);
+    padding: 1.3vw;
+    box-sizing: border-box;
+    border: 0.65vw solid #151d7e;
+    border-radius: 0.65vw;
+}
+.pnktopic-deco3 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 2 / 1 / 3 / 2;
+    background: url(https://iili.io/FlVyjp9.png) 50% 100% / 95% no-repeat;
+    align-self: end;
+}
+.pnktopic-deco4 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 3 / 1 / 4 / 2;
+    background: url(https://iili.io/FlwYDSs.png) center / cover;
+    align-self: end;
+}
+.pnktopic-deco5 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 1 / 3 / 3 / 4;
+    background: url(https://iili.io/FlVyOhu.png) center / cover;
+    align-self: start;
+}
+.pnktopic-deco6 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 3 / 3 / 5 / 4;
+    background: url(https://iili.io/FlVyg2V.png) 50% 150% / 90% no-repeat;
+    align-self: end;
+}
+.pnktopic-ctgrid {
+    width: 95%;
+    margin: 2.5vw auto 1.5vw;
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr;
+    grid-template-rows: auto 3.5vw;
+}
+.pnktopic-txt {
+    width: 100%;
+    font: 15pt 'FkDoodle';
+    color: #000000;
+    line-height: 1.15;
+    grid-area: 1 / 2 / 2 / 3;
+    text-align: justify;
+}
+.pnktopic-deco7 {
+    width: 25%;
+    aspect-ratio: 1.744 / 1;
+    grid-area: 1 / 2 / 3 / 4;
+    background: url(https://iili.io/FlOdYNf.png) center / cover;
+    justify-self: right;
+    align-self: end;
+}
+.pnktopic-addpicflex {
+    width: 90%;
+    margin: 2.8vw auto 1.2vw;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2vw;
+}
+.pnktopic-addpic {
+    width: 30%;
+    aspect-ratio: 1.5 / 1;
+    border: 0.35vw solid #151d7e;
+    border-radius: 0.32vw;
+}
+.pnktopic-footer {
+    width: 100%;
+    margin-top: 2.8vw;
+    aspect-ratio: 3.871 / 1;
+    background: url(https://iili.io/FlVyD4R.png) center / cover;
+}
