@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');:root {
+    --sotd-bg: #131313;
+    --sotd-maincl: white;
+    --sotd-subcl: black;
+    --sotd-icon: url(https://i.imgur.com/qYii608.png) center/cover;
+    --sotd-pic: url(https://i.imgur.com/F7NwxBE.png) center/cover;
+    --sotd-bannerpic: url(https://i.imgur.com/U7gl1hJ.png) center/cover;
+}
+.sotd-mainbox {
+    width: 65%;
+    margin: auto;
+    padding: 2vw;
+    position: relative;
+    background: var(--sotd-bg);  
+}
+.sotd-banner {
+    width: 100%;
+    aspect-ratio: 5 / 1.7;
+    border-radius: 25px;
+    background: var(--sotd-bannerpic);
+}
+.sotd-songbox {
+    width: 35%;
+    position: absolute;
+    top: 12vw;
+    left: 4vw;
+}
+.sotd-songtop {
+    padding: 1.2vw;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: var(--sotd-maincl);
+}
+.sotd-png {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    background: var(--sotd-subcl);
+    mask: var(--sotd-icon);
+    -webkit-mask: var(--sotd-icon);
+}
+.sotd-img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin-top: 0.8vw;
+    background: var(--sotd-pic)
+}
+.sotd-logo {
+    width: 40%;
+    aspect-ratio: 3.33 / 1;
+    margin-top: 0.8vw;
+    background: var(--sotd-subcl);
+    mask: url(https://iili.io/2P9zyl4.png) center / cover;
+    -webkit-mask: url(https://iili.io/2P9zyl4.png) center / cover;
+}
+.sotd-songbottom {
+    width: 100%;
+    margin-top: 1vw;
+    padding: 1.2vw;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: var(--sotd-maincl);
+}
+.sotd-sname {
+    width: 100%;
+    font: 1.2vw 'Montserrat', 'Sarabun', 'IBM Plex Sans JP', 'Noto Sans KR';
+    color: var(--sotd-subcl);
+    font-weight: 600;
+}
+.sotd-artist {
+    width: 100%;
+    margin-top: 0.3vw;
+    font: 0.8vw 'Montserrat', 'Sarabun', 'IBM Plex Sans JP', 'Noto Sans KR';
+    color: var(--sotd-subcl);
+    font-weight: 400;
+}
+.sotd-player {
+    width: 100%;
+    aspect-ratio: 3.08 / 1;
+    background: var(--sotd-subcl);
+    mask: url(https://iili.io/2P9IGeI.png) center / cover;
+    -webkit-mask: url(https://iili.io/2P9IGeI.png) center / cover;
+}
+.sotd-rpbox {
+    width: 55%;
+    margin: 1vw 0vw 1vw 45%;
+    padding: 0.8vw;
+}
+.sotd-name {
+    width: fit-content;
+    max-width: 75%;
+    padding: 0.2vw 0.8vw;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: 3px solid var(--sotd-maincl);
+    font: 1vw Montserrat;
+    color: var(--sotd-maincl);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.sotd-rp {
+    width: 85%;
+    height: 17vw;
+    margin-top: 0.6vw;
+    font: 1vw Sarabun;
+    color: var(--sotd-maincl);
+    line-height: 1.6;
+    overflow-y: scroll;
+}
+.sotd-rp::-webkit-scrollbar {
+    display: none;
+}
+.sotd-notebox {
+    width: 85%;
+    margin-top: 1.2vw;
+    padding-top: 0.8vw;
+    border-top: 3px solid var(--sotd-maincl);
+}
+.sotd-notett {
+    width: fit-content;
+    padding: 0.2vw 1vw;
+    background: var(--sotd-maincl);
+    border-radius: 100px;
+    font: 1vw Montserrat;
+    color: var(--sotd-bg);
+    font-weight: 600;
+}
+.sotd-notett::before {
+    width: fit-content;
+    padding: 0.2vw 1vw;
+    content: "note";
+    background: var(--sotd-maincl);
+    border-radius: 100px;
+    font: 1vw Montserrat;
+    color: var(--sotd-bg);
+    font-weight: 600;
+}
+.sotd-note {
+    margin-top: 0.8vw;
+    font: 1vw Sarabun;
+    color: var(--sotd-maincl);
+    font-style: italic;
+}
+.lareverie {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
+.lareverie::before {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    content: "lareverie";
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
