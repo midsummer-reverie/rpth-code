@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --color1: #ef3f97;
+    --color2: #ffffff;
+    --icon:url(https://i.imgur.com/07jESp2.png) center/cover;
+}
+.sig1-mainbox {
+    width: 55%;
+    margin: auto;
+    position: relative;
+}
+.sig1-circle {
+    width: 5vw;
+    aspect-ratio: 1 / 1;
+    padding: 0.8vw;
+    box-sizing: border-box;
+    border-radius: 1000px;
+    border: 2px solid var(--color1);
+    background: var(--color2);
+    position: absolute;
+    left: -2vw;
+}
+.sig1-icon {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: var(--color1);
+    mask: var(--icon);
+    -webkit-mask: var(--icon);
+}
+.sig1-quote {
+    width: 100%;
+    font: 1vw Work Sans;
+    color: var(--color2);
+    text-align: right;
+}
+.sig1-pic {
+    width: 100%;
+    aspect-ratio: 5 / 1.2;
+    border: 2px solid var(--color1);
+    border-radius: 0px 0px 100px 0px;
+}
+.sig1-name {
+    width: 100%;
+    margin-top: 0.5vw;
+    font: 1vw Work Sans;
+    color: var(--color1);
+    text-align: center;
+}
+.sig1-details {
+    width: 100%;
+    font: 0.8vw Work Sans;
+    color: var(--color2);
+    text-align: center;
+}
