@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Chonburi&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Gothic+A1&family=Maitree:wght@200;300;400;500;600;700&family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.cngn-cover {
+    width: 100%;
+    position: relative;
+}
+.cngn-mainbox {
+    width: 75%;
+    margin: auto;
+    padding: 2vw 0vw 1.6vw;
+    box-sizing: border-box;
+    background: var(--cngn-bgcl);
+}
+.cngn-header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cngn-headl {
+    width: 60%;
+}
+.cngn-userflex {
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+}
+.cngn-icon {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: var(--cngn-accent);
+    mask: var(--cngn-icon);
+}
+.cngn-username {
+    width: 90%;
+    font: 1.8vw 'Chonburi';
+    color: var(--cngn-accent);
+}
+.cngn-name {
+    width: 100%;
+    margin-left: 14%;
+    font: 1vw 'DM Sans';
+    color: var(--cngn-accent);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.cngn-status {
+    width: 100%;
+    margin-left: 14%;
+    font: 0.9vw 'DM Sans', 'Maitree', 'Sawarabi Gothic', 'Gothic A1';
+    color: var(--cngn-accent);
+    font-weight: 400;
+}
+.cngn-pfpic {
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    border: 2px solid var(--cngn-accent);
+    border-radius: 1000px;
+    background: var(--cngn-pfpic);
+}
+.cngn-rp {
+    width: 85%;
+    margin: auto;
+    padding: 1vw;
+    font: 1.15vw 'Maitree';
+    color: var(--cngn-accent);
+    font-weight: 500;
+    text-align: justify;
+}
+.cngn-notebar {
+    width: 85%;
+    margin: 1vw auto 0.6vw;
+    padding: 0.2vw;
+    box-sizing: border-box;
+    background: var(--cngn-accent);
+}
+.cngn-note {
+    width: 90%;
+    margin: auto;
+    font: 0.9vw 'Maitree';
+    font-weight: 500;
+    color: var(--cngn-bgcl);
+}
+.cngn-note::before {
+    width: 90%;
+    margin: auto;
+    content: "note ";
+    font: 0.9vw 'Maitree';
+    font-weight: 600;
+    color: var(--cngn-bgcl);
+}
+.cngn-vibesflex {
+    width: 85%;
+    margin: 1.2vw auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cngn-vibes {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid var(--cngn-accent);
+}
+.lareverie {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
+.lareverie::before {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    content: "lareverie";
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
