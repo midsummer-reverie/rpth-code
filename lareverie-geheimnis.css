@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://dl.dropbox.com/scl/fi/1do3raj95p7aw236ost3c/Signatie.css?rlkey=1z4e9yvxup29ngg1d05dg8kwo&st=2bnar20v');
+
+.ghn-box {
+    width: 100%;
+    aspect-ratio: 0.92 / 1;
+    background: url(https://iili.io/3y7c25b.png) center / cover;
+    position: relative;
+}
+.ghn-pic1 {
+    width: 25%;
+    aspect-ratio: 1 / 1.12;
+    border-style: solid;
+    border-color: #f4f4f2;
+    border-width: 1vw 1vw 2vw 1vw;
+    position: absolute;
+    top: 8%;
+    right: 10%;
+    background: var(--ghn-pic1);
+    rotate: -2deg;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.45);
+}
+.ghn-paper {
+    width: 70%;
+    aspect-ratio: 0.8 / 1;
+    background: url(https://iili.io/3y7cXI4.png) center / cover;
+    position: absolute;
+    top: 10.6%;
+    left: 14%;
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.55);
+    padding: 1.8vw;
+    box-sizing: border-box;
+}
+.ghn-header {
+    width: 45%;
+    aspect-ratio: 3.4 / 1;
+    margin: auto;
+    background: url(https://iili.io/3yliZZX.png) center / cover;
+}
+.ghn-flex {
+    width: 100%;
+    display: flex;
+    gap: 2vw;
+    margin: 1vw 0vw;
+}
+.ghn-flexl {
+    width: 30%;
+}
+.ghn-idphoto {
+    width: 100%;
+    aspect-ratio: 1 / 1.2;
+    background: var(--ghn-idphoto);
+    -webkit-filter: grayscale(85%);
+}
+.ghn-lheading {
+    width: 100%;
+    margin: 0.8vw 0vw;
+    background: #101010;
+    font: 1.4vw 'Inconsolata';
+    font-weight: 800;
+    color: #f3f3f3;
+    text-align: center;
+}
+.ghn-ltext {
+    width: 100%;
+    margin-bottom: 0.3vw;
+    font: 1.1vw 'Inconsolata', 'Noto Sans Thai Looped';
+    line-height: 1;
+    color: #101010;
+}
+.ghn-tribeinfo {
+    width: 100%;
+    height: clamp(120px, 16vw, 520px);
+    margin-bottom: 0.3vw;
+    font: 1.1vw 'Inconsolata', 'Trirong';
+    color: #101010;
+    overflow-y: scroll;
+}
+.ghn-flexr {
+    width: 68%;
+}
+.ghn-rheading {
+    width: 100%;
+    background: #101010;
+    font: 1.4vw 'Inconsolata';
+    color: #f3f3f3;
+    font-weight: 800;
+    margin-bottom: 0.8vw;
+    text-align: center;
+}
+.ghn-rtext {
+    width: 100%;
+    font: 1.1vw 'Inconsolata', 'Trirong';
+    line-height: 1;
+    margin-bottom: 0.5vw;
+    color: #101010;
+}
+.ghn-ageflex {
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 0.5vw;
+}
+.ghn-bd {
+    width: 65%;
+    font: 1.1vw 'Inconsolata', 'Trirong';
+    color: #101010;
+}
+.ghn-age {
+    width: 43%;
+    font: 1.1vw 'Inconsolata', 'Trirong';
+    color: #101010;
+}
+.ghn-bg {
+    width: 100%;
+    height: clamp(80px, 10.8vw, 180px);
+    overflow-y: scroll;
+    font: 1vw 'Trirong';
+    color: #101010;
+    line-height: 1.4;
+    margin-bottom: 0.8vw;
+}
+.ghn-perso {
+    width: 100%;
+    height: clamp(50px, 6.8vw, 120px);
+    overflow-y: scroll;
+    font: 1vw 'Trirong';
+    color: #101010;
+    line-height: 1.4;
+    margin-bottom: 0.8vw;
+}
+.ghn-footer {
+    width: 100%;
+    position: relative;
+}
+.ghn-signature-pic {
+    width: 70%;
+    margin: 1.2vw auto 0.5vw;
+    aspect-ratio: 4 / 1;
+    background: var(--ghn-sigcl);
+    mask: var(--ghn-sigpic);
+}
+.ghn-signature-text {
+    width: 70%;
+    margin: 1.2vw auto 0.5vw;
+    aspect-ratio: 4 / 1;
+    font: 2.2vw 'Signatie';
+    color: var(--ghn-sigcl);
+    text-align: center;
+}
+.ghn-sigtt {
+    width: 70%;
+    margin: auto;
+    padding-top: 0.3vw;
+    border-top: 1px solid #101010;
+    font: 1vw 'Inconsolata';
+    color: #101010;
+    text-align: center;
+}
+.ghn-sigtt::before {
+    content: "signature";
+}
+.ghn-stamp {
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    background: var(--ghn-stamp);
+    position: absolute;
+    right: 2%;
+    bottom: -10%;
+}
+.ghn-pic2 {
+    width: 28%;
+    aspect-ratio: 1.6 / 1;
+    position: absolute;
+    background: var(--ghn-pic2);
+    bottom: 1.8vw;
+    left: 5%;
+    rotate: 2deg;
+    border-style: solid;
+    border-color: #f4f4f2;
+    border-width: 1vw 1vw 2.2vw 1vw;
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.45);
+}
+.lareverie {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
+.lareverie::before {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    content: "lareverie";
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
+.ghn-bg::-webkit-scrollbar {
+    width: 0.45vw;
+    margin-left: 0.8vw;
+}   
+.ghn-bg::-webkit-scrollbar-track {
+    background: transparent;
+}   
+.ghn-bg::-webkit-scrollbar-thumb {
+    background-color: #101010;
+    border-radius: 1000px;
+}
+.ghn-perso::-webkit-scrollbar {
+    width: 0.45vw;
+    margin-left: 0.8vw;
+}   
+.ghn-perso::-webkit-scrollbar-track {
+    background: transparent;
+}   
+.ghn-perso::-webkit-scrollbar-thumb {
+    background-color: #101010;
+    border-radius: 1000px;
+}
+.ghn-tribeinfo::-webkit-scrollbar {
+    width: 0.45vw;
+    margin-left: 0.8vw;
+}   
+.ghn-tribeinfo::-webkit-scrollbar-track {
+    background: transparent;
+}   
+.ghn-tribeinfo::-webkit-scrollbar-thumb {
+    background-color: #101010;
+    border-radius: 1000px;
+}
