@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Klee+One&family=Nanum+Pen+Script&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://dl.dropbox.com/scl/fi/b46bbf5qztg1evqnvgbq3/NuraNamjai.css?rlkey=plpccca7lrj75l4u0mopa225v&st=q2khcexq');
+
+.mpof-main {
+    width: 100%;
+    padding: 4vw 0vw;
+    box-sizing: border-box;
+    background: var(--mpof-bg);
+}
+.mpof-icon {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    background: var(--mpof-accent);
+    margin: auto;
+    mask: var(--mpof-icon);
+}
+.mpof-title {
+    width: 80%;
+    margin: 1vw auto 0vw;
+    font: 3.2vw 'NuraNamjai', 'Klee One', 'Nanum Pen Script';
+    color: var(--mpof-accent);
+    text-align: center;
+}
+.mpof-author {
+    width: 60%;
+    margin: auto;
+    font: 1.2vw 'DM Sans';
+    color: var(--mpof-accent);
+    text-align: center;
+    font-weight: 550;
+}
+.mpof-tagline {
+    width: 65%;
+    margin: 1vw auto 2.6vw;
+    font: 1.2vw 'NuraNamjai', 'Klee One', 'Nanum Pen Script';
+    color: var(--mpof-accent);
+    line-height: 1;
+    text-align: center;
+}
+.mpof-pic {
+    width: 55%;
+    aspect-ratio: 2 / 1;
+    margin: 1vw auto 2.8vw;
+    border: 0.3vw solid var(--mpof-accent);
+    background: var(--mpof-pic);
+}
+.mpof-text {
+    width: 75%;
+    margin: 0vw auto 2.2vw;
+    font: 1.05vw 'Sarabun';
+    color: var(--mpof-textcl);
+    text-align: justify;
+    line-height: 1.6;
+}
+.mpof-polaroid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2.4vw 1fr 1fr 1fr 1fr 2.4vw;
+    grid-template-rows: 0.6vw 10vw 0.6vw;
+    gap: 0.8vw;
+    background: var(--mpof-accent);
+}
+.mpof-pol1 {
+    width: 100%;
+    height: 100%;
+    background: var(--mpof-pol1);
+    grid-area: 2 / 2;
+}
+.mpof-pol2 {
+    width: 100%;
+    height: 100%;
+    background: var(--mpof-pol2);
+    grid-area: 2 / 3;
+}
+.mpof-pol3 {
+    width: 100%;
+    height: 100%;
+    background: var(--mpof-pol3);
+    grid-area: 2 / 4;
+}
+.mpof-pol4 {
+    width: 100%;
+    height: 100%;
+    background: var(--mpof-pol4);
+    grid-area: 2 / 5;
+}
+.lareverie {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
+.lareverie::before {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    content: "lareverie";
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
