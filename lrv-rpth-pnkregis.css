@@ -507,10 +507,10 @@
     grid-area: 1 / 3;
     align-self: end;
 }
-.pnkre-sig-l {
+.pnkre-sig-l::before {
     content: "ลงชื่อ";
 }
-.pnkre-sig-r {
+.pnkre-sig-r::before {
     content: "ผู้สมัคร";
 }
 .pnkre-fn {
@@ -529,8 +529,10 @@
 }
 .pnkre-fn::before {
     content: "( ";
+    margin: 0.15vw;
 }
 .pnkre-fn::after {
     content: " )";
-
+    margin: 0.15vw;
 }
+
