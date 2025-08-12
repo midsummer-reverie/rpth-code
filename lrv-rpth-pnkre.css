@@ -1,0 +1,532 @@
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap);
+@import url(https://cdn.jsdelivr.net/gh/midsummer-reverie/font-face@refs/heads/main/TorsilpKhongYangKhitthueng2.css);
+
+.pnkre-paper {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 2vw;
+    background: #F7F7F7;
+}
+.pnkre-header {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto auto auto;
+    column-gap: 0.65vw;
+}
+.pnkre-logo {
+    width: 30%;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    grid-area: 1 / 2;
+    background: url(https://iili.io/FQG454S.png) center / 120%;
+}
+.pnkre-title {
+    width: fit-content;
+    margin: auto;
+    grid-area: 2 / 2;
+    font: 1.45vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+}
+.pnkre-school {
+    width: fit-content;
+    margin: 0.5vw auto;
+    grid-area: 3 / 1 / 4 / 4;
+    font: 1.05vw 'Bai Jamjuree';
+    color: #000;
+    text-align: center;
+}
+.pnkre-title::before {
+    content: "เอกสารสมัครเข้าเรียน";
+}
+.pnkre-school::before {
+    content: "โรงเรียนปัญญานุเคราะห์ แขวงลาดพร้าว เขตลาดพร้าว กรุงเทพมหานครฯ";
+}
+.pnkre-flex1 {
+    width: 95%;
+    margin: 3vw auto;
+    display: flex;
+    gap: 1.2vw;
+}
+.pnkre-pic {
+    width: 30%;
+    aspect-ratio: 3.2 / 4;
+    box-sizing: border-box;
+    border: 0.12vw solid #000;
+    background: url(https://i.pinimg.com/1200x/18/ee/22/18ee221….jpg) center / cover no-repeat;
+    padding: 0.2vw;
+    background-origin: content-box;
+    align-self: flex-start;
+}
+.pnkre-flex1-r {
+    width: 68%;
+}
+.pnkre-grid-nsn {
+    width: 100%;
+    display: grid;
+    grid-template-columns: fit-content(10%) 1fr fit-content(15%) 1fr;
+}
+.pnkre-tt-name {
+    width: 100%;
+    grid-area: 1 / 1;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-name {
+    width: 100%;
+    grid-area: 1 / 2;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-surname {
+    width: 100%;
+    grid-area: 1 / 3;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-surname {
+    width: 100%;
+    grid-area: 1 / 4;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-name::before {
+    content: "ชื่อ ";
+}
+.pnkre-tt-surname::before {
+    content: "นามสกุล ";
+}
+.pnkre-grid-nn {
+    width: 100%;
+    display: grid;
+    grid-template-columns: fit-content(20%) 1fr;
+    margin-top: 0.5vw;
+}
+.pnkre-tt-nickname {
+    width: 100%;
+    grid-area: 1 / 1;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-nickname {
+    width: 100%;
+    grid-area: 1 / 2;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-nickname::before {
+    content: "ชื่อเล่น ";
+}
+.pnkre-grid-dob {
+    width: 100%;
+    display: grid;
+    grid-template-columns: fit-content(35%) 2fr fit-content(10%) 1fr;
+    margin-top: 0.5vw;
+}
+.pnkre-tt-dob {
+    width: 100%;
+    grid-area: 1 / 1;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-dob {
+    width: 100%;
+    grid-area: 1 / 2;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-age {
+    width: 100%;
+    grid-area: 1 / 3;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-age {
+    width: 100%;
+    grid-area: 1 / 4;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-dob::before {
+    content: "วัน/เดือน/ปี เกิด";
+}
+.pnkre-tt-age::before {
+    content: "อายุ ";
+}
+.pnkre-grid-nation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: fit-content(15%) 1fr fit-content(15%) 1fr fit-content(15%) 1fr;
+    margin-top: 0.5vw;
+}
+.pnkre-tt-eth {
+    width: 100%;
+    grid-area: 1 / 1;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-eth {
+    width: 100%;
+    grid-area: 1 / 2;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-nat {
+    width: 100%;
+    grid-area: 1 / 3;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-nat {
+    width: 100%;
+    grid-area: 1 / 4;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-rel {
+    width: 100%;
+    grid-area: 1 / 5;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-rel {
+    width: 100%;
+    grid-area: 1 / 6;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-eth::before {
+    content: "เชื้อชาติ ";
+}
+.pnkre-tt-nat::before {
+    content: "สัญชาติ ";
+}
+.pnkre-tt-rel::before {
+    content: "ศาสนา ";
+}
+.pnkre-grid-fc {
+    width: 100%;
+    display: grid;
+    grid-template-columns: fit-content(15%) 1fr;
+    margin-top: 0.5vw;
+}
+.pnkre-tt-fc {
+    width: 100%;
+    grid-area: 1 / 1;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-fc {
+    width: 100%;
+    grid-area: 1 / 2;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-fc::before {
+    content: "เฟซเคลม";
+}
+.pnkre-tt-phy {
+    width: fit-content;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+    margin-top: 0.5vw;
+}
+.pnkre-info-phy {
+    width: 100%;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    margin-top: 0.25vw;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    line-height: 1.7;
+    text-align: left;
+    text-underline-offset: 0.35vw;
+}
+.pnkre-box {
+    width: 95%;
+    margin: 3vw auto 1vw;
+}
+.pnkre-tt-bac {
+    width: 100%;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+    margin-top: 0.25vw;
+}
+.pnkre-info-bac {
+    width: 100%;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    margin-top: 0.25vw;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    line-height: 1.7;
+    text-align: left;
+    text-underline-offset: 0.35vw;
+    text-decoration-color: #858585;
+}
+.pnkre-tt-bac::before {
+    content: "ประวัติตัวละคร";
+}
+.pnkre-tt-per {
+    width: 100%;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+    margin-top: 1.2vw;
+}
+.pnkre-info-per {
+    width: 100%;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    margin-top: 0.25vw;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    line-height: 1.7;
+    text-align: left;
+    text-underline-offset: 0.35vw;
+    text-decoration-color: #858585;
+}
+.pnkre-tt-per::before {
+    content: "ลักษณะนิสัย";
+}
+.pnkre-grid-pro {
+    width: 100%;
+    display: grid;
+    grid-template-columns: fit-content(25%) 1fr;
+    margin-top: 0.5vw;
+}
+.pnkre-tt-pro {
+    width: 100%;
+    grid-area: 1 / 1;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-pro {
+    width: 100%;
+    grid-area: 1 / 2;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-pro::before {
+    content: "แผนการเรียน ";
+}
+.pnkre-grid-class {
+    width: 100%;
+    display: grid;
+    grid-template-columns: fit-content(15%) 1fr;
+    margin-top: 0.5vw;
+}
+.pnkre-tt-class {
+    width: 100%;
+    grid-area: 1 / 1;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-class {
+    width: 100%;
+    grid-area: 1 / 2;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-class::before {
+    content: "ระดับชั้น ";
+}
+.pnkre-grid-club {
+    width: 100%;
+    display: grid;
+    grid-template-columns: fit-content(15%) 1fr;
+    margin-top: 0.5vw;
+}
+.pnkre-tt-club {
+    width: 100%;
+    grid-area: 1 / 1;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+}
+.pnkre-info-club {
+    width: 100%;
+    grid-area: 1 / 2;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    padding-left: 1.25vw;
+    box-sizing: border-box;
+    border-bottom: 0.12vw dotted #000;
+}
+.pnkre-tt-club::before {
+    content: "ชมรม";
+}
+.pnkre-tt-tmi {
+    width: 100%;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 700;
+    margin-top: 0.5vw;
+}
+.pnkre-tt-tmi::before {
+    content: "ข้อมูลเพิ่มเติม";
+}
+.pnkre-info-tmi {
+    width: 100%;
+    font: 1.15vw 'Bai Jamjuree';
+    color: #000;
+    line-height: 1.5;
+}
+.pnkre-footer {
+    width: 95%;
+    margin: 3vw auto;
+    display: flex;
+    gap: 1.2vw;
+}
+.pnkre-ft-l {
+    width: 40%;
+    box-sizing: border-box;
+    padding: 1.2vw;
+    border: 0.12vw solid #000;
+}
+.pnkre-fttt {
+    width: fit-content;
+    font: 1vw 'Bai Jamjuree';
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 1vw;
+}
+.pnkre-fttt {
+    content: "หลักฐานการรับสมัคร";
+}
+.pnkre-ftflex {
+    width: 100%;
+    display: flex;
+    gap: 0.6vw;
+    margin: 0.35vw 0vw;
+}
+.pnkre-check {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    border: 0.08vw solid #000;
+    background: url(https://iili.io/FQkztbn.png) center / 90% no-repeat;
+}
+.pnkre-ft1 {
+    width: 92%;
+    font: 1vw 'Bai Jamjuree';
+    color: #000;
+}
+.pnkre-ft2 {
+    width: 92%;
+    font: 1vw 'Bai Jamjuree';
+    color: #000;
+}
+.pnkre-ft1::before {
+    content: "รูปถ่ายขนาด 1.5 นิ้ว 2 รูป";
+}
+.pnkre-ft2::before {
+    content: "สำเนาทะเบียนบ้านนักเรียน";
+}
+.pnkre-ft-r {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    column-gap: 0.5vw;
+    grid-template-rows: auto auto auto;
+}
+.pnkre-sig-l {
+    width: 100%;
+    font: 1vw 'Bai Jamjuree';
+    color: #000;
+    grid-area: 1 / 1;
+    align-self: end;
+    text-align: right;
+}
+.pnkre-sig {
+    width: 100%;
+    grid-area: 1 / 2;
+    font: 2.2vw 'KhongYangKhitthueng';
+    color: #1E3C96;
+    border-bottom: 0.12vw dotted #000;
+    text-align: center;
+    line-height: 0.5;
+}
+.pnkre-sig-r {
+    width: 100%;
+    font: 1vw 'Bai Jamjuree';
+    color: #000;
+    grid-area: 1 / 3;
+    align-self: end;
+}
+.pnkre-sig-l {
+    content: "ลงชื่อ";
+}
+.pnkre-sig-r {
+    content: "ผู้สมัคร";
+}
+.pnkre-fn {
+    width: 85%;
+    margin: auto;
+    font: 1vw 'Bai Jamjuree';
+    color: #000;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    line-height: 1.5;
+    text-align: center;
+    text-underline-offset: 0.35vw;
+    text-decoration-color: #000;
+    grid-area: 2 / 1 / 3 / 4;
+    margin-top: 0.5vw;
+}
+.pnkre-fn::before {
+    content: "( ";
+}
+.pnkre-fn::after {
+    content: " )";
+}
