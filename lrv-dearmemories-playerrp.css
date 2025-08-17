@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
-@import url('https://dl.dropbox.com/scl/fi/pawmtr7ass3748iq9q1v4/HoneyMonly.css?rlkey=3hmls0ig8005oz0x2rzm256hp&st=7x77wjac');
+@font-face {
+    font-family: 'Honey Monly';
+    src: url(https://midsummer-reverie.github.io/font/Honey Monly.otf) format(opentype);
+    font-weight: 400;
+    font-style: normal;
+}
 
 #raspberry {
     --dmr-userrp-maincl: #ff85b7;
@@ -168,4 +173,5 @@
     grid-area: 1 / 2 / 3 / 3;
     background: var(--dmr-userrp-clip);
     rotate: -5deg;
+
 }
