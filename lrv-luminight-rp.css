@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap);
-@import url(https://dl.dropbox.com/scl/fi/eixdm1mqogy1an0yzgnew/moderniz.css?rlkey=4iv01fny195jugex8pznd7d2d&st=tamnznk4);
+@font-face {
+    font-family: 'Moderniz';
+    src: url(https://midsummer-reverie.github.io/font/Moderniz.otf) format(opentype);
+    font-weight: 400;
+    font-style: normal;
+}
 
 .lmnsrp-box {
     width: 65%;
@@ -45,7 +50,7 @@
 }
 .lmnsrp-jpn {
     width: 100%;
-    font: 1.8vw 'Noto Sans JP';
+    font: 1.8vw 'Moderniz','Noto Sans JP';
     color: var(--lmnsrp-acc2);
     font-weight: 700;
     text-align: right;
@@ -146,4 +151,5 @@
     background: var(--lmnsrp-acc1);
     mask: url(https://iili.io/FNvCF6b.png) center / cover;
     margin-top: 2vw;
+
 }
