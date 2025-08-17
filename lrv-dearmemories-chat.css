@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.dmr-chat-box {
+    width: 100%;
+    margin: 1.4vw auto;
+}
+.dmr-chat-header {
+    width: 100%;
+    display: flex;
+    gap: 1.2vw;
+    margin-bottom: 2vw;
+}
+.dmr-chat-mainpic {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    border: 0.35vw solid var(--dmr-chat-npccl);
+    background: var(--dmr-chat-npcpic);
+}
+.dmr-chat-rheader {
+    width: 78%;
+    align-self: center;
+}
+.dmr-chat-name {
+    width: fit-content;
+    font: 2vw 'Poppins';
+    font-weight: 700;
+    color: var(--dmr-chat-npccl);
+}
+.dmr-chat-name::before {
+    content: var(--dmr-chat-npcname);
+}
+.dmr-chat-chartitle {
+    width: fit-content;
+    font: 1vw 'Poppins';
+    color: #141414;
+    line-height: 1;
+}
+.dmr-chat-chartitle::before {
+    content: var(--dmr-chat-npctt);
+}
+.dmr-chat-npcbbflex {
+    width: 100%;
+    display: flex;
+    gap: 0.6vw;
+    margin: 1vw 0vw;
+}
+.dmr-chat-npcpic {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    background: var(--dmr-chat-npcpic);
+    align-self: flex-start;
+}
+.dmr-chat-npcbb {
+    width: fit-content;
+    max-width: 55%;
+    box-sizing: border-box;
+    padding: 0.6vw;
+    font: 0.95vw 'Prompt';
+    color: var(--dmr-chat-npctxtcl);
+    background: var(--dmr-chat-npccl);
+    font-weight: 400;
+    border-radius: 0vw 0.85vw 0.85vw 0.85vw;
+}
+.dmr-chat-userbbflex {
+    width: 100%;
+    display: flex;
+    gap: 0.6vw;
+    margin: 1vw 0vw;
+    flex-direction: row-reverse;
+}
+.dmr-chat-userpic {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    background: var(--dmr-chat-userpic);
+    align-self: flex-start;
+}
+.dmr-chat-userbb {
+    width: fit-content;
+    max-width: 55%;
+    box-sizing: border-box;
+    padding: 0.6vw;
+    font: 0.95vw 'Prompt';
+    color: #141414;
+    background: #fdfcf9;
+    font-weight: 400;
+    border-radius: 0.85vw 0vw 0.85vw 0.85vw;
+}
+#yuuto {
+    --dmr-chat-npcpic: url(https://iili.io/FqKcWcQ.png) 50% 20% /cover;
+    --dmr-chat-npccl: #ff7923;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Yuuto";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#raiki {
+    --dmr-chat-npcpic: url(https://iili.io/Fqqh3sp.png) 50% 20% /cover;
+    --dmr-chat-npccl: #e9bf00;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Raiki";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#yukari {
+    --dmr-chat-npcpic: url(https://iili.io/FqqNXEl.png) center/cover;
+    --dmr-chat-npccl: #c8578a;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Yukari";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#kazuaki {
+    --dmr-chat-npcpic: url(https://iili.io/FqqSh4j.png) 50% 5% /cover;
+    --dmr-chat-npccl: #4f1d7b;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Kazuaki";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#asai {
+    --dmr-chat-npcpic: url(https://iili.io/Fqqg6ep.png) 50% 30%/cover;
+    --dmr-chat-npccl: #B74242;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Asai";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#sora {
+    --dmr-chat-npcpic: url(https://iili.io/Fqq4nPn.png) center/cover;
+    --dmr-chat-npccl: #C4D7ED;
+    --dmr-chat-npctxtcl: #373737;
+    --dmr-chat-npcname: "Sora";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#rei {
+    --dmr-chat-npcpic: url(https://iili.io/Fqq6S1e.png) 50% 20%/cover;
+    --dmr-chat-npccl: #E5B1B0;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Rei";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#kirari {
+    --dmr-chat-npcpic: url(https://iili.io/FqqiESs.png) 50% 20%/cover;
+    --dmr-chat-npccl: #F7D791;
+    --dmr-chat-npctxtcl: #373737;
+    --dmr-chat-npcname: "Kirari";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#kira {
+    --dmr-chat-npcpic: url(https://iili.io/Fqqsamx.png) 50% 10%/cover;
+    --dmr-chat-npccl: #F7D791;
+    --dmr-chat-npctxtcl: #373737;
+    --dmr-chat-npcname: "Kira";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#seiya {
+    --dmr-chat-npcpic: url(https://iili.io/FKeo6l9.jpg) center/cover;
+    --dmr-chat-npccl: #c6accf;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Seiya";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#ren {
+    --dmr-chat-npcpic: url(https://iili.io/FqBzKox.png) center/cover;
+    --dmr-chat-npccl: #b9c7bf;
+    --dmr-chat-npctxtcl: #373737;
+    --dmr-chat-npcname: "Ren";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#noa {
+    --dmr-chat-npcpic: url(https://iili.io/FKeogPS.jpg) 80% 50%/cover;
+    --dmr-chat-npccl: #f4c29f;
+    --dmr-chat-npctxtcl: #373737;
+    --dmr-chat-npcname: "Noa";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#shin {
+    --dmr-chat-npcpic: url(https://iili.io/FKetOMl.png) center/cover;
+    --dmr-chat-npccl: #b2c4d6;
+    --dmr-chat-npctxtcl: #373737;
+    --dmr-chat-npcname: "Shin";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#ryuu {
+    --dmr-chat-npcpic: url(https://iili.io/Fqx2Fxp.jpg) 50% 10%/cover;
+    --dmr-chat-npccl: #825a3c;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Ryuu";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#kaito {
+    --dmr-chat-npcpic: url(https://iili.io/Fqx2fsI.jpg) 50% 10%/cover;
+    --dmr-chat-npccl: #64b39a;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Kaito";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#asahi {
+    --dmr-chat-npcpic: url(https://iili.io/Fqx22bR.jpg) center/cover;
+    --dmr-chat-npccl: #032c7d;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Asahi";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#kyouka {
+    --dmr-chat-npcpic: url(https://iili.io/Fqx2KWN.jpg) center/cover;
+    --dmr-chat-npccl: #68181f;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Kyouka";
+    --dmr-chat-npctt: "Madoromi's Employee";
+}
+#owner {
+    --dmr-chat-npcpic: url(https://iili.io/FqqQSJn.png) 70% 50%/cover;
+    --dmr-chat-npccl: #6E74AD;
+    --dmr-chat-npctxtcl: #fdfcf9;
+    --dmr-chat-npcname: "Owner";
+    --dmr-chat-npctt: "Madoromi's Owner";  
+}

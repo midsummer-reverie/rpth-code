@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,600,100;1,9..144,600,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+.dmr-npcrp-grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 5fr 0.5fr;
+    grid-template-rows: repeat(4, auto);
+}
+.dmr-npcrp-locpic {
+    width: 100%;
+    aspect-ratio: 2.4 / 1;
+    grid-area: 1 / 2 / 3 / 4;
+    background: var(--dmr-npcrp-locpic);
+    z-index: 2;
+}
+.dmr-npcrp-teared {
+    width: 100%;
+    aspect-ratio: 6.08 / 1;
+    grid-area: 2 / 2 / 3 / 4;
+    align-self: end;
+    background: url(https://iili.io/FdMiuvp.png) center / 50% repeat, #ffffff;
+    mask: url(https://iili.io/FdOzb44.png) center / cover;
+    margin-top: 1.8vw;
+    z-index: 2;
+}
+.dmr-npcrp-picbe {
+    width: 80%;
+    aspect-ratio: 2.4 / 3;
+    box-sizing: border-box;
+    border-width: 1vw 1vw 2vw 1vw;
+    border-style: solid;
+    border-color: #f9f8f8;
+    grid-area: 2 / 2 / 4 / 3;
+    margin: 0vw 0vw 0vw 2.5vw;
+    box-sizing: border-box;
+    z-index: 2;
+    align-self: end;
+    -webkit-box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+    background: beige;
+}
+.dmr-npcrp-charpic {
+    width: 80%;
+    aspect-ratio: 2.4 / 3;
+    box-sizing: border-box;
+    border-width: 1vw 1vw 2vw 1vw;
+    border-style: solid;
+    border-color: #f9f8f8;
+    grid-area: 2 / 2 / 4 / 3;
+    margin: 1vw 0vw 0vw 2.5vw;
+    box-sizing: border-box;
+    z-index: 3;
+    align-self: end;
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.5);
+    rotate: -3deg;
+    background: var(--dmr-npcrp-charpic);
+}
+.dmr-npcrp-tape {
+    width: 55%;
+    margin: 0vw auto;
+    aspect-ratio: 5.01 / 1;
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: start;
+    background: var(--dmr-npcrp-accent);
+    mask: url(https://iili.io/FdVve0N.png) center / cover;
+    z-index: 4;
+    rotate: 1deg;
+}
+.dmr-npcrp-contentbox {
+    width: 100%;
+    grid-area: 2 / 2 / 5 / 4;
+    background: url(https://iili.io/FdMiuvp.png) center / 50% repeat, #ffffff;
+    z-index: 0;
+}
+.dmr-npcrp-headbox {
+    width: 100%;
+    grid-area: 3 / 3 / 4 / 4;
+    z-index: 3;
+}
+.dmr-npcrp-loc {
+    width: 50%;
+    margin: 0vw auto;
+    padding: 0.3vw;
+    border-radius: 1000px;
+    background: var(--dmr-npcrp-accent);
+    font: 1vw 'Bai Jamjuree';
+    color: #ffffff;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+}
+.dmr-npcrp-name {
+    width: 90%;
+    margin: 0.3vw auto;
+    font: 2.5vw 'Fraunces';
+    color: var(--dmr-npcrp-accent);
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1;
+}
+.dmr-npcrp-text {
+    width: 80%;
+    margin: auto;
+    font: 1.16vw 'Poppins', 'Zen Maru Gothic', 'Jua';
+    color: #232323;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1;
+}
+.dmr-npcrp-rpbox {
+    width: 100%;
+    grid-area: 4 / 2 / 5 / 4;
+    box-sizing: border-box;
+    padding: 3vw 4vw;
+    z-index: 3;
+}
+.dmr-npcrp-rpcontent {
+    width: 100%;
+    font: 1.1vw 'Bai Jamjuree';
+    color: #232323;
+    text-align: justify;
+    line-height: 1.5;
+}
+.dmr-npcrp-notebox {
+    width: 100%;
+    padding: 1.6vw 0vw;
+    border-top: 0.2vw dashed var(--dmr-npcrp-accent);
+    margin-top: 2.4vw;
+}
+.dmr-npcrp-noteicon {
+    width: 5%;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    background: var(--dmr-npcrp-accent);
+    mask: url(https://iili.io/FdXzDDx.png) center / cover;
+}
+.dmr-npcrp-note {
+    width: 60%;
+    margin: 0.6vw auto;
+    font: 1.1vw 'Bai Jamjuree';
+    color: #232323;
+    font-weight: 500;
+    text-align: center;
+}
+.dmr-npcrp-png {
+    width: 50%;
+    aspect-ratio: 0.71 / 1;
+    grid-area: 4 / 3 / 5 / 5;
+    justify-self: right;
+    align-self: end;
+    background: var(--dmr-npcrp-png);
+    z-index: 4;
+    rotate: 25deg;
+}

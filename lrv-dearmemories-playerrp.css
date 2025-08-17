@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Inconsolata:wght@200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+@import url('https://dl.dropbox.com/scl/fi/pawmtr7ass3748iq9q1v4/HoneyMonly.css?rlkey=3hmls0ig8005oz0x2rzm256hp&st=7x77wjac');
+
+#raspberry {
+    --dmr-userrp-maincl: #ff85b7;
+    --dmr-userrp-subcl: #ffebb3;
+    --dmr-userrp-env: url(https://iili.io/F2fBy0v.png) center / cover;
+    --dmr-userrp-clip: url(https://iili.io/F2OMh3g.png) center / 130% no-repeat;
+}
+#bluehawaii {
+    --dmr-userrp-maincl: #6cb2d4;
+    --dmr-userrp-subcl: #ffebb3;
+    --dmr-userrp-env: url(https://iili.io/F2Ohpzx.png) center / cover;
+    --dmr-userrp-clip: url(https://iili.io/F2OMW6F.png) center / 130% no-repeat;
+}
+#matcha {
+    --dmr-userrp-maincl: #528b56;
+    --dmr-userrp-subcl: #ffebb3;
+    --dmr-userrp-env: url(https://iili.io/F2Ohbbj.png) center / cover;
+    --dmr-userrp-clip: url(https://iili.io/F2OMVG1.png) center / 130% no-repeat;
+}
+#peachtea {
+    --dmr-userrp-maincl: #df9575;
+    --dmr-userrp-subcl: #ffebb3;
+    --dmr-userrp-env: url(https://iili.io/F2Oht5u.png) center / cover;
+    --dmr-userrp-clip: url(https://iili.io/F2CnPLP.png) center / 130% no-repeat;
+}
+#mixberry {
+    --dmr-userrp-maincl: #ab7dc9;
+    --dmr-userrp-subcl: #ffebb3;
+    --dmr-userrp-env: url(https://iili.io/F2Oj2g1.png) center / cover;
+    --dmr-userrp-clip: url(https://iili.io/F2OMw8J.png) center / 130% no-repeat;
+}
+#mintchoc {
+    --dmr-userrp-maincl: #78c6b6;
+    --dmr-userrp-subcl: #4a3c30;
+    --dmr-userrp-env: url(https://iili.io/F2OhDOb.png) center / cover;
+    --dmr-userrp-clip: url(https://iili.io/F2OMNyv.png) center / 130% no-repeat;
+}
+#redvelvet {
+    --dmr-userrp-maincl: #870012;
+    --dmr-userrp-subcl: #ffe58e;
+    --dmr-userrp-env: url(https://iili.io/F2rdGWl.png) center / cover;
+    --dmr-userrp-clip: url(https://iili.io/F2rJz67.png) center / 130% no-repeat;
+}
+
+.dmr-userrp-grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1.6fr 0.5fr;
+    grid-template-rows: 3.5vw auto 3vw 3vw auto auto auto 5vw;
+}
+.dmr-userrp-cv {
+    width: 100%;
+    height: 100%;
+    grid-area: 2 / 2 / 8 / 4;
+    background: url(https://iili.io/F2KZGON.png) center / 20% repeat, var(--dmr-userrp-maincl);
+    box-sizing: border-box;
+    padding: 1.65vw;
+    border-radius: 1vw;
+}
+.dmr-userrp-paper {
+    width: 100%;
+    height: 100%;
+    background: url(https://iili.io/FdMiuvp.png) center / 50% repeat, #ffffff;
+    border-radius: 1vw;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.30);
+}
+.dmr-userrp-picbe {
+    width: 80%;
+    aspect-ratio: 0.92 / 1;
+    grid-area: 1 / 3 / 5 / 5;
+    justify-self: center;
+    align-self: end;
+    box-sizing: border-box;
+    border-width: 1vw;
+    border-style: solid;
+    border-color: #f9f9f9;
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+    rotate: -3deg;
+    background: var(--dmr-userrp-picbe);
+}
+.dmr-userrp-picup {
+    width: 80%;
+    aspect-ratio: 0.92 / 1;
+    grid-area: 1 / 3 / 5 / 5;
+    justify-self: right;
+    align-self: center;
+    box-sizing: border-box;
+    border-width: 1vw;
+    border-style: solid;
+    border-color: #f9f9f9;
+    -webkit-box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.4);
+    rotate: 4deg;
+    background: var(--dmr-userrp-charpic);
+}
+.dmr-userrp-sname {
+    width: fit-content;
+    max-width: 70%;
+    margin: auto;
+    grid-area: 3 / 2 / 4 / 3;
+    justify-self: center;
+    font: 3vw 'Honey Monly','Kiwi Maru';
+    line-height: 1;
+    background: var(--dmr-userrp-maincl);
+    padding: 0.2vw 0.6vw;
+    rotate: -2deg;
+    color: #ffffff;
+}
+.dmr-userrp-name {
+    width: fit-content;
+    max-width: 70%;
+    grid-area: 3 / 2 / 5 / 3;
+    justify-self: center;
+    align-self: end;
+    font: 3vw 'Honey Monly','Kiwi Maru';
+    line-height: 1;
+    background: var(--dmr-userrp-subcl);
+    padding: 0.2vw 0.6vw;
+    rotate: 3deg;
+    color: var(--dmr-userrp-maincl);
+    margin-left: 10vw;
+}
+.dmr-userrp-textbox {
+    width: 75%;
+    margin: auto;
+    grid-area: 5 / 2 / 6 / 4;
+    padding: 1.8vw;
+    margin-top: 1vw;
+}
+.dmr-userrp-loc {
+    width: 100%;
+    margin: 0.5vw 0vw 1.2vw;
+    font: 1.1vw 'Bai Jamjuree';
+    color: var(--dmr-userrp-maincl);
+    font-weight: 600;
+    text-align: right;
+    font-style: italic;
+}
+.dmr-userrp-rp {
+    width: 100%;
+    font: 1vw 'Bai Jamjuree';
+    line-height: 1.5;
+    color: #2c2c2c;
+    text-align: justify;
+}
+.dmr-userrp-note {
+    width: 100%;
+    padding: 0.2vw 0.8vw;
+    box-sizing: border-box;
+    background: var(--dmr-userrp-maincl);
+    font: 1vw 'Bai Jamjuree';
+    font-weight: 500;
+    color: #ffffff;
+    margin-top: 3vw;
+}
+.dmr-userrp-env {
+    width: 80%;
+    aspect-ratio: 1.94 / 1;
+    grid-area: 7 / 1 / 9 / 4;
+    background: var(--dmr-userrp-env);
+}
+.dmr-userrp-clip {
+    width: 35%;
+    aspect-ratio: 1 / 1;
+    grid-area: 1 / 2 / 3 / 3;
+    background: var(--dmr-userrp-clip);
+    rotate: -5deg;
+}
