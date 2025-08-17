@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Kiwi+Maru&family=Nanum+Pen+Script&display=swap');
+@import url('https://fonts.cdnfonts.com/css/perfectly-vintages');
+
+.post-mainbox {
+    width: 100%;
+    padding: 1.2vw;
+    box-sizing: border-box;
+    background: linear-gradient(0deg, rgba(19, 31, 90, 1) 0%, rgba(0, 0, 0, 0) 100%), url(https://iili.io/3chHAPt.png) center / cover;
+}
+.post-headflex {
+    width: 100%;
+    padding: 0.6vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.post-headflex-l {
+    width: 75%;
+}
+.post-codename {
+    width: 100%;
+    font: 2vw 'Perfectly Vintages';
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+.post-codetype {
+    width: 100%;
+    margin: 0vw 0vw 0.3vw 2vw;
+    font: 1vw 'DM Sans';
+    color: white;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+    color: white;
+    font-weight: 500;
+    font-style: italic;
+}
+.post-codedesc {
+    width: 100%;
+    padding-top: 1vw;
+    border-top: 0.1rem solid white;
+    font: 1.1vw 'Bai Jamjuree';
+}
+.post-cocktailpic {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    border: 0.1rem solid white;
+    -webkit-box-shadow: inset 0px 0px 5px 4px rgba(0,0,0,0.7);
+    background: var(--post-cocktailpic),#0000004D;
+}
+.post-codepreview {
+    width: 100%;
+    margin: 1vw 0vw;
+    padding: 1.2vw;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0px 0px 5px 4px rgba(0,0,0,0.3);
+    background: #0000004D;
+}
+.post-codedetailsflex {
+    width: 100%;
+    display: flex;
+    gap: 0.5vw;
+    align-items: stretch;
+}
+.post-moredetails {
+    width: 30%;
+    padding: 1.2vw;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0px 0px 5px 4px rgba(0, 0, 0, 0.3);
+    background: #0000004D;
+    font: 1vw 'Bai Jamjuree';
+    line-height: 1.4;
+}
+.post-codebox {
+    width: 70%;
+    padding: 1vw;
+    box-sizing: border-box;
+    -webkit-box-shadow: inset 0px 0px 5px 4px rgba(0, 0, 0, 0.3);
+    background: #0000004D;
+}
+.post-logo {
+    width: 15%;
+    margin: 1.2vw auto;
+    aspect-ratio: 2.58 / 1;
+    background: url(https://iili.io/3cXyDpR.png) center / cover;
+}
