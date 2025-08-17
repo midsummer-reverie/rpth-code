@@ -1,4 +1,22 @@
-@import url(https://dl.dropbox.com/scl/fi/ub8d1083558sf8t0k0p73/FkDoodle.css?rlkey=lenzgh66ktxqtxrtw7qfmjhhs&st=wivf1bhl);
+@font-face {
+    font-family: FkDoodle;
+    src: url(https://midsummer-reverie.github.io/font/FkDoodleBold.ttf) format(truetype);
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: FkDoodle;
+    src: url(https://midsummer-reverie.github.io/font/FkDoodleRegular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: FkDoodle;
+    src: url(https://midsummer-reverie.github.io/font/FkDoodleThin.ttf) format(truetype);
+    font-weight: 500;
+    font-style: normal;
+}
+
 .pnktopic-logo {
     width: 10%;
     aspect-ratio: 1 / 1;
@@ -136,4 +154,5 @@
     margin-top: 2.8vw;
     aspect-ratio: 3.871 / 1;
     background: url(https://iili.io/FlVyD4R.png) center / cover;
+
 }
