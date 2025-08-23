@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Holiday';
+    src: url(https://midsummer-reverie.github.io/font/HolidayFree.otf) format(opentype);
+    font-weight: 400;
+    font-style: normal;
+}
