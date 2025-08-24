@@ -49,7 +49,7 @@
 }
 .lmnsrp-jpn {
     width: 100%;
-    font: 2vw 'Moderniz','Noto Sans JP';
+    font: 1.65vw 'Moderniz','Noto Sans JP';
     color: var(--lmnsrp-acc2);
     font-weight: 700;
     text-align: right;
@@ -68,7 +68,7 @@
 .lmnsrp-sn {
     width: 95%;
     grid-area: 1 / 3;
-    font: 1.8vw 'Moderniz';
+    font: 1.65vw 'Moderniz';
     color: var(--lmnsrp-acc1);
     line-height: 1;
     padding-top: 0.8vw;
@@ -182,4 +182,5 @@
 #enchanter {
     --textsize: 0.8vw;
     --tribe: "enchanter";   
+
 }
