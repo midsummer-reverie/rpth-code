@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Do+Hyeon&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Kiwi+Maru&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --s04-icon-vinyl: url(https://iili.io/3Mntqjp.png) center / cover;
+}
+.s04-mainbox {
+    width: 100%;
+    padding: 4.8vw;
+    box-sizing: border-box;
+    background: var(--s04-bgcl);
+}
+.s04-grid {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto 5.2vw auto 1.8rem 9.6vw auto;
+    gap: 0.5rem;
+}
+.s04-title1 {
+    width: 100%;
+    grid-area: 1 / 1;
+    font: 1vw 'DM Sans';
+    font-weight: 650;
+    font-style: italic;
+    color: var(--s04-accent);
+    text-transform: lowercase;
+}
+.s04-title1::before {
+    width: 100%;
+    grid-area: 1 / 1;
+    font: 1vw 'DM Sans';
+    font-weight: 650;
+    font-style: italic;
+    color: var(--s04-accent);
+    text-transform: lowercase;
+    content: "mrs.hill's apartment";
+}
+.s04-mainpic {
+    idth: 100%;
+    aspect-ratio: 2 / 1;
+    grid-area: 2 / 1 / 3 / 4;
+    box-sizing: border-box;
+    border-radius: 35px;
+    border: 0.2rem solid var(--s04-accent);
+    background: var(--s04-roompic);
+}
+.s04-title2 {
+    width: 100%;
+    margin-bottom: 2vw;
+    grid-area: 3 / 3;
+    font: 1vw 'DM Sans';
+    font-weight: 650;
+    font-style: italic;
+    color: var(--s04-accent);
+    text-align: right;
+    text-transform: lowercase;
+}
+.s04-title2::before {
+    width: 100%;
+    margin-bottom: 2vw;
+    grid-area: 3 / 3;
+    font: 1vw 'DM Sans';
+    font-weight: 650;
+    font-style: italic;
+    color: var(--s04-accent);
+    text-align: right;
+    text-transform: lowercase;
+    content: "superior 04";
+}
+.s04-memflex {
+    width: 85%;
+    margin: auto;
+    grid-area: 4 / 1 / 5 / 4;
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+    margin-bottom: 3vw;
+    flex-wrap: wrap;
+}
+.s04-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.2vw;
+    position: relative;
+}
+.s04-member {
+    width: 4vw;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    border-radius: 1000px;
+    border: 0.16rem solid var(--s04-accent);
+    transition: transform 0.4s ease;
+    z-index: 2;
+} 
+.s04-memtext {
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    white-space: nowrap;
+    background: var(--s04-accent);
+    padding: 0.6vw 0;
+    border-radius: 2vw;
+    font: 0.75vw 'DM Sans';
+    color: var(--s04-bgcl);
+    font-weight: 400;
+}
+.s04-wrapper:hover .s04-memtext {
+    width: 10vw;
+    opacity: 1;
+    padding: 0.6vw 1vw;
+}
+.s04-wrapper:hover .s04-member {
+    transform: translateX(-0.5vw);
+}
+  
+.s04-name {
+    font: 1vw 'DM Sans';
+    font-weight: 600;
+}
+.s04-roomname {
+    width: 100%;
+    max-height: 1.2rem;
+    grid-area: 5 / 1;
+    font: 3.6vw 'Fraunces';
+    font-weight: 400;
+    font-style: italic;
+    line-height: 0.8;
+    color: var(--s04-accent);
+}
+.s04-room {
+    width: 90%;
+    font: 1.2vw 'DM Sans';
+    font-weight: 550;
+    color: var(--s04-textcl);
+    text-align: right;
+    grid-area: 6 / 1;
+}
+.s04-details {
+    width: 100%;
+    max-height: 12.7rem;
+    padding:  0vw 0.3vw 0vw 1.6vw;
+    box-sizing: border-box;
+    grid-area: 5 / 2 / 7 / 4;
+    border-left: 0.2rem solid var(--s04-accent);
+    font: 1vw 'Taviraj';
+    color: var(--s04-textcl);
+    text-align: justify;
+    overflow-y: scroll;
+}
+.s04-details::-webkit-scrollbar {
+    width: 0.4vw;
+    margin-left: 0.8vw;
+}   
+.s04-details::-webkit-scrollbar-track {
+    background: #00000000;
+}   
+.s04-details::-webkit-scrollbar-thumb {
+    background-color: var(--s04-accent);
+    border-radius: 1000px;
+}
+.s04-gradient {
+    width: 100%;
+    height: 25%;
+    margin-left: 1.2vw;
+    box-sizing: border-box;
+    grid-area: 5 / 2 / 7 / 4;
+    background: linear-gradient(0deg, var(--s04-bgcl) 0%, #00000000 80%);
+    align-self: end;
+}
+.s04-pic1 {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 0.175rem solid var(--s04-accent);
+    grid-area: 8 / 1;
+    background: var(--s04-pic1);
+}
+.s04-pic2 {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 0.175rem solid var(--s04-accent);
+    grid-area: 8 / 2;
+    background: var(--s04-pic2);
+}
+.s04-pic3 {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 0.175rem solid var(--s04-accent);
+    grid-area: 8 / 3;
+    background: var(--s04-pic3);
+}
+.s04-songflex {
+    width: 70%;
+    margin: 1rem auto;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    grid-area: 9 / 1 / 10 / 4;
+}
+.s04-vinyl {
+    width: 1.75vw;
+    aspect-ratio: 1 / 1;
+    background: var(--s04-textcl);
+    mask: var(--s04-icon-vinyl);
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+.s04-song {
+    width: fit-content;
+    font: 1vw 'DM Sans', 'Taviraj', 'Do Hyeon', 'Kiwi Maru';
+    color: var(--s04-textcl);
+}
+.s04-songname {
+    font-weight: 600;
+}
