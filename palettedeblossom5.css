@@ -1,0 +1,197 @@
+@import url(https://midsummer-reverie.github.io/font-face/THChara.css);
+@import url(https://midsummer-reverie.github.io/font-face/TheSeasons.css);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+:root {
+    --pdb-house: url(https://iili.io/KI9md8P.png) center/cover;
+    --pdb-sparkle: url(https://iili.io/3EXhlP2.png) center / 70% no-repeat;
+    --pdb-logo: url(https://iili.io/KzZC86x.png) center/cover;
+}
+.pdb-main {
+    width: 100%;
+    position: relative;
+}
+.pdb-topbox {
+    width: 75%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 1.25vw;
+    background: radial-gradient(ellipse at top, var(--pdb-color2) 0%, var(--pdb-bgcl) 60%);
+}
+.pdb-logo {
+    width: 6%;
+    aspect-ratio: 1 / 1;
+    margin: 1vw auto 1.6vw;
+    background: var(--pdb-txtcl);
+    mask: var(--pdb-logo);
+}
+.pdb-flex1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.pdb-colorcol {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.pdb-color1 {
+    width: 100%;
+    aspect-ratio: 1 / 1.8;
+    background: var(--pdb-color1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pdb-color2 {
+    width: 100%;
+    aspect-ratio: 1 / 1.8;
+    background: var(--pdb-color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pdb-color3 {
+    width: 100%;
+    aspect-ratio: 1 / 1.8;
+    background: var(--pdb-color3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pdb-colorname {
+    width: fit-content;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font: 0.75vw 'poppins';
+    color: var(--pdb-bgcl);
+    text-align: center;
+    line-height: 1.1;
+    box-sizing: border-box;
+}
+.pdb-mainpic {
+    width: 88%;
+    box-sizing: border-box;
+    border: 0.12vw solid var(--pdb-txtcl);
+    aspect-ratio: 1.55 / 1;
+    background: var(--pdb-mainpic);
+}
+.pdb-btbox {
+    width: 75%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 1.25vw;
+    background: radial-gradient(ellipse at bottom, var(--pdb-color3) 0%, var(--pdb-bgcl) 60%);
+}
+.pdb-nameflex {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.8vw;
+}
+.pdb-sparkle {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: var(--pdb-color2);
+    mask: var(--pdb-sparkle);
+}
+.pdb-roomname {
+    width: fit-content;
+    max-width: 80%;
+    margin-top: 1.25vw;
+    font: 3.8vw 'The Seasons';
+    color: var(--pdb-color1);
+    text-transform: capitalize;
+    text-align: right;
+    line-height: 0.8;
+    font-weight: 500;
+}
+.pdb-roomsub {
+    width: 100%;
+    font: 1.2vw 'Poppins';
+    color: var(--pdb-txtcl);
+    text-transform: lowercase;
+    text-align: right;
+    line-height: 1;
+    font-weight: 500;
+}
+.pdb-desc {
+    width: 95%;
+    margin: 1.25vw auto;
+    font: 1.4vw 'TH Chara';
+    color: var(--pdb-txtcl);
+    text-align: justify;
+}
+.pdb-btflex {
+    width: 100%;
+    margin: 2.5vw auto 1.25vw;
+    display: flex;
+    justify-content: space-between;
+}
+.pdb-btpic {
+    width: 47%;
+    aspect-ratio: 1.85 / 1;
+    border: 0.12vw solid var(--pdb-txtcl);
+    background: var(--pdb-btpic);
+}
+.pdb-memberbox {
+    width: 47%;
+    aspect-ratio: 1.85 / 1;
+    overflow-x: scroll;
+}
+.pdb-member {
+    width: 100%;
+    display: flex;
+    gap: 0.8vw;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 0.55vw;
+}
+.pdb-mempic {
+    width: 16%;
+    aspect-ratio: 1 / 1;
+    box-sizing: border-box;
+    border: 1px solid var(--pdb-txtcl);
+}
+.pdb-memdesc {
+    width: 82%;
+    font: 0.8vw 'Poppins';
+    color: var(--pdb-txtcl);
+    line-height: 1.1;
+    text-align: right;
+    font-style: italic;
+}
+.pdb-memname {
+    font-size: 0.9vw;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+}
+.pdb-houselogo {
+    width: 10%;
+    margin: auto;
+    aspect-ratio: 4/1;
+    background: var(--pdb-bgcl);
+    mask: var(--pdb-house);
+}
+.pdb-decoflex {
+    width: 15%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    top: 12%;
+    right: 8%;
+}
+.pdb-decopic1 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 0.12vw solid var(--pdb-txtcl);
+    background: var(--pdb-deco1);
+}
+.pdb-decopic2 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 0.12vw solid var(--pdb-txtcl);
+    background: var(--pdb-deco2);
+}
