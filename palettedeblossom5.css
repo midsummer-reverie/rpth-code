@@ -195,3 +195,6 @@
     border: 0.12vw solid var(--pdb-txtcl);
     background: var(--pdb-deco2);
 }
+.pdb-memberbox::-webkit-scrollbar {
+    display: none;
+}
