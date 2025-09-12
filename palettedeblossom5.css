@@ -172,7 +172,7 @@
     text-transform: uppercase;
 }
 .pdb-houselogo {
-    width: 10%;
+    width: 15%;
     margin: auto;
     aspect-ratio: 4/1;
     background: var(--pdb-bgcl);
@@ -202,5 +202,6 @@
 .pdb-memberbox::-webkit-scrollbar {
     display: none;
 }
+
 
 
