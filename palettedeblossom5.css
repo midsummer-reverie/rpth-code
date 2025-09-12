@@ -72,7 +72,7 @@
 .pdb-mainpic {
     width: 88%;
     box-sizing: border-box;
-    border: 0.12vw solid var(--pdb-txtcl);
+    border: 0.2vw solid var(--pdb-bgcl);
     aspect-ratio: 1.55 / 1;
     background: var(--pdb-mainpic);
 }
@@ -186,15 +186,16 @@
 .pdb-decopic1 {
     width: 100%;
     aspect-ratio: 1 / 1;
-    border: 0.12vw solid var(--pdb-txtcl);
+    border: 0.2vw solid var(--pdb-bgcl);
     background: var(--pdb-deco1);
 }
 .pdb-decopic2 {
     width: 100%;
     aspect-ratio: 1 / 1;
-    border: 0.12vw solid var(--pdb-txtcl);
+    border: 0.2vw solid var(--pdb-bgcl);
     background: var(--pdb-deco2);
 }
 .pdb-memberbox::-webkit-scrollbar {
     display: none;
 }
+
