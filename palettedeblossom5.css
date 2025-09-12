@@ -59,7 +59,7 @@
     justify-content: center;
     align-items: center;
 }
-.pdb-colorname {
+.pdb-colordesc {
     width: fit-content;
     writing-mode: vertical-rl;
     text-orientation: mixed;
@@ -68,6 +68,10 @@
     text-align: center;
     line-height: 1.1;
     box-sizing: border-box;
+}
+.pdb-colorname {
+    font-weight: 500;
+    text-transform: uppercase;
 }
 .pdb-mainpic {
     width: 88%;
@@ -198,4 +202,5 @@
 .pdb-memberbox::-webkit-scrollbar {
     display: none;
 }
+
 
