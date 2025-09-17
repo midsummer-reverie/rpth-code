@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Mitr&display=swap);
+
+.c25ae-box {
+    margin: auto;
+    background-attachment: fixed;
+    background-blend-mode: screen;
+    background: url(https://i.pinimg.com/originals/aa/b0/79/aab0793….gif) center / cover, url(https://iili.io/K23OZ0u.png) top / cover;
+    max-width: 900px;
+    box-shadow: inset 0 0 50px 10px #111111;
+    border: 1px solid #111111;
+    border-image: linear-gradient(to top, rgba(100, 100, 100, 1), rgba(13, 13, 13, 1)) 1;
+}
+.c25ae-content {
+    margin: auto;
+    background: rgba(0, 0, 0, 0.3);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.c25ae-header {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    margin-top: -5px;
+}
+.c25ae-subbox {
+    margin: auto;
+    box-shadow: 0 0 50px 2px #212121;
+    margin: -30px 50px 20px 50px;
+    border: 1px solid #111111;
+    border-image: linear-gradient(to top, rgba(100, 100, 100, 1), rgba(13, 13, 13, 1)) 1;
+}
+.c25ae-role {
+    background: url(https://i.imgur.com/gfA4sqn.png) center / cover;
+    padding: 25px;
+    font-family: 'Bai Jamjuree';
+    color: black;
+    text-align: justify;
+}
+.c25ae-hr {
+    background-color: #303030;
+    height: 1px;
+    border: 0px;
+}
+.c25ae-note {
+    font-size: 10pt;
+}
+.c25ae-footer {
+    margin: auto;
+    text-align: center;
+}
+.c25ae-title {
+    margin: auto;
+    max-width: 50%;
+    margin-top: 20px;
+}
