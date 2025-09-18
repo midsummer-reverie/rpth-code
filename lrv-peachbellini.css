@@ -69,11 +69,11 @@
 }
 .pbln-text {
     width: 100%;
-    font: 1vw 'Bai Jamjuree';
+    font: 1.05vw 'Bai Jamjuree';
     color: var(--pbln-textcl);
     text-align: justify;
     grid-area: 1 / 1 / 2 / 2;
-    line-height: 1.4;
+    line-height: 1.45;
     z-index: 2;
     align-self: center;
 }
@@ -116,3 +116,4 @@
     color: #969696;
     text-align: center;
 }
+
