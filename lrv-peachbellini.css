@@ -58,7 +58,7 @@
     margin: 1vw 0vw;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows auto auto;
+    grid-template-rows: auto auto;
 }
 .pbln-heart {
     width: 50%;
@@ -118,6 +118,7 @@
     color: #969696;
     text-align: center;
 }
+
 
 
 
