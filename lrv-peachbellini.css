@@ -75,7 +75,7 @@
     color: var(--pbln-textcl);
     text-align: justify;
     grid-area: 1 / 1 / 2 / 2;
-    line-height: 1.45;
+    line-height: 1.7;
     z-index: 2;
     align-self: center;
 }
@@ -118,6 +118,7 @@
     color: #969696;
     text-align: center;
 }
+
 
 
 
