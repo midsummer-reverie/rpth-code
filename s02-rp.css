@@ -17,7 +17,7 @@
     justify-self: right;
     margin: auto 0vw;
     background: var(--s02rp-bg);
-    rotate: 1deg;
+    rotate: -1deg;
     z-index: 0;
 }
 .s02rp-paper {
@@ -165,3 +165,4 @@
     aspect-ratio: 1 / 1;
     background: var(--s02rp-cl3);
 }
+
