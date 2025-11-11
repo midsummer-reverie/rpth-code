@@ -137,7 +137,8 @@
     background: url(https://iili.io/KpoeUeS.png) center / cover;
     grid-area: 5 / 2 / 7 / 3;
     z-index: 6;
-    margin-left: 0.75vw;
+    margin-left: 0.8vw;
+    margin-top: 0.25vw;
     margin-bottom: 0.25vw;
 }
 .s02rp-palette {
@@ -165,5 +166,6 @@
     aspect-ratio: 1 / 1;
     background: var(--s02rp-cl3);
 }
+
 
 
