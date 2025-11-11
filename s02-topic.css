@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://midsummer-reverie.github.io/font-face/Breathing.css');
+
+.s02topic-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6.5vw auto 6.5vw;
+    grid-template-rows: 6.5vw auto auto auto auto auto 6.5vw;
+    border: 2px solid var(--tp-subcl);
+    box-sizing: border-box;
+}
+.s02topic-bg {
+    width: 100%;
+    grid-area: 1 / 1 / 8 / 4;
+    background: var(--tp-bg);
+    filter: blur(3px);
+    z-index: 0;
+}
+.s02topic-paper {
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    grid-area: 2 / 2 / 6 / 3;
+    background: url(https://iili.io/KmMChRR.jpg) 100% / 35% repeat;
+    z-index: 1;
+}
+.s02topic-tt {
+    width: fit-content;
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 0.5vw 3.5vw;
+    font: 1.3vw Rubik;
+    color: var(--tp-subcl2);
+    font-weight: 600;
+    background: var(--tp-accent);
+    grid-area: 2 / 2 / 3 / 3;
+    z-index: 2;
+    margin-top: 1.4vw;
+}
+.s02topic-roomtt {
+    width: fit-content;
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: end;
+    margin: 3vw 0vw 1vw 12vw;
+    font: clamp(20px, calc(3vw + 0.2rem), 46px) 'Breathing';
+    line-height: 1.4;
+    color: var(--tp-subcl);
+    z-index: 3;
+}
+.s02topic-stamp {
+    width: 100%;
+    margin: auto;
+    aspect-ratio: 1.597 / 1;
+    background: var(--tp-accent);
+    mask: url(https://iili.io/Km0t1pV.png) center / cover;
+    grid-area: 3 / 2 / 4 / 3;
+    z-index: 4;
+    rotate: -1.5deg;
+    box-sizing: border-box;
+    padding: 2.8vw;
+}
+.s02topic-main {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 0.8vw solid var(--tp-subcl2);
+    rotate: 1deg;
+    background: var(--tp-main);
+}
+.s02topic-desc {
+    width: 72%;
+    margin: 3vw auto;
+    grid-area: 4 / 2 / 5 / 3;
+    font: 1.1vw 'Bai Jamjuree';
+    color: var(--tp-txt);
+    line-height: 1.7;
+    text-align: justify;
+    z-index: 5;
+}
+.s02topic-cirflex {
+    width: 40%;
+    grid-area: 5 / 1 / 7 / 3;
+    margin-left: 5.5vw;
+    display: flex;
+    gap: 1.2vw;
+    z-index: 6;
+}
+.s02topic-cir1 {
+    width: 42%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    border: 0.3vw solid var(--tp-subcl);
+    background: var(--tp-cir1);
+}
+.s02topic-cir2 {
+    width: 42%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    border: 0.3vw solid var(--tp-subcl);
+    background: url(https://i.pinimg.com/1200x/50/0c/00/500c009….jpg) center / cover;
+    background: var(--tp-cir2);
+}
+.s02topic-res {
+    max-width: 80%;
+    grid-area: 5 / 2 / 6 / 3;
+    justify-self: right;
+    align-self: start;
+    font: 1vw 'Rubik';
+    color: var(--tp-accent);
+    font-weight: 500;
+    text-align: right;
+    z-index: 8;
+    margin: 1.6vw 4.2vw 1vw 0vw;
+}
