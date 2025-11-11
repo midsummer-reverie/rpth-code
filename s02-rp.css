@@ -148,7 +148,7 @@
     display: flex;
     gap: 0.5vw;
     align-self: end;
-    margin: 0vw 2.2vw 1.2vw 0vw;
+    margin: 0vw 2.2vw 1.48vw 0vw;
     justify-self: right;
 }
 .s02rp-cl1 {
@@ -166,6 +166,7 @@
     aspect-ratio: 1 / 1;
     background: var(--s02rp-cl3);
 }
+
 
 
 
