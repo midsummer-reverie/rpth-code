@@ -97,7 +97,6 @@
     aspect-ratio: 1 / 1;
     border-radius: 1000px;
     border: 0.3vw solid var(--tp-subcl);
-    background: url(https://i.pinimg.com/1200x/50/0c/00/500c009….jpg) center / cover;
     background: var(--tp-cir2);
 }
 .s02topic-res {
@@ -111,4 +110,5 @@
     text-align: right;
     z-index: 8;
     margin: 1.6vw 4.2vw 1vw 0vw;
+
 }
