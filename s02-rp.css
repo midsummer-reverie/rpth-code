@@ -41,7 +41,7 @@
     width: 15%;
     aspect-ratio: 1 / 1;
     background: var(--s02rp-cl1);
-    mask: url(https://iili.io/3EXhlP2.png) center / 85% no-repeat;
+    mask: var(--s02rp-icon);
     grid-area: 1 / 2 / 2 / 3;
     margin: 0.6vw 1.8vw 0.6vw 0vw;
     z-index: 2;
@@ -163,4 +163,5 @@
     width: 32%;
     aspect-ratio: 1 / 1;
     background: var(--s02rp-cl3);
+
 }
