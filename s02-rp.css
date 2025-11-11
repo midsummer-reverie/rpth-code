@@ -5,13 +5,13 @@
     width: 80%;
     margin: auto;
     display: grid;
-    grid-template-columns: 50% 30% 20%;
+    grid-template-columns: 20% 50% 30%;
     grid-template-rows: auto auto 8vw auto 0.3vw auto;
 }
 .s02rp-back {
     width: 80%;
     height: 96%;
-    grid-area: 1 / 2 / 7 / 4;
+    grid-area: 1 / 1 / 7 / 3;
     box-sizing: border-box;
     border: 0.35vw solid var(--s02rp-cl2);
     justify-self: right;
@@ -23,7 +23,7 @@
 .s02rp-paper {
     width: 96%;
     margin: 0vw auto;
-    grid-area: 1 / 1 / 6 / 3;
+    grid-area: 1 / 2 / 6 / 4;
     background: url(https://iili.io/KmMChRR.jpg) center / 35% repeat;
     z-index: 1;
 }
@@ -32,7 +32,7 @@
     aspect-ratio: 0.774 / 1;
     background: var(--s02rp-cl1);
     mask: url(https://iili.io/KmjJtyl.png) center / 85% no-repeat;
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 2 / 2 / 3;
     margin: 0.6vw 0vw 0.6vw 1.6vw;
     z-index: 2;
     align-self: center;
@@ -41,8 +41,8 @@
     width: 15%;
     aspect-ratio: 1 / 1;
     background: var(--s02rp-cl1);
-    mask: var(--s02rp-icon);
-    grid-area: 1 / 2 / 2 / 3;
+    mask: url(https://iili.io/3EXhlP2.png) center / 85% no-repeat;
+    grid-area: 1 / 3 / 2 / 4;
     margin: 0.6vw 1.8vw 0.6vw 0vw;
     z-index: 2;
     justify-self: right;
@@ -52,7 +52,7 @@
     width: 100%;
     box-sizing: border-box;
     border: 0.4vw solid var(--s02rp-cl3);
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 2 / 2 / 3 / 4;
     aspect-ratio: 3.6 / 1;
     background: var(--s02rp-bn);
     z-index: 3;
@@ -64,7 +64,7 @@
     justify-self: center;
     background: var(--s02rp-cl1);
     mask: url(https://iili.io/Kmhzm3N.png) center / cover;
-    grid-area: 2 / 2 / 4 / 3;
+    grid-area: 2 / 3 / 4 / 4;
     z-index: 4;
     box-sizing: border-box;
     padding: 1vw;
@@ -79,7 +79,7 @@
     align-self: center;
     justify-self: center;
     z-index: 4;
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 3 / 2 / 4 / 3;
     margin-left: 1.2vw;
 }
 .s02rp-random {
@@ -101,7 +101,7 @@
     width: 80%;
     margin: 2vw auto 0.5vw;
     z-index: 5;
-    grid-area: 4 / 1 / 5 / 3;
+    grid-area: 4 / 2 / 5 / 4;
 }
 .s02rp-rp {
     width: 100%;
@@ -124,30 +124,31 @@
     width: 96%;
     aspect-ratio: 5.18 / 1;
     background: url(https://iili.io/KmMChRR.jpg) center / 35% repeat;
-    mask: url(https://iili.io/KmOoPRI.png) center / cover;
-    grid-area: 5 / 1 / 7 / 3;
+    mask: url(	https://iili.io/KpoeS72.png) center / cover;
+    grid-area: 5 / 2 / 7 / 4;
     margin: auto;
     align-self: end;
 }
 .s02rp-corner {
-    width: 58%;
-    aspect-ratio: 1.1575 / 1;
+    width: 35%;
+    aspect-ratio: 1.169 / 1;
     align-self: end;
-    justify-self: right;
-    background: url(https://iili.io/KmwwNJp.png) center / cover;
+    justify-self: left;
+    background: url(https://iili.io/KpoeUeS.png) center / cover;
     grid-area: 5 / 2 / 7 / 3;
     z-index: 6;
-    margin-right: 0.8vw;
+    margin-left: 0.75vw;
     margin-bottom: 0.25vw;
 }
 .s02rp-palette {
-    width: 25%;
-    grid-area: 5 / 1 / 7 / 2;
+    width: 35%;
+    grid-area: 5 / 3 / 7 / 4;
     z-index: 5;
     display: flex;
     gap: 0.5vw;
     align-self: end;
-    margin: 0vw 0vw 1vw 2.2vw;
+    margin: 0vw 2.2vw 1.2vw 0vw;
+    justify-self: right;
 }
 .s02rp-cl1 {
     width: 32%;
@@ -163,5 +164,4 @@
     width: 32%;
     aspect-ratio: 1 / 1;
     background: var(--s02rp-cl3);
-
 }
