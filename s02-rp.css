@@ -14,7 +14,7 @@
     grid-area: 1 / 1 / 7 / 3;
     box-sizing: border-box;
     border: 0.35vw solid var(--s02rp-cl2);
-    justify-self: right;
+    justify-self: left;
     margin: auto 0vw;
     background: var(--s02rp-bg);
     rotate: -1deg;
@@ -165,4 +165,5 @@
     aspect-ratio: 1 / 1;
     background: var(--s02rp-cl3);
 }
+
 
