@@ -82,7 +82,6 @@
 }
 .sp-mainsongname-txt {
   display: inline-block;
-  padding-left: 100%;          /* เริ่มเลื่อนจากนอกจอ */
   animation: marquee 10s linear infinite alternate;
 }
 /* keyframes เลื่อนกลับไปกลับมา */
@@ -569,3 +568,4 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
