@@ -561,10 +561,9 @@
   background: transparent;                 /* ไม่มีพื้นหลัง */
 }
 .sp-expflex::-webkit-scrollbar-thumb {
-    width: 27%;
+    width: 25%;
     height: 0.75vw;
     border-radius: 1000px;
-    background: transparent;
     background: #262626;
     margin-top: 1vw;
 }
@@ -574,6 +573,7 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
