@@ -348,7 +348,7 @@
 
 .sp-charname {
     color: #fff;
-    font-size: 1vw;
+    font: 1vw var(--sptf-font);
     margin: 0;
     padding: 0.15vw 0;
     opacity: 0;
@@ -555,6 +555,7 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
