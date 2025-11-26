@@ -349,6 +349,7 @@
 .sp-charname {
     color: #fff;
     font: 1vw var(--sptf-font);
+    font-weight: 500;
     margin: 0;
     padding: 0.15vw 0;
     opacity: 0;
@@ -358,6 +359,7 @@
 .sp-charori {
     font-size: 0.85vw;
     line-height: 1.2;
+    font-weight: 300;
 }
 /* Hover: โชว์ overlay + ข้อความ */
 .sp-char:hover .sp-charoverlay {
@@ -555,6 +557,7 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
