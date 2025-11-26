@@ -426,6 +426,9 @@
     padding-top: 0.65vw;
     text-decoration: underline;
 }
+.sp-follow::before {
+    content: "Following";
+}
 .sp-desc {
     width: 100%;
     margin-top: 1vw;
@@ -556,6 +559,7 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
