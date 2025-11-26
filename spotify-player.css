@@ -343,17 +343,22 @@
     rgba(0, 0, 0, 0) 70%
   );
   opacity: 0;
+  
+  /* จัดตำแหน่งที่สำคัญ */
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-direction: column;
-  padding: 1vw;
+  justify-content: flex-end;   /* ด้านล่าง */
+  align-items: flex-start;     /* ซ้าย */
+  
+  padding: 1vw;                /* ระยะห่างจากขอบ */
   transition: opacity 0.35s ease;
 }
+
 .sp-charname {
   color: #fff;
-  font: 1vw var(--sptf-font);
-  margin: 0;
+  font-size: 1vw;
+  margin: 0;                   /* กันไม่ให้ขยับเพิ่มจาก margin */
+  padding: 0.2em 0;            /* padding เฉพาะ text */
+  
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.35s ease, transform 0.35s ease;
@@ -558,5 +563,6 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
