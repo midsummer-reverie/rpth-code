@@ -1,0 +1,571 @@
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Noto+Sans+JP:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans+SC:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
+:root {
+    --sptf-font: 'DM Sans','Noto Sans JP','Noto Sans KR','Noto Sans TC','Noto Sans SC','Sarabun';
+    --sp-ic-dropdown: url(https://iili.io/fFbxYoN.png) center / 80% no-repeat;
+    --sp-ic-more: url(https://iili.io/fFmFmSR.png) center / 80% no-repeat;
+    --sp-ic-added: url(https://iili.io/fFmSdap.png) center / 70% no-repeat;
+    --sp-ic-shuffle: url(https://iili.io/fFyIBJ1.png) 0% 50% / 55% no-repeat;
+    --sp-ic-previous: url(https://iili.io/fFyz0PV.png) center / 65% no-repeat;
+    --sp-ic-playbutton: url(https://iili.io/fFyIfUP.png) center / cover;
+    --sp-ic-next: url(https://iili.io/fFy1IXS.png) center / 65% no-repeat;
+    --sp-ic-repeat: url(https://iili.io/fFyIbBR.png) 100% 50% / 55% no-repeat;
+    --sp-ic-bluetooth: url(https://iili.io/fFy6c8J.png) -150% 50% / 90% no-repeat;
+    --sp-ic-share1: url(https://iili.io/fK9du5l.png) 0% 50% / 80% no-repeat;
+    --sp-ic-queue: url(https://iili.io/fK9dAe2.png) 100% 60% / 80% no-repeat;
+    --sp-ic-share2: url(https://iili.io/fKHiJ1I.png) center / 50% no-repeat;
+    --sp-ic-expand: url(https://iili.io/fKHiHqN.png) center / 40% no-repeat;
+    --sp-cl-theme: #1DB954;
+}
+
+.sp-mainbox {
+    width: 80%;
+    box-sizing: border-box;
+    margin: auto;
+}
+.sp-top {
+    width: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(89, 176, 55, 0) 50%, rgba(0, 0, 0, 0.6) 100%), var(--sp-mainpic);
+    padding-top: 3vw;
+}
+.sp-header {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sp-icon1 {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    mask: var(--sp-ic-dropdown);
+}
+.sp-status {
+    width: 70%;
+    font: 1vw var(--sptf-font);
+    color: #fff;
+    text-align: center;
+}
+.sp-icon2 {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    mask: var(--sp-ic-more);
+}
+.sp-titlebox {
+    width: 80%;
+    margin: 40vw auto 0vw;
+    display: flex;
+    justify-content: space-between;
+}
+.sp-maincover {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.5vw;
+    background: var(--sp-alcover);
+}
+.sp-mainsong {
+    width: 74%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sp-mainsongname {
+    width: 100%;
+    font: 3.2vw var(--sptf-font);
+    font-weight: 600;
+    color: #fff;
+    line-height: 0.8;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.sp-mainsongname {
+  display: inline-block;
+  padding-left: 100%;          /* เริ่มเลื่อนจากนอกจอ */
+  animation: marquee 10s linear infinite alternate;
+}
+/* keyframes เลื่อนกลับไปกลับมา */
+@keyframes marquee {
+  0%   { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+.sp-mainsongart {
+    width: 100%;
+    font: 1.1vw var(--sptf-font);
+    font-weight: 400;
+    color: #B8B8B8;
+    line-height: 0.8;
+    margin-top: 0.6vw;
+}
+.sp-icon3 {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: var(--sp-cl-theme);
+    mask: var(--sp-ic-added);
+}
+.sp-player {
+    width: 80%;
+    margin: 2.5vw auto 0vw;
+    display: grid;
+    grid-template-columns: var(--sp-played) 0.8vw 1fr;
+    grid-template-rows: auto 0.2vw auto auto;
+}
+.sp-track {
+    width: 100%;
+    height: 100%;
+    grid-area: 2 / 1 / 3 / 4;
+    border-radius: 1000px;
+    background: #9C9C9C;
+}
+.sp-played {
+    width: 100%;
+    height: 100%;
+    grid-area: 2 / 1 / 3 / 2;
+    border-radius: 1000px;
+    background: #fff;
+}
+.sp-dot {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    background: #fff;
+    grid-area: 1 / 2 / 4 / 3;
+    align-self: center;
+}
+.sp-playedmin {
+    width: fit-content;
+    grid-area: 4 / 1 / 5 / 3;
+    font: 0.8vw 'DM Sans';
+    color: #C2C2C2;
+}
+.sp-totalmin {
+    width: fit-content;
+    grid-area: 4 / 2 / 5 / 4;
+    font: 0.8vw 'DM Sans';
+    color: #C2C2C2;
+    justify-self: right;
+}
+.sp-menu {
+    width: 80%;
+    margin: 1.2vw auto 0vw;
+    display: flex;
+    justify-content: space-between;
+}
+.sp-icon4 {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    mask: var(--sp-ic-shuffle);
+}
+.sp-icon5 {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    mask: var(--sp-ic-previous);
+}
+.sp-icon6 {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    mask: var(--sp-ic-playbutton);
+}
+.sp-icon7 {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    mask: var(--sp-ic-next);
+}
+.sp-icon8 {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    mask: var(--sp-ic-repeat);
+}
+.sp-submenu {
+    width: 80%;
+    margin: 1vw auto 0vw;
+    display: flex;
+}
+.sp-icon9 {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    background: var(--sp-cl-theme);
+    mask: url(https://iili.io/fFy6c8J.png) -150% 50% / 90% no-repeat;
+}
+.sp-device {
+    width: 82%;
+    font: 0.9vw var(--sptf-font);
+    color: var(--sp-cl-theme);
+    line-height: 0.8;
+    align-self: center;
+}
+.sp-icon10 {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    background: #ffffff;
+    mask: var(--sp-ic-share1);
+    margin-right: 0.5vw;
+}
+.sp-icon11 {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    background: #ffffff;
+    mask: var(--sp-ic-queue);
+    margin-left: 1vw;
+}
+.sp.extension {
+    width: 100%;
+    margin: auto;
+    background: #000000;
+    padding: 1vw 0vw 3vw;
+    box-sizing: border-box;
+}
+/*Lyrics Box*/
+.sp-lyricsbox {
+    width: 80%;
+    margin: 1.8vw auto 0vw;
+    display: grid;
+    grid-template-columns: 1vw 1fr 5% 5% 1vw;
+    grid-template-rows: minmax(auto, 5vw) minmax(15vw, 20vw) 4vw;
+    column-gap: 0.75vw;
+    box-sizing: border-box;
+}
+.sp-lybg {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.65vw;
+    background: var(--sp-lybg);
+    grid-area: 1 / 1 / 4 / 6;
+    z-index: 0;
+}
+.sp-lytxt {
+    width: 100%;
+    font: 1.6vw var(--sptf-font);
+    font-weight: 600;
+    color: #000000BF;
+    line-height: 1.45;
+    overflow-y: scroll;
+    grid-area: 1 / 2 / 4 / 5;
+    z-index: 1;
+}
+.sp-lyline {
+    color: #fff;
+}
+.sp-lytop {
+    width: 100%;
+    height: 100%;
+    border-radius: 1.65vw 1.65vw 0vw 0vw;
+    background: linear-gradient(0deg, #00000000 0%, var(--sp-lybg) 40%);
+    z-index: 2;
+    grid-area: 1 / 1 / 2 / 6;
+}
+.sp-lybt {
+    width: 100%;
+    height: 100%;
+    border-radius: 0vw 0vw 1.65vw 1.65vw;
+    background: linear-gradient(180deg, #00000000 0%, var(--sp-lybg) 65%);
+    z-index: 2;
+    grid-area: 3 / 1 / 4 / 6;
+}
+.sp-lytt {
+    width: 100%;
+    font: 1vw 'DM Sans';
+    color: #fff;
+    font-weight: 600;
+    grid-area: 1 / 2 / 2 / 3;
+    z-index: 3;
+    margin: 1vw 0vw;
+}
+.sp-lytt::before {
+    content: "Lyrics";
+}
+.sp-lydot1 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    background: #000000B3;
+    grid-area: 1 / 3 / 2 / 4;
+    margin-top: 0.7vw;
+    z-index: 4;
+}
+.sp-icon12 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    mask: var(--sp-ic-share2);
+}
+.sp-lydot2 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    background: #000000B3;
+    grid-area: 1 / 4 / 2 / 5;
+    margin-top: 0.7vw;
+    z-index: 4;
+}
+.sp-icon13 {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    mask: var(--sp-ic-expand);
+}
+/*Explore - Char Box*/
+.sp-expbox {
+    width: 80%;
+    margin: 1.8vw auto 0vw;
+    border-radius: 1.65vw;
+    background: #131313;
+    box-sizing: border-box;
+    padding: 1vw 2vw;
+}
+.sp-exptt {
+    width: 100%;
+    max-width: 100%;
+    font: 1vw 'DM Sans';
+    color: #fff;
+    font-weight: 600;
+    margin: 0.5vw 0vw;
+}
+.sp-expflex {
+    width: 100%;
+    margin: 1vw 0vw;
+    display: flex;
+    gap: 1vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: nowrap;
+}
+.sp-char {
+    width: 31%;
+    aspect-ratio: 1 / 1.4;
+    border-radius: 1vw;
+    background: var(--cpic);
+    flex: 0 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.sp-charoverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  opacity: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 1vw;
+  transition: opacity 0.35s ease;
+}
+.sp-charname {
+  color: #fff;
+  font: 1vw var(--sptf-font);
+  margin: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.sp-charori {
+    font-size: 0.85vw;
+    line-height: 1.2;
+}
+/* Hover: โชว์ overlay + ข้อความ */
+.sp-char:hover .sp-overlay {
+  opacity: 1;
+}
+.sp-char:hover .sp-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+/*About Artist*/
+.sp-abttop {
+    width: 80%;
+    margin: 1.8vw auto 0vw;
+    border-radius: 1.65vw 1.65vw 0vw 0vw;
+    box-sizing: border-box;
+    padding: 1vw 2vw;
+    background: var(--sp-abt);
+}
+.sp-abttt {
+    width: 100%;
+    aspect-ratio: 2 / 1;
+    font: 1vw 'DM Sans';
+    color: #fff;
+    font-weight: 600;
+    margin: 0.5vw 0vw;
+}
+.sp-abtbt {
+    width: 80%;
+    margin: auto;
+    border-radius: 0vw 0vw 1.65vw 1.65vw;
+    background: #131313;
+    box-sizing: border-box;
+    padding: 1.8vw 2vw;
+}
+.sp-abtflex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.sp-abtwrap {
+    width: 78%;
+}
+.sp-abtname {
+    width: 100%;
+    font: 1.4vw var(--sptf-font);
+    color: #ffffff;
+    font-weight: 600;
+}
+.sp-listener {
+    width: 100%;
+    font: 1vw var(--sptf-font);
+    color: #9C9C9C;
+    font-weight: 400;
+}
+.sp-follow {
+    width: 20%;
+    border-radius: 1000px;
+    border: 0.2vw solid #ffffff;
+    font: 1.05vw 'DM Sans';
+    color: #ffffff;
+    font-weight: 500;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 0.65vw;
+    text-decoration: underline;
+}
+.sp-desc {
+    width: 100%;
+    margin-top: 1vw;
+    font: 1vw var(--sptf-font);
+    color: #9C9C9C;
+    font-weight: 300;
+}
+.sp-relqflex {
+    width: 80%;
+    margin: 1.8vw auto 0vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.sp-relbox {
+    width: 47%;
+    margin: 1.8vw auto 0vw;
+    border-radius: 1.65vw;
+    box-sizing: border-box;
+    padding: 1vw 2vw;
+    background: #131313;
+}
+.sp-reltt {
+    width: 100%;
+    font: 1vw 'DM Sans';
+    color: #fff;
+    font-weight: 600;
+    margin: 0.5vw 0vw;
+    background: #131313;
+    border-radius: 1.65vw 1.65vw 0vw 0vw;
+    padding-bottom: 0.75vw;
+}
+.sp-reltt::before {
+    content: "Relationships";
+}
+.sp-relct {
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 18vw;
+}
+.sp-rellist {
+    width: 100%;
+    margin-bottom: 0.45vw;
+}
+.sp-relname {
+    width: 100%;
+    font: 1vw var(--sptf-font);
+    color: #fff;
+    font-weight: 400;
+}
+.sp-reldesc {
+    width: 100%;
+    font: 0.85vw var(--sptf-font);
+    color: #9C9C9C;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.sp-qbox {
+    width: 47%;
+    margin: 1.8vw auto 0vw;
+    border-radius: 1.65vw;
+    box-sizing: border-box;
+    padding: 1vw 2vw;
+    background: #131313;
+}
+.sp-qtt {
+    width: 100%;
+    font: 1vw 'DM Sans';
+    color: #fff;
+    font-weight: 600;
+    margin: 0.5vw 0vw;
+    background: #131313;
+    border-radius: 1.65vw 1.65vw 0vw 0vw;
+    padding-bottom: 0.75vw;
+}
+.sp-qtt::before {
+    content: "Next in queue";
+}
+.sp-qct {
+    width: 100%;
+    overflow-y: scroll;
+    max-height: 18vw;
+}
+.sp-qsong {
+    width: 100%;
+    display: flex;
+    gap: 0.5vw;
+    margin-bottom: 0.45vw;
+}
+.sp-qpic {
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    border-radius: 0.85vw;
+    background: var(--qpic);
+}
+.sp-qst {
+    width: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sp-qstt {
+    width: 100%;
+    font: 1vw var(--sptf-font);
+    color: #fff;
+    font-weight: 400;
+}
+.sp-qsa {
+    width: 100%;
+    font: 0.85vw var(--sptf-font);
+    color: #9C9C9C;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/*Scrollbars*/
+.sp-mainsongname::-webkit-scrollbar {
+    display: none;
+}
+.sp-lytxt::-webkit-scrollbar {
+    display: none;
+}
+.sp-expflex::-webkit-scrollbar {
+    display: none;
+}
+.sp-relct::-webkit-scrollbar {
+    display: none;
+}
+.sp-qct::-webkit-scrollbar {
+    display: none;
+}
