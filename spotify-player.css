@@ -76,18 +76,9 @@
     font-weight: 600;
     color: #fff;
     line-height: 0.8;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
-}
-.sp-mainsongname-txt {
-  display: inline-block;
-  animation: marquee 10s linear infinite alternate;
-}
-/* keyframes เลื่อนกลับไปกลับมา */
-@keyframes marquee {
-  0%   { transform: translateX(0%); }
-  100% { transform: translateX(-100%); }
 }
 .sp-mainsongart {
     width: 100%;
@@ -568,4 +559,3 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
-
