@@ -75,7 +75,7 @@
     font: 2.8vw var(--sptf-font);
     font-weight: 600;
     color: #fff;
-    line-height: 1.4;
+    line-height: 1;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;
@@ -574,6 +574,7 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
