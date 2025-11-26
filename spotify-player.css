@@ -441,8 +441,7 @@
     align-items: stretch;
 }
 .sp-relbox {
-    width: 47%;
-    margin: 1.8vw auto 0vw;
+    width: 48%;
     border-radius: 1.65vw;
     box-sizing: border-box;
     padding: 1vw 2vw;
@@ -484,8 +483,7 @@
     line-height: 1.2;
 }
 .sp-qbox {
-    width: 47%;
-    margin: 1.8vw auto 0vw;
+    width: 48%;
     border-radius: 1.65vw;
     box-sizing: border-box;
     padding: 1vw 2vw;
@@ -557,6 +555,7 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
