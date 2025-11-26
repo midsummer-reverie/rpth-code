@@ -550,10 +550,15 @@
 .sp-lytxt::-webkit-scrollbar {
     display: none;
 }
+.sp-expflex::-webkit-scrollbar {
+  height: 0.2อไ;                 /* ความหนา (iPhone = บางมาก) */
+}
+.sp-expflex::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);   /* สีเทาอ่อนโปร่งแบบ iOS */
+  border-radius: 1000px;                     /* ทำให้โค้งมน เหมือน iPhone */
+}
 .sp-expflex::-webkit-scrollbar-track {
-    width: 100%;
-    height: 0.2vw;
-    background: transparent;
+  background: transparent;                 /* ไม่มีพื้นหลัง */
 }
 .sp-expflex::-webkit-scrollbar-thumb {
     width: 100%;
@@ -568,6 +573,7 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
