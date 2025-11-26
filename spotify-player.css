@@ -433,6 +433,7 @@
     color: #9C9C9C;
     font-weight: 300;
 }
+/*Relationships $ Sone Queue*/
 .sp-relqflex {
     width: 80%;
     margin: 1.8vw auto 0vw;
@@ -555,6 +556,7 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
