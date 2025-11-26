@@ -368,10 +368,10 @@
     line-height: 1.2;
 }
 /* Hover: โชว์ overlay + ข้อความ */
-.sp-char:hover .sp-overlay {
+.sp-char:hover .sp-charoverlay {
   opacity: 1;
 }
-.sp-char:hover .sp-text {
+.sp-char:hover .sp-charname {
   opacity: 1;
   transform: translateY(0);
 }
@@ -563,6 +563,7 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
