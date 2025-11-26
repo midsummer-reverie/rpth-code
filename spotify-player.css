@@ -550,8 +550,17 @@
 .sp-lytxt::-webkit-scrollbar {
     display: none;
 }
-.sp-expflex::-webkit-scrollbar {
-    display: none;
+.sp-expflex::-webkit-scrollbar-track {
+    width: 100%;
+    height: 0.2vw;
+    background: transparent;
+}
+.sp-expflex::-webkit-scrollbar-thumb {
+    width: 100%;
+    height: 0.2vw;
+    border-radius: 1000px;
+    background: transparent;
+    background: #262626;
 }
 .sp-relct::-webkit-scrollbar {
     display: none;
@@ -559,6 +568,7 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
