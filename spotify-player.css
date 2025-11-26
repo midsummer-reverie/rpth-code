@@ -203,7 +203,7 @@
     mask: var(--sp-ic-queue);
     margin-left: 1vw;
 }
-.sp.extension {
+.sp-extension {
     width: 100%;
     margin: auto;
     background: #000000;
@@ -558,4 +558,5 @@
 .sp-qct::-webkit-scrollbar {
     display: none;
 }
+
 
