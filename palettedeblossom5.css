@@ -178,6 +178,7 @@
     font: 1.25vw 'Poppins';
     text-align: right;
     color: var(--pdb-txtcl);
+    font-weight: 600;
 }
 .pdb-houselogo {
     width: 15%;
@@ -213,6 +214,10 @@
 .pdb-quote::-webkit-scrollbar {
     display: none;
 }
+.pdb-quote::before {
+    content: '— ';
+}
+
 
 
 
