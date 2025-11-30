@@ -2,7 +2,7 @@
 @import url(https://midsummer-reverie.github.io/font-face/TheSeasons.css);
 @import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 :root {
-    --pdb-house: url(https://iili.io/KI9md8P.png) center/cover;
+    --pdb-house: url(https://iili.io/fowdrZu.png) center/cover;
     --pdb-sparkle: url(https://iili.io/3EXhlP2.png) center / 70% no-repeat;
     --pdb-logo: url(https://iili.io/fowdUu9.png) center/cover;
 }
@@ -171,6 +171,14 @@
     font-style: normal;
     text-transform: uppercase;
 }
+.pdb-quote {
+    width: 47%;
+    overflow-x: scroll;
+    align-self: center
+    font: 1.25vw 'Poppins';
+    text-align: right;
+    color: var(--pdb-txtcl);
+}
 .pdb-houselogo {
     width: 15%;
     margin: auto;
@@ -202,6 +210,7 @@
 .pdb-memberbox::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
