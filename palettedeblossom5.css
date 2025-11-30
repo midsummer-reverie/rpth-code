@@ -18,10 +18,10 @@
     background: radial-gradient(ellipse at top, var(--pdb-color2) 0%, var(--pdb-bgcl) 60%);
 }
 .pdb-logo {
-    width: 6%;
+    width: 10%;
     aspect-ratio: 1 / 1;
     margin: 1vw auto 1.6vw;
-    background: var(--pdb-txtcl);
+    background: var(--pdb-bgcl);
     mask: var(--pdb-logo);
 }
 .pdb-flex1 {
@@ -210,6 +210,7 @@
 .pdb-memberbox::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
