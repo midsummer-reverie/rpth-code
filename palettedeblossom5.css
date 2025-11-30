@@ -4,7 +4,7 @@
 :root {
     --pdb-house: url(https://iili.io/KI9md8P.png) center/cover;
     --pdb-sparkle: url(https://iili.io/3EXhlP2.png) center / 70% no-repeat;
-    --pdb-logo: url(https://iili.io/KzZC86x.png) center/cover;
+    --pdb-logo: url(https://iili.io/fowdUu9.png) center/cover;
 }
 .pdb-main {
     width: 100%;
@@ -202,6 +202,7 @@
 .pdb-memberbox::-webkit-scrollbar {
     display: none;
 }
+
 
 
 
