@@ -174,7 +174,7 @@
 .pdb-quote {
     width: 47%;
     overflow-x: scroll;
-    align-self: center
+    align-self: center;
     font: 1.25vw 'Poppins';
     text-align: right;
     color: var(--pdb-txtcl);
@@ -208,6 +208,9 @@
     background: var(--pdb-deco2);
 }
 .pdb-memberbox::-webkit-scrollbar {
+    display: none;
+}
+.pdb-quote::-webkit-scrollbar {
     display: none;
 }
 
