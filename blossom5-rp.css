@@ -132,3 +132,20 @@
     color: var(--bs5r-cl2);
     z-index: 4;
 }
+.bs5-qbox {
+    width: 60%;
+    z-index: 3;
+    position: absolute;
+    top: 38%;
+    right: -27%;
+}
+.bs5-quote {
+    width: fit-content;
+    padding: 0.25vw;
+    font: 1.1vw 'IM Fell English';
+    color: var(--bs5r-txt);
+    font-style: italic;
+    background: var(--bs5r-cl1);
+    margin-bottom: 0.25vw;
+    letter-spacing: 0.05vw;
+}
