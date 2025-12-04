@@ -3,7 +3,7 @@
 @import url(https://midsummer-reverie.github.io/font-face/THChara.css);
 :root {
     --bs5-wink: url(https://iili.io/fIcFZdv.png) center / 90% no-repeat;
-    --bs5--sealbase: url(https://iili.io/fIIx6mX.png) center / cover;
+    --bs5-sealbase: url(https://iili.io/fIIx6mX.png) center / cover;
     --bs5-logo: url(https://iili.io/fIIxiIn.png) center / cover;
     --bs5-sealoverlay: url(https://iili.io/fIIxsXs.png) center / cover;
 }
@@ -150,4 +150,5 @@
     margin-bottom: 0.25vw;
     letter-spacing: 0.05vw;
 }
+
 
