@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap);
+@import url(https://midsummer-reverie.github.io/font-face/TheSeasons.css);
+@import url(https://midsummer-reverie.github.io/font-face/THChara.css);
+:root {
+    --bs5-wink: url(https://iili.io/fIcFZdv.png) center / 90% no-repeat;
+    --bs5--sealbase: url(https://iili.io/fIIx6mX.png) center / cover;
+    --bs5-logo: url(https://iili.io/fIIxiIn.png) center / cover;
+    --bs5-sealoverlay: url(https://iili.io/fIIxsXs.png) center / cover;
+}
+.bs5-box {
+    width: 100%;
+    position: relative;
+    padding-top: 3vw;
+}
+.bs5-grid {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 15%;
+    grid-template-rows: 6vw 2vw auto 2vw auto auto;
+}
+.bs5-grad {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 1 / 1 / 6 / 6;
+    background: radial-gradient(circle at 40% 45%, var(--bs5r-cl1), transparent 50%), radial-gradient(circle at 65% 60%, var(--bs5r-cl3), transparent 35%), radial-gradient(circle at 50% 33%, var(--bs5r-cl2), transparent 40%);
+    opacity: 0.85;
+    z-index: 1;
+    filter: saturate(1.6);
+}
+.bs5-palettede {
+    width: 100%;
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: end;
+    font: 1vw 'Poppins';
+    color: var(--bs5r-txt);
+    letter-spacing: 0.2vw;
+    z-index: 2;
+    margin-left: 1vw;
+}
+.bs5-palettede::before {
+    content: "palette de";
+}
+.bs5-hrbox {
+    width: 88%;
+    align-self: center;
+    grid-area: 2 / 2 / 3 / 3;
+    margin-left: 1vw;
+}
+.bs5-hr {
+    border-top: 0.12vw solid var(--bs5r-txt);
+    z-index: 2;
+    background: transparent;
+}
+.bs5-name {
+    width: fit-content;
+    max-width: 80%;
+    grid-area: 1 / 3 / 3 / 5;
+    align-self: end;
+    font: 3.75vw 'The Seasons';
+    color: var(--bs5r-txt);
+    z-index: 2;
+    line-height: 0.6;
+    text-transform: capitalize;
+}
+.bs5-wink {
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    grid-area: 1 / 4 / 2 / 5;
+    background: var(--bs5r-txt);
+    mask: var(--bs5-wink);
+    margin-top: 1vw;
+    margin-left: -1vw;
+    z-index: 2;
+}
+.bs5-pic {
+    width: 80%;
+    aspect-ratio: 3 / 2;
+    grid-area: 3 / 1 / 4 / 5;
+    margin: 1vw 0vw 0vw 4vw;
+    box-sizing: border-box;
+    border: 0.3vw solid var(--bs5r-txt);
+    background: var(--bs5-pic);
+    z-index: 2;
+}
+.bs5-seal-base {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 2 / 1 / 4 / 2;
+    background: var(--bs5r-cl1);
+    mask: var(--bs5-sealbase);
+    z-index: 3;
+    filter: saturate(70%);
+}
+.bs5-logo {
+        width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 2 / 1 / 4 / 2;
+    background: var(--bs5-logo);
+    z-index: 4;
+}
+.bs5-seal-ovr {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 2 / 1 / 4 / 2;
+    background: var(--bs5-sealoverlay);
+    z-index: 5;
+    mix-blend-mode: overlay;
+}
+.bs5-png {
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    grid-area: 3 / 4 / 5 / 5;
+    background: var(--bs5-png);
+    z-index: 3;
+    align-self: end;
+}
+.bs5-rp {
+    width: 90%;
+    margin: 1.2vw auto;
+    grid-area: 5 / 1 / 6 / 5;
+    font: 1.4vw 'TH Chara';
+    color: var(--bs5r-txt);
+    z-index: 4;
+    text-align: justify;
+}
+.bs5-note {
+    width: 90%;
+    margin: auto;
+    grid-area: 6 / 1 / 7 / 5;
+    font: 1.4vw 'TH Chara';
+    color: var(--bs5r-cl2);
+    z-index: 4;
+}
