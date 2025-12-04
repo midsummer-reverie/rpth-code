@@ -46,6 +46,7 @@
     align-self: center;
     grid-area: 2 / 2 / 3 / 3;
     margin-left: 1vw;
+    z-index: 2;
 }
 .bs5-hr {
     border-top: 0.12vw solid var(--bs5r-txt);
@@ -149,3 +150,4 @@
     margin-bottom: 0.25vw;
     letter-spacing: 0.05vw;
 }
+
