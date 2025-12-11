@@ -1,0 +1,303 @@
+@import url(https://fonts.googleapis.com/css2?family=Chiron+GoRound+TC:wght@200..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Zen+Maru+Gothic&display=swap);
+:root {
+    --trophy: url(https://iili.io/f5OZxGj.png) center / 80% no-repeat;
+    --fonts: var('Poppins', 'Zen Maru Gothic', 'Chiron GoRound TC', 'Google Sans');
+}
+.muaw-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3vw;
+    border-radius: 1.2vw;
+    background: linear-gradient(25deg, var(--color1) 0%, var(--color2) 100%);
+}
+.muaw-head {
+    width: 65%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: fit-content(85%) 12%;
+    column-gap: 1vw;
+}
+.muaw-name {
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+    font: 4.2vw 'Poppins';
+    color: var(--textcl);
+    font-weight: 600;
+    line-height: 1;
+}
+.muaw-tt {
+    width: 100%;
+    grid-area: 2 / 1 / 3 / 2;
+    font: 2.2vw 'Poppins';
+    color: var(--textcl);
+    font-weight: 600;
+    line-height: 1;
+}
+.muaw-ast {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 1 / 2 / 3 / 3;
+    background: var(--textcl);
+    mask: url(https://iili.io/f5hZSGp.png) 0% 0% / 60% no-repeat;
+}
+.muaw-top {
+    width: 100%;
+    display: flex;
+    margin: 2vw 0vw;
+    justify-content: space-between;
+}
+.muaw-player {
+    width: 49%;
+    aspect-ratio: 1.33 / 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    border-radius: 1.2vw;
+    box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.35);
+}
+.muaw-img {
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1;
+    background: var(--diskimg);
+    mask: url(https://iili.io/f5htSDb.png) center / cover;
+    z-index: 1;
+    animation: cd-spin 4s linear infinite;
+}
+.muaw-dov {
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1;
+    background: url(https://iili.io/f5htgxj.png) center / cover;
+    mix-blend-mode: overlay;
+    z-index: 2;
+}
+.muaw-disk {
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1;
+    background: url(https://iili.io/f5htwf2.png) center / cover;
+    z-index: 3;
+}
+.muaw-play {
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1;
+    background: url(https://iili.io/f5ht8Ou.png) center / cover;
+    z-index: 4;
+    border-radius: 1.2vw;
+}
+@keyframes cd-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.muaw-gp {
+    width: 49%;
+    aspect-ratio: 1.33 / 1;
+    overflow-y: hidden;
+}
+.muaw-gptt {
+    width: 100%;
+    font: 2.5vw 'poppins';
+    color: var(--textcl);
+    font-weight: 600;
+    text-decoration: underline;
+    margin-bottom: 1vw;
+}
+.muaw-gplist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6vw;
+    /* ให้สูงตามเนื้อหาไปก่อน ถ้าอยากล็อกสูงค่อยใส่ height ทีหลัง */
+}
+
+.muaw-gpit {
+    width: 100%;
+    /* ตัด aspect-ratio ทิ้ง แล้วเปลี่ยนมาใช้ height แทนจะคุมง่ายกว่า */
+    height: 5.2vw; /* ความสูงปกติของแต่ละกล่อง */
+    background: var(--textcl);
+    border-radius: 1vw;
+    box-sizing: border-box;
+    padding: 0.85vw;
+    display: flex;
+    gap: 0.85vw;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.4s ease,
+                transform 0.3s ease,
+                opacity 0.3s ease;
+}
+
+/* icon + ข้อความปกติยังเหมือนเดิม */
+.muaw-trophy {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: var(--color1);
+    mask: var(--trophy);
+}
+
+.muaw-gpaw {
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35vw;
+}
+
+.muaw-gpawn {
+    width: 100%;
+    font: 1vw 'Poppins';
+    color: #4D4D4D;
+    line-height: 1;
+}
+
+.muaw-gpar {
+    width: 100%;
+    font: 2vw var(--font);
+    color: var(--color1);
+    line-height: 0.8;
+    font-weight: 600;
+}
+
+/* overlay ตอน hover */
+.muaw-gpdtbox {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-sizing: border-box;
+    padding: 0.85vw;
+    background:
+      linear-gradient(0deg, var(--color1) 0%, rgba(255, 239, 210, 0) 100%),
+      var(--gppic);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.muaw-gpdt {
+    font: 0.9vw 'Google Sans';
+    color: var(--textcl);
+    line-height: 1.2;
+}
+
+/* ========== HOVER แค่ตัวมันเอง ========== */
+
+.muaw-gpit:hover {
+    height: 17vw; /* กล่องนี้สูงขึ้น → ดันอันอื่นลง */
+    opacity: 1;
+    transform: translateY(-0.1vw);
+}
+
+.muaw-gpit:hover .muaw-gpaw,
+.muaw-gpit:hover .muaw-trophy {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.muaw-gpit:hover .muaw-gpdtbox {
+    opacity: 1;
+    transform: translateY(0);
+}
+.muaw-contain {
+    width: 100%;
+    margin: 3vw 0vw;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 35% 1fr;
+    column-gap: 2.5vw;
+}
+.muaw-tatt {
+    width: 100%;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.muaw-tabox {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 15% 1fr;
+    column-gap: 1vw;
+    align-content: center;
+}
+.muaw-tapic {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 1 / 1 / 2 / 2;
+    background: var(--tapic);
+    border-radius: 0.4vw;
+}
+.muaw-tan {
+    width: 100%;
+    grid-area: 1 / 2 / 2 / 3;
+    font: 1.1vw 'Poppins', 'Zen Maru Gothic', 'Chiron GoRound TC', 'Google Sans';
+    color: var(--textcl);
+    line-height: 0.8;
+    font-weight: 500;
+    align-self: center;
+}
+.muaw-prize {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.5vw;
+    display: flex;
+    justify-content: space-between;
+    grid-area: 1 / 2 / 2 / 3;
+    flex-wrap: wrap;
+}
+.muaw-pbox {
+    width: 48%;
+    box-sizing: border-box;
+    padding: 1vw;
+    background: var(--textcl);
+    border-radius: 1.2vw;
+    margin-bottom: 1vw;
+    transition: 0.3s ease;
+}
+
+/* เดิมมีอยู่แล้ว */
+.muaw-ptt {
+    width: 100%;
+    font: 1vw 'Poppins';
+    color: var(--color1);
+    font-weight: 600;
+}
+.muaw-ppic {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    margin: 0.6vw 0vw;
+    border-radius: 0.8vw;
+    background: var(--ppic);
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.3) inset;
+}
+.muaw-pname {
+    width: 100%;
+    font: 1.4vw 'Poppins', 'Zen Maru Gothic', 'Chiron GoRound TC', 'Google Sans';
+    color: var(--color1);
+    font-weight: 600;
+}
+
+/* ย่อความสูงไว้ก่อน + ทำให้เลื่อน/ยืดได้ */
+.muaw-pdt {
+    width: 100%;
+    font: 0.85vw 'Google Sans';
+    color: #4D4D4D;
+    text-align: justify;
+
+    max-height: 3.5vw;        /* ความสูงตอนปกติ (เห็นแค่ไม่กี่บรรทัด) */
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+/* เวลา hover การ์ด → ให้ส่วนรายละเอียด “ยืดลงมา” */
+.muaw-pbox:hover .muaw-pdt {
+    height: fit-content;         /* ปรับตามความยาวข้อความได้เลย */
+}
