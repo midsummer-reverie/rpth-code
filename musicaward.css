@@ -276,6 +276,7 @@
     font: 1vw 'Poppins';
     color: var(--color1);
     font-weight: 600;
+    line-height: 1.1;
 }
 .muaw-ppic {
     width: 100%;
@@ -290,6 +291,7 @@
     font: 1.15vw var(--fonts);
     color: var(--color1);
     font-weight: 600;
+    line-height: 1.1;
 }
 /* ย่อความสูงไว้ก่อน + ทำให้เลื่อน/ยืดได้ */
 .muaw-pdt {
@@ -345,6 +347,7 @@
     color: #969696;
     text-align: center;
 }
+
 
 
 
