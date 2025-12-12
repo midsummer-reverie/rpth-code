@@ -167,7 +167,7 @@
     width: 10%;
     aspect-ratio: 1 / 1;
     background: var(--textcl);
-    mask: url(https://iili.io/f5OZxGj.png) center / cover;
+    mask: var(--trophy);
 }
 .muaw-gpn {
     width: 87%;
@@ -301,4 +301,3 @@
 .muaw-pbox:hover .muaw-pdt {
     height: fit-content;         /* ปรับตามความยาวข้อความได้เลย */
 }
-
