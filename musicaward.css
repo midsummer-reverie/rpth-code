@@ -307,21 +307,22 @@
 .muaw-aoty:hover .muaw-gpd {
   opacity: 1;
 }
-.muaw-aoty:hover .sp-gpar {
+.muaw-aoty:hover .muaw-gpar {
   opacity: 1;
   transform: translateY(0);
 }
 .muaw-roty:hover .muaw-gpd {
   opacity: 1;
 }
-.muaw-roty:hover .sp-gpar {
+.muaw-roty:hover .muaw-gpar {
   opacity: 1;
   transform: translateY(0);
 }
 .muaw-soty:hover .muaw-gpd {
   opacity: 1;
 }
-.muaw-soty:hover .sp-gpar {
+.muaw-soty:hover .muaw-gpar {
   opacity: 1;
   transform: translateY(0);
 }
+
