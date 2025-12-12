@@ -56,11 +56,13 @@
     box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.35);
 }
 .muaw-img {
-    width: 100%;
+    width: 70%;
     height: 100%;
+    margin-left: 1.2vw;
+    margin-top: 0.24vw;
     grid-area: 1 / 1;
     background: var(--diskimg);
-    mask: url(https://iili.io/f5htSDb.png) center / cover;
+    mask: url(https://iili.io/f7dkcYv.png) center / cover;
     z-index: 1;
     animation: cd-spin 4s linear infinite;
 }
@@ -300,4 +302,5 @@
 /* เวลา hover การ์ด → ให้ส่วนรายละเอียด “ยืดลงมา” */
 .muaw-pbox:hover .muaw-pdt {
     height: fit-content;         /* ปรับตามความยาวข้อความได้เลย */
+
 }
