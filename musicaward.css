@@ -182,6 +182,7 @@
     border-radius: 1vw;
     background: var(--rotypic);
     margin-top: 0.8vw;
+    position: relative;
 }
 .muaw-aotytt {
     width: 100%;
@@ -197,6 +198,7 @@
     border-radius: 1vw;
     background: var(--aotypic);
     margin-top: 0.8vw;
+    position: relative;
 }
 .muaw-sotytt {
     width: 100%;
@@ -212,6 +214,7 @@
     border-radius: 1vw;
     background: var(--sotypic);
     margin-top: 0.8vw;
+    position: relative;
 }
 .muaw-gpd {
     position: absolute;
