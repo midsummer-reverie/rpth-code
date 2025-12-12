@@ -130,6 +130,7 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
+     flex: 1 1 0;
     transition: height 0.4s ease,
                 transform 0.3s ease,
                 opacity 0.3s ease;
@@ -196,7 +197,7 @@
 /* ========== HOVER แค่ตัวมันเอง ========== */
 
 .muaw-gpit:hover {
-    height: 17vw; /* กล่องนี้สูงขึ้น → ดันอันอื่นลง */
+    flex: 2.4 1 0;
     opacity: 1;
     transform: translateY(-0.1vw);
 }
@@ -304,5 +305,6 @@
     height: fit-content;         /* ปรับตามความยาวข้อความได้เลย */
 
 }
+
 
 
