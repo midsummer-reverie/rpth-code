@@ -304,3 +304,24 @@
 .muaw-pbox:hover .muaw-pdt {
     height: fit-content;         /* ปรับตามความยาวข้อความได้เลย */
 }
+.muaw-aoty:hover .muaw-gpd {
+  opacity: 1;
+}
+.muaw-aoty:hover .sp-gpar {
+  opacity: 1;
+  transform: translateY(0);
+}
+.muaw-roty:hover .muaw-gpd {
+  opacity: 1;
+}
+.muaw-roty:hover .sp-gpar {
+  opacity: 1;
+  transform: translateY(0);
+}
+.muaw-soty:hover .muaw-gpd {
+  opacity: 1;
+}
+.muaw-soty:hover .sp-gpar {
+  opacity: 1;
+  transform: translateY(0);
+}
