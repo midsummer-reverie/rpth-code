@@ -130,7 +130,7 @@
     justify-content: center;
     position: relative;
     overflow: hidden;
-     flex: 1 1 0;
+     flex: 1 1 5.2vw;
     transition: height 0.4s ease,
                 transform 0.3s ease,
                 opacity 0.3s ease;
@@ -197,7 +197,7 @@
 /* ========== HOVER แค่ตัวมันเอง ========== */
 
 .muaw-gpit:hover {
-    flex: 2.4 1 0;
+    flex: 3 1 17.5vw;
     opacity: 1;
     transform: translateY(-0.1vw);
 }
@@ -210,6 +210,10 @@
 .muaw-gpit:hover .muaw-gpdtbox {
     opacity: 1;
     transform: translateY(0);
+}
+.muaw-gpit:not(:hover) {
+    flex: 0.5 1 0%;
+    opacity: 0.7;
 }
 .muaw-contain {
     width: 100%;
@@ -305,6 +309,7 @@
     height: fit-content;         /* ปรับตามความยาวข้อความได้เลย */
 
 }
+
 
 
 
