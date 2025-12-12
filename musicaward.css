@@ -125,7 +125,7 @@
 .muaw-tan {
     width: 100%;
     grid-area: 1 / 2 / 2 / 3;
-    font: 1.1vw 'Poppins', 'Zen Maru Gothic', 'Chiron GoRound TC', 'Google Sans';
+    font: 1.1vw var(--fonts);
     color: var(--textcl);
     line-height: 0.8;
     font-weight: 500;
@@ -274,7 +274,7 @@
 }
 .muaw-pname {
     width: 100%;
-    font: 1.4vw 'Poppins', 'Zen Maru Gothic', 'Chiron GoRound TC', 'Google Sans';
+    font: 1.4vw var(--fonts);
     color: var(--color1);
     font-weight: 600;
 }
@@ -292,4 +292,3 @@
 .muaw-pbox:hover .muaw-pdt {
     height: fit-content;         /* ปรับตามความยาวข้อความได้เลย */
 }
-
