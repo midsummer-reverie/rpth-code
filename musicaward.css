@@ -287,7 +287,7 @@
 }
 .muaw-pname {
     width: 100%;
-    font: 1.4vw var(--fonts);
+    font: 1.15vw var(--fonts);
     color: var(--color1);
     font-weight: 600;
 }
@@ -345,6 +345,7 @@
     color: #969696;
     text-align: center;
 }
+
 
 
 
