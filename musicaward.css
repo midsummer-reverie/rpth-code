@@ -58,7 +58,7 @@
 .muaw-img {
     width: 70%;
     height: 100%;
-    margin-left: 1.2vw;
+    margin-left: 1.1vw;
     margin-top: 0.24vw;
     grid-area: 1 / 1;
     background: var(--diskimg);
@@ -304,3 +304,4 @@
     height: fit-content;         /* ปรับตามความยาวข้อความได้เลย */
 
 }
+
