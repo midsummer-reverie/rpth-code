@@ -303,7 +303,6 @@
 }
 /* เวลา hover การ์ด → ให้ส่วนรายละเอียด “ยืดลงมา” */
 .muaw-pbox:hover .muaw-pdt {
-    height: auto;
     max-height: 20vw;
 }
 .muaw-aoty:hover .muaw-gpd {
@@ -346,6 +345,7 @@
     color: #969696;
     text-align: center;
 }
+
 
 
 
