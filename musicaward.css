@@ -326,5 +326,24 @@
   opacity: 1;
   transform: translateY(0);
 }
+.lareverie {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
+.lareverie::before {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    content: "lareverie";
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
 
 
