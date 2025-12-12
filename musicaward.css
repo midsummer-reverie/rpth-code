@@ -173,7 +173,7 @@
     box-sizing: border-box;
     padding: 0.85vw;
     background:
-      linear-gradient(0deg, var(--color1) 0%, rgba(255, 239, 210, 0) 100%),
+      linear-gradient(0deg, var(--color1) 0%, rgba(255, 239, 210, 0) 70%),
       var(--gppic);
 
     display: flex;
@@ -304,4 +304,5 @@
     height: fit-content;         /* ปรับตามความยาวข้อความได้เลย */
 
 }
+
 
