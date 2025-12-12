@@ -115,6 +115,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.muaw-tab {
+    width: 49%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 20% 1fr;
+    column-gap: 1vw;
+    align-content: center;
+    margin-bottom: 0.8vw;
+}
 .muaw-tap {
     width: 100%;
     aspect-ratio: 1 / 1;
