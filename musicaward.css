@@ -218,6 +218,7 @@
 }
 .muaw-gpd {
     position: absolute;
+    border-radius: 1vw;
     inset: 0;
     background: linear-gradient(to top, var(--color1) 0%, rgba(0, 0, 0, 0) 70%);
     opacity: 0;
@@ -325,4 +326,5 @@
   opacity: 1;
   transform: translateY(0);
 }
+
 
