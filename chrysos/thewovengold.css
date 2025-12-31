@@ -140,7 +140,7 @@
     width: 80%;
     margin: auto;
     aspect-ratio: 4 / 1;
-    background: linear-gradient(180deg, var(--cs1-bg) #1f1c18 0%, transparent 100%), var(--cs1-pbt);
+    background: linear-gradient(180deg, var(--cs1-bg) 0%, transparent 100%), var(--cs1-pbt);
     position: relative;
 }
 .cs1-thread {
@@ -171,3 +171,4 @@
     color: #969696;
     text-align: center;
 }
+
