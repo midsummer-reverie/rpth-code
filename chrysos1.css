@@ -1,0 +1,173 @@
+@import url(https://midsummer-reverie.github.io/font-face/ophelia.css);
+@import url(https://midsummer-reverie.github.io/font-face/TheSeasons.css);
+@import url(https://midsummer-reverie.github.io/font-face/PinkLatte.css);
+@import url(https://midsummer-reverie.github.io/font-face/MalibuRing.css);
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap);
+
+.cs1-box {
+    width: 80%;
+    margin: auto;
+    background: var(--cs1-bg);
+    padding: 1.6vw;
+    position: relative;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.cs1-header {
+    width: 93%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 8% 1fr;
+    column-gap: 1vw;
+    align-content: center;
+    z-index: 3;
+    margin: auto;
+}
+.cs1-tribe {
+    width: fit-content;
+    height: fit-content;
+    grid-area: 1 / 1;
+    font: 1.2vw 'The Seasons';
+    font-weight: 500;
+    color: var(--cs1-sec);
+    text-transform: uppercase;
+    align-self: center;
+}
+.cs1-icon {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    grid-area: 1 / 2;
+    background: var(--cs1-pri);
+    mask: var(--cs1-ic);
+    align-self: center;
+}
+.cs1-rank {
+    width: fit-content;
+    height: fit-content;
+    grid-area: 1 / 3;
+    font: 1.2vw 'The Seasons';
+    font-weight: 500;
+    color: var(--cs1-sec);
+    text-transform: uppercase;
+    align-self: center;
+    justify-self: right;
+}
+.cs1-deco {
+    width: fit-content;
+    font: 20vw 'malibu ring';
+    color: var(--cs1-pri);
+    opacity: 0.7;
+    position: absolute;
+    text-transform: uppercase;
+    top: 8vw;
+    left: 0vw;
+    z-index: 2;
+}
+.cs1-deco::before {
+    content: var(--alphabet);
+}
+.cs1-title {
+    width: fit-content;
+    max-width: 70%;
+    margin: 2vw auto 0vw;
+    font: 2.4vw 'pinklatte';
+    color: var(--cs1-pri);
+    text-transform: lowercase;
+}
+.cs1-name {
+    width: fit-content;
+    max-width: 80%;
+    margin: 0vw auto;
+    font: 3.2vw 'ophelia';
+    color: var(--cs1-sec);
+    z-index: 3;
+    position: relative;
+}
+.cs1-picgrid {
+    width: 80%;
+    margin: 2.2vw auto;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1.2vw;
+    z-index: 3;
+    position: relative;
+}
+.cs1-p1 {
+    width: 100%;
+    grid-area: 1 / 1;
+    aspect-ratio: 1 / 1.2;
+    border: 0.25vw solid var(--cs1-pri);
+    background: var(--cs1-p1);
+    box-sizing: border-box;
+}
+.cs1-p2 {
+    width: 100%;
+    grid-area: 1 / 1;
+    aspect-ratio: 1 / 1.2;
+    border: 0.25vw solid var(--cs1-pri);
+    background: var(--cs1-p2);
+    box-sizing: border-box;
+}
+.cs1-p3 {
+    width: 100%;
+    grid-area: 1 / 1;
+    aspect-ratio: 1 / 1.2;
+    border: 0.25vw solid var(--cs1-pri);
+    background: var(--cs1-p3);
+    box-sizing: border-box;
+}
+.cs1-rp {
+    width: 80%;
+    margin: 4vw auto 1vw;
+    font: 1.1vw 'Bai Jamjuree';
+    color: var(--cs1-sec);
+    text-align: justify;
+    font-weight: 300;
+    line-height: 1.5;
+    z-index: 3;
+    position: relative;
+}
+.cs1-note {
+    width: 80%;
+    margin: 0vw auto 1vw;
+    font: 1.1vw 'Bai Jamjuree';
+    color: var(--cs1-pri);
+    font-weight: 400;
+    text-align: right;
+}
+.cs1-footer {
+    width: 80%;
+    margin: auto;
+    aspect-ratio: 4 / 1;
+    background: linear-gradient(180deg, var(--cs1-bg) #1f1c18 0%, transparent 100%), var(--cs1-pbt);
+    position: relative;
+}
+.cs1-thread {
+    width: 100%;
+    aspect-ratio: 6.1386 / 1;
+    background: var(--cs1-pri);
+    mask: url(https://iili.io/fX5Z9rG.png) center / cover;
+    position: absolute;
+    top: -3.5vw;
+    z-index: 4;
+}
+.lareverie {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
+.lareverie::before {
+    width: 20%;
+    aspect-ratio: 9/1;
+    margin: auto;
+    content: "lareverie";
+    font: 0.7vw Roboto Mono;
+    font-weight: 200;
+    color: #969696;
+    text-align: center;
+}
