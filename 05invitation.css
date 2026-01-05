@@ -3,99 +3,73 @@
 @import url(https://midsummer-reverie.github.io/font-face/TheSeasons.css.css);
 @import url(https://midsummer-reverie.github.io/font-face/ophelia.css);
 
-/* Container หลัก */
-.inv05-main-container {
-    width: 80%;
-    margin: 2vw auto;
+/* Container หลักที่คลุมทั้งหมด */
+.inv05-wrapper {
+    width: 70%;
+    margin: auto;
     box-sizing: border-box;
-    display: grid;
-    aspect-ratio: 0.868/1;
     position: relative;
 }
 
-/* พื้นหลังชั้นล่างสุด */
-.inv05-bg-layer {
+/* ส่วนภาพด้านบน (Header Photo) */
+.inv05-header-box {
     width: 100%;
-    grid-area: 1/1;
-    background: url(https://iili.io/fjT2vxj.png) center/cover;
-}
-
-/* รูปภาพตกแต่งด้านบน (เอียง) */
-.inv05-top-photo {
-    width: 95%;
-    height: 50%;
+    margin: auto;
     box-sizing: border-box;
-    grid-area: 1/1;
-    margin: 15vw auto 0vw;
-    rotate: 3deg;
-    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    aspect-ratio: 1.6/1;
+    border: 1.25vw solid #fff;
     background: url(https://i.pinimg.com/1200x/de/59/94/de5994ba8096f5d08eb0722c9d659e07.jpg) 50% 30%/cover;
-    border: 1.2vw solid #fff;
-}
-
-/* เลเยอร์ตกแต่งกลาง */
-.inv05-mid-layer {
-    width: 100%;
-    grid-area: 1/1;
-    background: url(https://iili.io/fjT2eDb.png) center/cover;
-    aspect-ratio: 1.371/1;
-    align-self: end;
-    z-index: 2;
-}
-
-/* การ์ดเนื้อหาหลัก */
-.inv05-content-card {
-    width: 96%;
-    height: 55%;
-    box-sizing: border-box;
-    grid-area: 1/1;
-    margin: 26vw auto 0vw;
-    rotate: -1deg;
-    z-index: 4;
-    background: url(https://iili.io/fwOejMx.jpg) center/cover;
-    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
-    padding: 1.2vw;
-}
-
-/* ส่วนหัวของการ์ด */
-.inv05-header-grid {
-    width: 100%;
     display: grid;
-    grid-template-rows: auto auto;
-    grid-template-columns: 1fr;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+    z-index: 4;
+    position: relative;
 }
 
-.inv05-invite-text {
-    width: 60%;
-    font: 2.3vw 'Scandilover';
-    color: #658e67;
-    margin-left: 2.8vw;
+/* ป้ายข้อความในส่วน Header */
+.inv05-label-group {
+    width: 45%;
+    margin: 2vw;
     grid-area: 1/1;
 }
 
-.inv05-address-text {
-    width: 50%;
-    font: 2.6vw 'Ophelia';
-    color: #ce8498;
-    margin-top: 1.65vw;
-    grid-area: 1/1/2/2;
+.inv05-label-green {
+    width: fit-content;
+    background: #658e67;
+    padding: 0.2vw 0.5vw;
+    font: 1.2vw 'The Seasons';
+    color: #fff;
+}
+
+.inv05-label-blue {
+    width: fit-content;
+    background: #70B3C4;
+    padding: 0.2vw 0.5vw;
+    font: 1.2vw 'The Seasons';
+    color: #fff;
+}
+
+.inv05-header-info {
+    width: fit-content;
+    margin: 2vw;
+    grid-area: 1/1;
     justify-self: right;
+    align-self: end;
 }
 
-/* ส่วนรายละเอียด Agenda และ Palette */
-.inv05-body-flex {
-    width: 98%;
-    margin: 1vw auto 0vw;
-    display: flex;
+/* ส่วนการ์ดเนื้อหา (Agenda Section) */
+.inv05-content-body {
+    width: 95%;
+    margin: -2vw auto 0vw;
+    z-index: 2;
     box-sizing: border-box;
-    justify-content: space-between;
+    padding: 1.65vw;
+    background: url(https://iili.io/fwOejMx.jpg) center/cover;
+    position: relative;
 }
 
-/* คอลัมน์ซ้าย (Agenda) */
-.inv05-agenda-col {
-    width: 50%;
-    box-sizing: border-box;
-    padding: 1vw;
+.inv05-agenda-container {
+    width: 90%;
+    margin: 3.2vw auto 0vw;
 }
 
 .inv05-agenda-title {
@@ -107,7 +81,7 @@
     text-align: center;
 }
 
-.inv05-agenda-item {
+.inv05-agenda-row {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -128,59 +102,75 @@
     font-weight: 500;
 }
 
-.inv05-agenda-icon {
-    width: 80%;
-    aspect-ratio: 1/1;
-    background: url(https://iili.io/fwkdF8Q.png) center/cover;
-    margin: -6vw auto 0vw;
+/* ส่วนล่าง (Palette & Dress Code) */
+.inv05-footer-flex {
+    width: 90%;
+    margin: 2vw auto 0vw;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* คอลัมน์ขวา (Palette/Dress Code) */
-.inv05-palette-col {
-    width: 46%;
-    box-sizing: border-box;
-    padding-left: 4vw;
-    border-left: 0.15vw dashed #658e67;
-}
-
-.inv05-palette-title {
-    width: 75%;
-    margin: 1.2vw auto 1vw;
-    font: 1.25vw 'The Seasons';
-    color: #7a9dcb;
-    text-align: center;
-    font-weight: 500;
+.inv05-footer-col {
+    width: 49%;
 }
 
 .inv05-palette-img {
-    width: 60%;
-    margin: -1vw auto 0vw;
+    width: 90%;
+    margin: auto;
     aspect-ratio: 1/1;
     background: url(https://iili.io/fwkuoxa.png) center/cover;
 }
 
-.inv05-dresscode-title {
+.inv05-dresscode-box {
+    width: 90%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    display: grid;
+}
+
+.inv05-color-bar {
+    width: 100%;
+    height: 30%;
+    align-self: center;
+    background: url(https://iili.io/fwkeyiJ.gif) center/cover;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
+}
+
+.inv05-footer-text-main {
     width: 75%;
-    margin: 0.5vw auto;
+    margin: 0.2vw auto;
     font: 1.25vw 'The Seasons';
     color: #7a9dcb;
     text-align: center;
     font-weight: 500;
 }
 
-.inv05-dresscode-bar {
-    width: 85%;
-    margin: 0.6vw auto;
-    aspect-ratio: 6/1;
-    background: url(https://iili.io/fwkeyiJ.gif) center/cover;
-    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.25);
-}
-
-.inv05-fav-color-text {
+.inv05-footer-text-sub {
     width: 75%;
-    margin: 0.5vw auto;
-    font: 1.6vw 'Scandilover';
+    margin: auto;
+    font: 1vw 'The Seasons';
     color: #141414;
     text-align: center;
-    font-weight: 500;
+}
+
+/* องค์ประกอบตกแต่งเพิ่มเติม */
+.inv05-decor-flower {
+    width: 80%;
+    margin: -9vw auto 0vw;
+    aspect-ratio: 1/1;
+    background: url(https://iili.io/fwkdF8Q.png) center/cover;
+}
+
+.inv05-floating-title {
+    width: 50%;
+    font: 3vw 'Scandilover';
+    color: #87CEE0;
+    text-align: center;
+    line-height: 0.6;
+    z-index: 5;
+    rotate: -5deg;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.35);
+    position: absolute;
+    right: -5vw;
+    bottom: 1vw;
 }
