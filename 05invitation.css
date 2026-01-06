@@ -164,7 +164,7 @@
 .inv05-floating-title {
     width: 50%;
     font: 3vw 'Scandilover';
-    color: #87CEE0;
+    color: #ce8498;
     text-align: center;
     line-height: 0.6;
     z-index: 5;
@@ -174,3 +174,4 @@
     right: -3vw;
     bottom: 1vw;
 }
+
