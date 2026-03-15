@@ -170,7 +170,7 @@
   text-transform: uppercase;
   font-weight: 400;
 }
-.cvrp-aff-dt::before {
+.cvrp-fac-dt::before {
   content: var(--facname);
   font-weight: 500;
 }
