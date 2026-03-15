@@ -1,0 +1,268 @@
+@import url(https://fonts.googleapis.com/css2?family=Anton&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=ZCOOL+QingKe+HuangYou&display=swap);
+@import url(https://midsummer-reverie.github.io/font-face/BebasNeue.css);
+
+.cvrp-wrapper {
+  width: 100%;
+  position: relative;
+  padding-bottom: 10vw;
+}
+.cvrp-headgrid {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: auto 2vw;
+  grid-template-columns: 1fr 1.5fr;
+}
+.cvrp-head1 {
+  width: 100%;
+  grid-area: 1 / 2 / 2 / 3;
+  aspect-ratio: 14.925 / 1;
+  background: var(--primarycl);
+  mask: url(https://i.ibb.co/0pnjhhLw/folder-head.png) center / cover;
+}
+.cvrp-head2 {
+  width: 100%;
+  grid-area: 2 / 1 / 3 / 3;
+  background: var(--primarycl);
+}
+.cvrp-head-deco {
+  width: 40%;
+  aspect-ratio: 4.4545 / 1;
+  grid-area: 1 / 2 / 3 / 3;
+  background: #131313;
+  z-index: 3;
+  mask: url(https://i.ibb.co/HTpJtRHh/folder-head2.png) center / cover;
+  margin: 0.8vw 0vw 0vw 4.25vw;
+}
+.cvrp-content {
+  width: 70%;
+  margin: auto;
+  box-sizing: border-box;
+  border: 0.3vw solid var(--primarycl);
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-template-columns: 1fr 1.8fr;
+  padding-bottom: 6vw;
+}
+.cvrp-nameflex {
+  width: 90%;
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 1.8vw auto 1vw;
+  gap: 1vw;
+}
+.cvrp-name-cn {
+  width: fit-content;
+  font: 1.6vw 'ZCOOL QingKe HuangYou';
+  color: var(--primarycl);
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.cvrp-name-py {
+  width: 82%;
+  font: 4vw 'Anton';
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+}
+.cvrp-details {
+  width: 95%;
+  grid-area: 2 / 2 / 3 / 3;
+}
+.cvrp-aff {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cvrp-aff-ic {
+  width: 10%;
+  aspect-ratio: 1 / 1;
+  background: #fff;
+  mask: var(--affic);
+}
+.cvrp-aff-tt {
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 0.25vw 0.65vw;
+  font: 1.35vw 'Bebas Neue';
+  font-weight: 500;
+  color: #131313;
+  text-transform: uppercase;
+  background: var(--primarycl);
+  font-weight: 500;
+  border: 0.15vw solid var(--primarycl);
+}
+.cvrp-aff-tt::before {
+  content: 'affiliations';
+}
+.cvrp-aff-dt {
+  flex: 1;
+  box-sizing: border-box;
+  border-bottom: 0.15vw solid var(--primarycl);
+  padding: 0.25vw 0vw 0.20vw 1vw;
+  font: 1.35vw 'Bebas Neue';
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.cvrp-aff-dt::before {
+  content: var(--affname);
+  font-weight: 500;
+}
+.cvrp-aff-dt::after {
+  content: var(--affdt);
+}
+#vinier {
+  --affic: url(https://i.ibb.co/ym2g94Ng/logo-vinier.png) center / 90% no-repeat;
+  --affname: 'vinier';
+  --affdt: ' — the independent forces';
+}
+#ziris {
+  --affic: url(https://i.ibb.co/Mksr423V/logo-ziris.png) center / 90% no-repeat;
+  --affname: 'ziris';
+  --affdt: ' — the official forces';
+}
+#quarter {
+  --affic: url(https://i.ibb.co/DfzMTk85/logo-quarter.png) center / 90% no-repeat;
+  --affname: 'quarter';
+  --affdt: ' — the revolutioners';
+}
+#mair {
+  --affic: url(https://i.ibb.co/HDNnpRn7/logo-mair.png) center / 90% no-repeat;
+  --affname: 'mair';
+  --affdt: ' — the outlaws';
+}
+.cvrp-fac {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cvrp-fac-ic {
+  width: 10%;
+  aspect-ratio: 1 / 1;
+  background: #fff;
+  mask: var(--facic);
+}
+.cvrp-fac-tt {
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 0.25vw 0.65vw;
+  font: 1.35vw 'Bebas Neue';
+  font-weight: 500;
+  color: #131313;
+  text-transform: uppercase;
+  background: var(--primarycl);
+  font-weight: 500;
+  border: 0.15vw solid var(--primarycl);
+}
+.cvrp-fac-tt::before {
+  content: 'factions';
+}
+.cvrp-fac-dt {
+  flex: 1;
+  box-sizing: border-box;
+  border-bottom: 0.15vw solid var(--primarycl);
+  padding: 0.25vw 0vw 0.20vw 1vw;
+  font: 1.35vw 'Bebas Neue';
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.cvrp-aff-dt::before {
+  content: var(--facname);
+  font-weight: 500;
+}
+#cake {
+  --facic: url(https://i.ibb.co/mrzGQxXD/cake.png) center / 70% no-repeat;
+  --facname: 'cake ';
+}
+#fork {
+  --facic: url(hhttps://i.ibb.co/9mCTBvDv/restaurant.png) center / 70% no-repeat;
+  --facname: 'fork ';
+}
+.cvrp-loc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.cvrp-loc-ic {
+  width: 10%;
+  aspect-ratio: 1 / 1;
+  background: #fff;
+  mask: url(https://i.ibb.co/nqkdNPcm/pin.png) center / 55% no-repeat;
+}
+.cvrp-loc-tt {
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 0.25vw 0.65vw;
+  font: 1.35vw 'Bebas Neue';
+  font-weight: 500;
+  color: #131313;
+  text-transform: uppercase;
+  background: var(--primarycl);
+  font-weight: 500;
+  border: 0.15vw solid var(--primarycl);
+}
+.cvrp-loc-tt::before {
+  content: 'location';
+}
+.cvrp-loc-dt {
+  flex: 1;
+  box-sizing: border-box;
+  border-bottom: 0.15vw solid var(--primarycl);
+  padding: 0.25vw 0vw 0.20vw 1vw;
+  font: 1.35vw 'Bebas Neue', 'Google Sans';
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.cvrp-rp {
+  width: 85%;
+  margin: 3vw auto 1vw;
+  font: 1vw 'Bai Jamjuree';
+  color: #fff;
+  font-weight: 300;
+  line-height: 1.5;
+  grid-area: 3 / 1 / 4 / 3;
+  text-align: justify;
+}
+.cvrp-note {
+  width: 85%;
+  margin: 0vw auto 1vw;
+  font: 1vw 'Bai Jamjuree';
+  color: var(--primarycl);
+  font-weight: 500;
+  line-height: 1.5;
+  grid-area: 4 / 1 / 5 / 3;
+}
+.cvrp-mainpic {
+  width: 29%;
+  aspect-ratio: 1.2 / 1;
+  border: 0.3vw solid var(--primarycl);
+  background: var(--mainpic);
+  position: absolute;
+  top: 6.6vw;
+  left: 4.5vw;
+}
+.cvrp-vibeflex {
+  width: 45%;
+  display: flex;
+  gap: 1.2vw;
+  position: absolute;
+  bottom: 4vw;
+  right: 13.5vw;
+}
+.cvrp-vibe1 {
+  width: 48%;
+  aspect-ratio: 1.3 / 1;
+  border: 0.3vw solid var(--primarycl);
+  background: var(--vibe1);
+}
+.cvrp-vibe2 {
+  width: 48%;
+  aspect-ratio: 1.3 / 1;
+  border: 0.3vw solid var(--primarycl);
+  background: var(--vibe2);
+}
