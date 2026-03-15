@@ -92,7 +92,6 @@
   text-transform: uppercase;
   background: var(--primarycl);
   font-weight: 500;
-  border: 0.15vw solid var(--primarycl);
 }
 .cvrp-aff-tt::before {
   content: 'affiliations';
@@ -155,7 +154,6 @@
   text-transform: uppercase;
   background: var(--primarycl);
   font-weight: 500;
-  border: 0.15vw solid var(--primarycl);
 }
 .cvrp-fac-tt::before {
   content: 'factions';
@@ -203,7 +201,6 @@
   text-transform: uppercase;
   background: var(--primarycl);
   font-weight: 500;
-  border: 0.15vw solid var(--primarycl);
 }
 .cvrp-loc-tt::before {
   content: 'location';
