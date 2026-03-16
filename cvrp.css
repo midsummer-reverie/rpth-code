@@ -18,7 +18,7 @@
   grid-area: 1 / 2 / 2 / 3;
   aspect-ratio: 14.925 / 1;
   background: var(--primarycl);
-  mask: url(https://i.ibb.co/0pnjhhLw/folder-head.png) center / cover;
+  mask: url(https://i.ibb.co/0pnjhhLw/folder-head.png) center / 102%;
 }
 .cvrp-head2 {
   width: 100%;
