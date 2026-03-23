@@ -1,0 +1,227 @@
+@import url(https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap);
+@import url(https://midsummer-reverie.github.io/font-face/PerfectlyVintages.css);
+
+.dsp-container {
+    width: 90%;
+    margin: auto;
+}
+.dsp-type {
+    width: 100%;
+    font: 1.3vw 'Google Sans';
+    color: var(--accent);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.dsp-type::before {
+    content: var(--type-text);
+}
+.dsp-header {
+    width: 100%;
+    border: 0.12vw solid var(--accent);
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 4.2fr;
+    box-sizing: border-box;
+}
+.dsp-iconbox {
+    width: 100%;
+    grid-area: 1 / 1;
+    background: var(--accent);
+    aspect-ratio: 1 / 1.2;
+    box-sizing: border-box;
+    padding: 1vw;
+}
+.dsp-icon {
+    width: 100%;
+    height: 100%;
+    background: #131313;
+    mask: var(--type-icon);
+}
+#roleplay {
+    --type-text: 'Roleplay Code';
+    --type-icon: url(https://i.ibb.co/Wv8rxt9M/Untitled-design-92.png) center/140%;
+}
+#profile {
+    --type-text: 'Profile Code';
+    --type-icon: url(https://i.ibb.co/Xf5d0Vbf/Untitled-design-87.png) center/140%;    
+}
+#signature {
+    --type-text: 'Signature Code';
+    --type-icon: url(https://i.ibb.co/jvLWhpZR/Untitled-design-91.png) center/130%;   
+}
+#misc {
+    --type-text: '';
+    --type-icon: url(https://i.ibb.co/JFjzWjHs/Untitled-design-89.png) center/130%;   
+}
+.dsp-header-box {
+    width: 100%;
+    grid-area: 1 / 2;
+    box-sizing: border-box;
+    padding: 1.5vw;
+    background: radial-gradient(circle at 100% 180%, var(--accent) 0%, #131313 60%);
+}
+.dsp-codename {
+    width: 100%;
+    font: 3vw 'Perfectly Vintages';
+    text-shadow: 0px 0px 5px var(--accent);
+    color: #ffffff;
+}
+.dsp-codedesc {
+    width: 80%;
+    margin-top: 0.6vw;
+    font: 1vw 'Google Sans';
+    color: #ffffff;
+    text-align: justify;
+}
+.dsp-flextitle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.6vw;
+}
+.dsp-sptt {
+    width: fit-content;
+    font: 1.15vw 'Google Sans';
+    color: var(--accent);
+    font-weight: 600;
+}
+.dsp-sptt::before {
+    content: 'sample';
+}
+.dsp-vartt {
+    width: fit-content;
+    font: 1.15vw 'Google Sans';
+    color: var(--accent);
+    font-weight: 600;
+}
+.dsp-vartt::before {
+    content: 'variations';
+}
+.dsp-gridbox {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 2.75fr 1fr;
+    box-sizing: border-box;
+}
+.dsp-spbox {
+    width: 100%;
+    grid-area: 1 / 1;
+    box-sizing: border-box;
+    border: 0.12vw solid var(--accent);
+    padding: 1vw;
+    max-height: 100vw;
+    overflow-y: scroll;
+}
+.dsp-btnbox {
+    width: 100%;
+    grid-area: 1 / 2;
+}
+.dsp-btn {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.6vw;
+    border-width: 0.12vw 0.12vw 0.12vw 0vw;
+    border-color: var(--accent);
+    border-style: solid;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 15fr;
+    column-gap: 0.8vw;
+    text-decoration: none; /* ป้องกันไม่ให้มีเส้นใต้แบบลิงก์ปกติ */
+    color: inherit;        /* ให้สีตัวอักษรเป็นไปตามที่เราตั้งไว้ ไม่กลายเป็นสีน้ำเงิน */
+    cursor: pointer;
+    transition: 0.3s;      /* เพิ่มลูกเล่นตอนชี้เมาส์ */
+}
+.dsp-btn:hover {
+    background: var(--accent);
+    opacity: 0.1;
+}
+.dsp-mark {
+    width: 100%;
+    grid-area: 1 / 1 / 4 / 2;
+    background: var(--accent);
+}
+.dsp-colorvar {
+    width: 100%;
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    gap: 0.65vw;
+    margin-top: 0.55vw;
+}
+.dsp-colordot {
+    width: 15%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    background: #FF7A7A;
+}
+.dsp-btndesc {
+    width: 100%;
+    grid-area: 2 / 2 / 4 / 3;
+    margin-top: 0.45vw;
+    margin-bottom: 0.65vw;
+    font: 0.85vw 'Google Sans';
+    color: #ffffff;
+}
+.dsp-codett {
+    width: 100%;
+    font: 1.25vw 'Google Sans';
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 1.6vw;
+}
+.dsp-codett::before {
+    content: 'code';
+}
+.dsp-codebox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vw;
+    border: 0.12vw solid var(--accent);
+    background: radial-gradient(circle at 80% 90%, var(--accent) 0%, #131313 100%);
+}
+.dsp-detailstt {
+    width: 100%;
+    font: 1.25vw 'Google Sans';
+    color: var(--accent);
+    font-weight: 600;
+    margin-top: 1.6vw;
+}
+.dsp-detailstt::before {
+    content: 'more details';
+}
+.dsp-details {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1vw;
+    border: 0.12vw solid var(--accent);
+    background: radial-gradient(circle at 80% 90%, var(--accent) 0%, #131313 100%);
+    box-sizing: border-box;
+    padding: 1.45vw;
+    font: 1vw 'Google Sans';
+    color: #ffffff;
+}
+/* ให้ Variation 1 แสดงผลเป็นค่าเริ่มต้น */
+.var-1 { display: block; }
+
+/* จุด Anchor ซ่อนไว้ใช้รับค่า */
+.rp-anchor {
+    position: absolute;
+    visibility: hidden;
+}
+
+/* 🌟 กลไกสลับแท็บ: ควบคุมทั้งพรีวิวและกล่องโค้ด 🌟 */
+/* ถ้าคลิกปุ่ม #v2 ให้ซ่อน var-1 และโชว์ var-2 */
+#v2:target ~ .dsp-gridbox .var-1,
+#v2:target ~ .dsp-codebox .var-1 { display: none; }
+
+#v2:target ~ .dsp-gridbox .var-2,
+#v2:target ~ .dsp-codebox .var-2 { display: block; }
+
+/* ถ้าคลิกปุ่ม #v1 (หรือค่าเริ่มต้น) ให้โชว์ var-1 เหมือนเดิม */
+#v1:target ~ .dsp-gridbox .var-1,
+#v1:target ~ .dsp-codebox .var-1 { display: block; }
+
+#v1:target ~ .dsp-gridbox .var-2,
+#v1:target ~ .dsp-codebox .var-2 { display: none; }
