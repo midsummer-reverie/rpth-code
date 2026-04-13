@@ -10,7 +10,7 @@
     justify-content: center;
     padding: 4vw;
     box-sizing: border-box;
-    background: radial-gradient(circle, var(--cl1) 0%, var(--cl2) 100%);
+    background: radial-gradient(circle, var(--cl1) 0%, var(--cl2) 60%);
     grid-template-columns: 0.85fr;
 }
 .fm-top {
