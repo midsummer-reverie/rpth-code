@@ -18,12 +18,14 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 8vw;
+    box-sizing: border-box;
 }
 .fm-tribe {
     width: fit-content;
     font: 1.12vw 'Cormorant Garamond';
     color: var(--text);
     font-weight: 700;
+    max-width: 45%;
 }
 .fm-words {
     width: fit-content;
@@ -31,6 +33,7 @@
     color: var(--text);
     text-align: right;
     font-weight: 500;
+    max-width: 45%;
 }
 .fm-name {
     width: 90%;
@@ -40,6 +43,7 @@
     line-height: 1;
     z-index: 8;
     text-indent: 2vw;
+    box-sizing: border-box;
 }
 .fm-grid {
     width: 100%;
