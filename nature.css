@@ -1,0 +1,246 @@
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap);
+@import url(https://midsummer-reverie.github.io/font-face/Slight.css);
+@import url(https://midsummer-reverie.github.io/font-face/LovelyMay.css);
+@import url(https://midsummer-reverie.github.io/font-face/ophelia.css);
+
+#fairy {
+    --ntlogo: url(https://i.ibb.co/ccSsyBJQ/image.png) center/cover;
+    --nttxt: "พันธสัญญาแห่งชีวิตในพงไพร";
+}
+#merpeople {
+    --ntlogo: url(https://iili.io/B6UcjmG.png) center/cover;
+    --nttxt: "พันธะสัญญาแห่งชีวิตใต้สมุทร";
+}
+
+.nature-con {
+    width: 100%;
+    background: #000;
+    padding-top: 4vw;
+}
+.nature-logo {
+    width: 12%;
+    aspect-ratio: 1 / 1;
+    background: #fff;
+    mask: var(--ntlogo);
+    margin: auto;
+}
+.nature-title {
+    width: 70%;
+    margin: 2vw auto 1vw;
+    font: 6.7vw 'ophelia';
+    text-align: center;
+    color: #fff;
+}
+.nature-note {
+    width: fit-content;
+    text-align: center;
+    font: 1.3vw 'Bai Jamjuree';
+    color: #A1A1A1;
+    font-weight: 300;
+    margin: -0.5vw auto 3vw;
+    font-style: italic;
+}
+.nature-ind {
+    width: 100%;
+    padding-bottom: 3.5vw;
+}
+.nature-pic {
+    width: 100%;
+    aspect-ratio: 1.7 / 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(34, 193, 195, 0) 25%, rgba(14, 80, 81, 0) 65%, rgba(0, 0, 0, 1) 100%), var(--cpic);
+}
+.nature-nameg {
+    width: 65%;
+    margin: -1.5vw auto 0vw;
+    display: grid;
+    grid-template-rows: auto 3vw auto;
+    grid-template-columns: 1fr 1fr;
+}
+.nature-fn {
+    width: 100%;
+    grid-area: 1 / 1 / 3 / 3;
+    font: 6.5vw 'Slight';
+    color: #fff;
+    text-transform: capitalize;
+}
+.nature-namef {
+    width: 100%;
+    display: flex;
+    gap: 1.25vw;
+    align-items: center;
+    grid-area: 3 / 2 / 4 / 3;
+    margin-top: -1vw;
+}
+.nature-sp {
+    width: 15%;
+    aspect-ratio: 1 / 1;
+    background: var(--charcl);
+    mask: url(https://iili.io/B4kcqBV.png) center / 90% no-repeat;
+}
+.nature-sn {
+    max-width: 73%;
+    color: #fff;
+    font: 2vw 'Lovely May';
+    text-transform: uppercase;
+}
+.nature-thn {
+    max-width: 80%;
+    margin: 1.85vw auto 0.5vw;
+    text-align: center;
+    font: 1.2vw 'Bai Jamjuree';
+    font-weight: 300;
+    letter-spacing: 0.15vw;
+    color: #bababa;
+}
+.nature-pos {
+    max-width: 80%;
+    margin: 0.5vw auto;
+    text-align: center;
+    font: 1.2vw 'Bai Jamjuree';
+    font-weight: 300;
+    letter-spacing: 0.15vw;
+    color: #bababa;
+}
+.nature-df {
+    width: fit-content;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: minmax(auto, max-content) 0.1vw minmax(auto, max-content);
+    column-gap: 1vw;
+    max-width: 70%;
+    margin: 2vw auto 1vw;
+    align-items: center;
+}
+.nature-rank {
+    width: fit-content;
+    grid-area: 1 / 1;
+    font: 1.25vw 'Bai Jamjuree';
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.05vw;
+}
+.nature-rank::before {
+    content: var(--rank);
+}
+#mer1 {
+    --rank: "ชาวเงือกระดับที่ 1 สุ้มเสียงธารา";
+}
+#mer2 {
+    --rank: "ชาวเงือกระดับที่ 2 มัจฉานคร";
+}
+#mer3 {
+    --rank: "ชาวเงือกระดับที่ 3 อาภรณ์นที";
+}
+#mer4 {
+    --rank: "ชาวเงือกระดับที่ 4 วารีมัสยา";
+}
+#mer5 {
+    --rank: "ชาวเงือกระดับที่ 5 มีนาทองคำ";
+}
+#mer6 {
+    --rank: "ชาวเงือกระดับที่ 6 กำไลสมุทร";
+}
+#mer7 {
+    --rank: "ชาวเงือกระดับที่ 7 มงกุฎทะเล";
+}
+#fae1 {
+    --rank: "แฟรี่ระดับที่ 1 รังสีพฤกษา";
+}
+#fae2 {
+    --rank: "แฟรี่ระดับที่ 2 วนาพิรักษ์";
+}
+#fae3 {
+    --rank: "แฟรี่ระดับที่ 3 พิทักษ์ปฐพี";
+}
+#fae4 {
+    --rank: "แฟรี่ระดับที่ 4 รุจีสุริยา";
+}
+#fae5 {
+    --rank: "แฟรี่ระดับที่ 5 ประภาศศิธร";
+}
+#fae6 {
+    --rank: "แฟรี่ระดับที่ 6 ภมรบุปผชาติ";
+}
+#fae7 {
+    --rank: "แฟรี่ระดับที่ 7 วิลาสธราดล";
+}
+#aedion {
+    --rank: "สมาชิกสภาแห่งเอเดียน";
+}
+.nature-vl {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    grid-area: 1 / 2;
+}
+.nature-clf {
+    width: fit-content;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+}
+.nature-color {
+    width: 2vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    background: var(--charcl);
+}
+.nature-colorcode {
+    width: fit-content;
+    font: 1.25vw 'Google Sans';
+    color: #fff;
+    text-transform: uppercase;
+}
+.nature-anf {
+    width: 75%;
+    display: flex;
+    gap: 1.25vw;
+    margin: 2.2vw auto 0vw;
+    align-items: center;
+}
+.nature-antt {
+    max-width: 25%;
+    box-sizing: border-box;
+    padding: 0.55vw 1vw;
+    background: var(--charcl);
+    font: 1.1vw 'Bai Jamjuree';
+    font-weight: 500;
+    letter-spacing: 0.05vw;
+    color: #fff;
+    text-align: center;
+}
+.nature-antt::before {
+    content: "สัตว์แฝงในกาย";
+}
+.nature-andt {
+    max-width: 75%;
+    font: 1.1vw 'Bai Jamjuree';
+    color: #fff;
+}
+.nature-bf {
+    width: 75%;
+    display: flex;
+    gap: 1.25vw;
+    margin: 0.8vw auto 0vw;
+    align-items: start;
+}
+.nature-btt {
+    max-width: 35%;
+    box-sizing: border-box;
+    padding: 0.55vw 1vw;
+    background: var(--charcl);
+    font: 1.1vw 'Bai Jamjuree';
+    font-weight: 500;
+    letter-spacing: 0.05vw;
+    color: #fff;
+    text-align: center;
+}
+.nature-btt::before {
+    content: var(--nttxt);
+}
+.nature-bdt {
+    max-width: 62%;
+    font: 1.1vw 'Bai Jamjuree';
+    line-height: 1.4;
+    color: #fff;
+}
