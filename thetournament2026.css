@@ -30,10 +30,10 @@
 }
 #noteam {
     --radialbg: radial-gradient(80% 50% at 50% 40%, rgba(123, 201, 99, 0.5) 0%, rgba(0, 0, 0, 0) 60%);
-    --sunbg: linear-gradient(0deg, rgb(60, 100, 41) 0%, rgba(20, 20, 20, 1) 100%);
+    --sunbg: linear-gradient(0deg, rgb(78, 112, 62) 0%, rgba(20, 20, 20, 1) 100%);
     --boxbg: linear-gradient(0deg, rgb(202, 255, 178) 0%, rgba(255, 255, 255, 1) 100%);
-    --accent: #366726;
-    --teamlogo: url(https://iili.io/BQJXOKb.png) center/cover;
+    --accent: #477138;
+    --teamlogo: url(https://iili.io/BQTD8tp.png) center/cover;
     --emoji: url(https://iili.io/BQTcxaI.png) center/cover;
     --teamname: "the tournament";  
 }
