@@ -11,7 +11,7 @@
     --teamname: "coral team";
 }
 #aqua {
-    --radialbg: radial-gradient(80% 50% at 50% 40%, rgb(0, 134, 158) 0%, rgba(0, 0, 0, 0) 100%);
+    --radialbg: radial-gradient(80% 50% at 50% 40%, rgb(0, 134, 158, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
     --sunbg: linear-gradient(0deg, rgb(46, 150, 195) 0%, rgba(20, 20, 20, 1) 100%);
     --boxbg: linear-gradient(0deg, rgb(163, 237, 255) 0%, rgba(255, 255, 255, 1) 100%);
     --accent: #009cbf;
@@ -20,7 +20,7 @@
     --teamname: "aqua team";  
 }
 #sandy {
-    --radialbg: radial-gradient(80% 50% at 50% 40%, rgb(202, 152, 60) 0%, rgba(0, 0, 0, 0) 100%);
+    --radialbg: radial-gradient(80% 50% at 50% 40%, rgb(202, 152, 60, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
     --sunbg: linear-gradient(0deg, rgb(234, 180, 44) 0%, rgba(20, 20, 20, 1) 100%);
     --boxbg: linear-gradient(0deg, rgb(255, 227, 151) 0%, rgba(255, 255, 255, 1) 100%);
     --accent: #eca61a;
@@ -29,7 +29,7 @@
     --teamname: "sandy team";  
 }
 #noteam {
-    --radialbg: radial-gradient(80% 50% at 50% 40%, rgb(193, 180, 125) 0%, rgba(0, 0, 0, 0) 100%);
+    --radialbg: radial-gradient(80% 50% at 50% 40%, rgb(193, 180, 125, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
     --sunbg: linear-gradient(0deg, rgb(177, 167, 109) 0%, rgba(20, 20, 20, 1) 100%);
     --boxbg: linear-gradient(0deg, rgb(255, 249, 199) 0%, rgba(255, 255, 255, 1) 100%);
     --accent: #998858;
