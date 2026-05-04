@@ -23,7 +23,7 @@
     --radialbg: radial-gradient(80% 50% at 50% 40%, rgb(202, 152, 60, 0.5) 0%, rgba(0, 0, 0, 0) 60%);
     --sunbg: linear-gradient(0deg, rgb(234, 180, 44) 0%, rgba(20, 20, 20, 1) 100%);
     --boxbg: linear-gradient(0deg, rgb(255, 227, 151) 0%, rgba(255, 255, 255, 1) 100%);
-    --accent: #a77d28;
+    --accent: #edb139;
     --teamlogo: url(https://iili.io/BQJXOKb.png) center/cover;
     --emoji: url(https://iili.io/BQJXGHl.png) center/cover;
     --teamname: "sandy team";  
