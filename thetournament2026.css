@@ -1,5 +1,6 @@
 @import url(https://midsummer-reverie.github.io/font-face/DreamAvenue.css);
 @import url(https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz@0,17..18;1,17..18&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+@import url(https://emoji-css.afeld.me/emoji.css);
 
 #coral {
     --radialbg: radial-gradient(80% 50% at 50% 40%, rgba(255, 54, 111, 0.5) 0%, rgba(255, 140, 169, 0) 60%);
