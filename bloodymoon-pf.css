@@ -1,0 +1,128 @@
+@import url(https://midsummer-reverie.github.io/font-face/Pandantica.css);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap);
+
+.blm-container {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+}
+
+.blm-bg {
+    width: 100%;
+    grid-area: 1 / 1;
+    z-index: 1;
+    background: var(--bg);
+    filter: blur(0.3vw);
+}
+
+.blm-content-wrap {
+    width: 100%;
+    grid-area: 1 / 1;
+    z-index: 2;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.blm-title {
+    width: 75%;
+    font: 5vw 'Pandantica';
+    margin: 7vw auto 0vw;
+    color: var(--text);
+    line-height: 1;
+    text-align: center;
+}
+
+.blm-subtitle {
+    width: 75%;
+    margin: 1vw auto 0vw;
+    font: 1.6vw 'Cormorant Garamond';
+    font-weight: 700;
+    color: var(--text);
+    text-align: center;
+}
+
+.blm-flex-row {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.2vw auto 0vw;
+}
+
+.blm-card-border {
+    width: 23%;
+    aspect-ratio: 1 / 1.65;
+    box-sizing: border-box;
+    padding: 0.15vw;
+    background: linear-gradient(0deg, var(--cl1) 0%, var(--cl2) 100%);
+    border-radius: 0.4vw;
+}
+
+.blm-card-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.4vw;
+}
+
+.blm-flex-row-sm {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0.8vw auto 0vw;
+}
+
+.blm-star {
+    width: 23%;
+    font: 1.25vw 'Cormorant Garamond';
+    color: var(--text);
+    text-align: center;
+}
+
+.blm-large-border {
+    width: 75%;
+    margin: 5vw auto 0vw;
+    aspect-ratio: 1.4 / 1;
+    box-sizing: border-box;
+    padding: 0.15vw;
+    background: linear-gradient(0deg, var(--cl1) 0%, var(--cl2) 100%);
+}
+
+.blm-large-img {
+    width: 100%;
+    height: 100%;
+}
+
+.blm-mask-1 {
+    width: 40%;
+    aspect-ratio: 2.36 / 1;
+    background: var(--cl1);
+    mask: url(https://iili.io/Bt2vuRI.png) center / cover;
+    -webkit-mask: url(https://iili.io/Bt2vuRI.png) center / cover;
+    position: absolute;
+    bottom: 36.25vw;
+    left: 4vw;
+}
+
+.blm-text-box {
+    width: 80%;
+    margin: 8vw auto 30vw;
+    border-radius: 1000px;
+    box-sizing: border-box;
+    padding: 0.5vw 2vw;
+    border: 0.15vw solid var(--text);
+    font: 1vw 'Montserrat';
+    color: var(--text);
+    font-weight: 500;
+    text-align: center;
+}
+
+.blm-mask-2 {
+    width: 5%;
+    aspect-ratio: 1 / 1;
+    background: var(--text);
+    mask: url(https://iili.io/BtBNxMF.png) center / cover;
+    -webkit-mask: url(https://iili.io/BtBNxMF.png) center / cover;
+    position: absolute;
+    bottom: 30.8vw;
+    right: 9.5vw;
+}
