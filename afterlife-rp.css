@@ -16,7 +16,7 @@
   aspect-ratio: 1/1;
   border-radius: 1000px;
   border: 0.25vw solid var(--acrp-accent);
-  background: var(--acrp-img-1) center/cover;
+  background: var(--acrp-img-1);
   z-index: 1;
   margin: 1vw;
 }
@@ -27,7 +27,7 @@
   aspect-ratio: 1/1;
   border-radius: 1000px;
   border: 0.25vw solid var(--acrp-accent);
-  background: var(--acrp-img-2) center/cover;
+  background: var(--acrp-img-2);
   z-index: 1;
   justify-self: end;
   align-self: end;
@@ -65,7 +65,7 @@
   grid-area: 2/2/3/3;
   z-index: 3;
   background: var(--acrp-text-color);
-  mask: url('https://iili.io/C2V7nJ1.png') center/20%;
+  mask: url(https://iili.io/C2V7nJ1.png) center/20%;
   border-radius: 1000px;
   opacity: 0.1;
 }
