@@ -1,0 +1,143 @@
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+JP:wght@200..900&display=swap);
+
+/* กำหนดตัวแปรสำหรับทำ Variation (ธีม) */
+.acrp-container {
+  /* โครงสร้าง Container หลัก */
+  width: 85%;
+  margin: 3.2vw auto;
+  display: grid;
+  grid-template-rows: 5vw auto 5vw;
+  grid-template-columns: 7vw 1fr 7vw;
+}
+
+.acrp-img-circle-1 {
+  width: 40%;
+  grid-area: 1/1/3/3;
+  aspect-ratio: 1/1;
+  border-radius: 1000px;
+  border: 0.25vw solid var(--acrp-accent);
+  background: var(--acrp-img-1) center/cover;
+  z-index: 1;
+  margin: 1vw;
+}
+
+.acrp-img-circle-2 {
+  width: 40%;
+  grid-area: 2/2/4/4;
+  aspect-ratio: 1/1;
+  border-radius: 1000px;
+  border: 0.25vw solid var(--acrp-accent);
+  background: var(--acrp-img-2) center/cover;
+  z-index: 1;
+  justify-self: end;
+  align-self: end;
+  margin: 0vw 0.5vw 3vw 0vw;
+}
+
+.acrp-title-vertical {
+  width: fit-content;
+  margin: 4vw 2.8vw 0vw 0vw;
+  font: 6.2vw 'Noto Serif JP', serif;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  color: var(--acrp-accent);
+  font-weight: 700;
+  z-index: 1;
+  justify-self: right;
+  grid-area: 1/2/4/4;
+  opacity: 0.9;
+}
+
+.acrp-bg-base {
+  width: 100%;
+  height: 100%;
+  grid-area: 2/2/3/3;
+  z-index: 2;
+  background: var(--acrp-bg-color);
+  border-radius: 1000px;
+}
+
+.acrp-bg-pattern {
+  width: 100%;
+  height: 100%;
+  grid-area: 2/2/3/3;
+  z-index: 3;
+  background: var(--acrp-text-color);
+  mask: var(--acrp-img-bg-pattern);
+  border-radius: 1000px;
+  opacity: 0.1;
+}
+
+.acrp-content-wrapper {
+  width: 100%;
+  grid-area: 2/2/3/3;
+  z-index: 4;
+  box-sizing: border-box;
+  padding: 5vw;
+}
+
+.acrp-icon-mask {
+  width: 15%;
+  aspect-ratio: 1/1;
+  background: var(--acrp-accent);
+  /* ใส่ -webkit-mask เพิ่มเพื่อให้รองรับ Safari ได้ดีขึ้น */
+  -webkit-mask: var(--acrp-icon);
+  mask: var(--acrp-icon);
+  margin: 2.5vw auto 0vw;
+}
+
+.acrp-name-first {
+  width: fit-content;
+  margin: 2.5vw auto 0.3vw;
+  font: 1.5vw 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: var(--acrp-accent);
+  font-weight: 300;
+  letter-spacing: 0.25vw;
+}
+
+.acrp-name-last {
+  width: fit-content;
+  margin: 0.3vw auto;
+  font: 1.5vw 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: var(--acrp-accent);
+  font-weight: 300;
+  letter-spacing: 0.25vw;
+}
+
+.acrp-body-text {
+  width: 100%;
+  margin-top: 3.5vw;
+  font: 1.1vw 'Bai Jamjuree', sans-serif;
+  color: var(--acrp-text-color);
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.7;
+  min-height: 18vw;
+}
+
+.acrp-footer-text {
+  width: 100%;
+  margin-top: 1.5vw;
+  font: 1.1vw 'Bai Jamjuree', sans-serif;
+  color: var(--acrp-text-color);
+  font-weight: 500;
+  text-align: right;
+  line-height: 1.4;
+  margin-bottom: 10vw;
+}
+
+.acrp-bottom-mask {
+  width: 60%;
+  aspect-ratio: 1.806/1;
+  background: var(--acrp-accent);
+  -webkit-mask: url('https://iili.io/C2V7l5X.png') center/cover;
+  mask: url('https://iili.io/C2V7l5X.png') center/cover;
+  align-self: end;
+  grid-area: 2/1/4/3;
+  z-index: 5;
+  margin-bottom: 0.8vw;
+}
