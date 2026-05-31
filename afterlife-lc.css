@@ -21,8 +21,8 @@
   height: 100%;
   grid-area: 2/2/3/3;
   background: var(--aclc-accent-secondary);
-  -webkit-mask: url('https://iili.io/C2V7nJ1.md.png') center/20% no-repeat;
-  mask: url('https://iili.io/C2V7nJ1.md.png') center/20% no-repeat;
+  -webkit-mask: url('https://iili.io/C2V7nJ1.md.png') center/20%;
+  mask: url('https://iili.io/C2V7nJ1.md.png') center/20%;
   z-index: 2;
   opacity: 0.25;
 }
