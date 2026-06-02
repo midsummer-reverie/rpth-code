@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Playpen+Sans+Thai:wght@100..800&display=swap);
+
+.dmr-ev-bg {
+    width: 80%;
+    margin: auto;
+    padding: 2vw;
+    box-sizing: border-box;
+    border-radius: 0.8vw;
+    background: url(https://iili.io/FdMiuvp.png) center / 50%, #ffffff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.dmr-ev-logo {
+    width: 15%;
+    margin: auto;
+    aspect-ratio: 1 / 1;
+    background: url(https://iili.io/FFtVI0x.png) center / cover;
+}
+.dmr-ev-pic {
+    width: 75%;
+    margin: 1.4vw auto;
+    aspect-ratio: 2 / 1;
+    background: var(--dmr-ev-pic);
+}
+.dmr-ev-title {
+    width: fit-content;
+    max-width: 60%;
+    font: 2vw 'Playpen Sans Thai';
+    font-weight: 600;
+    color: var(--dmr-ev-color);
+    text-align: center;
+    margin: 1vw auto;
+}
+.dmr-ev-txt {
+    width: 75%;
+    margin: auto;
+    padding: 1.6vw 0vw;
+    border-top: 0.12vw dashed var(--dmr-ev-color);
+    font: 1.1vw 'Bai Jamjuree';
+    color: #141414;
+    text-align: justify;
+    line-height: 1.45;
+}
