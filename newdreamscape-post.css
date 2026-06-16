@@ -92,7 +92,7 @@
 }
 
 .dps-preview-box::-webkit-scrollbar-track {
-    background: var(--dps-c-secondary); 
+    background: transparent; 
     border-radius: 10px; /* ขอบมนสำหรับแทร็ก */
 }
 
