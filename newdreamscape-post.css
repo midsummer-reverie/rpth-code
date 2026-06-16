@@ -160,7 +160,7 @@
     padding: 0.15vw 0.35vw;
     background: var(--dps-c-accent);
     border-radius: 0.4vw;
-    font: 1vw 'DM Mono';
+    font: 0.85vw 'DM Mono';
     color: var(--dps-c-main);
 }
 
