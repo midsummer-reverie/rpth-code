@@ -23,6 +23,7 @@
     line-height: 1.4;
     overflow-y: scroll;
     text-align: justify;
+    padding-right: 1vw;
 }
 .chfzz-text::-webkit-scrollbar {
     width: 0.3vw;
