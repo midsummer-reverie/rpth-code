@@ -155,6 +155,15 @@
     grid-area: 1/2/2/3;
 }
 
+.dps-hightlight {
+    box-sizing: border-box;
+    padding: 0.15vw 0.35vw;
+    background: var(--dps-c-accent);
+    border-radius: 0.4vw;
+    font: 1vw 'DM Mono';
+    color: var(--dps-c-main);
+}
+
 .dps-var-desc {
     width: 100%;
     grid-area: 2/2/3/3;
