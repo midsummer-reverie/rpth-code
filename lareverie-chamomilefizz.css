@@ -25,11 +25,12 @@
     text-align: justify;
 }
 .chfzz-text::-webkit-scrollbar {
-    width: 0.8vw;
+    width: 0.3vw;
     padding-left: 0.6vw;
 }   
 .chfzz-text::-webkit-scrollbar-track {
     background: transparent;
+    width: 0.8vw;
 }   
 .chfzz-text::-webkit-scrollbar-thumb {
     background-color: var(--chfzz-subcl);
