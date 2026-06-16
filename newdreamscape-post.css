@@ -86,6 +86,27 @@
     overflow-y: scroll;
 }
 
+.dps-preview-box::-webkit-scrollbar {
+    width: 6px;  /* ความกว้างของ Scrollbar แนวตั้ง */
+    height: 6px; /* ความสูงของ Scrollbar แนวนอน (เผื่อมี) */
+}
+
+.dps-preview-box::-webkit-scrollbar-track {
+    background: var(--scroll-track); 
+    border-radius: 10px; /* ขอบมนสำหรับแทร็ก */
+}
+
+.dps-preview-box::-webkit-scrollbar-thumb {
+    background: var(--scroll-accent); 
+    border-radius: 10px; /* ขอบมนสำหรับตัวเลื่อน */
+}
+
+/* (ออปชันเสริม) เวลานำเมาส์ไปชี้ให้ Scrollbar ดูทึบขึ้นหรือสว่างขึ้นนิดหน่อย */
+.dps-preview-box::-webkit-scrollbar-thumb:hover {
+    opacity: 0.8;
+    background: #e5e3de; /* เปลี่ยนเป็นสี Accent ที่เข้ม/อ่อนลงนิดนึงเวลานำเมาส์ไปชี้ */
+}
+
 .dps-info-flex {
     width: 90%;
     margin: auto;
