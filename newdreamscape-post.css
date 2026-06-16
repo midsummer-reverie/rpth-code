@@ -92,12 +92,12 @@
 }
 
 .dps-preview-box::-webkit-scrollbar-track {
-    background: var(--scroll-track); 
+    background: var(--dps-c-secondary); 
     border-radius: 10px; /* ขอบมนสำหรับแทร็ก */
 }
 
 .dps-preview-box::-webkit-scrollbar-thumb {
-    background: var(--scroll-accent); 
+    background: var(--dps-c-secondary); 
     border-radius: 10px; /* ขอบมนสำหรับตัวเลื่อน */
 }
 
@@ -122,6 +122,7 @@
     padding: 1.5vw;
     border-right: 0.1vw solid var(--dps-c-accent);
     font: 1.2vw 'TH Chara';
+    color: var(--dps-c-accent);
 }
 
 .dps-var-grid {
