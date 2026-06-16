@@ -121,6 +121,7 @@
     box-sizing: border-box;
     padding: 1.5vw;
     border-right: 0.1vw solid var(--dps-c-accent);
+    font: 1.2vw 'TH Chara';
 }
 
 .dps-var-grid {
