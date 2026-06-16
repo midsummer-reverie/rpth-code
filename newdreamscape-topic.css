@@ -122,6 +122,7 @@
     background-position: center;
     background-size: 70%;
     background-repeat: no-repeat;
+    transition: all 0.3s ease; /* เพิ่มความสมูท */
 }
 
 .dtp-link-text {
@@ -131,6 +132,15 @@
     text-align: center;
     margin-bottom: 1.5vw;
     font-weight: 300;
+    transition: color 0.3s ease; /* เพิ่มความสมูท */
+}
+
+.dtp-link-col a:hover .dtp-link-icon {
+    transform: translateY(-0.5vw) scale(1.05); /* ไอคอนเด้งขึ้นและขยายขึ้นนิดนึง */
+}
+
+.dtp-link-col a:hover .dtp-link-text {
+    color: var(--dtp-c-secondary); /* เปลี่ยนสีตัวอักษร */
 }
 
 .dtp-menu-header {
@@ -168,6 +178,11 @@
     grid-template-rows: auto auto;
     grid-template-columns: 1fr 20%;
     text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.dtp-menu-item:hover {
+    transform: translateX(0.5vw); /* ขยับกล่องไปทางขวานิดนึง */
 }
 
 .dtp-menu-item-sub {
