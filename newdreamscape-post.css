@@ -155,7 +155,7 @@
     grid-area: 1/2/2/3;
 }
 
-.dps-hightlight {
+.dps-highlight {
     box-sizing: border-box;
     padding: 0.15vw 0.35vw;
     background: var(--dps-c-accent);
