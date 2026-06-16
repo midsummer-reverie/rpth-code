@@ -137,7 +137,6 @@
 .dps-var-dot {
     width: 100%;
     border-radius: 1000px;
-    background: var(--dps-c-dot);
     aspect-ratio: 1/1;
     border: 0.1vw solid var(--dps-c-accent);
     grid-area: 1/1/2/2;
