@@ -22,12 +22,12 @@
     width: 100%;
     box-sizing: border-box;
     padding: 2vw;
-    background: linear-gradient(180deg, rgba(92, 0, 0, 0) 0%, rgba(20, 20, 20, 1) 100%), var(--pf3-bg-main) center/cover;
+    background: linear-gradient(180deg, rgba(92, 0, 0, 0) 0%, rgba(20, 20, 20, 1) 100%), var(--pf3-bg-main);
 
-    --pf3-mask-cal: url(https://iili.io/CzfHugj.png);
-    --pf3-mask-clock: url(https://iili.io/CzfKpYg.png);
-    --pf3-mask-play: url(https://iili.io/Cz6JxJj.md.png);
-    --pf3-mask-add: url(https://iili.io/Cz6JC0u.md.png);
+    --pf3-mask-cal: url(https://iili.io/CzfHugj.png)  center/85% no-repeat;
+    --pf3-mask-clock: url(https://iili.io/CzfKpYg.png)  center/85% no-repeat;
+    --pf3-mask-play: url(https://iili.io/Cz6JxJj.md.png)  center/cover;
+    --pf3-mask-add: url(https://iili.io/Cz6JC0u.md.png)  center/cover;
     --pf3-bg-overlay: url(https://i.pinimg.com/originals/e5/57/b4/e557b46e7d5f64872f6e5ca0b9744d6c.gif) center/cover;
     
     --pf3-c-dark-trans: #171717cc;
@@ -65,16 +65,16 @@
     width: 15%;
     aspect-ratio: 1/1;
     background: var(--pf3-c-accent);
-    mask: var(--pf3-mask-cal) center/85% no-repeat;
-    -webkit-mask: var(--pf3-mask-cal) center/85% no-repeat;
+    mask: var(--pf3-mask-cal);
+    -webkit-mask: var(--pf3-mask-cal);
 }
 
 .pf3-icon-clock {
     width: 15%;
     aspect-ratio: 1/1;
     background: var(--pf3-c-accent);
-    mask: var(--pf3-mask-clock) center/85% no-repeat;
-    -webkit-mask: var(--pf3-mask-clock) center/85% no-repeat;
+    mask: var(--pf3-mask-clock);
+    -webkit-mask: var(--pf3-mask-clock);
 }
 
 .pf3-date-time-text {
@@ -87,7 +87,7 @@
 .pf3-header-card {
     width: 80%;
     margin: auto;
-    background: linear-gradient(var(--pf3-c-dark-trans), var(--pf3-c-dark-trans)), var(--pf3-bg-cover) center/cover;
+    background: linear-gradient(var(--pf3-c-dark-trans), var(--pf3-c-dark-trans)), var(--pf3-bg-cover);
     display: flex;
     padding: 1.8vw;
     border-width: 0vw 0.15vw 0.15vw 0.15vw;
@@ -103,7 +103,7 @@
     border-radius: 0.55vw;
     box-shadow: 0px 0px 8px 0px var(--pf3-c-shadow) inset;
     -webkit-box-shadow: 0px 0px 8px 0px var(--pf3-c-shadow) inset;
-    background: var(--pf3-bg-avatar) 50% 30%/cover;
+    background: var(--pf3-bg-avatar);
 }
 
 .pf3-header-info {
@@ -201,7 +201,7 @@
     border-radius: 0.55vw;
     box-sizing: border-box;
     z-index: 2;
-    background: var(--pf3-bg-overlay) center/cover;
+    background: var(--pf3-bg-overlay);
     mix-blend-mode: screen;
     opacity: 0.5;
     -webkit-box-shadow: 0px 0px 7px 0px var(--pf3-c-shadow-light) inset;
@@ -236,16 +236,16 @@
     width: 15%;
     aspect-ratio: 1/1;
     background: var(--pf3-c-dark);
-    mask: var(--pf3-mask-play) center/cover;
-    -webkit-mask: var(--pf3-mask-play) center/cover;
+    mask: var(--pf3-mask-play);
+    -webkit-mask: var(--pf3-mask-play);
 }
 
 .pf3-icon-add {
     width: 15%;
     aspect-ratio: 1/1;
     background: var(--pf3-c-dark);
-    mask: var(--pf3-mask-add) center/cover;
-    -webkit-mask: var(--pf3-mask-add) center/cover;
+    mask: var(--pf3-mask-add);
+    -webkit-mask: var(--pf3-mask-add);
 }
 
 .pf3-btn-text {
@@ -339,7 +339,7 @@
     aspect-ratio: 1/1;
     border: 0.05vw solid var(--pf3-c-accent);
     border-radius: 0.2vw;
-    background: var(--pf3-bg-char) center/cover;
+    background: var(--pf3-bg-char);
 }
 
 .pf3-char-info {
