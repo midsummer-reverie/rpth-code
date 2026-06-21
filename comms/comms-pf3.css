@@ -1,0 +1,365 @@
+@import url(https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Inconsolata:wght@200..900&family=M+PLUS+1+Code:wght@100..700&family=Nanum+Gothic+Coding&family=Zen+Dots&display=swap);
+
+/* การตั้งค่า Scrollbar แบบมินิมอล สำหรับคลาส .pf3-char-scroll */
+.pf3-char-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: var(--pf3-c-accent) transparent;
+}
+.pf3-char-scroll::-webkit-scrollbar {
+    width: 0.35vw; /* ขนาดความกว้างของ scrollbar */
+}
+.pf3-char-scroll::-webkit-scrollbar-track {
+    background: transparent; /* แทรกพื้นหลังสีใส */
+}
+.pf3-char-scroll::-webkit-scrollbar-thumb {
+    background: var(--pf3-c-accent); /* สีของตัวเลื่อน */
+    border-radius: 10vw;
+}
+
+/* --------------------------------- */
+
+.pf3-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2vw;
+    background: linear-gradient(180deg, rgba(92, 0, 0, 0) 0%, rgba(20, 20, 20, 1) 100%), var(--pf3-bg-main) center/cover;
+
+    --pf3-mask-cal: url(https://iili.io/CzfHugj.png);
+    --pf3-mask-clock: url(https://iili.io/CzfKpYg.png);
+    --pf3-mask-play: url(https://iili.io/Cz6JxJj.md.png);
+    --pf3-mask-add: url(https://iili.io/Cz6JC0u.md.png);
+    
+    --pf3-c-dark-trans: #171717cc;
+    --pf3-c-shadow: rgba(0,0,0,0.75);
+    --pf3-c-shadow-light: rgba(0,0,0,0.65);
+    
+    --pf3-font: 'Inconsolata', 'IBM Plex Sans Thai','M PLUS 1 Code','Nanum Gothic Coding';
+    --pf3-font-tt: 'Zen Dots';
+}
+
+.pf3-top-bar {
+    width: 80%;
+    margin: 5vw auto 0vw;
+    background: var(--pf3-c-accent);
+    border-radius: 1.3vw 1.3vw 0vw 0vw;
+    display: flex;
+    gap: 1.2vw;
+    padding: 1.3vw 1.3vw 0vw 1.3vw;
+    box-sizing: border-box;
+}
+
+.pf3-date-time-box {
+    min-width: 30%;
+    width: fit-content;
+    background: var(--pf3-c-dark);
+    display: flex;
+    gap: 0.8vw;
+    box-sizing: border-box;
+    padding: 0.85vw;
+    margin: auto 0vw;
+    border-radius: 1vw 1vw 0vw 0vw;
+}
+
+.pf3-icon-cal {
+    width: 15%;
+    aspect-ratio: 1/1;
+    background: var(--pf3-c-accent);
+    mask: var(--pf3-mask-cal) center/85% no-repeat;
+    -webkit-mask: var(--pf3-mask-cal) center/85% no-repeat;
+}
+
+.pf3-icon-clock {
+    width: 15%;
+    aspect-ratio: 1/1;
+    background: var(--pf3-c-accent);
+    mask: var(--pf3-mask-clock) center/85% no-repeat;
+    -webkit-mask: var(--pf3-mask-clock) center/85% no-repeat;
+}
+
+.pf3-date-time-text {
+    width: fit-content;
+    font: 1.15vw var(--pf3-font);
+    color: var(--pf3-c-accent);
+    align-self: center;
+}
+
+.pf3-header-card {
+    width: 80%;
+    margin: auto;
+    background: linear-gradient(var(--pf3-c-dark-trans), var(--pf3-c-dark-trans)), var(--pf3-bg-cover) center/cover;
+    display: flex;
+    padding: 1.8vw;
+    border-width: 0vw 0.15vw 0.15vw 0.15vw;
+    border-style: solid;
+    border-color: var(--pf3-c-accent);
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.pf3-avatar {
+    width: 45%;
+    border: 0.05vw solid var(--pf3-c-accent);
+    border-radius: 0.55vw;
+    box-shadow: 0px 0px 8px 0px var(--pf3-c-shadow) inset;
+    -webkit-box-shadow: 0px 0px 8px 0px var(--pf3-c-shadow) inset;
+    background: var(--pf3-bg-avatar) 50% 30%/cover;
+}
+
+.pf3-header-info {
+    width: 51%;
+    padding-bottom: 3.2vw;
+}
+
+.pf3-name {
+    width: 100%;
+    font: 1.75vw var(--pf3-font-tt);
+    color: var(--pf3-c-light);
+    margin-bottom: 1.2vw;
+}
+
+.pf3-tag-line {
+    width: 100%;
+    padding: 0.7vw 0vw;
+    font: 1.3vw var(--pf3-font);
+    color: var(--pf3-c-accent);
+    font-weight: 500;
+}
+
+.pf3-tag-line-bordered {
+    width: 100%;
+    padding: 0.7vw 0vw;
+    font: 1.3vw var(--pf3-font);
+    color: var(--pf3-c-accent);
+    font-weight: 500;
+    border-style: solid;
+    border-width: 0.12vw 0vw;
+    border-color: var(--pf3-c-accent);
+}
+
+.pf3-main-content {
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 2.2vw;
+    background: var(--pf3-c-dark);
+    border-width: 0vw 0.15vw 0.15vw 0.15vw;
+    border-style: solid;
+    border-color: var(--pf3-c-accent);
+}
+
+.pf3-quote {
+    width: 100%;
+    background: var(--pf3-c-accent);
+    padding: 0.65vw;
+    border-radius: 0.6vw;
+    font: 1.15vw var(--pf3-font);
+    color: var(--pf3-c-dark);
+    text-align: center;
+    font-weight: 500;
+    box-sizing: border-box;
+}
+
+.pf3-columns {
+    width: 100%;
+    margin-top: 2.2vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pf3-col-left, .pf3-col-right {
+    width: 48%;
+}
+
+.pf3-video-wrapper {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border: 0.15vw solid var(--pf3-c-accent);
+    border-radius: 0.55vw;
+    display: grid;
+    box-shadow: 0px 0px 7px 0px var(--pf3-c-shadow) inset;
+    -webkit-box-shadow: 0px 0px 7px 0px var(--pf3-c-shadow-light) inset;
+    box-sizing: border-box;
+}
+
+.pf3-video-inner {
+    width: 100%;
+    grid-area: 1/1;
+    box-sizing: border-box;
+}
+
+.pf3-video-frame {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.4vw;
+    overflow: hidden;
+}
+
+.pf3-video-overlay {
+    width: 100%;
+    grid-area: 1/1;
+    border-radius: 0.55vw;
+    box-sizing: border-box;
+    z-index: 2;
+    background: var(--pf3-bg-overlay) center/cover;
+    mix-blend-mode: screen;
+    opacity: 0.5;
+    -webkit-box-shadow: 0px 0px 7px 0px var(--pf3-c-shadow-light) inset;
+}
+
+.pf3-actions {
+    width: 100%;
+    margin-top: 1.6vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pf3-btn {
+    width: 48.5%;
+    box-sizing: border-box;
+    padding: 0.7vw 1vw;
+    gap: 0.65vw;
+    display: flex;
+    background: var(--pf3-c-accent);
+    border-radius: 0.5vw;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); /* แอนิเมชั่นความสมูทของปุ่ม */
+}
+
+/* เอฟเฟกต์ Hover ของปุ่ม */
+.pf3-btn:hover {
+    opacity: 0.75;
+    transform: translateY(-0.2vw);
+}
+
+.pf3-icon-play {
+    width: 15%;
+    aspect-ratio: 1/1;
+    background: var(--pf3-c-dark);
+    mask: var(--pf3-mask-play) center/cover;
+    -webkit-mask: var(--pf3-mask-play) center/cover;
+}
+
+.pf3-icon-add {
+    width: 15%;
+    aspect-ratio: 1/1;
+    background: var(--pf3-c-dark);
+    mask: var(--pf3-mask-add) center/cover;
+    -webkit-mask: var(--pf3-mask-add) center/cover;
+}
+
+.pf3-btn-text {
+    margin: auto auto;
+    font: 1.15vw var(--pf3-font);
+    color: var(--pf3-c-dark);
+    font-weight: 600;
+}
+
+.pf3-track-header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8vw 0vw;
+    border-bottom: 0.12vw solid var(--pf3-c-accent);
+    margin-top: 1vw;
+    display: flex;
+    font: 1.3vw var(--pf3-font);
+    color: var(--pf3-c-accent);
+    font-weight: 600;
+}
+
+.pf3-th-num, .pf3-td-num {
+    width: 10%;
+    text-align: center;
+}
+
+.pf3-th-title, .pf3-td-title {
+    width: 65%;
+    margin-left: 1vw;
+}
+
+.pf3-th-time, .pf3-td-time {
+    width: 20%;
+    margin-left: 1vw;
+    align-self: flex-end;
+    text-align: right;
+    padding-right: 0.8vw;
+}
+
+.pf3-track-row {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.45vw 0vw;
+    border-bottom: 0.08vw solid var(--pf3-c-accent);
+    display: flex;
+    font: 1.15vw var(--pf3-font);
+    color: var(--pf3-c-accent);
+    font-weight: 400;
+    align-items: flex-start;
+    line-height: 1.3;
+}
+
+.pf3-artist {
+    font-size: 1.05vw;
+    color: var(--pf3-c-light);
+    opacity: 0.65;
+    display: inline-block;
+    margin-top: 0.3vw;
+}
+
+.pf3-sec-title {
+    width: 100%;
+    font: 1.75vw var(--pf3-font-tt);
+    color: var(--pf3-c-light);
+    margin-bottom: 1.2vw;
+}
+
+.pf3-char-grid {
+    width: 100%;
+    display: grid;
+    align-items: start;
+}
+
+.pf3-char-scroll {
+    width: 100%;
+    height: 30vw;
+    overflow-y: auto;
+    grid-area: 1/1;
+    padding-right: 0.5vw; /* เพิ่มพื้นที่ให้ scrollbar นิดหน่อย */
+}
+
+.pf3-char-item {
+    width: 100%;
+    margin-top: 0.9vw;
+    display: flex;
+    gap: 1.2vw;
+}
+
+.pf3-char-img {
+    width: 15%;
+    aspect-ratio: 1/1;
+    border: 0.05vw solid var(--pf3-c-accent);
+    border-radius: 0.2vw;
+    background: var(--pf3-bg-char) center/cover;
+}
+
+.pf3-char-info {
+    width: fit-content;
+    margin: auto 0vw;
+    font: 1.2vw var(--pf3-font);
+    line-height: 1.2;
+    color: var(--pf3-c-accent);
+}
+
+.pf3-char-desc {
+    font-size: 1.05vw;
+    color: var(--pf3-c-light);
+    opacity: 0.65;
+}
+
+.pf3-fade-bottom {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #00000000 90%, var(--pf3-c-dark) 100%);
+    grid-area: 1/1;
+    z-index: 3;
+    pointer-events: none; /* ทำให้การเฟดสีไม่ไปบังการ scroll ทับเนื้อหาด้านล่าง */
+}
