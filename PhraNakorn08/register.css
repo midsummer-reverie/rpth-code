@@ -1,0 +1,279 @@
+/* Import Fonts */
+@import url('https://midsummer-reverie.github.io/font-face/ChulaCharas.css');
+@import url('https://midsummer-reverie.github.io/font-face/MNChaochom.css');
+@import url('https://midsummer-reverie.github.io/font-face/WCSuvarnakorn.css');
+@import url('https://midsummer-reverie.github.io/font-face/PGHomestay.css');
+
+.reg2508-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 3vw;
+}
+
+.reg2508-inner {
+    width: 100%;
+    box-sizing: border-box;
+    background: radial-gradient(circle, rgba(255, 251, 242, 1) 60%, rgba(224, 222, 215, 1) 100%);
+    padding: 1.8vw;
+}
+
+.reg2508-logo {
+    width: 20%;
+    background: #29241f;
+    mask: url(https://iili.io/CR0yN14.png) center/cover;
+    -webkit-mask: url(https://iili.io/CR0yN14.png) center/cover;
+    aspect-ratio: 2.046/1;
+    margin: 2.5vw auto 0vw;
+}
+
+.reg2508-title-1 {
+    width: 80%;
+    margin: 1.85vw auto 1vw;
+    font: 3.4vw 'MN Chaochom', sans-serif;
+    color: #131313;
+    text-align: center;
+}
+
+.reg2508-title-2 {
+    width: 80%;
+    margin: 0vw auto 0.8vw;
+    font: 2.1vw 'Chulacharas', sans-serif;
+    color: #131313;
+    text-align: center;
+    line-height: 0.8;
+    font-weight: 500;
+}
+
+.reg2508-title-3 {
+    width: 80%;
+    margin: 0vw auto 0.8vw;
+    font: 1.6vw 'Chulacharas', sans-serif;
+    color: #131313;
+    text-align: center;
+    line-height: 0.8;
+    font-weight: 500;
+}
+
+/* Date Box */
+.reg2508-date-box {
+    width: fit-content;
+    padding: 0.8vw;
+    border: 0.1vw solid transparent;
+    margin-top: 2.25vw;
+}
+
+.reg2508-date-box::before {
+    content: attr(data-label);
+    display: block;
+    width: fit-content;
+    font: 0.9vw 'Chulacharas', sans-serif;
+    color: #131313;
+}
+
+.reg2508-date-value {
+    width: fit-content;
+    font: 1.8vw 'WC Suvarnakorn', sans-serif;
+    color: #131313;
+    padding-left: 1vw;
+    line-height: 0;
+    margin-top: 0.65vw;
+}
+
+/* Section Header */
+.reg2508-section-header {
+    width: fit-content;
+    padding: 0.5vw 1.2vw;
+    background: #131313;
+    font: 1.2vw 'ChulaCharas', sans-serif;
+    color: #fcfcfc;
+    font-weight: 500;
+    margin-top: 2vw;
+}
+
+/* Part 1 Flex Layout */
+.reg2508-part1-flex {
+    width: 100%;
+    display: flex;
+}
+
+.reg2508-info-col {
+    width: 55%;
+    border: 0.11vw solid #131313;
+    box-sizing: border-box;
+}
+
+/* Dynamic ::before Labels */
+.reg2508-info-box, .reg2508-info-flex-item, .reg2508-part2-box, .reg2508-sig-item-40, .reg2508-sig-item-60 {
+    box-sizing: border-box;
+    font: 1.2vw 'Chulacharas', sans-serif;
+    color: #131313;
+}
+
+.reg2508-info-box::before, .reg2508-info-flex-item::before, .reg2508-part2-box::before, .reg2508-sig-item-40::before, .reg2508-sig-item-60::before {
+    content: attr(data-label);
+    display: block;
+    width: fit-content;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.reg2508-info-box {
+    width: 100%;
+    padding: 0.6vw;
+    border-bottom: 0.11vw solid #131313;
+}
+
+.reg2508-info-box.no-border-bottom, .reg2508-part2-box.no-border-bottom {
+    border-bottom: none;
+}
+
+.reg2508-value {
+    width: fit-content;
+    padding-left: 2vw;
+}
+
+/* Flex rows inside info */
+.reg2508-info-row {
+    width: 100%;
+    display: flex;
+    font: 1.2vw 'Chulacharas', sans-serif;
+    color: #131313;
+    border-bottom: 0.11vw solid #131313;
+}
+
+.reg2508-info-flex-item {
+    padding: 0.6vw;
+}
+
+.reg2508-item-40 { width: 40%; border-right: 0.11vw solid #131313; }
+.reg2508-item-60 { width: 60%; }
+.reg2508-item-55 { width: 55%; border-right: 0.11vw solid #131313; }
+.reg2508-item-45 { width: 45%; }
+
+/* Portrait Column */
+.reg2508-portrait-col {
+    width: 45%;
+    border-width: 0.11vw 0.11vw 0.11vw 0vw;
+    border-style: solid;
+    border-color: #131313;
+    box-sizing: border-box;
+    padding: 1vw;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.reg2508-portrait-img {
+    width: 100%;
+    height: 100%;
+    grid-area: 1/1;
+    box-sizing: border-box;
+    border: 0.45vw solid #fff;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
+    background: var(--char-image) 50% 10%/cover;
+    rotate: 1deg;
+}
+
+.reg2508-portrait-deco {
+    width: 20%;
+    aspect-ratio: 2.896/1;
+    grid-area: 1/1;
+    margin: auto;
+    background: url(https://iili.io/CRNFlRI.png) center/cover;
+    z-index: 3;
+    transform: translateY(-9.3vw);
+}
+
+/* Part 2 Section */
+.reg2508-part2-wrapper {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.11vw solid #131313;
+}
+
+.reg2508-part2-box {
+    width: 100%;
+    padding: 1.6vw;
+    border-bottom: 0.11vw solid #131313;
+}
+
+.reg2508-part2-value {
+    width: fit-content;
+    padding-left: 2vw;
+    text-align: justify;
+}
+
+.reg2508-details {
+    margin-top: 1.5vw;
+}
+
+.reg2508-summary {
+    margin-bottom: 0.6vw;
+    font-weight: 500;
+}
+
+/* Part 3 Relations */
+.reg2508-relations-grid {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 1.2vw 0vw;
+    gap: 1%;
+    flex-wrap: wrap;
+}
+
+.reg2508-relation-card {
+    width: 24.25%;
+    font: 1.2vw 'Chulacharas', sans-serif;
+    color: #131313;
+}
+
+.reg2508-relation-img {
+    width: 100%;
+    aspect-ratio: 1.45/1;
+    border: 0.11vw solid #131313;
+    box-sizing: border-box;
+    background: var(--rel-image-1) center/cover;
+}
+
+.reg2508-relation-name {
+    width: 100%;
+    text-align: center;
+    margin-top: 0.5vw;
+    font-weight: 500;
+}
+
+.reg2508-relation-role {
+    font-weight: 400;
+}
+
+/* Faceclaim & Signature Block */
+.reg2508-signature-row {
+    width: 100%;
+    display: flex;
+    font: 1.2vw 'Chulacharas', sans-serif;
+    color: #131313;
+    border: 0.11vw solid #131313;
+    margin: 2.2vw auto;
+    position: relative;
+}
+
+.reg2508-sig-item-40 {
+    width: 40%;
+    border-right: 0.11vw solid #131313;
+    padding: 0.6vw;
+}
+
+.reg2508-sig-item-60 {
+    width: 60%;
+    padding: 0.6vw;
+}
+
+.reg2508-signature-text {
+    width: fit-content;
+    padding-left: 4vw;
+    font: 1.6vw 'PG Homestay', sans-serif;
+    color: #070a66;
+    text-transform: lowercase;
+    line-height: 1;
+}
