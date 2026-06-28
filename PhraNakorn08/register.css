@@ -54,6 +54,18 @@
     font-weight: 500;
 }
 
+.reg2508-title-1::before {
+    content: "ประวัติตัวละคร พระนคร ๒๕๐๘";
+}
+
+.reg2508-title-2 {
+    content: "สำนักทะเบียน กระทรวงมหาดไทย";
+}
+
+.reg2508-title-3 {
+    content: "ในราชอาณาจักรไทย อันมีพระมหากษัตริย์ทรงเป็นประมุข";
+}
+
 /* Date Box */
 .reg2508-date-box {
     width: fit-content;
