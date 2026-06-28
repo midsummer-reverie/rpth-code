@@ -26,45 +26,21 @@
     margin: 2.5vw auto 0vw;
 }
 
-.reg2508-title-1 {
+/* Titles with ::before */
+.reg2508-title-1, .reg2508-title-2, .reg2508-title-3 {
     width: 80%;
-    margin: 1.85vw auto 1vw;
-    font: 3.4vw 'MN Chaochom', sans-serif;
-    color: #131313;
+    margin: 0vw auto;
     text-align: center;
 }
 
-.reg2508-title-2 {
-    width: 80%;
-    margin: 0vw auto 0.8vw;
-    font: 2.1vw 'Chulacharas', sans-serif;
-    color: #131313;
-    text-align: center;
-    line-height: 0.8;
-    font-weight: 500;
-}
+.reg2508-title-1 { margin-top: 1.85vw; margin-bottom: 1vw; font: 3.4vw 'MN Chaochom', sans-serif; color: #131313; }
+.reg2508-title-1::before { content: "ประวัติตัวละคร พระนคร ๒๕๐๘"; }
 
-.reg2508-title-3 {
-    width: 80%;
-    margin: 0vw auto 0.8vw;
-    font: 1.6vw 'Chulacharas', sans-serif;
-    color: #131313;
-    text-align: center;
-    line-height: 0.8;
-    font-weight: 500;
-}
+.reg2508-title-2 { margin-bottom: 0.8vw; font: 2.1vw 'Chulacharas', sans-serif; color: #131313; line-height: 0.8; font-weight: 500; }
+.reg2508-title-2::before { content: "สำนักทะเบียน กระทรวงมหาดไทย"; }
 
-.reg2508-title-1::before {
-    content: "ประวัติตัวละคร พระนคร ๒๕๐๘";
-}
-
-.reg2508-title-2 {
-    content: "สำนักทะเบียน กระทรวงมหาดไทย";
-}
-
-.reg2508-title-3 {
-    content: "ในราชอาณาจักรไทย อันมีพระมหากษัตริย์ทรงเป็นประมุข";
-}
+.reg2508-title-3 { margin-bottom: 0.8vw; font: 1.6vw 'Chulacharas', sans-serif; color: #131313; line-height: 0.8; font-weight: 500; }
+.reg2508-title-3::before { content: "ในราชอาณาจักรไทย อันมีพระมหากษัตริย์ทรงเป็นประมุข"; }
 
 /* Date Box */
 .reg2508-date-box {
@@ -75,7 +51,7 @@
 }
 
 .reg2508-date-box::before {
-    content: attr(data-label);
+    content: "วันที่ลงทะเบียน:";
     display: block;
     width: fit-content;
     font: 0.9vw 'Chulacharas', sans-serif;
@@ -91,7 +67,7 @@
     margin-top: 0.65vw;
 }
 
-/* Section Header */
+/* Section Headers with ::before */
 .reg2508-section-header {
     width: fit-content;
     padding: 0.5vw 1.2vw;
@@ -101,6 +77,10 @@
     font-weight: 500;
     margin-top: 2vw;
 }
+
+.reg2508-sec-1::before { content: "ส่วนที่ 1: ข้อมูลตัวละคร"; }
+.reg2508-sec-2::before { content: "ส่วนที่ 2: ประวัติตัวละคร"; }
+.reg2508-sec-3::before { content: "ส่วนที่ 3: ความสัมพันธ์กับตัวละครอื่น (ถ้ามี)"; }
 
 /* Part 1 Flex Layout */
 .reg2508-part1-flex {
@@ -114,7 +94,7 @@
     box-sizing: border-box;
 }
 
-/* Dynamic ::before Labels */
+/* Base style for fields */
 .reg2508-info-box, .reg2508-info-flex-item, .reg2508-part2-box, .reg2508-sig-item-40, .reg2508-sig-item-60 {
     box-sizing: border-box;
     font: 1.2vw 'Chulacharas', sans-serif;
@@ -122,7 +102,6 @@
 }
 
 .reg2508-info-box::before, .reg2508-info-flex-item::before, .reg2508-part2-box::before, .reg2508-sig-item-40::before, .reg2508-sig-item-60::before {
-    content: attr(data-label);
     display: block;
     width: fit-content;
     font-size: 1vw;
@@ -161,6 +140,15 @@
 .reg2508-item-60 { width: 60%; }
 .reg2508-item-55 { width: 55%; border-right: 0.11vw solid #131313; }
 .reg2508-item-45 { width: 45%; }
+
+/* Specific Part 1 Labels */
+.reg2508-lbl-thname::before { content: "ชื่อ - นามสกุล ภาษาไทย:"; }
+.reg2508-lbl-enname::before { content: "ชื่อ - นามสกุล ภาษาอังกฤษ:"; }
+.reg2508-lbl-nickname::before { content: "ชื่อเล่น:"; }
+.reg2508-lbl-dob::before { content: "วัน เดือน ปีเกิด:"; }
+.reg2508-lbl-occupation::before { content: "อาชีพ:"; }
+.reg2508-lbl-sexuality::before { content: "รสนิยมทางเพศ:"; }
+.reg2508-lbl-address::before { content: "ที่อยู่:"; }
 
 /* Portrait Column */
 .reg2508-portrait-col {
@@ -224,6 +212,13 @@
     font-weight: 500;
 }
 
+/* Specific Part 2 Labels */
+.reg2508-lbl-royal::before { content: "ประวัติราชสกุล:"; }
+.reg2508-lbl-bio::before { content: "ประวัติและภูมิหลังของตัวละคร:"; }
+.reg2508-lbl-physical::before { content: "ลักษณะทางกายภาพโดยคร่าว:"; }
+.reg2508-lbl-personality::before { content: "ลักษณะนิสัยของตัวละคร:"; }
+.reg2508-lbl-additional::before { content: "ข้อมูลเพิ่มเติม:"; }
+
 /* Part 3 Relations */
 .reg2508-relations-grid {
     width: 100%;
@@ -271,16 +266,11 @@
     position: relative;
 }
 
-.reg2508-sig-item-40 {
-    width: 40%;
-    border-right: 0.11vw solid #131313;
-    padding: 0.6vw;
-}
+.reg2508-sig-item-40 { width: 40%; border-right: 0.11vw solid #131313; padding: 0.6vw; }
+.reg2508-sig-item-40::before { content: "ชื่อเฟซเคลม:"; }
 
-.reg2508-sig-item-60 {
-    width: 60%;
-    padding: 0.6vw;
-}
+.reg2508-sig-item-60 { width: 60%; padding: 0.6vw; }
+.reg2508-sig-item-60::before { content: "ลายมือชื่อ:"; }
 
 .reg2508-signature-text {
     width: fit-content;
