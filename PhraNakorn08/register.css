@@ -170,7 +170,7 @@
     border: 0.45vw solid #fff;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.55);
-    background: var(--char-image) 50% 10%/cover;
+    background: var(--char-image);
     rotate: 1deg;
 }
 
@@ -241,7 +241,7 @@
     aspect-ratio: 1.45/1;
     border: 0.11vw solid #131313;
     box-sizing: border-box;
-    background: var(--rel-image-1) center/cover;
+    background: var(--rel-image-1);
 }
 
 .reg2508-relation-name {
