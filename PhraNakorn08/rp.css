@@ -3,21 +3,19 @@
 @import url('https://midsummer-reverie.github.io/font-face/MNChaochom.css');
 @import url('https://midsummer-reverie.github.io/font-face/KlabBaan.css');
 
-/* Main Wrapper */
-.2508rp-container {
+.rp2508-container {
     width: 75%;
     margin: auto;
-    /* รับค่าภาพพื้นหลังมาจากตัวแปร --bg-image ใน HTML */
     background: linear-gradient(#05050580, #05050580), var(--bg-image) center/cover;
 }
 
-.2508rp-header-banner {
+.rp2508-header-banner {
     width: 100%;
     aspect-ratio: 5.361/1;
     background: url(https://iili.io/CAFfdb9.md.png) center/cover;
 }
 
-.2508rp-grid-layout {
+.rp2508-grid-layout {
     width: 90%;
     margin: auto;
     display: grid;
@@ -26,7 +24,7 @@
     z-index: 2;
 }
 
-.2508rp-deco-top {
+.rp2508-deco-top {
     width: 40%;
     aspect-ratio: 1/1;
     grid-area: 1/2/3/3;
@@ -38,7 +36,7 @@
     rotate: 10deg;
 }
 
-.2508rp-portrait {
+.rp2508-portrait {
     width: 100%;
     margin-left: 1vw;
     aspect-ratio: 1/1.12;
@@ -47,18 +45,17 @@
     grid-area: 2/1/4/3;
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    /* รับค่าภาพบุคคลมาจากตัวแปร --char-image ใน HTML */
     background: var(--char-image) center/cover;
 }
 
-.2508rp-title-area {
+.rp2508-title-area {
     width: 55%;
     grid-area: 2/2/3/5;
     margin-top: 3vw;
     justify-self: right;
 }
 
-.2508rp-title-main {
+.rp2508-title-main {
     width: 100%;
     font: 3.8vw 'MN Chaochom', sans-serif;
     color: #fffffc;
@@ -66,7 +63,7 @@
     line-height: 1;
 }
 
-.2508rp-title-sub {
+.rp2508-title-sub {
     width: 100%;
     font: 3vw 'MN Chaochom', sans-serif;
     color: #fffffc;
@@ -75,14 +72,14 @@
     box-sizing: border-box;
 }
 
-.2508rp-location {
+.rp2508-location {
     width: fit-content;
     margin: 2vw auto;
     font: 1.3vw 'ChulaCharas', sans-serif;
     color: #fffffc;
 }
 
-.2508rp-content-box {
+.rp2508-content-box {
     width: 92%;
     box-sizing: border-box;
     padding: 2vw;
@@ -96,14 +93,14 @@
     text-align: justify;
 }
 
-.2508rp-note {
+.rp2508-note {
     width: 100%;
     margin-top: 1.2vw;
     font-weight: 500;
     text-align: right;
 }
 
-.2508rp-deco-bottom {
+.rp2508-deco-bottom {
     width: 45%;
     aspect-ratio: 0.773/1;
     background: url(https://iili.io/CAJzLZX.png) center/cover;
@@ -115,14 +112,14 @@
     rotate: 5deg;
 }
 
-.2508rp-footer {
+.rp2508-footer {
     width: 100%;
     margin-top: -4.8vw;
     display: grid;
     aspect-ratio: 3.2587/1;
 }
 
-.2508rp-footer-layer1 {
+.rp2508-footer-layer1 {
     width: 100%;
     height: 100%;
     grid-area: 1/1;
@@ -130,7 +127,7 @@
     z-index: 3;
 }
 
-.2508rp-footer-layer2 {
+.rp2508-footer-layer2 {
     width: 100%;
     height: 60%;
     grid-area: 1/1;
