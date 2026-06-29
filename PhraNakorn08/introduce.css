@@ -1,0 +1,159 @@
+/* Import Fonts */
+@import url('https://midsummer-reverie.github.io/font-face/MNChaochom.css');
+@import url('https://midsummer-reverie.github.io/font-face/ChulaCharas.css');
+
+/* Main Layout Containers */
+.int2508-main-container {
+    width: 100%;
+    box-sizing: border-box;
+    background: #594034;
+    display: grid;
+    position: relative;
+    overflow: hidden;
+}
+
+.int2508-overlay-layer {
+    width: 100%;
+    height: 100%;
+    grid-area: 1/1;
+    background: url(https://iili.io/CRkqras.png) center/80%;
+    mix-blend-mode: overlay;
+    opacity: 0.7;
+}
+
+.int2508-content-wrapper {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    grid-area: 1/1;
+    padding: 3vw;
+    z-index: 4;
+}
+
+.int2508-inner-card {
+    width: 100%;
+    box-sizing: border-box;
+    background: #f7f7f5;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.6);
+}
+
+.int2508-body-section {
+    width: 100%;
+    background: #f7f7f5;
+    box-sizing: border-box;
+    padding: 2vw;
+}
+
+/* Header Components */
+.int2508-image-header-box {
+    width: 100%;
+    background: linear-gradient(#05050580, #05050580), var(--bg-image) center/cover;
+}
+
+.int2508-mask-top {
+    width: 100%;
+    aspect-ratio: 7.8/1;
+    background: #f7f7f5;
+    mask: url(https://iili.io/CR1Bqle.png) center/cover;
+    -webkit-mask: url(https://iili.io/CR1Bqle.png) center/cover;
+}
+
+.int2508-mask-logo {
+    width: 35%;
+    background: #f7f7f5;
+    mask: url(https://iili.io/CR8k3yN.png) center/cover;
+    -webkit-mask: url(https://iili.io/CR8k3yN.png) center/cover;
+    aspect-ratio: 2.046/1;
+    margin: 2vw auto 1.2vw;
+}
+
+.int2508-mask-bottom {
+    width: 100%;
+    aspect-ratio: 8.49/1;
+    background: #f7f7f5;
+    mask: url(https://iili.io/CR1qfyv.png) center/cover;
+    -webkit-mask: url(https://iili.io/CR1qfyv.png) center/cover;
+}
+
+/* Standardized Headings */
+.int2508-standard-heading {
+    width: 80%;
+    margin: 2.5vw auto 0.5vw;
+    font: 2.8vw 'MN Chaochom', sans-serif;
+    color: #334f30;
+    line-height: 1;
+    text-shadow: 0px 0px 2px rgba(0,0,0,0.6);
+}
+
+/* Content Boxes Classified by Format */
+.int2508-gradient-image-box {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 2vw;
+    background: linear-gradient(0deg, rgba(69, 63, 54, 1) 30%, rgba(255, 255, 255, 0) 100%), var(--bg-image) center/cover;
+    margin: auto;
+    font: 1.2vw 'Chulacharas', sans-serif;
+    color: #f7f7f5;
+    text-align: justify;
+    line-height: 1.4;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border: 0.1vw solid #edebdf;
+    padding-top: 20vw;
+}
+
+.int2508-text-only-box {
+    width: 80%;
+    box-sizing: border-box;
+    padding: 1.2vw;
+    margin: auto;
+    font: 1.3vw 'Chulacharas', sans-serif;
+    color: #131313;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+.int2508-gradient-footer-box {
+    width: 80%;
+    margin: 2.5vw auto 1.2vw;
+    background: linear-gradient(#05050580, #05050580), var(--bg-image) center/cover;
+    font: 1.2vw 'Chulacharas', sans-serif;
+    color: #f7f7f5;
+    text-align: center;
+    line-height: 1.4;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+    border: 0.1vw solid #edebdf;
+    box-sizing: border-box;
+    padding: 2vw;
+}
+
+.int2508-footer-highlight {
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+/* Decorative Background Elements */
+.int2508-deco-left {
+    width: 25%;
+    aspect-ratio: 0.52/1;
+    background: url(https://iili.io/CReS20x.png) center/cover;
+    z-index: 6;
+    grid-area: 1/1;
+    align-self: end;
+    rotate: -2deg;
+    margin-left: -2vw;
+}
+
+.int2508-deco-right {
+    width: 42%;
+    aspect-ratio: 1.1/1;
+    background: url(-) center/cover;
+    z-index: 6;
+    grid-area: 1/1;
+    rotate: 24deg;
+    position: absolute;
+    right: -3vw;
+    top: -13vw;
+}
