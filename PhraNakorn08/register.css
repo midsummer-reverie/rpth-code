@@ -160,6 +160,7 @@
     padding: 1vw;
     display: grid;
     grid-template-columns: 1fr;
+    position: relative;
 }
 
 .reg2508-portrait-img {
@@ -181,7 +182,9 @@
     margin: auto;
     background: url(https://iili.io/CRNFlRI.png) center/cover;
     z-index: 3;
-    transform: translateY(-9.3vw);
+    position: absolute;
+    top: -0.85vw;
+    left: 9.3vw;
 }
 
 /* Part 2 Section */
