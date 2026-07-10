@@ -27,7 +27,7 @@
     grid-area: 1 / 2 / 3 / 4;
     z-index: 2;
     aspect-ratio: 1.567 / 1;
-    background: url(https://iili.io/C0V9FRt.png) 50% 20% / cover;
+    background: url(https://iili.io/C0V9FRt.png) 80% 30%/110%;
     mask: url(https://iili.io/C0MruHl.png) center / cover;
     -webkit-mask: url(https://iili.io/C0MruHl.png) center / cover;
     justify-self: end;
