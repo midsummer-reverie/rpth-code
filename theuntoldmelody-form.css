@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Baskervville:ital,wght@0,400..700;1,400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+.tum-fr-wrapper {
+    width: 100%;
+}
+
+.tum-fr-wrapper a {
+    color: #333333;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: text-shadow 0.3s ease;
+}
+
+.tum-fr-wrapper a:hover {
+    text-shadow: 0px 0px 4px rgba(51,51,51,0.4);
+}
+
+.tum-fr-grid {
+    width: 60%;
+    display: grid;
+    grid-template-rows: 3vw auto 3vw;
+    grid-template-columns: 3vw 1fr 3vw;
+    margin: auto;
+}
+
+.tum-fr-bg-top {
+    width: 80%;
+    grid-area: 1 / 2 / 3 / 4;
+    z-index: 2;
+    aspect-ratio: 1.567 / 1;
+    background: url(https://iili.io/C0V9FRt.png) 50% 20% / cover;
+    mask: url(https://iili.io/C0MruHl.png) center / cover;
+    -webkit-mask: url(https://iili.io/C0MruHl.png) center / cover;
+    justify-self: end;
+}
+
+.tum-fr-bg-bottom {
+    width: 70%;
+    grid-area: 2 / 1 / 4 / 3;
+    aspect-ratio: 1 / 1;
+    z-index: 1;
+    background: url(https://iili.io/C0Mr5D7.png) center / cover;
+    margin: 0.4vw 0.8vw;
+    align-self: end;
+}
+
+.tum-fr-content-box {
+    width: 100%;
+    grid-area: 2 / 2 / 3 / 3;
+    box-sizing: border-box;
+    padding: 1.6vw;
+    background: #f7f4ed;
+    z-index: 3;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.tum-fr-banner-box {
+    width: 100%;
+    box-sizing: border-box;
+    border: 0.08vw solid #333333;
+    background: var(--tum-fr-color);
+}
+
+.tum-fr-banner-mask {
+    width: 100%;
+    background: #333333;
+    aspect-ratio: 3.1 / 1;
+    mask: url(https://iili.io/ClpqQja.png) center / 80% no-repeat;
+    -webkit-mask: url(https://iili.io/ClpqQja.png) center / 80% no-repeat;
+}
+
+.tum-fr-info-row {
+    width: 100%;
+    margin-top: 1.2vw;
+    display: flex;
+    border-width: 0.06vw 0vw;
+    border-style: solid;
+    border-color: #333333;
+    box-sizing: border-box;
+}
+
+.tum-fr-info-col1 {
+    width: 55%;
+    border-right: 0.06vw solid #333333;
+    padding: 0.35vw 0vw;
+}
+
+.tum-fr-info-col2 {
+    width: 45%;
+    padding: 0.35vw 0vw;
+}
+
+.tum-fr-info-label {
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 1vw;
+    font: 0.85vw 'Google Sans';
+    color: var(--tum-fr-color);
+    opacity: 0.9;
+    font-weight: 500;
+    filter: brightness(0.7);
+}
+
+.tum-fr-info-value {
+    width: 100%;
+    box-sizing: border-box;
+    font: 1vw 'Google Sans';
+    color: #333333;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tum-fr-text-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.6vw;
+    background: var(--tum-fr-color);
+    font: 1vw 'Google Sans';
+    color: #333333;
+    line-height: 1.4;
+}
+
+.tum-fr-location-row {
+    width: 100%;
+}
+
+.tum-fr-tags-container {
+    width: 95%;
+    margin: 1vw auto;
+    display: flex;
+    gap: 0.85vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tum-fr-tag-1 {
+    width: fit-content;
+    padding: 0.25vw 0.55vw;
+    background: #f7f4ed;
+    font-weight: 600;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.45);
+    rotate: -1deg;
+}
+
+.tum-fr-tag-2 {
+    width: fit-content;
+    padding: 0.25vw 0.55vw;
+    background: #f7f4ed;
+    font-weight: 600;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.45);
+    rotate: 2deg;
+}
+
+.tum-fr-tag-3 {
+    width: fit-content;
+    padding: 0.25vw 0.55vw;
+    background: #f7f4ed;
+    font-weight: 600;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.45);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.45);
+    rotate: -2deg;
+}
+
+.tum-fr-evidence {
+    width: 100%;
+    margin-top: 0.8vw;
+}
+
+.tum-fr-quote {
+    width: 50%;
+    margin-top: 2vw;
+    font: 0.85vw 'Baskervville', serif;
+    font-style: italic;
+    font-weight: 500;
+    margin-bottom: -0.6vw;
+    margin-left: -0.6vw;
+    line-height: 1;
+    color: var(--tum-fr-color);
+    filter: brightness(0.75);
+}
+
+.tum-fr-front-img {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    grid-area: 2 / 2 / 4 / 4;
+    z-index: 4;
+    justify-self: end;
+    align-self: end;
+    border: 0.4vw solid #fffffc;
+    background: var(--tum-fr-img);
+    rotate: 2deg;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    margin-bottom: -0.6vw;
+}
