@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Baskervville:ital,wght@0,400..700;1,400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://midsummer-reverie.github.io/font-face/THChara.css');
+
+.tum-th-container { width: 100%; position: relative; }
+.tum-th-grid { width: 90%; margin: auto; display: grid; }
+.tum-th-bg-color { width: 100%; grid-area: 1/1; z-index: 2; background: #ffffff; }
+.tum-th-bg-image { width: 100%; grid-area: 1/1; z-index: 3; background: url(https://iili.io/ClpqZZJ.png) center/cover; opacity: 0.8; }
+.tum-th-content { width: 100%; grid-area: 1/1; z-index: 4; box-sizing: border-box; padding: 2.3vw; }
+.tum-th-mask-top { width: 80%; margin: 1vw auto; background: #33291e; aspect-ratio: 3.1/1; mask: url(https://iili.io/ClpqQja.png) center/cover; -webkit-mask: url(https://iili.io/ClpqQja.png) center/cover; }
+.tum-th-divider { width: 50%; margin: 3vw auto 1.5vw; aspect-ratio: 1/0.2; background: url(https://iili.io/ClpD1ON.png) center/cover; }
+.tum-th-title-small { width: fit-content; margin: auto; font: 1.2vw 'Bai Jamjuree'; color: #33291e; font-weight: 500; }
+.tum-th-paragraph { width: 90%; margin: 1.2vw auto 1vw; font: 1.15vw 'Bai Jamjuree'; color: #33291e; text-align: justify; font-weight: 300; }
+.tum-th-banner { width: 75%; margin: 3vw auto 0vw; aspect-ratio: 2/1; border: 0.03vw solid #33291e; box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5); -webkit-box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75); background: url(https://iili.io/ClyOtQS.png) center/cover; }
+.tum-th-section-header { width: 50%; display: flex; gap: 1vw; margin-top: 4vw; }
+.tum-th-icon { width: 10%; aspect-ratio: 1/1; background: #33291e; mask: url(https://iili.io/ClpSr8u.png) center/cover; -webkit-mask: url(https://iili.io/ClpSr8u.png) center/cover; }
+.tum-th-section-title { width: fit-content; font: 1.85vw 'Bai Jamjuree'; color: #33291e; align-self: center; font-weight: 600; }
+.tum-th-section-body { width: 95%; margin: 2.4vw auto 0vw; font: 1.15vw 'Bai Jamjuree'; color: #131313; line-height: 1.5; font-weight: 300; }
+.tum-th-highlight { color: #33291e; }
+.tum-th-footer-note { width: 75%; margin: 3vw auto 0vw; font: 1.05vw 'Bai Jamjuree'; color: #ffffff; line-height: 1.5; font-weight: 400; box-sizing: border-box; padding: 1.5vw; background: #5a5046; border-radius: 0.8vw; text-align: center; box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75); -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.75); }
+.tum-th-corner-img { width: 25%; aspect-ratio: 1/1; background: url(https://iili.io/C0J0ZiJ.png) center/cover; position: absolute; bottom: -5.2vw; left: -2.4vw; z-index: 6; }
