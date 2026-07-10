@@ -118,6 +118,9 @@
     font: 1vw 'Google Sans';
     color: #333333;
     line-height: 1.4;
+    border-width: 0vw 0.06vw 0.06vw 0.06vw;
+    border-color: #333333;
+    border-style: solid;
 }
 
 .tum-fr-location-row {
