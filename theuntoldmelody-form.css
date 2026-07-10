@@ -182,6 +182,10 @@
     filter: brightness(0.75);
 }
 
+.tum-fr-quote::before {
+    content: "Music, at its essence, is what gives us memories. And the longer a song has existed in our lives, the more memories we have of it.";
+}
+
 .tum-fr-front-img {
     width: 30%;
     aspect-ratio: 1 / 1;
