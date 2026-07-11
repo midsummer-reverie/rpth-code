@@ -107,7 +107,7 @@
 }
 
 .tumrp-sign::before {
-    content: var(--displaname);
+    content: var(--displayname);
 }
 
 .tumrp-note {
