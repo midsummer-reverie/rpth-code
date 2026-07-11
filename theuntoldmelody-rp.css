@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Baskervville:ital,wght@0,400..700;1,400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+@import url('https://midsummer-reverie.github.io/font-face/BethanyElingston.css');
+@import url('https://midsummer-reverie.github.io/font-face/Hertine.css');
+
+.tumrp-wrapper {
+    width: 100%;
+    margin-bottom: 3vw;
+}
+
+.tumrp-grid {
+    width: 65%;
+    display: grid;
+    grid-template-rows: 3vw auto 3vw;
+    grid-template-columns: 3vw 1fr 3vw;
+    margin: auto;
+}
+
+.tumrp-bg-mask {
+    width: 80%;
+    grid-area: 1 / 2 / 3 / 4;
+    z-index: 2;
+    aspect-ratio: 1.567 / 1;
+    background: #ffffff;
+    mask: url(https://iili.io/C0MruHl.png) center / cover;
+    -webkit-mask: url(https://iili.io/C0MruHl.png) center / cover;
+    justify-self: end;
+    box-sizing: border-box;
+    padding: 1.6vw;
+}
+
+.tumrp-bg-img-inner {
+    width: 100%;
+    height: 100%;
+    background: var(--tumrp-bg-inner);
+}
+
+.tumrp-bg-paper {
+    width: 70%;
+    grid-area: 2 / 1 / 4 / 3;
+    aspect-ratio: 1 / 1;
+    z-index: 1;
+    background: url(https://iili.io/C0Mr5D7.png) center / cover;
+    margin: 0.4vw 0.8vw;
+    align-self: end;
+}
+
+.tumrp-content {
+    width: 100%;
+    grid-area: 2 / 2 / 3 / 3;
+    box-sizing: border-box;
+    padding: 1.6vw;
+    background: #f7f4ed;
+    z-index: 3;
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+.tumrp-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tumrp-title {
+    width: 78%;
+    font: 3vw 'Bethany Elingston';
+    text-transform: uppercase;
+    color: #333333;
+    align-self: center;
+    line-height: 1.6;
+    margin-top: 0.6vw;
+}
+
+.tumrp-icon {
+    width: 10%;
+    aspect-ratio: 1 / 1;
+    background: var(--tumrp-color);
+    mask: var(--tumrp-icon-img);
+    -webkit-mask: var(--tumrp-icon-img);
+    align-self: center;
+    filter: brightness(0.8);
+}
+
+.tumrp-textbox {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.6vw;
+    background: var(--tumrp-color);
+    font: 1vw 'Google Sans';
+    color: #333333;
+    line-height: 1.4;
+    margin-top: 1vw;
+    border: 0.1vw solid #333333;
+}
+
+.tumrp-sign {
+    width: 100%;
+    font: 2vw 'Hertine';
+    color: var(--tumrp-color);
+    text-transform: lowercase;
+    text-align: right;
+    filter: brightness(0.85);
+    margin-top: 1vw;
+    line-height: 1;
+    opacity: 0.8;
+    margin-bottom: -1vw;
+}
+
+.tumrp-sign::before {
+    content: var(--displaname);
+}
+
+.tumrp-note {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.2vw 1.6vw;
+    background: var(--tumrp-color);
+    font: 1vw 'Google Sans';
+    color: #333333;
+    line-height: 1.4;
+    margin-top: 1vw;
+    border: 0.1vw solid #333333;
+    font-weight: 500;
+}
+
+.tumrp-front-img {
+    width: 28%;
+    aspect-ratio: 1 / 1;
+    grid-area: 2 / 2 / 4 / 4;
+    z-index: 4;
+    justify-self: end;
+    align-self: end;
+    border: 0.4vw solid #fffffc;
+    background: var(--tumrp-img);
+    rotate: 2deg;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    margin-bottom: -0.6vw;
+}
