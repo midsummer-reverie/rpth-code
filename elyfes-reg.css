@@ -1,0 +1,25 @@
+@import url(https://midsummer-reverie.github.io/font-face/MNCopper.css);
+@import url(https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap);
+
+
+.efreg-container {
+    --efreg-black-75: #000000bf;
+    width: 85%;
+    margin: auto;
+}
+.efreg-title { width: 80%; font: 3vw 'MN Copper'; color: #fff; text-shadow: 0px 0px 7px var(--efreg-border-glow); margin-top: 1.6vw; }
+.efreg-main-box { width: 100%; display: grid; box-sizing: border-box; background: var(--efreg-bg); }
+.efreg-grad { width: 100%; grid-area: 1/1; background: linear-gradient(180deg, var(--efreg-black) 30%, var(--efreg-grad-end) 100%); z-index: 2; }
+.efreg-pattern { width: 100%; background: url('https://iili.io/CcS3NRe.png') center/25%; grid-area: 1/1; z-index: 3; mix-blend-mode: overlay; opacity: 0.3; }
+.efreg-spacer { width: 100%; grid-area: 1/1; z-index: 5; padding-bottom: 3vw; }
+.efreg-gif { width: 100%; background: url('https://64.media.tumblr.com/e71d3ce26dc8047664b681e1c62326b7/6e3707da42ee0d9f-08/s1280x1920/c0056fdfb954a0eec9319ee31aaa70faf8fb57dd.gif') center/40%; grid-area: 1/1; z-index: 4; mix-blend-mode: normal; opacity: 0.5; }
+.efreg-content-wrap { width: 100%; grid-area: 1/1; z-index: 6; box-sizing: border-box; padding: 3vw; }
+.efreg-char-box { width: 100%; box-sizing: border-box; margin-top: 1vw; box-shadow: 0px 0px 8px 0px var(--efreg-border-glow), 0px 0px 6px 0px var(--efreg-black-75) inset; -webkit-box-shadow: 0px 0px 6px 0px var(--efreg-border-glow), 0px 0px 6px 0px var(--efreg-black-75) inset; border: 0.04vw solid var(--efreg-border); border-radius: 1.3vw; display: grid; font: 1.1vw 'Google Sans'; color: #fff; line-height: 1.75; text-align: justify; text-shadow: 0px 0px 3px var(--efreg-text-sh); }
+.efreg-char-bg-wrap { width: 100%; display: flex; grid-area: 1/1; z-index: 2; border-radius: 1.3vw; box-sizing: border-box; }
+.efreg-char-bg-left { width: 60%; background: var(--efreg-black); border-radius: 1.3vw 0vw 0vw 1.3vw; }
+.efreg-char-bg-right { width: 40%; background: linear-gradient(90deg, var(--efreg-black) 0%, transparent 100%), var(--efreg-img-char) center/cover; border-radius: 0vw 1.3vw 1.3vw 0vw; }
+.efreg-char-text-wrap { width: 100%; border-radius: 1.3vw; grid-area: 1/1; z-index: 4; box-sizing: border-box; padding: 1.7vw; }
+.efreg-char-text { width: 75%; }
+.efreg-flex-box { width: 100%; margin-top: 1.25vw; font: 1.1vw 'Google Sans'; color: #fff; line-height: 1.75; text-align: justify; display: flex; justify-content: space-between; }
+.efreg-dress-pic { width: 42%; box-sizing: border-box; box-shadow: 0px 0px 8px 0px var(--efreg-border-glow), 0px 0px 6px 0px var(--efreg-black-75) inset; -webkit-box-shadow: 0px 0px 6px 0px var(--efreg-border-glow), 0px 0px 6px 0px var(--efreg-black-75) inset; border: 0.04vw solid var(--efreg-border); border-radius: 1.3vw; aspect-ratio: 1/1.45; background: var(--efreg-img-dress) center/cover; align-self: start; }
+.efreg-desc-box { width: 56%; box-sizing: border-box; box-shadow: 0px 0px 8px 0px var(--efreg-border-glow), 0px 0px 6px 0px var(--efreg-black-75) inset; -webkit-box-shadow: 0px 0px 6px 0px var(--efreg-border-glow); border: 0.04vw solid var(--efreg-border); border-radius: 1.3vw; background: var(--efreg-bg-op); min-height: 10vw; padding: 1.4vw; }
