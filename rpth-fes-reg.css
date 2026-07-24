@@ -12,7 +12,7 @@
 .efreg-grad { width: 100%; grid-area: 1/1; background: linear-gradient(180deg, var(--efreg-black) 30%, var(--efreg-grad-end) 100%); z-index: 2; }
 .efreg-pattern { width: 100%; background: url('https://iili.io/CcS3NRe.png') center/25%; grid-area: 1/1; z-index: 3; mix-blend-mode: overlay; opacity: 0.3; }
 .efreg-spacer { width: 100%; grid-area: 1/1; z-index: 5; padding-bottom: 3vw; }
-.efreg-gif { width: 100%; background: url('https://64.media.tumblr.com/e71d3ce26dc8047664b681e1c62326b7/6e3707da42ee0d9f-08/s1280x1920/c0056fdfb954a0eec9319ee31aaa70faf8fb57dd.gif') center/40%; grid-area: 1/1; z-index: 4; mix-blend-mode: normal; opacity: 0.5; }
+.efreg-gif { width: 100%; background: url(https://iili.io/ClrgYBV.gif) center / 40%; grid-area: 1/1; z-index: 4; mix-blend-mode: normal; opacity: 0.5; }
 .efreg-content-wrap { width: 100%; grid-area: 1/1; z-index: 6; box-sizing: border-box; padding: 3vw; }
 .efreg-char-box { width: 100%; box-sizing: border-box; margin-top: 1vw; box-shadow: 0px 0px 8px 0px var(--efreg-border-glow), 0px 0px 6px 0px var(--efreg-black-75) inset; -webkit-box-shadow: 0px 0px 6px 0px var(--efreg-border-glow), 0px 0px 6px 0px var(--efreg-black-75) inset; border: 0.04vw solid var(--efreg-border); border-radius: 1.3vw; display: grid; font: 1.1vw 'Google Sans'; color: #fff; line-height: 1.75; text-align: justify; text-shadow: 0px 0px 3px var(--efreg-text-sh); }
 .efreg-char-bg-wrap { width: 100%; display: flex; grid-area: 1/1; z-index: 2; border-radius: 1.3vw; box-sizing: border-box; }
