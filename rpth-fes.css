@@ -53,6 +53,7 @@
     justify-self: center;
     z-index: 4;
     align-self: end;
+    pointer-events: none;
 }
 .fest-content {
     width: 100%;
