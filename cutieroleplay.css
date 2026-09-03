@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://midsummer-reverie.github.io/font-face/QuickLove.css');
+@import url('https://midsummer-reverie.github.io/font-face/baanfonts.css');
+@import url('https://midsummer-reverie.github.io/font-face/FCPalette.css');
+
+.ctr-container {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 2.4vw auto 1vw 1.3vw 1vw auto;
+    grid-template-columns: 2.6vw 1fr 2.6vw;
+}
+.ctr-petname {
+    width: fit-content;
+    position: relative;
+    z-index: 8;
+    grid-area: 1 / 2 / 3 / 3;
+    justify-self: right;
+    margin-right: 4vw;
+    margin-top: 0.25vw;
+    font: 2.8vw 'Quick Love';
+    color: var(--accl1);
+    -webkit-text-stroke: 0.7vw var(--rpborder);
+    paint-order: stroke fill;
+}
+.ctr-top {
+    width: 100%;
+    height: 100%;
+    grid-area: 2 / 2 / 4 / 3;
+    box-sizing: border-box;
+    padding: 1vw;
+    border: 0.35vw solid var(--rpborder);
+    border-radius: 1.2vw;
+    overflow: hidden;
+    background: linear-gradient(0deg, var(--accl2) 40%, var(--accl3) 40%), #000;
+}
+.ctr-top-in {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+.ctr-petframe {
+    width: 28%;
+    box-sizing: border-box;
+    background: #fff;
+    border: 0.15vw solid var(--rpborder);
+    aspect-ratio: 1 / 1;
+    border-radius: 0.8vw;
+    overflow: hidden;
+}
+.ctr-petpic {
+    width: 100%;
+    height: 100%;
+    background: var(--petpic), var(--accl1);
+}
+.ctr-petde {
+    width: 70%;
+    box-sizing: border-box;
+    padding: 1.6vw;
+    border: 0.15vw solid var(--rpborder);
+    border-radius: 0.8vw;
+    overflow: hidden;
+    background: #ffffff;
+    font: 1.65vw 'JaoTomato';
+    color: var(--txtcl-rp);
+    line-height: 1.4;
+}
+.ctr-petde-owner {
+    width: 100%;
+    margin-bottom: 0.3vw;
+}
+.ctr-petde-owner::before {
+    padding: 0.2vw 1vw;
+    background: var(--accl1);
+    color: var(--rpborder);
+    border-radius: 1000px;
+    line-height: 1;
+    margin-right: 1.2vw;
+    content: 'Owner';
+}
+.ctr-petde-breed {
+    width: 100%;
+    margin-bottom: 0.3vw;
+}
+.ctr-petde-breed::before {
+    padding: 0.2vw 1vw;
+    background: var(--accl1);
+    color: var(--rpborder);
+    border-radius: 1000px;
+    line-height: 1;
+    margin-right: 1.2vw;
+    content: 'Breed';
+}
+.ctr-petde-age {
+    width: 100%;
+    margin-bottom: 0.3vw;
+}
+.ctr-petde-age::before {
+    padding: 0.2vw 1vw;
+    background: var(--accl1);
+    color: var(--rpborder);
+    border-radius: 1000px;
+    line-height: 1;
+    margin-right: 1.2vw;
+    content: 'Age';
+}
+.ctr-bottom {
+    width: 100%;
+    height: 100%;
+    grid-area: 5 / 2 / 7 / 3;
+    box-sizing: border-box;
+    padding: 1vw;
+    border: 0.35vw solid var(--rpborder);
+    border-radius: 1.2vw;
+    overflow: hidden;
+    background: linear-gradient(0deg, var(--accl2) 40%, var(--accl3) 40%), #000;
+}
+.ctr-bggrid {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    background: var(--accl1);
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    border-radius: 1vw;
+}
+.ctr-bgpt {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    mask: url(https://iili.io/Cprvqa2.md.png) center / 60%;
+    opacity: 0.8;
+    mix-blend-mode: overlay;
+    grid-area: 1 / 1 / 3 / 2;
+}
+.ctr-sky {
+    width: 100%;
+    aspect-ratio: 2.5 / 1;
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: start;
+    background: url(https://cdn.imgchest.com/files/885b5d147e48.png) center / cover;
+    z-index: 5;
+}
+.ctr-field {
+    width: 100%;
+    aspect-ratio: 2.86 / 1;
+    grid-area: 2 / 1 / 3 / 2;
+    align-self: start;
+    background: url(https://cdn.imgchest.com/files/5b4eac229fcc.png) center / cover;
+    z-index: 5;
+    margin-top: -5vw;
+}
+.ctr-text {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 1.8vw;
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 6;
+}
+.ctr-rp {
+    width: 100%;
+    background: #ffffffe6;
+    border-radius: 1vw;
+    font: 1.1vw 'Mali';
+    color: var(--txtcl-rp);
+    border: 0.2vw solid var(--rpborder);
+    line-height: 1.6;
+    box-sizing: border-box;
+    padding: 2vw;
+    text-align: justify;
+}
+.ctr-note {
+    font-weight: 500;
+    margin-top: 1.4vw;
+}
+.ctr-rings {
+    width: 75%;
+    margin: auto;
+    grid-area: 3 / 2 / 6 / 3;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+.ctr-ring-group {
+    width: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+.ctr-ring {
+    width: 48%;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 2.6;
+    border: 0.22vw solid var(--rpborder);
+    border-radius: 1000px;
+    background: var(--accl1);
+}
