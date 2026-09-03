@@ -48,7 +48,7 @@
     width: fit-content;
     max-width: 65%;
     padding: 1vw;
-    border: 0.2vw solid #88cee5;
+    border: 0.2vw solid var(--bgcl);
     border-radius: 1000px;
     background: #ffffff;
     margin: auto;
@@ -56,10 +56,10 @@
 .ctt-locname-inner {
     width: fit-content;
     padding: 1vw 2vw;
-    border: 0.12vw dashed #88cee5;
+    border: 0.12vw dashed var(--bgcl);
     border-radius: 1000px;
     font: 2vw 'JaoAmericano';
-    color: #88cee5;
+    color: var(--bgcl);
 }
 .ctt-png1 {
     width: 16%;
