@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Kaisei+Decol:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://midsummer-reverie.github.io/font-face/QuickLove.css');
+@import url('https://midsummer-reverie.github.io/font-face/baanfonts.css');
+@import url('https://midsummer-reverie.github.io/font-face/FCPalette.css');
+
+.cta-container {
+    width: 100%;
+    display: grid;
+    position: relative;
+    line-height: 1.4;
+}
+.cta-bg {
+    width: 100%;
+    height: 100%;
+    grid-area: 1 / 1;
+    z-index: 2;
+    background: var(--bgcl);
+}
+.cta-stripe {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    mask: url(https://iili.io/CmqPUH7.png) center / 20%;
+    opacity: 0.6;
+    grid-area: 1 / 1;
+    z-index: 3;
+}
+.cta-content {
+    width: 100%;
+    grid-area: 1 / 1;
+    z-index: 4;
+}
+.cta-header {
+    width: 100%;
+    background: var(--hdbg);
+    box-sizing: border-box;
+    padding: 2vw;
+    z-index: 5;
+    position: relative;
+}
+.cta-logo {
+    width: 60%;
+    margin: auto;
+    pointer-events: none;
+}
+.cta-trim {
+    width: 100%;
+    aspect-ratio: 11.58 / 1;
+    z-index: 5;
+    background: var(--hdbg);
+    mask: url(https://iili.io/CmBh3OB.png) center / cover;
+}
+.cta-pic1 {
+    width: 100%;
+    aspect-ratio: 3 / 1;
+    background: var(--pic1);
+    margin-top: -6vw;
+    border-bottom: 2vw solid var(--mainborder);
+}
+.cta-details {
+    width: 93%;
+    margin: 2vw auto;
+    box-sizing: border-box;
+    padding: 2vw;
+    background: #ffffff;
+    border-radius: 1.2vw;
+}
+.cta-title {
+    width: 70%;
+    margin: 0vw auto 1.6vw;
+    font: 3vw 'Quick Love', 'JaoAmericano';
+    color: var(--ttcl);
+    -webkit-text-stroke: 0.5vw var(--ttstroke);
+    paint-order: stroke fill;
+    text-align: center;
+}
+.cta-plaintxt {
+    width: 95%;
+    margin: 0vw auto 1.6vw;
+    font: 1.15vw 'Mali';
+    color: var(--pltxtcl);
+    text-align: justify;
+}
+.cta-bbox {
+    width: 95%;
+    margin: 0vw auto 1.6vw;
+}
+.cta-bbox-eflex {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    z-index: 5;
+    position: relative;
+}
+.cta-bbox-ears {
+    width: 25%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1000px;
+    background: var(--bearcl);
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 1.8vw;
+}
+.cta-bbox-innerears {
+    width: 100%;
+    height: 100%;
+    border-radius: 1000px;
+    background: var(--bearcl-in);
+}
+.cta-bbox-txt {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2vw;
+    background: var(--bearcl);
+    margin-top: -5.25vw;
+    border-radius: 1.2vw;
+    z-index: 6;
+    position: relative;
+    font: 1.15vw 'Mali';
+    color: var(--beartxt);
+    text-align: justify;
+}
+.cta-pwt {
+    width: 95%;
+    margin: 0vw auto 1.6vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cta-pwt-pic {
+    width: 35%;
+    aspect-ratio: 1.4 / 1;
+    border: 0.35vw solid var(--pwt-border);
+    border-radius: 1vw;
+    background: var(--pwt-pic);
+}
+.cta-pwt-txt {
+    width: 61%;
+    font: 1.1vw 'Mali';
+    color: var(--pwt-txt);
+    text-align: justify;
+}
+.cta-gallery {
+    width: 95%;
+    margin: 0vw auto 1.6vw;
+    display: flex;
+    justify-content: space-between;
+}
+.cta-gallery-pic1 {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border: 0.35vw solid var(--gallery-cl);
+    border-radius: 0.65vw;
+    background: var(--gallery1);
+}
+.cta-gallery-pic2 {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border: 0.35vw solid var(--gallery-cl);
+    border-radius: 0.65vw;
+    background: var(--gallery2);
+}
+.cta-gallery-pic3 {
+    width: 30%;
+    aspect-ratio: 1 / 1;
+    border: 0.35vw solid var(--gallery-cl);
+    border-radius: 0.65vw;
+    background: var(--gallery3);
+}
+.cta-twbg {
+    width: 95%;
+    margin: 0vw auto 1.6vw;
+    box-sizing: border-box;
+    padding: 2vw;
+    background: var(--twcl);
+    border-radius: 1.2vw;
+    font: 1.15vw 'Mali';
+    color: var(--twtxt);
+    text-align: justify;
+}
+.cta-sou {
+    width: 35%;
+    margin: 0vw auto 1.6vw;
+}
+.cta-sou-pic {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: var(--sou-pic);
+}
+.cta-sou-name {
+    width: 100%;
+    margin-top: 1.2vw;
+    box-sizing: border-box;
+    padding: 1vw;
+    border-radius: 1vw;
+    background: var(--soubg);
+    font: 1.85vw 'JaoAmericano';
+    color: var(--soutxt);
+    text-align: center;
+    line-height: 1;
+}
