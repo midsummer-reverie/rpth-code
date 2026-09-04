@@ -25,7 +25,8 @@
     width: 100%;
     height: 100%;
     mask: url(https://iili.io/CmzipTl.png) center / 15%;
-    background: var(--cl1);
+    background: #ffffff;
+    mix-blend-mode: soft-light;
     opacity: 0.4;
     grid-area: 1 / 1;
     z-index: 4;
@@ -48,7 +49,7 @@
     width: fit-content;
     max-width: 65%;
     padding: 1vw;
-    border: 0.2vw solid var(--bgcl);
+    border: 0.2vw solid var(--cl1);
     border-radius: 1000px;
     background: #ffffff;
     margin: auto;
@@ -56,7 +57,7 @@
 .ctt-locname-inner {
     width: fit-content;
     padding: 1vw 2vw;
-    border: 0.12vw dashed var(--bgcl);
+    border: 0.12vw dashed var(--cl1);
     border-radius: 1000px;
     font: 2vw 'JaoAmericano';
     color: var(--bgcl);
