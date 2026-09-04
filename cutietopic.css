@@ -11,7 +11,7 @@
     width: 100%;
     border: 0.3vw solid var(--strokecl);
     border-radius: 1.2vw;
-    background: #b7e2f0;
+    background: var(--bgcl);
     box-sizing: border-box;
     margin-top: 2vw;
     position: relative;
