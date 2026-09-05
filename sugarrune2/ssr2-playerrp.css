@@ -174,6 +174,7 @@
     --p-grad1: url(https://i.pinimg.com/1200x/0f/4b/67/0f4b678c07c3d2560080231fe7544a8f.jpg) center / cover;
     --p-grad2: url(https://i.pinimg.com/736x/4e/58/ee/4e58ee51e71fc22d84817453ace7bff3.jpg) center / cover;
     --p-addt: #ffffff;
+    --p-txt: #ffffff;
 }
 #darkpurple {
     --p-shadow: rgba(149, 89, 197, 0.6);
@@ -183,6 +184,7 @@
     --p-grad1: url(https://i.pinimg.com/1200x/d6/c7/52/d6c752d2054589f6ff939f98e11e3c22.jpg) center / cover;
     --p-grad2: url(https://i.pinimg.com/1200x/75/8b/48/758b48719aa2f37ca9951f7a6da75811.jpg) center / cover;
     --p-addt: #ffffff;
+    --p-txt: #ffffff;
 }
 #darkblue {
     --p-shadow: rgba(101, 160, 233, 0.6);
@@ -192,6 +194,7 @@
     --p-grad1: url(https://i.pinimg.com/1200x/90/d4/a2/90d4a2e184c503d5e7a28ce9b9f5a5cf.jpg) center / cover;
     --p-grad2: url(https://i.pinimg.com/1200x/6f/56/89/6f568995acb0662c019f8dc35acf6d24.jpg) center / cover;
     --p-addt: #ffffff;
+    --p-txt: #ffffff;
 }
 #darkpink {
     --p-shadow: rgba(255, 107, 201, 0.6);
@@ -201,6 +204,7 @@
     --p-grad1: url(https://i.pinimg.com/736x/dc/7d/03/dc7d03a725387f4c7f5539e3e35c5525.jpg) center / cover;
     --p-grad2: url(https://i.pinimg.com/736x/1a/e2/07/1ae207141c399574460062775e0c8d66.jpg) center / cover;
     --p-addt: #ffffff;
+    --p-txt: #ffffff;
 }
 #darkgreen {
     --p-shadow: rgba(87, 184, 72, 0.6);
@@ -210,6 +214,7 @@
     --p-grad1: url(https://i.pinimg.com/736x/f5/5b/31/f55b31ec99a64f26a5bf0d63ee0ef76e.jpg) center / cover;
     --p-grad2: url(https://i.pinimg.com/1200x/c4/bc/2f/c4bc2ffe92d75eef0ed017dedd527f9a.jpg) center / cover;
     --p-addt: #ffffff;
+    --p-txt: #ffffff;
 }
 #darkyellow {
     --p-shadow: rgba(255, 213, 108, 0.6);
@@ -219,6 +224,7 @@
     --p-grad1: url(https://i.pinimg.com/1200x/7b/d5/f4/7bd5f411b49553758d705960c87fc992.jpg) center / cover;
     --p-grad2: url(https://i.pinimg.com/1200x/6f/b9/de/6fb9de2e3f9fda0cb6633b661359da6a.jpg) center / cover;
     --p-addt: #ffffff;
+    --p-txt: #ffffff;
 }
 #darkorange {
     --p-shadow: rgba(255, 173, 79, 0.6);
@@ -228,6 +234,7 @@
     --p-grad1: url(https://i.pinimg.com/736x/cb/ed/36/cbed36706d293ef36be5cbf223b0aa4d.jpg) center / cover;
     --p-grad2: url(https://i.pinimg.com/1200x/8e/b4/33/8eb433de2f78cce3f3f0024b5bd7c6a2.jpg) center / cover;
     --p-addt: #ffffff;
+    --p-txt: #ffffff;
 }
 #darkrainbow {
     --p-shadow: rgba(255, 162, 207, 0.6);
@@ -237,6 +244,7 @@
     --p-grad1: url(https://i.pinimg.com/736x/d5/b5/3d/d5b53d277dcdfbec67303a22ee7ad7ac.jpg) 50% 30%/cover;
     --p-grad2: url(https://i.pinimg.com/736x/dc/d3/66/dcd366042b5eb8df542cb7b07449f390.jpg) 50% 20%/cover;
     --p-addt: #ffffff;
+    --p-txt: #ffffff;
 }
 #lightred {
     --p-shadow: rgba(255, 177, 173, 0.6);
@@ -246,6 +254,7 @@
     --p-grad1: url(https://i.pinimg.com/736x/4e/58/ee/4e58ee51e71fc22d84817453ace7bff3.jpg) 50% 30%/cover;
     --p-grad2: url(https://i.pinimg.com/736x/ad/6e/84/ad6e848047ab77214b8306d363877c03.jpg) 50% 20%/cover;
     --p-addt: #470000;
+    --p-txt: #1a1a1a;
 }
 #lightpurple {
     --p-shadow: rgba(203, 163, 255, 0.6);
@@ -255,6 +264,7 @@
     --p-grad1: url(https://i.pinimg.com/1200x/c7/e8/9f/c7e89f9b0911f37b2ca9e2b7777903e6.jpg) 50% 30%/cover;
     --p-grad2: url(https://i.pinimg.com/736x/f4/1a/12/f41a1282d580a271b54c4163f7ecbb6a.jpg) 50% 20%/cover;
     --p-addt: #463255;
+    --p-txt: #1a1a1a;
 }
 #lightblue {
     --p-shadow: rgba(120, 221, 255, 0.6);
@@ -264,6 +274,7 @@
     --p-grad1: url(https://i.pinimg.com/736x/87/d5/08/87d508cc7a63e238204f45f7588e62e5.jpg) 50% 30%/cover;
     --p-grad2: url(https://i.pinimg.com/736x/13/e7/84/13e7846b3f37ae18c6e8793f5dd89bd6.jpg) 50% 20%/cover;
     --p-addt: #003147;
+    --p-txt: #1a1a1a;
 }
 #lightpink {
     --p-shadow: rgba(255, 173, 210, 0.6);
@@ -273,6 +284,7 @@
     --p-grad1: url(https://i.pinimg.com/1200x/0d/44/8b/0d448ba0555401af37acf9841dbc6e9f.jpg) 50% 30%/cover;
     --p-grad2: url(https://i.pinimg.com/736x/f4/1a/12/f41a1282d580a271b54c4163f7ecbb6a.jpg) 50% 20%/cover;
     --p-addt: #773a4e;
+    --p-txt: #1a1a1a;
 }
 #lightgreen {
     --p-shadow: rgba(133, 255, 135, 0.6);
@@ -282,6 +294,7 @@
     --p-grad1: url(https://i.pinimg.com/736x/ed/ed/c8/ededc85d7d1a9a552bcc149cd95cd184.jpg) 50% 30%/cover;
     --p-grad2: url(https://i.pinimg.com/736x/4e/13/97/4e1397171c04bf244b4e2ebf68cf0a91.jpg) 50% 20%/cover;
     --p-addt: #004709;
+    --p-txt: #1a1a1a;
 }
 #lightyellow {
     --p-shadow: rgba(255, 244, 125, 0.6);
@@ -291,6 +304,7 @@
     --p-grad1: url(https://i.pinimg.com/736x/f6/d6/78/f6d6781802cec6542e881261199fbc0c.jpg) 50% 30%/cover;
     --p-grad2: url(https://i.pinimg.com/736x/14/3e/2b/143e2b8f7ce2f3dfeef70d0d65919369.jpg) 50% 20%/cover;
     --p-addt: #4d3910;
+    --p-txt: #1a1a1a;
 }
 #lightorange {
     --p-shadow: rgba(255, 185, 81, 0.6);
@@ -300,6 +314,7 @@
     --p-grad1: url(https://i.pinimg.com/736x/33/f4/6b/33f46b84d4a14a6db34d1766d619f2b3.jpg) 50% 30%/cover;
     --p-grad2: url(https://i.pinimg.com/736x/33/f4/6b/33f46b84d4a14a6db34d1766d619f2b3.jpg) 50% 20%/cover;
     --p-addt: #6d3600;
+    --p-txt: #1a1a1a;
 }
 #lightrainbow {
     --p-shadow: rgba(255, 251, 229, 0.6);
@@ -309,6 +324,7 @@
     --p-grad1: url(https://i.pinimg.com/736x/81/15/62/811562904a75852fff19d0a3fbd61702.jpg) 50% 30%/cover;
     --p-grad2: url(https://i.pinimg.com/736x/a2/d1/dc/a2d1dc0aec70f367fd6c6b11246337dc.jpg) 50% 20%/cover;
     --p-addt: #252525;
+    --p-txt: #1a1a1a;
 }
 #custom {
     --p-overlay: 0.2;
