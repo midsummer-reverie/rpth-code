@@ -327,5 +327,6 @@
     --p-txt: #1a1a1a;
 }
 #custom {
-    --p-opa: 0.2;
+    --p-opa: 0.15;
+    --p-overlay: #000000;
 }
