@@ -1,0 +1,312 @@
+@import url(https://midsummer-reverie.github.io/font-face/aranta.css);
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Kaisei+Decol:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+.ssr-py-container {
+    width: 85%;
+    margin: 1vw auto;
+    display: grid;
+    grid-template-columns: 4vw 1fr 4vw;
+    grid-template-rows: auto 1vw;
+}
+.ssr-py-hd {
+    width: 80%;
+    margin-left: 4vw;
+    display: flex;
+    z-index: 5;
+    gap: 2.3vw;
+    box-sizing: border-box;
+    align-items: flex-start;
+    grid-area: 1 / 2 / 2 / 3;
+    align-self: start;
+}
+.ssr-py-pic {
+    width: 30%;
+    aspect-ratio: 1 / 1.12;
+    border: 0.1vw solid #fff;
+    border-radius: 1.2vw;
+    background: var(--p-pic);
+    box-sizing: border-box;
+    margin-top: 1vw;
+}
+.ssr-py-hdde {
+    width: 65%;
+    margin-top: 1.65vw
+}
+.ssr-py-lastname {
+    width: fit-content;
+    font: 1.6vw 'EB Garamond';
+    text-shadow: 0px 1px 5px var(--p-shadow);
+    text-transform: uppercase;
+    font-style: italic;
+}
+.ssr-py-name {
+    width: fit-content;
+    font: 5vw 'Aranta';
+    text-shadow: 0px 1px 5px var(--p-shadow);
+    text-align: right;
+    text-transform: capitalize;
+    margin-left: 5vw;
+    margin-top: -1.6vw;
+}
+.ssr-py-add {
+    width: 100%;
+    display: flex;
+    gap: 1.5vw;
+    font: 1vw 'Poppins';
+    line-height: 1;
+    margin-top: 1.8vw;
+}
+.ssr-py-addc {
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0.5vw 0.85vw;
+    border: 0.1vw solid #fff;
+    border-radius: 0.4vw;
+    background: var(--p-grad2);
+    color: var(--p-addt);
+}
+.ssr-py-content {
+    width: 100%;
+    grid-area: 1 / 2 / 2 / 3;
+    z-index: 3;
+    display: grid;
+    border: 0.1vw solid #fff;
+    border-radius: 0.85vw;
+    overflow: hidden;
+    background: var(--p-bg);
+    box-sizing: border-box;
+    margin-top: 10vw;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr;
+}
+.ssr-py-ovl {
+    width: 100%;
+    height: 100%;
+    background: var(--p-overlay);
+    mask: url(https://iili.io/CmzipTl.png) center / 10%;
+    grid-area: 1 / 1;
+    mix-blend-mode: soft-light;
+    opacity: var(--opa);
+}
+.ssr-py-grad {
+    width: 100%;
+    aspect-ratio: 1.802 / 1;
+    grid-area: 1 / 1;
+    align-self: end;
+    background: var(--p-grad1);
+    mask: url(https://iili.io/n9Z4ELF.png) center / cover;
+    z-index: 9;
+}
+.ssr-py-text {
+    width: 100%;
+    grid-area: 1 / 1;
+    box-sizing: border-box;
+    padding: 6vw 2.6vw 4vw;
+    font: 1.1vw 'Google Sans';
+    color: var(--p-txt);
+    z-index: 10;
+    text-align: justify;
+    line-height: 1.4;
+}
+.ssr-py-hr {
+    margin: 1.25vw 0vw;
+    background-color: var(--p-txt);
+}
+.ssr-py-note {
+    width: 100%;
+    font-weight: 500;
+    text-align: right;
+}
+.ssr-py-locket {
+    width: 28%;
+    grid-area: 1 / 2 / 2 / 4;
+    z-index: 4;
+    aspect-ratio: 1 / 1;
+    justify-self: end;
+    background: var(--p-locket);
+    margin-top: 1.6vw;
+    margin-right: -1vw;
+    rotate: 10deg;
+}
+.ssr-py-wand {
+    width: 45%;
+    grid-area: 1 / 1 / 2 / 3;
+    aspect-ratio: 3.87 / 1;
+    background: var(--p-wand);
+    z-index: 4;
+    align-self: end;
+    rotate: -100deg;
+    margin-left: -8vw;
+    margin-bottom: 4.5vw;
+}
+.ssr-py-ssr {
+    width: fit-content;
+    grid-area: 1 / 3 / 2 / 4;
+    font: 1.5vw 'Kaisei Decol';
+    writing-mode: vertical-rl;
+    background: var(--p-grad2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 500;
+    margin-bottom: 9vw;
+    margin-left: 0.4vw;
+    align-self: end;
+}
+.ssr-py-sp {
+    width: 15%;
+    grid-area: 1 / 1 / 2 / 3;
+    background: var(--p-grad1);
+    aspect-ratio: 1 / 1;
+    mask: url(https://www.bbimg.org/images/2026/09/02/E-72.png) center / cover;
+    z-index: 2;
+    margin-left: 3vw;
+    margin-top: 1vw;
+}
+
+#darkred {
+    --p-shadow: rgba(255, 19, 0, 0.6);
+    --p-bg: #141414;
+    --p-overlay: #ffffff;
+    --opa: 0.1;
+    --p-grad1: url(https://i.pinimg.com/1200x/0f/4b/67/0f4b678c07c3d2560080231fe7544a8f.jpg) center / cover;
+    --p-grad2: url(https://i.pinimg.com/736x/4e/58/ee/4e58ee51e71fc22d84817453ace7bff3.jpg) center / cover;
+    --p-addt: #ffffff;
+}
+#darkpurple {
+    --p-shadow: rgba(149, 89, 197, 0.6);
+    --p-bg: #141414;
+    --p-overlay: #ffffff;
+    --opa: 0.1;
+    --p-grad1: url(https://i.pinimg.com/1200x/d6/c7/52/d6c752d2054589f6ff939f98e11e3c22.jpg) center / cover;
+    --p-grad2: url(https://i.pinimg.com/1200x/75/8b/48/758b48719aa2f37ca9951f7a6da75811.jpg) center / cover;
+    --p-addt: #ffffff;
+}
+#darkblue {
+    --p-shadow: rgba(101, 160, 233, 0.6);
+    --p-bg: #141414;
+    --p-overlay: #ffffff;
+    --opa: 0.1;
+    --p-grad1: url(https://i.pinimg.com/1200x/90/d4/a2/90d4a2e184c503d5e7a28ce9b9f5a5cf.jpg) center / cover;
+    --p-grad2: url(https://i.pinimg.com/1200x/6f/56/89/6f568995acb0662c019f8dc35acf6d24.jpg) center / cover;
+    --p-addt: #ffffff;
+}
+#darkpink {
+    --p-shadow: rgba(255, 107, 201, 0.6);
+    --p-bg: #141414;
+    --p-overlay: #ffffff;
+    --opa: 0.1;
+    --p-grad1: url(https://i.pinimg.com/736x/dc/7d/03/dc7d03a725387f4c7f5539e3e35c5525.jpg) center / cover;
+    --p-grad2: url(https://i.pinimg.com/736x/1a/e2/07/1ae207141c399574460062775e0c8d66.jpg) center / cover;
+    --p-addt: #ffffff;
+}
+#darkgreen {
+    --p-shadow: rgba(87, 184, 72, 0.6);
+    --p-bg: #141414;
+    --p-overlay: #ffffff;
+    --opa: 0.1;
+    --p-grad1: url(https://i.pinimg.com/736x/f5/5b/31/f55b31ec99a64f26a5bf0d63ee0ef76e.jpg) center / cover;
+    --p-grad2: url(https://i.pinimg.com/1200x/c4/bc/2f/c4bc2ffe92d75eef0ed017dedd527f9a.jpg) center / cover;
+    --p-addt: #ffffff;
+}
+#darkyellow {
+    --p-shadow: rgba(255, 213, 108, 0.6);
+    --p-bg: #141414;
+    --p-overlay: #ffffff;
+    --opa: 0.1;
+    --p-grad1: url(https://i.pinimg.com/1200x/7b/d5/f4/7bd5f411b49553758d705960c87fc992.jpg) center / cover;
+    --p-grad2: url(https://i.pinimg.com/1200x/6f/b9/de/6fb9de2e3f9fda0cb6633b661359da6a.jpg) center / cover;
+    --p-addt: #ffffff;
+}
+#darkorange {
+    --p-shadow: rgba(255, 173, 79, 0.6);
+    --p-bg: #141414;
+    --p-overlay: #ffffff;
+    --opa: 0.1;
+    --p-grad1: url(https://i.pinimg.com/736x/cb/ed/36/cbed36706d293ef36be5cbf223b0aa4d.jpg) center / cover;
+    --p-grad2: url(https://i.pinimg.com/1200x/8e/b4/33/8eb433de2f78cce3f3f0024b5bd7c6a2.jpg) center / cover;
+    --p-addt: #ffffff;
+}
+#darkrainbow {
+    --p-shadow: rgba(255, 162, 207, 0.6);
+    --p-bg: #141414;
+    --p-overlay: #ffffff;
+    --opa: 0.1;
+    --p-grad1: url(https://i.pinimg.com/736x/d5/b5/3d/d5b53d277dcdfbec67303a22ee7ad7ac.jpg) 50% 30%/cover;
+    --p-grad2: url(https://i.pinimg.com/736x/dc/d3/66/dcd366042b5eb8df542cb7b07449f390.jpg) 50% 20%/cover;
+    --p-addt: #ffffff;
+}
+#lightred {
+    --p-shadow: rgba(255, 177, 173, 0.6);
+    --p-bg: #e7e7e7;
+    --p-overlay: #000000;
+    --opa: 0.25;
+    --p-grad1: url(https://i.pinimg.com/736x/4e/58/ee/4e58ee51e71fc22d84817453ace7bff3.jpg) 50% 30%/cover;
+    --p-grad2: url(https://i.pinimg.com/736x/ad/6e/84/ad6e848047ab77214b8306d363877c03.jpg) 50% 20%/cover;
+    --p-addt: #470000;
+}
+#lightpurple {
+    --p-shadow: rgba(203, 163, 255, 0.6);
+    --p-bg: #e7e7e7;
+    --p-overlay: #000000;
+    --opa: 0.25;
+    --p-grad1: url(https://i.pinimg.com/1200x/c7/e8/9f/c7e89f9b0911f37b2ca9e2b7777903e6.jpg) 50% 30%/cover;
+    --p-grad2: url(https://i.pinimg.com/736x/f4/1a/12/f41a1282d580a271b54c4163f7ecbb6a.jpg) 50% 20%/cover;
+    --p-addt: #463255;
+}
+#lightblue {
+    --p-shadow: rgba(120, 221, 255, 0.6);
+    --p-bg: #e7e7e7;
+    --p-overlay: #000000;
+    --opa: 0.25;
+    --p-grad1: url(https://i.pinimg.com/736x/87/d5/08/87d508cc7a63e238204f45f7588e62e5.jpg) 50% 30%/cover;
+    --p-grad2: url(https://i.pinimg.com/736x/13/e7/84/13e7846b3f37ae18c6e8793f5dd89bd6.jpg) 50% 20%/cover;
+    --p-addt: #003147;
+}
+#lightpink {
+    --p-shadow: rgba(255, 173, 210, 0.6);
+    --p-bg: #e7e7e7;
+    --p-overlay: #000000;
+    --opa: 0.25;
+    --p-grad1: url(https://i.pinimg.com/1200x/0d/44/8b/0d448ba0555401af37acf9841dbc6e9f.jpg) 50% 30%/cover;
+    --p-grad2: url(https://i.pinimg.com/736x/f4/1a/12/f41a1282d580a271b54c4163f7ecbb6a.jpg) 50% 20%/cover;
+    --p-addt: #773a4e;
+}
+#lightgreen {
+    --p-shadow: rgba(133, 255, 135, 0.6);
+    --p-bg: #e7e7e7;
+    --p-overlay: #000000;
+    --opa: 0.25;
+    --p-grad1: url(https://i.pinimg.com/736x/ed/ed/c8/ededc85d7d1a9a552bcc149cd95cd184.jpg) 50% 30%/cover;
+    --p-grad2: url(https://i.pinimg.com/736x/4e/13/97/4e1397171c04bf244b4e2ebf68cf0a91.jpg) 50% 20%/cover;
+    --p-addt: #004709;
+}
+#lightyellow {
+    --p-shadow: rgba(255, 244, 125, 0.6);
+    --p-bg: #e7e7e7;
+    --p-overlay: #000000;
+    --opa: 0.25;
+    --p-grad1: url(https://i.pinimg.com/736x/f6/d6/78/f6d6781802cec6542e881261199fbc0c.jpg) 50% 30%/cover;
+    --p-grad2: url(https://i.pinimg.com/736x/14/3e/2b/143e2b8f7ce2f3dfeef70d0d65919369.jpg) 50% 20%/cover;
+    --p-addt: #4d3910;
+}
+#lightorange {
+    --p-shadow: rgba(255, 185, 81, 0.6);
+    --p-bg: #e7e7e7;
+    --p-overlay: #000000;
+    --opa: 0.25;
+    --p-grad1: url(https://i.pinimg.com/736x/33/f4/6b/33f46b84d4a14a6db34d1766d619f2b3.jpg) 50% 30%/cover;
+    --p-grad2: url(https://i.pinimg.com/736x/33/f4/6b/33f46b84d4a14a6db34d1766d619f2b3.jpg) 50% 20%/cover;
+    --p-addt: #6d3600;
+}
+#lightrainbow {
+    --p-shadow: rgba(255, 251, 229, 0.6);
+    --p-bg: #e7e7e7;
+    --p-overlay: #000000;
+    --opa: 0.25;
+    --p-grad1: url(https://i.pinimg.com/736x/81/15/62/811562904a75852fff19d0a3fbd61702.jpg) 50% 30%/cover;
+    --p-grad2: url(https://i.pinimg.com/736x/a2/d1/dc/a2d1dc0aec70f367fd6c6b11246337dc.jpg) 50% 20%/cover;
+    --p-addt: #252525;
+}
+#custom {
+    --p-overlay: 0.2;
+}
