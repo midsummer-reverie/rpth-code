@@ -328,7 +328,11 @@
     --p-addt: #252525;
     --p-txt: #1a1a1a;
 }
-#custom {
+#custompic {
+    --p-opa: 0.15;
+    --p-overlay: #000000;
+}
+#customclr {
     --p-opa: 0.15;
     --p-overlay: #000000;
 }
