@@ -115,9 +115,19 @@
     background-color: var(--p-txt);
 }
 .ssr-py-note {
-    width: 100%;
-    font-weight: 500;
-    text-align: right;
+    width: fit-content;
+    box-sizing: border-box;
+    padding: 0.4vw 0.85vw;
+    border: 0.1vw solid #fff;
+    border-radius: 0.6vw;
+    background: url(https://i.pinimg.com/1200x/6f/56/89/6f56899….jpg) center / cover;
+    grid-area: 1 / 2 / 3 / 3;
+    align-self: end;
+    justify-self: end;
+    z-index: 8;
+    font: 1vw 'Google Sans';
+    margin-right: 2.4vw;
+    max-width: 70%;
 }
 .ssr-py-locket {
     width: 28%;
@@ -329,10 +339,10 @@
     --p-txt: #1a1a1a;
 }
 #custompic {
-    --p-opa: 0.15;
-    --p-overlay: #000000;
+    --p-opa: 0.1;
+    --p-overlay: #ffffff;
 }
 #customclr {
-    --p-opa: 0.15;
-    --p-overlay: #000000;
+    --p-opa: 0.1;
+    --p-overlay: #ffffff;
 }
