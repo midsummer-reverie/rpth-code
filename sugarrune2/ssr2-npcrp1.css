@@ -215,6 +215,7 @@
     mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat;
     -webkit-mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat;
     align-self: start;
+    rotate: -10deg;
 }
 .ssr-npc1-decoflex {
     width: 70%;
