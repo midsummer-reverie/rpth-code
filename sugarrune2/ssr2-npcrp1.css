@@ -134,13 +134,19 @@
 .ssr-npc1-note {
     width: 100%;
     box-sizing: border-box;
-    grid-area: 4 / 2 / 5 / 3;
-    z-index: 4;
-    padding: 2.45vw;
+    grid-area: 5 / 2 / 6 / 3;
+    z-index: 3;
+    border-width: 0vw 0.1vw 0.1vw 0.1vw;
+    border-style: solid;
+    border-color: #fff;
+    border-radius: 0vw 0vw 1vw 1vw;
+    background: var(--npcgrad);
+    display: grid;
+    overflow: hidden;
+    padding: 1vw 2vw;
     font: 1.1vw 'Google Sans';
     color: var(--npcdetext);
-    text-align: justify;
-    line-height: 1.4;
+    font-weight: 500;
 }
 .ssr-npc1-heartframe {
     width: 12%;
@@ -251,5 +257,5 @@
     --npcdropheart: url(https://iili.io/nFk11Fj.md.png) center/95% no-repeat;
 }
 #noheartdrop {
-    
+
 }
