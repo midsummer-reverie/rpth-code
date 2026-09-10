@@ -22,7 +22,7 @@
 .ssr-npc1-hbg { width: 110%; height: 110%; position: absolute; background: var(--npcgradbg); mask: url(https://iili.io/nFkEimB.png) center / cover; }
 .ssr-npc2-hde { width: 100%; height: 100%; grid-area: 1 / 1; background: var(--npcgrad); mask: url(https://iili.io/nFUaCp2.png) center / cover; -webkit-mask: url(https://iili.io/nFUaCp2.png) center / cover; }
 .ssr-npc2-heart { width: 100%; height: 100%; grid-area: 1 / 1; background: var(--npcdropheart); z-index: 6; margin-top: 0.19vw; }
-.ssr-npc2-deco2 { width: 80%; margin: -1vw auto; aspect-ratio: 3.09 / 1; grid-area: 1 / 2 / 4 / 3; z-index: 2; background: var(--npcaccent); mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat; -webkit-mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat; align-self: start; rotate: -7deg; }
+.ssr-npc2-deco2 { width: 80%; margin: -1vw auto; aspect-ratio: 3.09 / 1; grid-area: 1 / 2 / 4 / 3; z-index: 2; background: var(--npctxtcl); mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat; -webkit-mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat; align-self: start; rotate: -7deg; }
 .ssr-npc2-decoflex { width: 70%; display: flex; gap: 0.8vw; justify-self: center; margin-top: -1vw; flex-direction: column; align-items: center; grid-area: 4 / 1 / 5 / 2; align-self: center; }
 .ssr-npc2-decosp { width: 100%; aspect-ratio: 1 / 1; background: var(--npcgrad); mask: url(https://iili.io/nFkE4dx.md.png) center / cover; -webkit-mask: url(https://iili.io/nFkE4dx.md.png) center / cover; }
 .ssr-npc2-ssr { width: fit-content; font: 1.15vw 'Kaisei Decol'; writing-mode: vertical-rl; font-weight: 500; color: #fff; }
