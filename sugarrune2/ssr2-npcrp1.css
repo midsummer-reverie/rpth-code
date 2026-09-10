@@ -163,7 +163,7 @@
     border: 0.2vw solid var(--npcaccent);
     justify-self: start;
     align-self: end;
-    background: #fff;
+    background: var(--npcboxbg);
     margin-bottom: 1.25vw;
     margin-left: 0.5vw;
     padding: 0.8vw;
