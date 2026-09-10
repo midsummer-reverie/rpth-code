@@ -209,7 +209,7 @@
     flex-direction: column;
     align-items: center;
 }
-.ssr-npc1-decoasp {
+.ssr-npc1-decosp {
     width: 100%;
     aspect-ratio: 1 / 1;
     background: var(--npcgradbg);
@@ -222,7 +222,7 @@
     font-weight: 500;
     color: #fff;
 }
-.ssr-npc1-ssrL::before {
+.ssr-npc1-ssr::before {
     content: 'シュガシュガルーン';
 }
 
