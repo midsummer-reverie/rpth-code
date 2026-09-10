@@ -80,7 +80,7 @@
     border-style: solid;
     border-color:  #fff;
     border-radius: 1vw 1vw 0vw 0vw;
-    background: #141414;
+    background: var(--npcboxbg);
     display: grid;
     overflow: hidden;
 }
