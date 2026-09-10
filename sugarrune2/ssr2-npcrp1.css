@@ -4,41 +4,43 @@
 @import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Kaisei+Decol:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,50/0;1,600;1,700;1,800;1,900&display=swap);
 
 .ssr-npc1-container {
-    width: 75%;
+    width: 85%;
     margin: 1.65vw auto;
     display: grid;
-    grid-template-rows: 2.8vw 3.5vw 8.25vw auto auto 2.2vw;
-    grid-template-columns: 4vw 1fr 2.6vw;
+    grid-template-rows: 2.8vw 3.5vw 10vw auto auto 2.2vw;
+    grid-template-columns: 2.6vw 1fr 4vw;
 }
 .ssr-npc1-bg {
-    width: 35%;
+    width: 45%;
     height: 100%;
-    grid-area: 2 / 1 / 4 / 3;
+    grid-area: 2 / 2 / 4 / 4;
     z-index: 5;
     border: 0.1vw solid #ffffff;
     border-radius: 0.85vw;
     background: var(--npcbg);
+    justify-self: end;
 }
 .ssr-npc1-char {
-    width: 35%;
+    width: 45%;
     height: 99.8%;
-    grid-area: 1 / 1 / 4 / 3;
+    grid-area: 1 / 2 / 4 / 4;
     z-index: 6;
     background: var(--npcpng);
     margin: 0.1vw;
     border-radius: 0.85vw;
     box-sizing: border-box;
+    justify-self: end;
 }
 .ssr-npc1-deflex {
     width: 55%;
     display: flex;
     gap: 0.8vw;
-    justify-content: flex-end;
+    justify-content: flex-start;
     grid-area: 2 / 2 / 3 / 3;
     z-index: 3;
     align-self: end;
-    justify-self: end;
-    margin-right: 3.2vw;
+    justify-self: start;
+    margin-left: 3.2vw;
 }
 .ssr-npc1-class {
     width: fit-content;
@@ -91,16 +93,18 @@
     align-self: end;
     background: var(--npcgradbg);
     mask: url(https://iili.io/nFkEimB.png) center / cover;
+    -webkit-mask: url(https://iili.io/nFkEimB.png) center / cover;
     opacity: 0.6;
 }
 .ssr-npc1-namebox {
-    width: 60%;
+    width: 50%;
     grid-area: 3 / 2 / 4 / 3;
     z-index: 4;
-    justify-self: end;
+    justify-self: start;
     color: var(--npcnamecl);
     text-shadow: 0px 0px 4px var(--npcnamesh);
     margin-top: 2vw;
+    margin-left: 3.5vw;
 }
 .ssr-npc1-lastname {
     width: fit-content;
@@ -112,7 +116,7 @@
 .ssr-npc1-firstname {
     width: fit-content;
     max-width: 75%;
-    margin: -1.2vw 3.5vw 0vw 3.6vw;
+    margin: -1.2vw 3.6vw 0vw 3.5vw;
     font: 2.4vw 'The Seasons';
     text-transform: uppercase;
     letter-spacing: 0.15vw;
@@ -147,20 +151,21 @@
     font: 1.1vw 'Google Sans';
     color: var(--npcdetext);
     font-weight: 500;
+    text-align: right;
 }
 .ssr-npc1-heartframe {
     width: 12%;
     box-sizing: border-box;
-    grid-area: 4 / 2 / 7 / 4;
+    grid-area: 4 / 1 / 7 / 3;
     z-index: 6;
     aspect-ratio: 1 / 1;
     border-radius: 1000px;
     border: 0.2vw solid var(--npcaccent);
-    justify-self: end;
+    justify-self: start;
     align-self: end;
     background: #fff;
     margin-bottom: 1.25vw;
-    margin-right: 0.5vw;
+    margin-left: 0.5vw;
     padding: 0.8vw;
     display: grid;
 }
@@ -170,6 +175,7 @@
     grid-area: 1 / 1;
     background: var(--npcgrad);
     mask: url(https://iili.io/nFUaCp2.png) center / cover;
+    -webkit-mask: url(https://iili.io/nFUaCp2.png) center / cover;
 }
 .ssr-npc1-heart {
     width: 100%;
@@ -182,11 +188,12 @@
 .ssr-npc1-deco1 {
     width: 70%;
     aspect-ratio: 0.21 / 1;
-    grid-area: 4 / 1 / 5 / 2;
+    grid-area: 4 / 3 / 5 / 4;
     z-index: 4;
     margin-top: -0.2vw;
     background: var(--npcaccent);
     mask: url(https://iili.io/nFkE65Q.png) center / cover;
+    -webkit-mask: url(https://iili.io/nFkE65Q.png) center / cover;
     justify-self: center;
 }
 .ssr-npc1-deco2 {
@@ -197,13 +204,14 @@
     z-index: 2;
     background: var(--npcaccent);
     mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat;
+    -webkit-mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat;
     align-self: start;
 }
 .ssr-npc1-decoflex {
     width: 70%;
     display: flex;
     gap: 0.8vw;
-    grid-area: 4 / 3 / 5 / 4;
+    grid-area: 4 / 1 / 5 / 2;
     justify-self: center;
     margin-top: -1vw;
     flex-direction: column;
@@ -214,6 +222,7 @@
     aspect-ratio: 1 / 1;
     background: var(--npcgradbg);
     mask: url(https://iili.io/nFkE4dx.md.png) center / cover;
+    -webkit-mask: url(https://iili.io/nFkE4dx.md.png) center / cover;
 }
 .ssr-npc1-ssr {
     width: fit-content;
@@ -226,36 +235,14 @@
     content: 'シュガシュガルーン';
 }
 
-#yellowheart {
-    --npcdropheart: url(https://iili.io/nFk1woF.md.png) center/95% no-repeat;
-}
-#orangeheart {
-    --npcdropheart: url(https://iili.io/nFk1daR.md.png) center/95% no-repeat;
-}
-#greenheart {
-    --npcdropheart: url(https://iili.io/nFk1Zlf.md.png) center/95% no-repeat;
-}
-#blueheart {
-    --npcdropheart: url(https://iili.io/nFk1vcv.md.png) center/95% no-repeat;
-}
-#purpleheart {
-    --npcdropheart: url(https://iili.io/nFkEnDP.md.png) center/95% no-repeat;
-}
-#pinkheart {
-    --npcdropheart: url(https://iili.io/nFk1yD7.md.png) center/95% no-repeat;
-}
-#redheart {
-    --npcdropheart: url(https://iili.io/nFk1kKJ.md.png) center/95% no-repeat;
-}
-#whiteheart {
-    --npcdropheart: url(https://iili.io/nFkEFlj.md.png) center/95% no-repeat;
-}
-#blackheart {
-    --npcdropheart: url(https://iili.io/nFkEA0J.md.png) center/95% no-repeat;
-}
-#rainbowheart {
-    --npcdropheart: url(https://iili.io/nFk11Fj.md.png) center/95% no-repeat;
-}
-#noheartdrop {
-
-}
+#yellowheart { --npcdropheart: url(https://iili.io/nFk1woF.md.png) center/95% no-repeat; }
+#orangeheart { --npcdropheart: url(https://iili.io/nFk1daR.md.png) center/95% no-repeat; }
+#greenheart { --npcdropheart: url(https://iili.io/nFk1Zlf.md.png) center/95% no-repeat; }
+#blueheart { --npcdropheart: url(https://iili.io/nFk1vcv.md.png) center/95% no-repeat; }
+#purpleheart { --npcdropheart: url(https://iili.io/nFkEnDP.md.png) center/95% no-repeat; }
+#pinkheart { --npcdropheart: url(https://iili.io/nFk1yD7.md.png) center/95% no-repeat; }
+#redheart { --npcdropheart: url(https://iili.io/nFk1kKJ.md.png) center/95% no-repeat; }
+#whiteheart { --npcdropheart: url(https://iili.io/nFkEFlj.md.png) center/95% no-repeat; }
+#blackheart { --npcdropheart: url(https://iili.io/nFkEA0J.md.png) center/95% no-repeat; }
+#rainbowheart { --npcdropheart: url(https://iili.io/nFk11Fj.md.png) center/95% no-repeat; }
+#noheartdrop {}
