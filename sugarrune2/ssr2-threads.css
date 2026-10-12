@@ -3,12 +3,23 @@
 @import url(https://midsummer-reverie.github.io/font-face/TheSeasons.css);
 @font-face { font-family:'Citadel Upper'; src:url(https://midsummer-reverie.github.io/font/Citadel-Script.otf) format('opentype'); unicode-range:U+0041-005A; size-adjust:126%; }
 
+/* ===== ภาพตกแต่ง (ใช้ร่วมทุกธีม) ===== */
+.ssr-thr-container {
+  --img-texture:url(https://iili.io/nAo0RHu.md.png);
+  --img-ribbon:url(https://iili.io/n5NWNEb.png);
+  --img-deco-a:url(https://iili.io/nAaZ5Qf.md.png);
+  --img-deco-b:url(https://iili.io/nAaZaEl.md.png);
+  --img-deco2:url(https://iili.io/nRAUAiB.png);
+  --img-ssp:url(https://iili.io/nAo0oV2.md.png);
+  --img-bm:url(https://iili.io/nAo05Ab.md.png);
+}
+
 /* ===== ธีมสี (เพิ่มธีมใหม่ได้โดยคัดลอกบล็อกนี้แล้วเปลี่ยน id) ===== */
 #pink {
-  --c-light:rgb(255 233 245);      /* สีอ่อนของ gradient / พื้นกล่องข้อความ */
-  --c-main:rgb(255 139 205);       /* สีเข้มของ gradient */
-  --c-line:#c86197;                /* เส้นขอบหลัก / ลายตกแต่ง */
-  --c-line2:#c95990;               /* เส้นขอบแผงบน */
+  --c-light:rgb(255 233 245);
+  --c-main:rgb(255 139 205);
+  --c-line:#c86197;
+  --c-line2:#c95990;
   --c-white:#fff;
   --c-text:#030303;
   --c-text-loc:#0b0b0b;
@@ -81,13 +92,13 @@
 /* ป้าย "สถานที่เพิ่มเติม" */
 .ssr-thr-btitle { grid-area:3/2/4/3; z-index:6; width:40%; justify-self:end; display:flex; align-items:center; margin-bottom:-4vw; }
 .ssr-thr-btitle::before { content:"สถานที่เพิ่มเติม"; width:78%; box-sizing:border-box; padding:.5vw .65vw; background:var(--c-btitle-bg); border:.1vw solid var(--c-line); border-radius:.55vw; font:500 1.25vw 'Google Sans'; color:var(--c-text); text-shadow:0 0 4px var(--c-btitle-glow); text-align:center; }
-.ssr-thr-btitle::after { content:""; width:20%; aspect-ratio:1; margin-left:-2.1vw; background:var(--img-icon) center/90% no-repeat; }
+.ssr-thr-btitle::after { content:""; width:20%; aspect-ratio:1; margin-left:-2.1vw; background:var(--img-heart) center/90% no-repeat; }
 
 /* เนื้อหาแผงล่าง */
 .ssr-thr-bcon { grid-area:4/2/5/3; z-index:5; box-sizing:border-box; border:.12vw solid var(--c-line); border-radius:.75vw; padding:3vw 1.75vw 2.2vw; overflow:hidden; }
 .ssr-thr-locfl { display:flex; flex-wrap:wrap; justify-content:center; gap:.85vw; }
 .ssr-thr-locbox { width:32%; }
-.ssr-thr-locpic { aspect-ratio:3/1.85; box-sizing:border-box; border:.1vw solid var(--c-line); box-shadow:inset var(--shadow); border-radius:.4vw; background:var(--img-loc) center/cover; }
+.ssr-thr-locpic { aspect-ratio:3/1.85; box-sizing:border-box; border:.1vw solid var(--c-line); box-shadow:inset var(--shadow); border-radius:.4vw; background:var(--img-locpic) center/cover; }
 .ssr-thr-locn { margin-top:.75vw; box-sizing:border-box; padding:.2vw; font:1vw 'Google Sans'; color:var(--c-text-loc); text-shadow:0 0 4px var(--c-loc-glow); text-align:center; background:var(--loc-grad); border:.1vw solid var(--c-white); border-radius:.45vw; }
 
 /* ลายตกแต่งมุมล่างซ้าย */
