@@ -14,49 +14,35 @@
   --img-bm:url(https://iili.io/nAo05Ab.md.png);
 }
 
-/* ===== ธีมสี (เพิ่มธีมใหม่ได้โดยคัดลอกบล็อกนี้แล้วเปลี่ยน id) ===== */
+/* ===== ธีมสี ===== */
+#blue {
+  --c-light:rgb(0 0 0);          /* สีอ่อน/พื้นของ gradient และกล่องข้อความ */
+  --c-main:rgb(85 147 204);      /* สีหลัก gradient + ขอบตัวอักษรชื่อ */
+  --c-line:#6b9fb9;              /* เส้นขอบ ลายตกแต่ง bookmark ทั้งหมด */
+  --c-white:#fff;                /* ลายโอเวอร์เลย์ ไอคอน ขอบป้ายสถานที่ ตัวอักษรชื่อ */
+  --c-text:#fff;                 /* ตัวอักษรเนื้อหา */
+  --c-text-loc:#0b0b0b;          /* ตัวอักษรป้ายสถานที่ */
+  --c-glow:#85d6ff;              /* เรืองแสงของชื่อโรงเรียน และป้าย "สถานที่เพิ่มเติม" */
+  --c-btitle-bg:rgb(10 10 10);   /* พื้นป้าย "สถานที่เพิ่มเติม" */
+  --c-loc-glow:#a7e2ff;          /* เรืองแสงชื่อสถานที่ */
+  --c-loc-a:rgb(161 198 226);    /* gradient ป้ายสถานที่ ต้น */
+  --c-loc-b:rgb(119 194 244);    /* gradient ป้ายสถานที่ ปลาย */
+  --c-bm-bg:#334e65;             /* พื้น bookmark */
+  --c-shadow:rgba(0,0,0,.75);
+}
 #pink {
-  --img-heart:url(https://iili.io/nFk1yD7.md.png);
   --c-light:rgb(255 233 245);
   --c-main:rgb(255 139 205);
   --c-line:#c86197;
-  --c-line2:#c95990;
   --c-white:#fff;
   --c-text:#030303;
   --c-text-loc:#0b0b0b;
-  --c-title:#fff;
-  --c-title-glow:#ffa7d9;
-  --c-title-stroke:rgb(201 96 159);
+  --c-glow:#ffa7d9;
   --c-btitle-bg:rgb(255 233 245);
-  --c-btitle-glow:#ffacd7;
   --c-loc-glow:#ffd9f0;
   --c-loc-a:rgb(255 198 232);
   --c-loc-b:rgb(255 145 203);
   --c-bm-bg:#ffb9d9;
-  --c-bm-border:#b96b80;
-  --c-bm-dash:#c6809f;
-  --c-shadow:rgba(0,0,0,.75);
-}
-#blue {
-  --img-heart:url(https://iili.io/nFk1vcv.md.png);
-  --c-light:rgb(0 0 0);
-  --c-main:rgb(85 147 204);
-  --c-line:#6b9fb9;
-  --c-line2:#6b9fb9;
-  --c-white:#fff;
-  --c-text:#ffffff;
-  --c-text-loc:#0b0b0b;
-  --c-title:#fff;
-  --c-title-glow:#85d6ff;
-  --c-title-stroke:rgb(85 147 204);
-  --c-btitle-bg:rgb(10 10 10);
-  --c-btitle-glow:#85d6ff;
-  --c-loc-glow:#a7e2ff;
-  --c-loc-a:rgb(161 198 226);
-  --c-loc-b:rgb(119 194 244);
-  --c-bm-bg:#334e65;
-  --c-bm-border:#6b9fb9;
-  --c-bm-dash:#6b9fb9;
   --c-shadow:rgba(0,0,0,.75);
 }
 
@@ -75,7 +61,7 @@
 .ssr-thr-gr::after { content:""; grid-area:1/2/3/3; height:10vw; margin-top:-6vw; z-index:2; background:var(--ribbon); mask:var(--img-ribbon) center/90% no-repeat; }
 
 /* ชื่อโรงเรียน */
-.ssr-thr-titleflex { grid-area:1/2/2/3; z-index:8; width:85%; margin:auto auto -4.3vw; display:flex; align-items:center; flex-direction:row-reverse; font:4.2vw 'The Seasons'; color:var(--c-title); text-shadow:0 0 6px var(--c-title-glow); -webkit-text-stroke:.25vw var(--c-title-stroke); paint-order:stroke fill; }
+.ssr-thr-titleflex { grid-area:1/2/2/3; z-index:8; width:85%; margin:auto auto -4.3vw; display:flex; align-items:center; flex-direction:row-reverse; font:4.2vw 'The Seasons'; color:var(--c-white); text-shadow:0 0 6px var(--c-glow); -webkit-text-stroke:.25vw var(--c-main); paint-order:stroke fill; }
 .ssr-thr-title1 { width:100%; box-sizing:border-box; padding:.5vw 1vw; text-align:center; }
 .ssr-thr-tteng { line-height:1; font-family:'Citadel Upper','The Seasons'; text-transform: capitalize; }
 .ssr-thr-ttth { width:95%; margin:-.6vw 0 0; font:1.4vw 'Google Sans'; letter-spacing:.15vw; }
@@ -87,13 +73,13 @@
 .ssr-thr-top::after, .ssr-thr-bt::after { content:""; position:absolute; inset:0; background:var(--c-white); mask:var(--img-texture) center/20%; mix-blend-mode:overlay; opacity:.3; border-radius:inherit; }
 
 /* เนื้อหาแผงบน */
-.ssr-thr-tcon { grid-area:2/2/3/3; z-index:5; box-sizing:border-box; border:.12vw solid var(--c-line2); border-radius:.75vw; padding:5vw 1.75vw 2.4vw; overflow:hidden; }
+.ssr-thr-tcon { grid-area:2/2/3/3; z-index:5; box-sizing:border-box; border:.12vw solid var(--c-line); border-radius:.75vw; padding:5vw 1.75vw 2.4vw; overflow:hidden; }
 .ssr-thr-pic { aspect-ratio:3/1.8; box-sizing:border-box; border:.1vw solid var(--c-line); box-shadow:inset var(--shadow); border-radius:.65vw; background:var(--img-pic) center/cover; }
 .ssr-thr-desc { margin-top:1.5vw; background:var(--c-light); box-sizing:border-box; padding:.8vw; font:1.1vw 'Google Sans'; color:var(--c-text); line-height:1.5; text-align:justify; }
 
 /* ป้าย "สถานที่เพิ่มเติม" */
 .ssr-thr-btitle { grid-area:3/2/4/3; z-index:6; width:40%; justify-self:end; display:flex; align-items:center; margin-bottom:-4vw; }
-.ssr-thr-btitle::before { content:"สถานที่เพิ่มเติม"; width:78%; box-sizing:border-box; padding:.5vw .65vw; background:var(--c-btitle-bg); border:.1vw solid var(--c-line); border-radius:.55vw; font:500 1.25vw 'Google Sans'; color:var(--c-text); text-shadow:0 0 4px var(--c-btitle-glow); text-align:center; }
+.ssr-thr-btitle::before { content:"สถานที่เพิ่มเติม"; width:78%; box-sizing:border-box; padding:.5vw .65vw; background:var(--c-btitle-bg); border:.1vw solid var(--c-line); border-radius:.55vw; font:500 1.25vw 'Google Sans'; color:var(--c-text); text-shadow:0 0 4px var(--c-glow); text-align:center; }
 .ssr-thr-btitle::after { content:""; width:20%; aspect-ratio:1; margin-left:-2.1vw; background:var(--img-heart) center/90% no-repeat; }
 
 /* เนื้อหาแผงล่าง */
@@ -119,6 +105,6 @@
 .ssr-thr-deco2 { grid-area:5/2/6/3; justify-self:end; width:35%; aspect-ratio:2.7/1; margin-right:3vw; background:var(--c-line); mask:var(--img-deco2) center/cover; }
 
 /* bookmark */
-.ssr-thr-bookmark { position:relative; grid-area:2/2/3/4; z-index:2; justify-self:end; width:20%; height:4.6vw; margin-top:4.5vw; box-sizing:border-box; background:var(--c-bm-bg); border:.11vw solid var(--c-bm-border); border-radius:1vw; }
-.ssr-thr-bookmark::before { content:""; position:absolute; inset:.4vw; border:.09vw dashed var(--c-bm-dash); border-radius:.8vw; }
+.ssr-thr-bookmark { position:relative; grid-area:2/2/3/4; z-index:2; justify-self:end; width:20%; height:4.6vw; margin-top:4.5vw; box-sizing:border-box; background:var(--c-bm-bg); border:.11vw solid var(--c-line); border-radius:1vw; }
+.ssr-thr-bookmark::before { content:""; position:absolute; inset:.4vw; border:.09vw dashed var(--c-line); border-radius:.8vw; }
 .ssr-thr-bookmark::after { content:""; position:absolute; top:1.14vw; right:1.64vw; width:calc(25% - .57vw); aspect-ratio:1; background:var(--c-white); mask:var(--img-bm) center/95% no-repeat; }
