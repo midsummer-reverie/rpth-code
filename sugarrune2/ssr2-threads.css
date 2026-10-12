@@ -79,6 +79,22 @@
   --c-bm-bg: #ffaed3;
   --c-shadow: rgba(0, 0, 0, .75);
 }
+.green-light {
+    --img-heart: url(https://iili.io/nFk1Zlf.md.png);
+    --c-light: rgb(226 241 227);
+    --c-main: rgb(95 194 98);
+    --c-line: #4a8154;
+    --c-white: #ffffff;
+    --c-text: #131313;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #dbffe1;
+    --c-btitle-bg: rgb(188 217 195);
+    --c-loc-glow: #d5ffd8;
+    --c-loc-a: rgb(203 255 205);
+    --c-loc-b: rgb(132 223 139);
+    --c-bm-bg: #96d9a2;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
 
 
 /* ===== โครงสร้าง (ใช้ร่วมทุกธีม) ===== */
@@ -114,7 +130,7 @@
 
 /* ป้าย "สถานที่เพิ่มเติม" */
 .ssr-thr-btitle { grid-area:3/2/4/3; z-index:6; width:40%; justify-self:end; display:flex; align-items:center; margin-bottom:-4vw; }
-.ssr-thr-btitle::before { content:"สถานที่เพิ่มเติม"; width:78%; box-sizing:border-box; padding:.5vw .65vw; background:var(--c-btitle-bg); border:.1vw solid var(--c-line); border-radius:.55vw; font:500 1.25vw 'Google Sans'; color:var(--c-text); text-shadow:0 0 4px var(--c-glow); text-align:center; }
+.ssr-thr-btitle::before { content:"สถานที่เพิ่มเติม"; width:78%; box-sizing:border-box; padding:.5vw .65vw; background:var(--c-btitle-bg); border:.1vw solid var(--c-line); border-radius:.55vw; font:500 1.25vw 'Google Sans'; color:var(--c-text-loc); text-shadow:0 0 4px var(--c-glow); text-align:center; }
 .ssr-thr-btitle::after { content:""; width:20%; aspect-ratio:1; margin-left:-2.1vw; background:var(--img-heart) center/90% no-repeat; }
 
 /* เนื้อหาแผงล่าง */
