@@ -15,7 +15,24 @@
 }
 
 /* ===== ธีมสี ===== */
-#blue {
+#blue-light {
+  --img-heart:url(https://iili.io/nFk1vcv.md.png);
+  --c-light: rgb(231 244 255);
+  --c-main: rgb(85 147 204);
+  --c-line: #6b9fb9;
+  --c-white: #ffffff;
+  --c-text: #131313;
+  --c-text-loc: #0b0b0b;
+  --c-glow: #85d6ff;
+  --c-btitle-bg: rgb(224 240 255);
+  --c-loc-glow: #c3ebff;
+  --c-loc-a: rgb(190 220 243);
+  --c-loc-b: rgb(119 194 244);
+  --c-bm-bg: #bdd6ec;
+  --c-shadow: rgba(0, 0, 0, .75);
+}
+#blue-dark {
+  --img-heart:url(https://iili.io/nFk1vcv.md.png);
   --c-light:rgb(0 0 0);          /* สีอ่อน/พื้นของ gradient และกล่องข้อความ */
   --c-main:rgb(85 147 204);      /* สีหลัก gradient + ขอบตัวอักษรชื่อ */
   --c-line:#6b9fb9;              /* เส้นขอบ ลายตกแต่ง bookmark ทั้งหมด */
@@ -27,12 +44,13 @@
   --c-loc-glow:#a7e2ff;          /* เรืองแสงชื่อสถานที่ */
   --c-loc-a:rgb(161 198 226);    /* gradient ป้ายสถานที่ ต้น */
   --c-loc-b:rgb(119 194 244);    /* gradient ป้ายสถานที่ ปลาย */
-  --c-bm-bg:#334e65;             /* พื้น bookmark */
+  --c-bm-bg:#6896be;             /* พื้น bookmark */
   --c-shadow:rgba(0,0,0,.75);
 }
-#pink {
+#pink-light {
+  --img-heart:url(https://iili.io/nFk1yD7.md.png);
   --c-light:rgb(255 233 245);
-  --c-main:rgb(255 139 205);
+  --c-main:rgb(255 103 189);
   --c-line:#c86197;
   --c-white:#fff;
   --c-text:#030303;
@@ -45,12 +63,29 @@
   --c-bm-bg:#ffb9d9;
   --c-shadow:rgba(0,0,0,.75);
 }
+#pink-dark {
+  --img-heart:url(https://iili.io/nFk1yD7.md.png);
+  --c-light: rgb(0 0 0);
+  --c-main: rgb(255 119 196);
+  --c-line: #c86197;
+  --c-white: #ffffff;
+  --c-text: #ffffff;
+  --c-text-loc: #000000;
+  --c-glow: #7a4864;
+  --c-btitle-bg: rgb(255 137 202);
+  --c-loc-glow: #ffd9f0;
+  --c-loc-a: rgb(255 188 228);
+  --c-loc-b: rgb(226 155 193);
+  --c-bm-bg: #ffaed3;
+  --c-shadow: rgba(0, 0, 0, .75);
+}
+
 
 /* ===== โครงสร้าง (ใช้ร่วมทุกธีม) ===== */
 .ssr-thr-container {
   --shadow:0 0 5px var(--c-shadow);
   --panel:linear-gradient(0deg,var(--c-light) 30%,var(--c-main) 100%);
-  --ribbon:linear-gradient(90deg,var(--c-light) 30%,var(--c-main) 100%);
+  --ribbon:linear-gradient(90deg,var(--c-glow) 30%,var(--c-main) 100%);
   --deco-grad:linear-gradient(180deg,var(--c-light) 30%,var(--c-main) 100%);
   --loc-grad:linear-gradient(90deg,var(--c-loc-a) 30%,var(--c-loc-b) 100%);
   width:100%;
