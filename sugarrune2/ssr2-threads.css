@@ -1,0 +1,65 @@
+@import url(https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap);
+@import url(https://midsummer-reverie.github.io/font-face/BrownSugar.css);
+@import url(https://midsummer-reverie.github.io/font-face/TheSeasons.css);
+@font-face {
+  font-family: 'Citadel Upper';
+  src: url(https://midsummer-reverie.github.io/font/Citadel-Script.otf) format('opentype');
+  unicode-range: U+0041-005A;
+  size-adjust: 126%; /* 5.3vw ÷ 4.2vw ≈ 1.26 ทดแทน span ที่เคยขยายตัวอักษร */
+}
+
+.ssr-thr-container { --line:#c86197; --pink:rgb(255 233 245); --pink2:rgb(255 139 205); --panel:linear-gradient(0deg,var(--pink) 30%,var(--pink2) 100%); --shadow:0 0 5px rgba(0,0,0,.75); width:100%; }
+.ssr-thr-gr { width:95%; margin:1.5vw auto; display:grid; grid-template-rows:auto auto 3vw auto 6.2vw; grid-template-columns:5.5vw 1fr 5.5vw; }
+
+/* แถบริบบิ้นด้านบน */
+.ssr-thr-gr::after { content:""; grid-area:1/2/3/3; height:10vw; margin-top:-6vw; z-index:2; background:linear-gradient(90deg,var(--pink) 30%,var(--pink2) 100%); mask:url(https://iili.io/n5NWNEb.png) center/90% no-repeat; }
+
+/* ชื่อโรงเรียน */
+.ssr-thr-titleflex { grid-area:1/2/2/3; z-index:8; width:85%; margin:auto auto -4.3vw; display:flex; align-items:center; flex-direction:row-reverse; font:4.2vw 'The Seasons'; color:#fff; text-shadow:0 0 6px #ffa7d9; -webkit-text-stroke:.25vw rgb(201 96 159); paint-order:stroke fill; }
+.ssr-thr-title1 { width:100%; box-sizing:border-box; padding:.5vw 1vw; text-align:center; }
+.ssr-thr-tteng { line-height:1; font-family:'Citadel Upper','The Seasons'; }
+.ssr-thr-cap { font:5.3vw 'Citadel'; }
+.ssr-thr-ttth { width:95%; margin:-.6vw 0 0; font:1.4vw 'Google Sans'; letter-spacing:.15vw; }
+
+/* แผงบน / แผงล่าง (พื้นหลัง + ลายโอเวอร์เลย์) */
+.ssr-thr-top, .ssr-thr-bt { position:relative; z-index:3; box-sizing:border-box; background:var(--panel); box-shadow:var(--shadow); border-radius:.75vw; }
+.ssr-thr-top { grid-area:2/2/3/3; }
+.ssr-thr-bt  { grid-area:4/2/5/3; }
+.ssr-thr-top::after, .ssr-thr-bt::after { content:""; position:absolute; inset:0; background:#fff; mask:url(https://iili.io/nAo0RHu.md.png) center/20%; mix-blend-mode:overlay; opacity:.3; border-radius:inherit; }
+
+/* เนื้อหาแผงบน */
+.ssr-thr-tcon { grid-area:2/2/3/3; z-index:5; box-sizing:border-box; border:.12vw solid #c95990; border-radius:.75vw; padding:5vw 1.75vw 2.4vw; overflow:hidden; }
+.ssr-thr-pic { aspect-ratio:3/1.8; box-sizing:border-box; border:.1vw solid var(--line); box-shadow:inset var(--shadow); border-radius:.65vw; background:url(https://iili.io/nA7OAMv.png) center/cover; }
+.ssr-thr-desc { margin-top:1.5vw; background:var(--pink); box-sizing:border-box; padding:.8vw; font:1.1vw 'Google Sans'; color:#030303; line-height:1.5; text-align:justify; }
+
+/* ป้าย "สถานที่เพิ่มเติม" */
+.ssr-thr-btitle { grid-area:3/2/4/3; z-index:6; width:40%; justify-self:end; display:flex; align-items:center; margin-bottom:-4vw; }
+.ssr-thr-btitle::before { content:"สถานที่เพิ่มเติม"; width:78%; box-sizing:border-box; padding:.5vw .65vw; background:var(--pink); border:.1vw solid var(--line); border-radius:.55vw; font:500 1.25vw 'Google Sans'; color:#030303; text-shadow:0 0 4px #ffacd7; text-align:center; }
+.ssr-thr-btitle::after { content:""; width:20%; aspect-ratio:1; margin-left:-2.1vw; background:url(https://iili.io/nFk1yD7.md.png) center/90% no-repeat; }
+
+/* เนื้อหาแผงล่าง */
+.ssr-thr-bcon { grid-area:4/2/5/3; z-index:5; box-sizing:border-box; border:.12vw solid var(--line); border-radius:.75vw; padding:3vw 1.75vw 2.2vw; overflow:hidden; }
+.ssr-thr-locfl { display:flex; flex-wrap:wrap; justify-content:center; gap:.85vw; }
+.ssr-thr-locbox { width:32%; }
+.ssr-thr-locpic { aspect-ratio:3/1.85; box-sizing:border-box; border:.1vw solid var(--line); box-shadow:inset var(--shadow); border-radius:.4vw; background:url(https://i.pinimg.com/736x/3e/04/f4/3e04f40d68a4e160595d05091a261b9d.jpg) center/cover; }
+.ssr-thr-locn { margin-top:.75vw; box-sizing:border-box; padding:.2vw; font:1vw 'Google Sans'; color:#0b0b0b; text-shadow:0 0 4px #ffd9f0; text-align:center; background:linear-gradient(90deg,rgb(255 198 232) 30%,rgb(255 145 203) 100%); border:.1vw solid #fff; border-radius:.45vw; }
+
+/* ลายตกแต่งมุมล่างซ้าย (2 ชั้นซ้อนกัน) */
+.ssr-thr-deco { grid-area:5/1/6/3; z-index:2; display:grid; width:30%; aspect-ratio:1; align-self:end; margin:0 0 -1vw -2vw; rotate:-5deg; }
+.ssr-thr-deco::before, .ssr-thr-deco::after { content:""; grid-area:1/1; width:100%; height:100%; }
+.ssr-thr-deco::before { background:var(--line); mask:url(https://iili.io/nAaZ5Qf.md.png) center/cover; }
+.ssr-thr-deco::after  { background:linear-gradient(180deg,var(--pink) 30%,var(--pink2) 100%); mask:url(https://iili.io/nAaZaEl.md.png) center/cover; }
+
+/* ข้อความแนวตั้งด้านซ้าย */
+.ssr-thr-s { grid-area:2/1/3/2; justify-self:end; width:50%; margin-top:7vw; display:flex; flex-direction:column; align-items:center; gap:2vw; font:1.2vw 'Brown Sugar'; line-height:1; text-transform:uppercase; letter-spacing:.15vw; }
+.ssr-thr-s::before, .ssr-thr-s::after { max-width:40%; writing-mode:vertical-rl; }
+.ssr-thr-s::before { content:"sugar sugar rune"; }
+.ssr-thr-s::after  { content:"season 2"; }
+.ssr-thr-ssp { width:100%; aspect-ratio:1; background:#fff; mask:url(https://iili.io/nAo0oV2.md.png) center/80% no-repeat; }
+
+.ssr-thr-deco2 { grid-area:5/2/6/3; justify-self:end; width:35%; aspect-ratio:2.7/1; margin-right:3vw; background:var(--line); mask:url(https://iili.io/nRAUAiB.png) center/cover; }
+
+/* bookmark */
+.ssr-thr-bookmark { position:relative; grid-area:2/2/3/4; z-index:2; justify-self:end; width:20%; height:4.6vw; margin-top:4.5vw; box-sizing:border-box; background:#ffb9d9; border:.11vw solid #b96b80; border-radius:1vw; }
+.ssr-thr-bookmark::before { content:""; position:absolute; inset:.4vw; border:.09vw dashed #c6809f; border-radius:.8vw; }
+.ssr-thr-bookmark::after { content:""; position:absolute; top:1.14vw; right:1.64vw; width:calc(25% - .57vw); aspect-ratio:1; background:#fff; mask:url(https://iili.io/nAo05Ab.md.png) center/95% no-repeat; }
