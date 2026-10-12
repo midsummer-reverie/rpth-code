@@ -16,6 +16,7 @@
 
 /* ===== ธีมสี (เพิ่มธีมใหม่ได้โดยคัดลอกบล็อกนี้แล้วเปลี่ยน id) ===== */
 #pink {
+  --img-heart:url(https://iili.io/nFk1yD7.md.png);
   --c-light:rgb(255 233 245);
   --c-main:rgb(255 139 205);
   --c-line:#c86197;
@@ -37,6 +38,7 @@
   --c-shadow:rgba(0,0,0,.75);
 }
 #blue {
+  --img-heart:url(https://iili.io/nFk1vcv.md.png);
   --c-light:rgb(0 0 0);
   --c-main:rgb(85 147 204);
   --c-line:#6b9fb9;
