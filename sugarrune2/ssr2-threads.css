@@ -79,7 +79,7 @@
   --c-bm-bg: #ffaed3;
   --c-shadow: rgba(0, 0, 0, .75);
 }
-.green-light {
+#green-light {
     --img-heart: url(https://iili.io/nFk1Zlf.md.png);
     --c-light: rgb(226 241 227);
     --c-main: rgb(95 194 98);
@@ -95,7 +95,54 @@
     --c-bm-bg: #96d9a2;
     --c-shadow: rgba(0, 0, 0, .75);
 }
-
+#green-dark {
+    --img-heart: url(https://iili.io/nFk1Zlf.md.png);
+    --c-light: rgb(0 0 0);
+    --c-main: rgb(86 157 88);
+    --c-line: #378144;
+    --c-white: #ffffff;
+    --c-text: #ffffff;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #dbffe1;
+    --c-btitle-bg: rgb(188 217 195);
+    --c-loc-glow: #d5ffd8;
+    --c-loc-a: rgb(203 255 205);
+    --c-loc-b: rgb(132 223 139);
+    --c-bm-bg: #96d9a2;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#yellow-light {
+    --img-heart: url(https://iili.io/nFk1woF.md.png);
+    --c-light: rgb(255 251 238);
+    --c-main: rgb(255 237 122);
+    --c-line: #d2a738;
+    --c-white: #ffffff;
+    --c-text: #131313;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #9f7532;
+    --c-btitle-bg: rgb(255 243 207);
+    --c-loc-glow: #fff5da;
+    --c-loc-a: rgb(255 252 196);
+    --c-loc-b: rgb(255 231 157);
+    --c-bm-bg: #fff7ab;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#yellow-dark {
+    --img-heart: url(https://iili.io/nFk1woF.md.png);
+    --c-light: rgb(0 0 0);
+    --c-main: rgb(209 194 100);
+    --c-line: #ffdb7e;
+    --c-white: #ffffff;
+    --c-text: #ffffff;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #9f7532;
+    --c-btitle-bg: rgb(238 223 181);
+    --c-loc-glow: #fff5da;
+    --c-loc-a: rgb(255 252 196);
+    --c-loc-b: rgb(255 231 157);
+    --c-bm-bg: #7f763f;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
 
 /* ===== โครงสร้าง (ใช้ร่วมทุกธีม) ===== */
 .ssr-thr-container {
