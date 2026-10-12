@@ -64,7 +64,7 @@
 /* ชื่อโรงเรียน */
 .ssr-thr-titleflex { grid-area:1/2/2/3; z-index:8; width:85%; margin:auto auto -4.3vw; display:flex; align-items:center; flex-direction:row-reverse; font:4.2vw 'The Seasons'; color:var(--c-title); text-shadow:0 0 6px var(--c-title-glow); -webkit-text-stroke:.25vw var(--c-title-stroke); paint-order:stroke fill; }
 .ssr-thr-title1 { width:100%; box-sizing:border-box; padding:.5vw 1vw; text-align:center; }
-.ssr-thr-tteng { line-height:1; font-family:'Citadel Upper','The Seasons'; }
+.ssr-thr-tteng { line-height:1; font-family:'Citadel Upper','The Seasons'; text-transform: capitalize; }
 .ssr-thr-ttth { width:95%; margin:-.6vw 0 0; font:1.4vw 'Google Sans'; letter-spacing:.15vw; }
 
 /* แผงบน / แผงล่าง */
