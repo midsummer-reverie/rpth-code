@@ -197,3 +197,4 @@
 .ssr-bio-label--trait::before    { content: "♡ อุปนิสัย"; }
 .ssr-bio-label--physical::before { content: "♡ ลักษณะทางกายภาพ"; }
 .ssr-bio-label--note::before     { content: "♡ สิ่งที่อยากบอกกับทีมงาน"; }
+.ssr-bio-footer::before          { content: "sugar sugar rune ♡ シュガシュガルーン"; }
