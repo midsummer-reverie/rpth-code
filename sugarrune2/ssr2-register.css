@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Kaisei+Decol:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://midsummer-reverie.github.io/font-face/BrownSugar.css);
+@import url(https://midsummer-reverie.github.io/font-face/TheSeasons.css);
+@import url(https://midsummer-reverie.github.io/font-face/Citadel-Script.css);
+
+/* ===== ตัวแปรสีชมพู / ภาพ gradient / mask / png ตกแต่ง ===== */
+#pink {
+  --ssr-bio-pink: #ff77bc;
+  --ssr-bio-pink-light: #ffa1d1;
+  --ssr-bio-gradient: url(https://i.pinimg.com/736x/02/c7/33/02c7337a8fcdf1c5ce947d3d8d32889b.jpg);
+  --ssr-bio-mask-banner: url(https://iili.io/nasnOCu.png);
+  --ssr-bio-mask-corner: url(https://iili.io/napKTAv.png);
+  --ssr-bio-deco: url(https://iili.io/nFk1yD7.md.png);
+}
+
+/* ===== โครงหลัก ===== */
+.ssr-bio-wrap {
+  width: 95%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 3vw auto 3vw;
+  grid-template-columns: 6vw 1fr 6vw;
+}
+
+.ssr-bio-wrap::before,
+.ssr-bio-wrap::after,
+.ssr-bio-card::before { content: ""; }
+
+/* พื้นหลัง gradient ที่ใช้ร่วมกัน */
+.ssr-bio-tab,
+.ssr-bio-chip,
+.ssr-bio-card::before,
+.ssr-bio-wrap::before { background: var(--ssr-bio-gradient) center/cover; }
+
+/* corner ตกแต่งมุมขวาบน */
+.ssr-bio-wrap::before {
+  width: 35%;
+  aspect-ratio: 1/1;
+  grid-area: 1/2/3/4;
+  z-index: 2;
+  justify-self: end;
+  mask: var(--ssr-bio-mask-corner) center/cover;
+  margin-top: -2vw;
+}
+
+/* png ตกแต่งมุมซ้ายล่าง */
+.ssr-bio-wrap::after {
+  width: 10%;
+  aspect-ratio: 1/1;
+  grid-area: 2/1/4/3;
+  z-index: 7;
+  background: var(--ssr-bio-deco) center/cover;
+  align-self: end;
+  margin-left: 3.5vw;
+  rotate: -4deg;
+  margin-bottom: -0.6vw;
+}
+
+.ssr-bio-tab {
+  width: fit-content;
+  box-sizing: border-box;
+  grid-area: 1/2/2/3;
+  padding: 0.5vw 1vw;
+  border: solid var(--ssr-bio-pink);
+  border-width: 0.12vw 0.12vw 0 0.12vw;
+  border-radius: 1vw 1vw 0 0;
+  align-self: end;
+  margin-left: 3vw;
+  font: 500 1.15vw 'Poppins';
+  color: #1b1b1b;
+  z-index: 2;
+}
+
+.ssr-bio-card {
+  width: 100%;
+  height: 100%;
+  grid-area: 2/2/3/3;
+  border-radius: 1.2vw;
+  border: 0.15vw solid var(--ssr-bio-pink);
+  background: #020202;
+  display: grid;
+  overflow: hidden;
+  z-index: 3;
+}
+
+/* banner ที่มี mask */
+.ssr-bio-card::before {
+  width: 100%;
+  aspect-ratio: 1.65/1;
+  grid-area: 1/1;
+  align-self: end;
+  mask: var(--ssr-bio-mask-banner) center/cover;
+  opacity: 0.6;
+}
+
+.ssr-bio-content {
+  width: 100%;
+  grid-area: 1/1;
+  box-sizing: border-box;
+  padding: 2vw 2vw 4vw;
+  z-index: 4;
+}
+
+/* ===== ชื่อใหญ่ ===== */
+.ssr-bio-name {
+  width: 100%;
+  font: 500 5.75vw 'The Seasons';
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--ssr-bio-pink) 50%, transparent);
+}
+.ssr-bio-name--second { margin-top: -0.6vw; }
+
+/* ===== ชิป ===== */
+.ssr-bio-chips {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  font: 500 1vw 'Google Sans';
+  color: #1b1b1b;
+}
+.ssr-bio-chip {
+  width: 49%;
+  box-sizing: border-box;
+  padding: 0.35vw 0.8vw;
+  border: 0.12vw solid #fff;
+  border-radius: 0.6vw;
+  text-align: center;
+}
+
+/* ===== เนื้อหาฟอร์ม ===== */
+.ssr-bio-body {
+  width: 90%;
+  margin: 4vw auto 0;
+}
+.ssr-bio-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5vw;
+}
+.ssr-bio-col { width: 48%; }
+.ssr-bio-block { width: 100%; }
+
+.ssr-bio-label,
+.ssr-bio-text {
+  width: 100%;
+  font: 500 1.1vw 'Google Sans';
+}
+.ssr-bio-label { color: var(--ssr-bio-pink-light); }
+.ssr-bio-label::first-letter {
+  color: var(--ssr-bio-pink);
+  margin-right: 0.5vw;
+}
+.ssr-bio-text {
+  font-weight: 400;
+  color: color-mix(in srgb, #fff 90%, transparent);
+  margin-top: 0.8vw;
+}
+.ssr-bio-text--long {
+  text-align: justify;
+  line-height: 1.4;
+}
+
+/* ===== รูปตัวละคร / footer ===== */
+.ssr-bio-photo {
+  width: 48%;
+  height: 17vw;
+  grid-area: 2/2/3/4;
+  border: 0.12vw solid var(--ssr-bio-pink);
+  z-index: 6;
+  justify-self: end;
+  border-radius: 1vw;
+  margin: 1.5vw 1.2vw 0 0;
+  background: var(--ssr-bio-char) 50% 40%/cover;
+}
+
+.ssr-bio-footer {
+  width: fit-content;
+  grid-area: 3/2/4/3;
+  font: 600 1.1vw 'Poppins', 'Kaisei Decol';
+  color: #fff;
+  justify-self: end;
+  margin: 0.5vw 1.25vw 0 0;
+}
+
+/* ===== หัวข้อใส่ผ่าน ::before ===== */
+.ssr-bio-tab::before { content: "REGISTRATION FORM"; }
+
+.ssr-bio-chip--extra::before { content: "ภาพตัวละครเพิ่มเติม"; }
+.ssr-bio-chip--color::before { content: "สีแบนเนอร์: "; }
+
+.ssr-bio-label--human::before    { content: "♡ ชื่อในโลกมนุษย์ (ไทย/ENG)"; }
+.ssr-bio-label--rova::before     { content: "♡ ชื่อในโรวาโยม (ไทย/ENG)"; }
+.ssr-bio-label--age::before      { content: "♡ อายุ"; }
+.ssr-bio-label--spell::before    { content: "♡ คาถาประจำตัว"; }
+.ssr-bio-label--history::before  { content: "♡ ประวัติตัวละคร (ไม่เกิน 300 คำ)"; }
+.ssr-bio-label--trait::before    { content: "♡ อุปนิสัย"; }
+.ssr-bio-label--physical::before { content: "♡ ลักษณะทางกายภาพ"; }
+.ssr-bio-label--note::before     { content: "♡ สิ่งที่อยากบอกกับทีมงาน"; }
