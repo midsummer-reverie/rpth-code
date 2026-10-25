@@ -203,7 +203,7 @@ a.ssr-bio-chip {
   margin-bottom: 1.5vw;
 }
 .ssr-bio-col { width: 48%; }
-.ssr-bio-block { width: 100%; }
+.ssr-bio-block { width: 100%; margin-bottom: 2vw;}
 
 .ssr-bio-label,
 .ssr-bio-text {
