@@ -12,6 +12,54 @@
   --ssr-bio-mask-corner: url(https://iili.io/napKTAv.png);
   --ssr-bio-deco: url(https://iili.io/nFk1yD7.md.png);
 }
+#blue {
+  --ssr-bio-pink: #77d1ff;
+  --ssr-bio-pink-light: #a1dfff;
+  --ssr-bio-gradient: url(https://i.pinimg.com/736x/68/96/5f/68965fa….jpg);
+  --ssr-bio-mask-banner: url(https://iili.io/nasnOCu.png);
+  --ssr-bio-mask-corner: url(https://iili.io/napKTAv.png);
+  --ssr-bio-deco: url(https://iili.io/nFk1vcv.md.png);
+}
+#green {
+  --ssr-bio-pink: #77c472;
+  --ssr-bio-pink-light: #a4f7b5;
+  --ssr-bio-gradient: url(https://i.pinimg.com/736x/4e/13/97/4e1397171c04bf244b4e2ebf68cf0a91.jpg);
+  --ssr-bio-mask-banner: url(https://iili.io/nasnOCu.png);
+  --ssr-bio-mask-corner: url(https://iili.io/napKTAv.png);
+  --ssr-bio-deco: url(https://iili.io/nFk1Zlf.md.png);
+}
+#yellow {
+  --ssr-bio-pink: #ffda66;
+  --ssr-bio-pink-light: #ffef97;
+  --ssr-bio-gradient: url(https://i.pinimg.com/736x/95/e0/0c/95e00c9e0f8b90cd77cd125fadb138eb.jpg);
+  --ssr-bio-mask-banner: url(https://iili.io/nasnOCu.png);
+  --ssr-bio-mask-corner: url(https://iili.io/napKTAv.png);
+  --ssr-bio-deco: url(https://iili.io/nFk1woF.md.png);
+}
+#orange {
+  --ssr-bio-pink: #ff9654;
+  --ssr-bio-pink-light: #ffb566;
+  --ssr-bio-gradient: url(https://i.pinimg.com/736x/97/bc/f5/97bcf56….jpg);
+  --ssr-bio-mask-banner: url(https://iili.io/nasnOCu.png);
+  --ssr-bio-mask-corner: url(https://iili.io/napKTAv.png);
+  --ssr-bio-deco: url(https://iili.io/nFk1daR.md.png);
+}
+#red {
+  --ssr-bio-pink: #ff6161;
+  --ssr-bio-pink-light: #ff9e9e;
+  --ssr-bio-gradient: url(https://i.pinimg.com/736x/67/46/04/6746043….jpg);
+  --ssr-bio-mask-banner: url(https://iili.io/nasnOCu.png);
+  --ssr-bio-mask-corner: url(https://iili.io/napKTAv.png);
+  --ssr-bio-deco: url(https://iili.io/nFk1kKJ.md.png);
+}
+#purple {
+  --ssr-bio-pink: #9b66bf;
+  --ssr-bio-pink-light: #bb9bd6;
+  --ssr-bio-gradient: url(https://i.pinimg.com/736x/85/85/00/8585007….jpg);
+  --ssr-bio-mask-banner: url(https://iili.io/nasnOCu.png);
+  --ssr-bio-mask-corner: url(https://iili.io/napKTAv.png);
+  --ssr-bio-deco: url(https://iili.io/nFkEnDP.md.png);
+}
 
 /* ===== โครงหลัก ===== */
 .ssr-bio-wrap {
