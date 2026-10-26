@@ -16,6 +16,18 @@
   --ssr-hub-color: #ffa2da;
   --ssr-hub-tab: url(https://i.pinimg.com/1200x/52/db/55/52db55321e9cd75e692cb25adf06e5a0.jpg);
 }
+#yellow {
+  --ssr-hub-color: #ffda66;
+  --ssr-hub-tab: url(https://i.pinimg.com/736x/25/e4/ea/25e4ea24882e05fd3c860eede00e2e0b.jpg);
+}
+#orange {
+  --ssr-hub-color: #ff874d;
+  --ssr-hub-tab: url(https://i.pinimg.com/736x/9f/18/6f/9f186fe9686589586c1fdb30b4fd8e29.jpg);
+}
+#green {
+  --ssr-hub-color: #4b8443;
+  --ssr-hub-tab: url(https://i.pinimg.com/1200x/a0/6e/01/a06e01731cc5dc4a12c068a068e76064.jpg);
+}
 
 /* ===== โครงหลัก ===== */
 .ssr-hub-wrap {
@@ -95,7 +107,7 @@
   width: 100%;
   aspect-ratio: 2/1;
   margin: 3vw auto;
-  background: url(https://iili.io/n0d0yiu.gif) center/cover;
+  background: var(--ssr-hub-pic);
 }
 
 /* ===== กล่องข้อมูล ===== */
@@ -166,7 +178,7 @@
   box-sizing: border-box;
   border: 0.25vw solid var(--ssr-hub-staff-color);
   border-radius: 0.75vw;
-  background: var(--ssr-hub-staff-img) center/cover;
+  background: var(--ssr-hub-staff-img);
   transition: box-shadow 0.3s ease;
 }
 .ssr-hub-staff:hover .ssr-hub-staff-photo {
@@ -181,7 +193,7 @@
   text-align: center;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  background: var(--ssr-hub-staff-text) center/cover;
+  background: var(--ssr-hub-staff-text);
   -webkit-background-clip: text;
   background-clip: text;
 }
