@@ -28,6 +28,10 @@
   --ssr-hub-color: #4b8443;
   --ssr-hub-tab: url(https://i.pinimg.com/1200x/a0/6e/01/a06e01731cc5dc4a12c068a068e76064.jpg);
 }
+#red {
+  --ssr-hub-color: #ff8080;
+  --ssr-hub-tab: url(https://i.pinimg.com/736x/51/f6/97/51f69762b654ec27725e911429545769.jpg);
+}
 
 /* ===== โครงหลัก ===== */
 .ssr-hub-wrap {
