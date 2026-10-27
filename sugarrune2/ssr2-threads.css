@@ -290,7 +290,7 @@
 .ssr-thr-deco::after  { background:var(--deco-grad); mask:var(--img-deco-b) center/cover; }
 
 /* ข้อความแนวตั้งด้านซ้าย */
-.ssr-thr-s { grid-area:2/1/3/2; justify-self:end; width:50%; margin-top:7.5vw; display:flex; flex-direction:column; align-items:center; gap:2vw; font:1.2vw 'Brown Sugar'; line-height:1; text-transform:uppercase; letter-spacing:.15vw; }
+.ssr-thr-s { grid-area:2/1/3/2; justify-self:end; width:50%; margin-top:7.5vw; display:flex; flex-direction:column; align-items:center; gap:2vw; font:1.2vw 'Brown Sugar'; line-height:1; text-transform:uppercase; letter-spacing:.15vw; color: #ffffff; }
 .ssr-thr-s::before, .ssr-thr-s::after { max-width:40%; writing-mode:vertical-rl; }
 .ssr-thr-s::before { content:"sugar sugar rune"; }
 .ssr-thr-s::after  { content:"season 2"; }
