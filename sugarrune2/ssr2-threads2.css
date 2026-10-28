@@ -1,0 +1,307 @@
+@import url(https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap);
+@import url(https://midsummer-reverie.github.io/font-face/BrownSugar.css);
+@import url(https://midsummer-reverie.github.io/font-face/TheSeasons.css);
+@font-face { font-family:'Citadel Upper'; src:url(https://midsummer-reverie.github.io/font/Citadel-Script.otf) format('opentype'); unicode-range:U+0041-005A; size-adjust:126%; }
+
+/* ===== ภาพตกแต่ง (ใช้ร่วมทุกธีม) ===== */
+.ssr-thr-container {
+  --img-texture:url(https://iili.io/nAo0RHu.md.png);
+  --img-ribbon:url(https://iili.io/n5NWNEb.png);
+  --img-deco-a:url(https://iili.io/nAaZ5Qf.md.png);
+  --img-deco-b:url(https://iili.io/nAaZaEl.md.png);
+  --img-deco2:url(https://iili.io/nRAUAiB.png);
+  --img-ssp:url(https://iili.io/nAo0oV2.md.png);
+  --img-bm:url(https://iili.io/nAo05Ab.md.png);
+}
+
+/* ===== ธีมสี ===== */
+#blue-light {
+  --img-heart:url(https://iili.io/nFk1vcv.md.png);
+  --c-light: rgb(231 244 255);
+  --c-main: rgb(85 147 204);
+  --c-line: #6b9fb9;
+  --c-white: #ffffff;
+  --c-text: #131313;
+  --c-text-loc: #0b0b0b;
+  --c-glow: #85d6ff;
+  --c-btitle-bg: rgb(224 240 255);
+  --c-loc-glow: #c3ebff;
+  --c-loc-a: rgb(190 220 243);
+  --c-loc-b: rgb(119 194 244);
+  --c-bm-bg: #bdd6ec;
+  --c-shadow: rgba(0, 0, 0, .75);
+}
+#blue-dark {
+  --img-heart:url(https://iili.io/nFk1vcv.md.png);
+  --c-light:rgb(0 0 0);          /* สีอ่อน/พื้นของ gradient และกล่องข้อความ */
+  --c-main:rgb(85 147 204);      /* สีหลัก gradient + ขอบตัวอักษรชื่อ */
+  --c-line:#6b9fb9;              /* เส้นขอบ ลายตกแต่ง bookmark ทั้งหมด */
+  --c-white:#fff;                /* ลายโอเวอร์เลย์ ไอคอน ขอบป้ายสถานที่ ตัวอักษรชื่อ */
+  --c-text:#fff;                 /* ตัวอักษรเนื้อหา */
+  --c-text-loc:#0b0b0b;          /* ตัวอักษรป้ายสถานที่ */
+  --c-glow:#85d6ff;              /* เรืองแสงของชื่อโรงเรียน และป้าย "สถานที่เพิ่มเติม" */
+  --c-btitle-bg:rgb(188, 218, 238);   /* พื้นป้าย "สถานที่เพิ่มเติม" */
+  --c-loc-glow:#a7e2ff;          /* เรืองแสงชื่อสถานที่ */
+  --c-loc-a:rgb(161 198 226);    /* gradient ป้ายสถานที่ ต้น */
+  --c-loc-b:rgb(119 194 244);    /* gradient ป้ายสถานที่ ปลาย */
+  --c-bm-bg:#6896be;             /* พื้น bookmark */
+  --c-shadow:rgba(0,0,0,.75);
+}
+#pink-light {
+  --img-heart:url(https://iili.io/nFk1yD7.md.png);
+  --c-light:rgb(255 233 245);
+  --c-main:rgb(255 103 189);
+  --c-line:#c86197;
+  --c-white:#fff;
+  --c-text:#030303;
+  --c-text-loc:#0b0b0b;
+  --c-glow:#ffa7d9;
+  --c-btitle-bg:rgb(255 233 245);
+  --c-loc-glow:#ffd9f0;
+  --c-loc-a:rgb(255 198 232);
+  --c-loc-b:rgb(255 145 203);
+  --c-bm-bg:#ffb9d9;
+  --c-shadow:rgba(0,0,0,.75);
+}
+#pink-dark {
+  --img-heart:url(https://iili.io/nFk1yD7.md.png);
+  --c-light: rgb(0 0 0);
+  --c-main: rgb(255 119 196);
+  --c-line: #c86197;
+  --c-white: #ffffff;
+  --c-text: #ffffff;
+  --c-text-loc: #000000;
+  --c-glow: #7a4864;
+  --c-btitle-bg: rgb(255 137 202);
+  --c-loc-glow: #ffd9f0;
+  --c-loc-a: rgb(255 188 228);
+  --c-loc-b: rgb(226 155 193);
+  --c-bm-bg: #ffaed3;
+  --c-shadow: rgba(0, 0, 0, .75);
+}
+#green-light {
+    --img-heart: url(https://iili.io/nFk1Zlf.md.png);
+    --c-light: rgb(226 241 227);
+    --c-main: rgb(95 194 98);
+    --c-line: #4a8154;
+    --c-white: #ffffff;
+    --c-text: #131313;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #dbffe1;
+    --c-btitle-bg: rgb(188 217 195);
+    --c-loc-glow: #d5ffd8;
+    --c-loc-a: rgb(203 255 205);
+    --c-loc-b: rgb(132 223 139);
+    --c-bm-bg: #96d9a2;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#green-dark {
+    --img-heart: url(https://iili.io/nFk1Zlf.md.png);
+    --c-light: rgb(0 0 0);
+    --c-main: rgb(86 157 88);
+    --c-line: #378144;
+    --c-white: #ffffff;
+    --c-text: #ffffff;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #dbffe1;
+    --c-btitle-bg: rgb(188 217 195);
+    --c-loc-glow: #d5ffd8;
+    --c-loc-a: rgb(203 255 205);
+    --c-loc-b: rgb(132 223 139);
+    --c-bm-bg: #96d9a2;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#yellow-light {
+    --img-heart: url(https://iili.io/nFk1woF.md.png);
+    --c-light: rgb(255 251 238);
+    --c-main: rgb(255 237 122);
+    --c-line: #d2a738;
+    --c-white: #ffffff;
+    --c-text: #131313;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #9f7532;
+    --c-btitle-bg: rgb(255 243 207);
+    --c-loc-glow: #fff5da;
+    --c-loc-a: rgb(255 252 196);
+    --c-loc-b: rgb(255 231 157);
+    --c-bm-bg: #fff7ab;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#yellow-dark {
+    --img-heart: url(https://iili.io/nFk1woF.md.png);
+    --c-light: rgb(0 0 0);
+    --c-main: rgb(209 194 100);
+    --c-line: #ffdb7e;
+    --c-white: #ffffff;
+    --c-text: #ffffff;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #9f7532;
+    --c-btitle-bg: rgb(238 223 181);
+    --c-loc-glow: #fff5da;
+    --c-loc-a: rgb(255 252 196);
+    --c-loc-b: rgb(255 231 157);
+    --c-bm-bg: #7f763f;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#orange-light {
+    --img-heart: url(https://iili.io/nFk1daR.md.png);
+    --c-light: rgb(255 240 231);
+    --c-main: rgb(255 126 44);
+    --c-line: #974600;
+    --c-white: #ffffff;
+    --c-text: #000000;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #ff966e;
+    --c-btitle-bg: rgb(255 211 182);
+    --c-loc-glow: #ffc2a0;
+    --c-loc-a: rgb(255 217 189);
+    --c-loc-b: rgb(255 174 104);
+    --c-bm-bg: #ffae68;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#orange-dark {
+    --img-heart: url(https://iili.io/nFk1daR.md.png);
+    --c-light: rgb(14 14 14);
+    --c-main: rgb(255 149 81);
+    --c-line: #ff7600;
+    --c-white: #ffffff;
+    --c-text: #ffffff;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #ff966e;
+    --c-btitle-bg: rgb(255 211 182);
+    --c-loc-glow: #ffc2a0;
+    --c-loc-a: rgb(255 217 189);
+    --c-loc-b: rgb(255 174 104);
+    --c-bm-bg: #ffae68;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#red-light {
+    --img-heart: url(https://iili.io/nFk1kKJ.md.png);
+    --c-light: rgb(252 233 233);
+    --c-main: rgb(255 99 99);
+    --c-line: #da4e4e;
+    --c-white: #ffffff;
+    --c-text: #131313;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #ffc0c0;
+    --c-btitle-bg: rgb(255 227 227);
+    --c-loc-glow: #ffc3c3;
+    --c-loc-a: rgb(255 211 211);
+    --c-loc-b: rgb(255 149 149);
+    --c-bm-bg: #ffa5a5;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#red-dark {
+    --img-heart: url(https://iili.io/nFk1kKJ.md.png);
+    --c-light: rgb(0 0 0);
+    --c-main: rgb(204 44 44);
+    --c-line: #c73535;
+    --c-white: #ffffff;
+    --c-text: #ffffff;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #ffc0c0;
+    --c-btitle-bg: rgb(255 225 225);
+    --c-loc-glow: #ffc3c3;
+    --c-loc-a: rgb(255 183 183);
+    --c-loc-b: rgb(255 117 117);
+    --c-bm-bg: #a73535;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#purple-light {
+    --img-heart: url(https://iili.io/nFkEnDP.md.png);
+    --c-light: rgb(244 231 255);
+    --c-main: rgb(123 72 177);
+    --c-line: #6f528d;
+    --c-white: #ffffff;
+    --c-text: #131313;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #e1ccff;
+    --c-btitle-bg: rgb(237 224 255);
+    --c-loc-glow: #e7ddff;
+    --c-loc-a: rgb(218 190 243);
+    --c-loc-b: rgb(168 136 222);
+    --c-bm-bg: #b299d1;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+#purple-dark {
+    --img-heart: url(https://iili.io/nFkEnDP.md.png);
+    --c-light: rgb(0 0 0);
+    --c-main: rgb(107 59 157);
+    --c-line: #6f528d;
+    --c-white: #ffffff;
+    --c-text: #ffffff;
+    --c-text-loc: #0b0b0b;
+    --c-glow: #e1ccff;
+    --c-btitle-bg: rgb(237 224 255);
+    --c-loc-glow: #e7ddff;
+    --c-loc-a: rgb(218 190 243);
+    --c-loc-b: rgb(168 136 222);
+    --c-bm-bg: #8d6cb7;
+    --c-shadow: rgba(0, 0, 0, .75);
+}
+
+/* ===== โครงสร้าง (ใช้ร่วมทุกธีม) ===== */
+.ssr-thr-container {
+  --shadow:0 0 5px var(--c-shadow);
+  --panel:linear-gradient(0deg,var(--c-light) 30%,var(--c-main) 100%);
+  --ribbon:linear-gradient(90deg,var(--c-glow) 30%,var(--c-main) 100%);
+  --deco-grad:linear-gradient(180deg,var(--c-light) 30%,var(--c-main) 100%);
+  --loc-grad:linear-gradient(90deg,var(--c-loc-a) 30%,var(--c-loc-b) 100%);
+  width:100%;
+}
+.ssr-thr-gr { width:95%; margin:1.5vw auto; display:grid; grid-template-rows:5vw auto 3vw auto 6.2vw; grid-template-columns:5.5vw 1fr 5.5vw; }
+.ssr-thr-noloc .ssr-thr-gr { grid-template-rows:5vw auto 6.2vw; }
+
+/* แถบริบบิ้นด้านบน */
+.ssr-thr-gr::after { content:""; grid-area:1/2/3/3; height:10vw; margin-top:-4.3vw; z-index:2; background:var(--ribbon); mask:var(--img-ribbon) center/90% no-repeat; }
+
+/* ชื่อโรงเรียน */
+.ssr-thr-titleflex { grid-area:1/2/2/3; z-index:8; width:85%; margin:auto auto -4.3vw; display:flex; align-items:center; flex-direction:row-reverse; font:4.2vw 'The Seasons'; color:var(--c-white); text-shadow:0 0 6px var(--c-glow); -webkit-text-stroke:.25vw var(--c-main); paint-order:stroke fill; }
+.ssr-thr-title1 { width:100%; box-sizing:border-box; padding:.5vw 1vw; text-align:center; }
+.ssr-thr-tteng { line-height:1; font-family:'Citadel Upper','The Seasons'; text-transform: capitalize; }
+.ssr-thr-ttth { width:95%; margin:-.6vw 0 0; font:1.4vw 'Google Sans'; letter-spacing:.15vw; }
+
+/* แผงบน / แผงล่าง */
+.ssr-thr-top, .ssr-thr-bt { position:relative; z-index:3; box-sizing:border-box; background:var(--panel); box-shadow:var(--shadow); border-radius:.75vw; }
+.ssr-thr-top { grid-area:2/2/3/3; }
+.ssr-thr-bt  { grid-area:4/2/5/3; }
+.ssr-thr-top::after, .ssr-thr-bt::after { content:""; position:absolute; inset:0; background:var(--c-white); mask:var(--img-texture) center/20%; mix-blend-mode:overlay; opacity:.3; border-radius:inherit; }
+
+/* เนื้อหาแผงบน */
+.ssr-thr-tcon { grid-area:2/2/3/3; z-index:5; box-sizing:border-box; border:.12vw solid var(--c-line); border-radius:.75vw; padding:5vw 1.75vw 2.4vw; overflow:hidden; }
+.ssr-thr-pic { aspect-ratio:3/1.8; box-sizing:border-box; border:.1vw solid var(--c-line); box-shadow:inset var(--shadow); border-radius:.65vw; background:var(--img-pic); }
+.ssr-thr-desc { margin-top:1.5vw; background:var(--c-light); box-sizing:border-box; padding:.8vw; font:1.1vw 'Google Sans'; color:var(--c-text); line-height:1.5; text-align:justify; }
+
+/* ป้าย "สถานที่เพิ่มเติม" */
+.ssr-thr-btitle { grid-area:3/2/4/3; z-index:6; width:40%; justify-self:end; display:flex; align-items:center; margin-bottom:-4vw; }
+.ssr-thr-btitle::before { content:"สถานที่เพิ่มเติม"; width:78%; box-sizing:border-box; padding:.5vw .65vw; background:var(--c-btitle-bg); border:.1vw solid var(--c-line); border-radius:.55vw; font:500 1.25vw 'Google Sans'; color:var(--c-text-loc); text-shadow:0 0 4px var(--c-glow); text-align:center; }
+.ssr-thr-btitle::after { content:""; width:20%; aspect-ratio:1; margin-left:-2.1vw; background:var(--img-heart) center/90% no-repeat; }
+
+/* เนื้อหาแผงล่าง */
+.ssr-thr-bcon { grid-area:4/2/5/3; z-index:5; box-sizing:border-box; border:.12vw solid var(--c-line); border-radius:.75vw; padding:3vw 1.75vw 2.2vw; overflow:hidden; }
+.ssr-thr-locfl { display:flex; flex-wrap:wrap; justify-content:center; gap:.85vw; }
+.ssr-thr-locbox { width:32%; }
+.ssr-thr-locpic { aspect-ratio:3/1.85; box-sizing:border-box; border:.1vw solid var(--c-line); box-shadow:inset var(--shadow); border-radius:.4vw; background:var(--img-locpic); }
+.ssr-thr-locn { margin-top:.75vw; box-sizing:border-box; padding:.2vw; font:1vw 'Google Sans'; color:var(--c-text-loc); text-shadow:0 0 4px var(--c-loc-glow); text-align:center; background:var(--loc-grad); border:.1vw solid var(--c-white); border-radius:.45vw; }
+
+/* ลายตกแต่งมุมล่างซ้าย */
+.ssr-thr-deco { grid-area:5/1/6/3; z-index:2; display:grid; width:30%; aspect-ratio:1; align-self:end; margin:0 0 -1vw -2vw; rotate:-5deg; }
+.ssr-thr-noloc .ssr-thr-deco { grid-area:3/1/4/3; }
+.ssr-thr-deco::before, .ssr-thr-deco::after { content:""; grid-area:1/1; width:100%; height:100%; }
+.ssr-thr-deco::before { background:var(--c-line); mask:var(--img-deco-a) center/cover; }
+.ssr-thr-deco::after  { background:var(--deco-grad); mask:var(--img-deco-b) center/cover; }
+
+/* ข้อความแนวตั้งด้านซ้าย */
+.ssr-thr-s { grid-area:2/1/3/2; justify-self:end; width:50%; margin-top:7.5vw; display:flex; flex-direction:column; align-items:center; gap:2vw; font:1.2vw 'Brown Sugar'; line-height:1; text-transform:uppercase; letter-spacing:.15vw; color: #ffffff; }
+.ssr-thr-s::before, .ssr-thr-s::after { max-width:40%; writing-mode:vertical-rl; }
+.ssr-thr-s::before { content:"sugar sugar rune"; }
+.ssr-thr-s::after  { content:"season 2"; }
+.ssr-thr-ssp { width:100%; aspect-ratio:1; background:var(--c-white); mask:var(--img-ssp) center/80% no-repeat; }
+
+.ssr-thr-deco2 { grid-area:5/2/6/3; justify-self:end; width:35%; aspect-ratio:2.7/1; margin-right:3vw; background:var(--c-line); mask:var(--img-deco2) center/cover; }
+.ssr-thr-noloc .ssr-thr-deco2 { grid-area:3/2/4/3; }
+
+/* bookmark */
+.ssr-thr-bookmark { position:relative; grid-area:2/2/3/4; z-index:2; justify-self:end; width:20%; height:4.6vw; margin-top:4.5vw; box-sizing:border-box; background:var(--c-bm-bg); border:.11vw solid var(--c-line); border-radius:1vw; }
+.ssr-thr-bookmark::before { content:""; position:absolute; inset:.4vw; border:.09vw dashed var(--c-line); border-radius:.8vw; }
+.ssr-thr-bookmark::after { content:""; position:absolute; top:1.14vw; right:1.64vw; width:calc(25% - .57vw); aspect-ratio:1; background:var(--c-white); mask:var(--img-bm) center/95% no-repeat; }
