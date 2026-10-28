@@ -268,7 +268,7 @@
 
 /* เนื้อหาแผงบน */
 .ssr-thr-tcon { grid-area:2/2/3/3; z-index:5; box-sizing:border-box; border:.12vw solid var(--c-line); border-radius:.75vw; padding:5vw 1.75vw 2.4vw; overflow:hidden; }
-.ssr-thr-pic { aspect-ratio:3/1.8; box-sizing:border-box; border:.1vw solid var(--c-line); box-shadow:inset var(--shadow); border-radius:.65vw; background:var(--img-pic); }
+.ssr-thr-pic { aspect-ratio:3/1.8; box-sizing:border-box; border:.1vw solid var(--c-line); box-shadow:inset var(--shadow); border-radius:.65vw; background:var(--img-pic) center/cover; }
 .ssr-thr-desc { margin-top:1.5vw; background:var(--c-light); box-sizing:border-box; padding:.8vw; font:1.1vw 'Google Sans'; color:var(--c-text); line-height:1.5; text-align:justify; }
 
 /* ป้าย "สถานที่เพิ่มเติม" */
@@ -280,7 +280,7 @@
 .ssr-thr-bcon { grid-area:4/2/5/3; z-index:5; box-sizing:border-box; border:.12vw solid var(--c-line); border-radius:.75vw; padding:3vw 1.75vw 2.2vw; overflow:hidden; }
 .ssr-thr-locfl { display:flex; flex-wrap:wrap; justify-content:center; gap:.85vw; }
 .ssr-thr-locbox { width:32%; }
-.ssr-thr-locpic { aspect-ratio:3/1.85; box-sizing:border-box; border:.1vw solid var(--c-line); box-shadow:inset var(--shadow); border-radius:.4vw; background:var(--img-locpic); }
+.ssr-thr-locpic { aspect-ratio:3/1.85; box-sizing:border-box; border:.1vw solid var(--c-line); box-shadow:inset var(--shadow); border-radius:.4vw; background:var(--img-locpic) center/cover; }
 .ssr-thr-locn { margin-top:.75vw; box-sizing:border-box; padding:.2vw; font:1vw 'Google Sans'; color:var(--c-text-loc); text-shadow:0 0 4px var(--c-loc-glow); text-align:center; background:var(--loc-grad); border:.1vw solid var(--c-white); border-radius:.45vw; }
 
 /* ลายตกแต่งมุมล่างซ้าย */
