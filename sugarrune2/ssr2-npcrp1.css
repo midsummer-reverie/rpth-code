@@ -256,4 +256,4 @@
 #whiteheart { --npcdropheart: url(https://iili.io/nFkEFlj.md.png) center/95% no-repeat; --npchbg: url(https://iili.io/nFkEimB.png) center / cover; }
 #blackheart { --npcdropheart: url(https://iili.io/nFkEA0J.md.png) center/95% no-repeat; --npchbg: url(https://iili.io/nFkEimB.png) center / cover; }
 #rainbowheart { --npcdropheart: url(https://iili.io/nFk11Fj.md.png) center/95% no-repeat; --npchbg: url(https://iili.io/nFkEimB.png) center / cover; }
-#noheartdrop { --npchbg: transparent; }
+#noheartdrop { --npchbg: none; }
