@@ -7,7 +7,7 @@
     width: 85%;
     margin: 1.65vw auto;
     display: grid;
-    grid-template-rows: 2.8vw 3.5vw 10vw auto auto 2.2vw;
+    grid-template-rows: 5.5vw 3.5vw 10vw auto auto 2.2vw;
     grid-template-columns: 2.6vw 1fr 4vw;
 }
 .ssr-npc1-bg {
@@ -207,7 +207,7 @@
 }
 .ssr-npc1-deco2 {
     width: 75%;
-    margin: -1vw auto;
+    margin: 1vw 2vw 1.3vw 4vw;
     aspect-ratio: 3.09 / 1;
     grid-area: 1 / 2 / 4 / 3;
     z-index: 2;
@@ -215,7 +215,7 @@
     mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat;
     -webkit-mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat;
     align-self: start;
-    rotate: -10deg;
+    rotate: -6deg;
 }
 .ssr-npc1-decoflex {
     width: 70%;
