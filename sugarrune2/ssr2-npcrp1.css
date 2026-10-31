@@ -177,6 +177,7 @@
     position: absolute;
     background: var(--npcgradbg);
     mask: var(--npchbg);
+    -webkit-mask: var(--npchbg);
 }
 .ssr-npc1-hde {
     width: 100%;
