@@ -7,7 +7,7 @@
     width: 85%;
     margin: 1.65vw auto;
     display: grid;
-    grid-template-rows: 5.5vw 3.5vw 10vw auto auto 2.2vw;
+    grid-template-rows: 8vw 3.5vw 10vw auto auto 2.2vw;
     grid-template-columns: 2.6vw 1fr 4vw;
 }
 .ssr-npc1-bg {
@@ -207,7 +207,7 @@
 }
 .ssr-npc1-deco2 {
     width: 75%;
-    margin: 1vw 2vw 1.3vw 4vw;
+    margin: 3.35vw 2vw 1.3vw 4vw;
     aspect-ratio: 3.09 / 1;
     grid-area: 1 / 2 / 4 / 3;
     z-index: 2;
