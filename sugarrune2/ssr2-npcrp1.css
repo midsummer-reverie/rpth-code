@@ -1,13 +1,13 @@
 @import url(https://midsummer-reverie.github.io/font-face/aranta.css);
 @import url(https://midsummer-reverie.github.io/font-face/Citadel-Script.css);
 @import url(https://midsummer-reverie.github.io/font-face/TheSeasons.css);
-@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,-50..200;1,17..18,400..700,-50..200&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,-50..200;1,17..18,400..700,-50..200&family=Kaisei+Decol&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
 .ssr-npc1-container {
     width: 85%;
     margin: 1.65vw auto;
     display: grid;
-    grid-template-rows: 8vw 3.5vw 10vw auto auto 2.2vw;
+    grid-template-rows: 14vw 3.5vw 10vw auto auto 2.2vw;
     grid-template-columns: 2.6vw 1fr 4vw;
 }
 .ssr-npc1-bg {
@@ -207,7 +207,7 @@
 }
 .ssr-npc1-deco2 {
     width: 75%;
-    margin: 3.35vw 2vw 1.3vw 4vw;
+    margin: 9vw 2vw 1.3vw 4vw;
     aspect-ratio: 3.09 / 1;
     grid-area: 1 / 2 / 4 / 3;
     z-index: 2;
