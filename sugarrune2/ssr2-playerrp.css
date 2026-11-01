@@ -104,7 +104,7 @@
     grid-area: 1 / 1;
     box-sizing: border-box;
     padding: 6vw 2.6vw 4vw;
-    font: 1.1vw 'Google Sans';
+    font: 1.05vw 'Bai Jamjuree';
     color: var(--p-txt);
     z-index: 10;
     text-align: justify;
@@ -125,7 +125,7 @@
     align-self: end;
     justify-self: end;
     z-index: 8;
-    font: 1vw 'Google Sans';
+    font: 1vw 'Bai Jamjuree';
     color: var(--p-addt);
     margin-right: 2.4vw;
     max-width: 80%;
