@@ -4,19 +4,20 @@
 @import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,-50..200;1,17..18,400..700,-50..200&family=Kaisei+Decol&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
 .ssr-npc1-container {
-    width: 85%;
-    margin: 1.65vw auto;
+    --u: min(1vw, 12.8px);
+    width: min(85%, calc(85 * var(--u)));
+    margin: calc(1.65 * var(--u)) auto;
     display: grid;
-    grid-template-rows: 14vw 3.5vw 10vw auto auto 2.2vw;
-    grid-template-columns: 2.6vw 1fr 4vw;
+    grid-template-rows: calc(14 * var(--u)) calc(3.5 * var(--u)) calc(10 * var(--u)) auto auto calc(2.2 * var(--u));
+    grid-template-columns: calc(2.6 * var(--u)) 1fr calc(4 * var(--u));
 }
 .ssr-npc1-bg {
     width: 45%;
     height: 100%;
     grid-area: 2 / 2 / 4 / 4;
     z-index: 5;
-    border: 0.1vw solid #ffffff;
-    border-radius: 0.85vw;
+    border: calc(0.1 * var(--u)) solid #ffffff;
+    border-radius: calc(0.85 * var(--u));
     background: var(--npcbg);
     justify-self: end;
 }
@@ -26,51 +27,51 @@
     grid-area: 1 / 2 / 4 / 4;
     z-index: 6;
     background: var(--npcpng);
-    margin: 0.1vw;
-    border-radius: 0.85vw;
+    margin: calc(0.1 * var(--u));
+    border-radius: calc(0.85 * var(--u));
     box-sizing: border-box;
     justify-self: end;
 }
 .ssr-npc1-deflex {
     width: 55%;
     display: flex;
-    gap: 0.8vw;
+    gap: calc(0.8 * var(--u));
     justify-content: flex-start;
     grid-area: 2 / 2 / 3 / 3;
     z-index: 3;
     align-self: end;
     justify-self: start;
-    margin-left: 3.2vw;
+    margin-left: calc(3.2 * var(--u));
 }
 .ssr-npc1-class {
     width: fit-content;
     box-sizing: border-box;
-    padding: 0.7vw 1vw;
-    border-width: 0.1vw 0.1vw 0vw 0.1vw;
+    padding: calc(0.7 * var(--u)) calc(1 * var(--u));
+    border-width: calc(0.1 * var(--u)) calc(0.1 * var(--u)) 0 calc(0.1 * var(--u));
     border-style: solid;
     border-color: #fff;
-    font: 1vw 'Poppins';
+    font: calc(1 * var(--u)) 'Poppins';
     color: var(--npcdetext);
     font-weight: 500;
     text-align: center;
     line-height: 1;
-    border-radius: 0.65vw 0.65vw 0vw 0vw;
+    border-radius: calc(0.65 * var(--u)) calc(0.65 * var(--u)) 0 0;
     background: var(--npcgrad);
 }
 .ssr-npc1-location {
     width: fit-content;
     max-width: 70%;
     box-sizing: border-box;
-    padding: 0.7vw 1vw;
-    border-width: 0.1vw 0.1vw 0vw 0.1vw;
+    padding: calc(0.7 * var(--u)) calc(1 * var(--u));
+    border-width: calc(0.1 * var(--u)) calc(0.1 * var(--u)) 0 calc(0.1 * var(--u));
     border-style: solid;
     border-color: #fff;
-    font: 1vw 'Poppins', 'Bai Jamjuree';
+    font: calc(1 * var(--u)) 'Poppins', 'Bai Jamjuree';
     color: var(--npcdetext);
     font-weight: 500;
     text-align: center;
     line-height: 1;
-    border-radius: 0.65vw 0.65vw 0vw 0vw;
+    border-radius: calc(0.65 * var(--u)) calc(0.65 * var(--u)) 0 0;
     background: var(--npcgrad);
 }
 .ssr-npc1-boxbg {
@@ -78,10 +79,10 @@
     box-sizing: border-box;
     grid-area: 3 / 2 / 5 / 3;
     z-index: 3;
-    border-width: 0.1vw 0.1vw 0vw 0.1vw;
+    border-width: calc(0.1 * var(--u)) calc(0.1 * var(--u)) 0 calc(0.1 * var(--u));
     border-style: solid;
-    border-color:  #fff;
-    border-radius: 1vw 1vw 0vw 0vw;
+    border-color: #fff;
+    border-radius: calc(1 * var(--u)) calc(1 * var(--u)) 0 0;
     background: var(--npcboxbg);
     display: grid;
     overflow: hidden;
@@ -103,34 +104,34 @@
     justify-self: start;
     color: var(--npcnamecl);
     text-shadow: 0px 0px 4px var(--npcnamesh);
-    margin-top: 2vw;
-    margin-left: 3.5vw;
+    margin-top: calc(2 * var(--u));
+    margin-left: calc(3.5 * var(--u));
 }
 .ssr-npc1-lastname {
     width: fit-content;
     max-width: 55%;
-    font: 1.3vw 'The Seasons';
-    letter-spacing: 0.12vw;
+    font: calc(1.3 * var(--u)) 'The Seasons';
+    letter-spacing: calc(0.12 * var(--u));
     text-transform: uppercase;
 }
 .ssr-npc1-firstname {
     width: fit-content;
     max-width: 75%;
-    margin: -1.2vw 3.6vw 0vw 3.5vw;
-    font: 2.4vw 'The Seasons';
+    margin: calc(-1.2 * var(--u)) calc(3.6 * var(--u)) 0 calc(3.5 * var(--u));
+    font: calc(2.4 * var(--u)) 'The Seasons';
     text-transform: uppercase;
-    letter-spacing: 0.15vw;
+    letter-spacing: calc(0.15 * var(--u));
 }
 .ssr-npc1-firstname::first-letter {
-    font: 5.5vw 'Citadel';
+    font: calc(5.5 * var(--u)) 'Citadel';
 }
 .ssr-npc1-roleplay {
     width: 100%;
     box-sizing: border-box;
     grid-area: 4 / 2 / 5 / 3;
     z-index: 4;
-    padding: 2.45vw;
-    font: 1.05vw 'Bai Jamjuree';
+    padding: calc(2.45 * var(--u));
+    font: calc(1.05 * var(--u)) 'Bai Jamjuree';
     color: var(--npctxtcl);
     text-align: justify;
     line-height: 1.4;
@@ -140,15 +141,15 @@
     box-sizing: border-box;
     grid-area: 5 / 2 / 6 / 3;
     z-index: 3;
-    border-width: 0vw 0.1vw 0.1vw 0.1vw;
+    border-width: 0 calc(0.1 * var(--u)) calc(0.1 * var(--u)) calc(0.1 * var(--u));
     border-style: solid;
     border-color: #fff;
-    border-radius: 0vw 0vw 1vw 1vw;
+    border-radius: 0 0 calc(1 * var(--u)) calc(1 * var(--u));
     background: var(--npcgrad);
     display: grid;
     overflow: hidden;
-    padding: 1vw 2vw;
-    font: 1.05vw 'Bai Jamjuree';
+    padding: calc(1 * var(--u)) calc(2 * var(--u));
+    font: calc(1.05 * var(--u)) 'Bai Jamjuree';
     color: var(--npcdetext);
     font-weight: 500;
     text-align: right;
@@ -160,15 +161,15 @@
     z-index: 6;
     aspect-ratio: 1 / 1;
     border-radius: 1000px;
-    border: 0.2vw solid var(--npcaccent);
+    border: calc(0.2 * var(--u)) solid var(--npcaccent);
     justify-self: start;
     align-self: end;
     background: var(--npcboxbg);
-    margin-bottom: 1.25vw;
-    margin-left: 0.5vw;
-    padding: 0.8vw;
+    margin-bottom: calc(1.25 * var(--u));
+    margin-left: calc(0.5 * var(--u));
+    padding: calc(0.8 * var(--u));
     display: grid;
-    position: relative; 
+    position: relative;
     overflow: hidden;
 }
 .ssr-npc1-hbg {
@@ -192,14 +193,14 @@
     grid-area: 1 / 1;
     background: var(--npcdropheart);
     z-index: 6;
-    margin-top: 0.19vw;
+    margin-top: calc(0.19 * var(--u));
 }
 .ssr-npc1-deco1 {
     width: 70%;
     aspect-ratio: 0.21 / 1;
     grid-area: 4 / 3 / 5 / 4;
     z-index: 4;
-    margin-top: -0.2vw;
+    margin-top: calc(-0.2 * var(--u));
     background: var(--npcaccent);
     mask: url(https://iili.io/nFkE65Q.png) center / cover;
     -webkit-mask: url(https://iili.io/nFkE65Q.png) center / cover;
@@ -207,7 +208,7 @@
 }
 .ssr-npc1-deco2 {
     width: 75%;
-    margin: 9vw 2vw 1.3vw 4vw;
+    margin: calc(9 * var(--u)) calc(2 * var(--u)) calc(1.3 * var(--u)) calc(4 * var(--u));
     aspect-ratio: 3.09 / 1;
     grid-area: 1 / 2 / 4 / 3;
     z-index: 2;
@@ -220,10 +221,10 @@
 .ssr-npc1-decoflex {
     width: 70%;
     display: flex;
-    gap: 0.8vw;
+    gap: calc(0.8 * var(--u));
     grid-area: 4 / 1 / 5 / 2;
     justify-self: center;
-    margin-top: -1vw;
+    margin-top: calc(-1 * var(--u));
     flex-direction: column;
     align-items: center;
     align-self: center;
@@ -237,7 +238,7 @@
 }
 .ssr-npc1-ssr {
     width: fit-content;
-    font: 1.15vw 'Kaisei Decol';
+    font: calc(1.15 * var(--u)) 'Kaisei Decol';
     writing-mode: vertical-rl;
     font-weight: 500;
     color: #fff;
