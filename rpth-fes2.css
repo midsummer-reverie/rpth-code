@@ -5,12 +5,12 @@
     --fest-accent: #92c270;
     --fest-banner: url(https://iili.io/FMV6pjf.png) 60% 55% / cover;
     --fest-bg-main: #000000;
-    --fest-bg-op: color-mix(in srgb, #000 60%, transparent);
+    --fest-bg-op: color-mix(in srgb, var(--fest-bg-main) 60%, transparent);
     --fest-elm: #6c995a;
-    --fest-elm-op: color-mix(in srgb, #6c995a 75%, transparent);
+    --fest-elm-op: color-mix(in srgb, var(--fest-elm) 75%, transparent);
     --fest-zone-img: url(https://iili.io/FMWHjgs.png) center/cover;
     --fest-text: #ffffff;
-    --fest-text-sh: color-mix(in srgb, #fff 80%, transparent);
+    --fest-text-sh: color-mix(in srgb, var(--fest-text) 80%, transparent);
     --fest-item: url(https://iili.io/FazyD7f.png) center / cover;
 }*/
 
@@ -91,11 +91,11 @@
     width: 80%;
     margin: -2vw auto 0vw;
     font: 1.1vw 'Google Sans';
-    color: #fff;
+    color: var(--fest-text);
     line-height: 1.5;
     text-align: justify;
     text-indent: 2.8vw;
-    text-shadow: 0px 0px 3px color-mix(in srgb, #fff 60%, transparent);
+    text-shadow: 0px 0px 3px color-mix(in srgb, var(--fest-text) 60%, transparent);
 }
 .fest-zone {
     width: 80%;
@@ -179,8 +179,8 @@
     box-sizing: border-box;
     padding: 1.85vw;
     background: var(--fest-bg-op);
-    box-shadow: 0px 0px 8px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, #000 75%, transparent) inset;
-    -webkit-box-shadow: 0px 0px 6px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, #000 75%, transparent) inset;
+    box-shadow: 0px 0px 8px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, var(--fest-bg-main) 75%, transparent) inset;
+    -webkit-box-shadow: 0px 0px 6px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, var(--fest-bg-main) 75%, transparent) inset;
     border: 0.04vw solid var(--fest-elm);
     border-radius: 100%;
 }
@@ -203,8 +203,8 @@
     box-sizing: border-box;
     padding: 1.8vw;
     background: var(--fest-bg-op);
-    box-shadow: 0px 0px 8px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, #000 75%, transparent) inset;
-    -webkit-box-shadow: 0px 0px 6px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, #000 75%, transparent) inset;
+    box-shadow: 0px 0px 8px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, var(--fest-bg-main) 75%, transparent) inset;
+    -webkit-box-shadow: 0px 0px 6px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, var(--fest-bg-main) 75%, transparent) inset;
     border: 0.04vw solid var(--fest-elm);
     border-radius: 1.5vw;
     font: 1.1vw 'Google Sans';
@@ -239,7 +239,7 @@
     color: var(--fest-text);
     text-shadow: 0px 0px 7px var(--fest-text-sh);
     padding-left: 0.8vw;
-    border-left: 0.2vw solid #fff;
+    border-left: 0.2vw solid var(--fest-text);
     box-sizing: border-box;
     opacity: 0.85;
 }
@@ -252,8 +252,8 @@
 .fest-ccard {
     width: 46%;
     background: var(--fest-bg-op);
-    box-shadow: 0px 0px 8px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, #000 75%, transparent) inset;
-    -webkit-box-shadow: 0px 0px 6px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, #000 75%, transparent) inset;
+    box-shadow: 0px 0px 8px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, var(--fest-bg-main) 75%, transparent) inset;
+    -webkit-box-shadow: 0px 0px 6px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, var(--fest-bg-main) 75%, transparent) inset;
     border: 0.04vw solid var(--fest-elm);
     border-radius: 1.3vw;
     font: 1.1vw 'Google Sans';
@@ -270,12 +270,12 @@
     box-sizing: border-box;
     padding: 1.8vw;
     background: var(--fest-bg-op);
-    box-shadow: 0px 0px 8px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, #000 75%, transparent) inset;
-    -webkit-box-shadow: 0px 0px 6px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, #000 75%, transparent) inset;
+    box-shadow: 0px 0px 8px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, var(--fest-bg-main) 75%, transparent) inset;
+    -webkit-box-shadow: 0px 0px 6px 0px var(--fest-elm-op), 0px 0px 6px 0px color-mix(in srgb, var(--fest-bg-main) 75%, transparent) inset;
     border: 0.04vw solid var(--fest-elm);
     border-radius: 1.5vw;
     font: 1.1vw 'Google Sans';
-    text-shadow: 0px 0px 7px color-mix(in srgb, #fff 70%, transparent);
+    text-shadow: 0px 0px 7px color-mix(in srgb, var(--fest-text) 70%, transparent);
     line-height: 1.5;
     text-align: center;
     margin: 3vw auto 0vw;
