@@ -15,7 +15,7 @@
 #blue {
   --ssr-bio-pink: #77d1ff;
   --ssr-bio-pink-light: #a1dfff;
-  --ssr-bio-gradient: url(https://i.pinimg.com/736x/64/c1/b2/64c1b293b62aedc83c49d8c1c4852093.jpg);
+  --ssr-bio-gradient: url(https://i.pinimg.com/736x/68/96/5f/68965fa….jpg);
   --ssr-bio-mask-banner: url(https://iili.io/nasnOCu.png);
   --ssr-bio-mask-corner: url(https://iili.io/napKTAv.png);
   --ssr-bio-deco: url(https://iili.io/nFk1vcv.md.png);
@@ -63,11 +63,12 @@
 
 /* ===== โครงหลัก ===== */
 .ssr-bio-wrap {
-  width: 95%;
+  --u: min(1vw, 12.8px);
+  width: min(95%, calc(95 * var(--u)));
   margin: auto;
   display: grid;
-  grid-template-rows: 3vw auto 3vw;
-  grid-template-columns: 6vw 1fr 6vw;
+  grid-template-rows: calc(3 * var(--u)) auto calc(3 * var(--u));
+  grid-template-columns: calc(6 * var(--u)) 1fr calc(6 * var(--u));
 }
 
 .ssr-bio-wrap::before,
@@ -88,7 +89,7 @@
   z-index: 2;
   justify-self: end;
   mask: var(--ssr-bio-mask-corner) center/cover;
-  margin-top: -2vw;
+  margin-top: calc(-2 * var(--u));
 }
 
 /* png ตกแต่งมุมซ้ายล่าง */
@@ -99,22 +100,22 @@
   z-index: 7;
   background: var(--ssr-bio-deco) center/cover;
   align-self: end;
-  margin-left: 3.5vw;
+  margin-left: calc(3.5 * var(--u));
   rotate: -4deg;
-  margin-bottom: -0.6vw;
+  margin-bottom: calc(-0.6 * var(--u));
 }
 
 .ssr-bio-tab {
   width: fit-content;
   box-sizing: border-box;
   grid-area: 1/2/2/3;
-  padding: 0.5vw 1vw;
+  padding: calc(0.5 * var(--u)) calc(1 * var(--u));
   border: solid var(--ssr-bio-pink);
-  border-width: 0.12vw 0.12vw 0 0.12vw;
-  border-radius: 1vw 1vw 0 0;
+  border-width: calc(0.12 * var(--u)) calc(0.12 * var(--u)) 0 calc(0.12 * var(--u));
+  border-radius: calc(1 * var(--u)) calc(1 * var(--u)) 0 0;
   align-self: end;
-  margin-left: 3vw;
-  font: 500 1.15vw 'Poppins';
+  margin-left: calc(3 * var(--u));
+  font: 500 calc(1.15 * var(--u)) 'Poppins';
   color: #1b1b1b;
   z-index: 2;
 }
@@ -123,8 +124,8 @@
   width: 100%;
   height: 100%;
   grid-area: 2/2/3/3;
-  border-radius: 1.2vw;
-  border: 0.15vw solid var(--ssr-bio-pink);
+  border-radius: calc(1.2 * var(--u));
+  border: calc(0.15 * var(--u)) solid var(--ssr-bio-pink);
   background: #020202;
   display: grid;
   overflow: hidden;
@@ -145,33 +146,33 @@
   width: 100%;
   grid-area: 1/1;
   box-sizing: border-box;
-  padding: 2vw 2vw 4vw;
+  padding: calc(2 * var(--u)) calc(2 * var(--u)) calc(4 * var(--u));
   z-index: 4;
 }
 
 /* ===== ชื่อใหญ่ ===== */
 .ssr-bio-name {
   width: 100%;
-  font: 500 5.75vw 'The Seasons';
+  font: 500 calc(5.75 * var(--u)) 'The Seasons';
   text-transform: uppercase;
   color: color-mix(in srgb, var(--ssr-bio-pink) 50%, transparent);
 }
-.ssr-bio-name--second { margin-top: -0.6vw; }
+.ssr-bio-name--second { margin-top: calc(-0.6 * var(--u)); }
 
 /* ===== ชิป ===== */
 .ssr-bio-chips {
   width: 50%;
   display: flex;
   justify-content: space-between;
-  font: 500 1vw 'Google Sans';
+  font: 500 calc(1 * var(--u)) 'Google Sans';
   color: #1b1b1b;
 }
 .ssr-bio-chip {
   width: 49%;
   box-sizing: border-box;
-  padding: 0.35vw 0.8vw;
-  border: 0.12vw solid #fff;
-  border-radius: 0.6vw;
+  padding: calc(0.35 * var(--u)) calc(0.8 * var(--u));
+  border: calc(0.12 * var(--u)) solid #fff;
+  border-radius: calc(0.6 * var(--u));
   text-align: center;
 }
 a.ssr-bio-chip {
@@ -187,38 +188,38 @@ a.ssr-bio-chip {
 }
 .ssr-bio-chip:hover {
   border-color: var(--ssr-bio-pink-light);
-  box-shadow: 0 0 0.6vw 0.1vw var(--ssr-bio-pink-light),
-              0 0 1.4vw 0.2vw color-mix(in srgb, var(--ssr-bio-pink-light) 50%, transparent);
+  box-shadow: 0 0 calc(0.6 * var(--u)) calc(0.1 * var(--u)) var(--ssr-bio-pink-light),
+              0 0 calc(1.4 * var(--u)) calc(0.2 * var(--u)) color-mix(in srgb, var(--ssr-bio-pink-light) 50%, transparent);
 }
 
 /* ===== เนื้อหาฟอร์ม ===== */
 .ssr-bio-body {
   width: 90%;
-  margin: 4vw auto 0;
+  margin: calc(4 * var(--u)) auto 0;
 }
 .ssr-bio-row {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.5vw;
+  margin-bottom: calc(1.5 * var(--u));
 }
 .ssr-bio-col { width: 48%; }
-.ssr-bio-block { width: 100%; margin-bottom: 2vw;}
+.ssr-bio-block { width: 100%; margin-bottom: calc(2 * var(--u)); }
 
 .ssr-bio-label,
 .ssr-bio-text {
   width: 100%;
-  font: 500 1.1vw 'Google Sans';
+  font: 500 calc(1.1 * var(--u)) 'Google Sans';
 }
 .ssr-bio-label { color: var(--ssr-bio-pink-light); }
 .ssr-bio-label::first-letter {
   color: var(--ssr-bio-pink);
-  margin-right: 0.5vw;
+  margin-right: calc(0.5 * var(--u));
 }
 .ssr-bio-text {
   font-weight: 400;
   color: color-mix(in srgb, #fff 90%, transparent);
-  margin-top: 0.8vw;
+  margin-top: calc(0.8 * var(--u));
 }
 .ssr-bio-text--long {
   text-align: justify;
@@ -228,23 +229,23 @@ a.ssr-bio-chip {
 /* ===== รูปตัวละคร / footer ===== */
 .ssr-bio-photo {
   width: 48%;
-  height: 17vw;
+  height: calc(17 * var(--u));
   grid-area: 2/2/3/4;
-  border: 0.12vw solid var(--ssr-bio-pink);
+  border: calc(0.12 * var(--u)) solid var(--ssr-bio-pink);
   z-index: 6;
   justify-self: end;
-  border-radius: 1vw;
-  margin: 1.5vw 1.2vw 0 0;
+  border-radius: calc(1 * var(--u));
+  margin: calc(1.5 * var(--u)) calc(1.2 * var(--u)) 0 0;
   background: var(--ssr-bio-char);
 }
 
 .ssr-bio-footer {
   width: fit-content;
   grid-area: 3/2/4/3;
-  font: 600 1.1vw 'Poppins', 'Kaisei Decol';
+  font: 600 calc(1.1 * var(--u)) 'Poppins', 'Kaisei Decol';
   color: #fff;
   justify-self: end;
-  margin: 0.5vw 1.25vw 0 0;
+  margin: calc(0.5 * var(--u)) calc(1.25 * var(--u)) 0 0;
 }
 
 /* ===== หัวข้อใส่ผ่าน ::before ===== */
