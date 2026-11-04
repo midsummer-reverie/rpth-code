@@ -416,16 +416,19 @@
     --p-overlay: 
 #ffffff;
 }
-/* Layout normalization: dimensions follow the component width, capped at 900px. */
+/* Layout normalization for wide screens: cap the component itself at 900px. */
 .ssr-py-container {
-    width: 85%;
+    width: min(85%, 900px);
     max-width: 900px;
-    margin: 1cqw auto;
+    box-sizing: border-box;
+    margin: 9px auto;
     display: grid;
     grid-template-columns: 4cqw minmax(0, 1fr) 4cqw;
     grid-template-rows: auto 1cqw;
     container-type: inline-size;
 }
+
+/* All spatial vw values below are tied to the component width, not the monitor. */
 .ssr-py-hd { margin-left: 4cqw; gap: 2.3cqw; }
 .ssr-py-pic { border-width: 0.1cqw; border-radius: 1.2cqw; margin-top: 1cqw; }
 .ssr-py-hdde { margin-top: 1.65cqw; }
@@ -441,9 +444,10 @@
 .ssr-py-ssr { margin-bottom: 9cqw; margin-left: 0.4cqw; }
 .ssr-py-sp { margin-left: 3cqw; margin-top: 1cqw; }
 
+/* Keep existing small-screen behavior; restore the original 85% width there. */
 @container (max-width: 560px) {
     .ssr-py-container {
-        width: 100%;
-        grid-template-columns: 3cqw minmax(0, 1fr) 3cqw;
+        width: 85%;
+        grid-template-columns: 4cqw minmax(0, 1fr) 4cqw;
     }
 }
