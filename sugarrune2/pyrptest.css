@@ -451,3 +451,10 @@
         grid-template-columns: 4cqw minmax(0, 1fr) 4cqw;
     }
 }
+
+/* Keep the text panel at the reference composition width on large displays. */
+.ssr-py-content {
+    width: 100%;
+    max-width: 660px;
+    justify-self: center;
+}
