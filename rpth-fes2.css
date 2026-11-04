@@ -19,6 +19,9 @@
     margin: auto;
     background: linear-gradient(0deg, var(--fest-accent) 0%, #131313 70%);
     padding: 0.09vw;
+    --fest-bg-op: color-mix(in srgb, var(--fest-bg-main) 60%, transparent);
+    --fest-elm-op: color-mix(in srgb, var(--fest-elm) 75%, transparent);
+    --fest-text-sh: color-mix(in srgb, var(--fest-text) 80%, transparent);
 }
 .fest-header {
     width: 100%;
