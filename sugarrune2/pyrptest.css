@@ -5,7 +5,7 @@
     width: min(85%, 900px);
     max-width: 900px;
     box-sizing: border-box;
-    margin: clamp(12px, 5.2vw, 70px) auto 10px;
+    margin: clamp(12px, 4.8vw, 64px) auto 10px;
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 660px) minmax(0, 1fr);
     grid-template-rows: auto 10px;
@@ -94,7 +94,7 @@
     overflow: hidden;
     background: var(--p-bg);
     box-sizing: border-box;
-    margin-top: 15cqw;
+    margin-top: 13.7cqw;
     grid-template-rows: 100%;
     grid-template-columns: 1fr;
 }
@@ -364,4 +364,5 @@
     --p-opa: 0.1;
     --p-overlay: #ffffff;
 }
+
 
