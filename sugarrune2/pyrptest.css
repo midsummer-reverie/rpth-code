@@ -2,19 +2,21 @@
 @import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Kaisei+Decol:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
 .ssr-py-container {
-    width: 85%;
-    margin: 1vw auto;
-    display: grid;
-    grid-template-columns: 4vw 1fr 4vw;
-    grid-template-rows: auto 1vw;
+    width: min(85%, 900px);
     max-width: 900px;
+    box-sizing: border-box;
+    margin: clamp(12px, 5.2vw, 70px) auto 10px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 660px) minmax(0, 1fr);
+    grid-template-rows: auto 10px;
+    container-type: inline-size;
 }
 .ssr-py-hd {
     width: 80%;
-    margin-left: 4vw;
+    margin-left: 4cqw;
     display: flex;
     z-index: 5;
-    gap: 2.3vw;
+    gap: 2.3cqw;
     box-sizing: border-box;
     align-items: flex-start;
     grid-area: 1 / 2 / 2 / 3;
@@ -23,64 +25,76 @@
 .ssr-py-pic {
     width: 30%;
     aspect-ratio: 1 / 1.12;
-    border: 0.1vw solid #fff;
-    border-radius: 1.2vw;
+    border: 0.1cqw solid #fff;
+    border-radius: 1.2cqw;
     background: var(--p-pic);
     box-sizing: border-box;
-    margin-top: 1vw;
+    margin-top: 1cqw;
 }
 .ssr-py-hdde {
     width: 65%;
-    margin-top: 1.65vw
+    position: relative;
+    min-height: 12cqw;
+    margin-top: 1.65cqw;
 }
 .ssr-py-lastname {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: fit-content;
     font: 1.6vw 'EB Garamond';
-    color: 
-#ffffff;
+    color: #ffffff;
     text-shadow: 0px 1px 5px var(--p-shadow);
     text-transform: uppercase;
     font-style: italic;
 }
 .ssr-py-name {
+    position: absolute;
+    top: 1.2cqw;
+    left: 5cqw;
     width: fit-content;
     font: 5vw 'Aranta';
-    color: 
-#ffffff;
+    color: #ffffff;
     text-shadow: 0px 1px 5px var(--p-shadow);
     text-align: right;
     text-transform: capitalize;
-    margin-left: 5vw;
-    margin-top: -1.6vw;
+    white-space: nowrap;
+    margin: 0;
 }
 .ssr-py-add {
-    width: 100%;
+    position: absolute;
+    top: 11cqw;
+    left: 0;
+    width: max-content;
+    max-width: 100%;
     display: flex;
-    gap: 1.5vw;
+    gap: 1.5cqw;
     font: 1vw 'Poppins';
     line-height: 1;
-    margin-top: 1.8vw;
+    margin: 0;
 }
 .ssr-py-addc {
     width: fit-content;
     box-sizing: border-box;
-    padding: 0.5vw 0.85vw;
-    border: 0.1vw solid #fff;
-    border-radius: 0.4vw;
+    padding: 0.5cqw 0.85cqw;
+    border: 0.1cqw solid #fff;
+    border-radius: 0.4cqw;
     background: var(--p-grad2);
     color: var(--p-addt);
 }
 .ssr-py-content {
     width: 100%;
+    max-width: 660px;
     grid-area: 1 / 2 / 2 / 3;
+    justify-self: center;
     z-index: 3;
     display: grid;
-    border: 0.1vw solid #fff;
-    border-radius: 0.85vw;
+    border: 0.1cqw solid #fff;
+    border-radius: 0.85cqw;
     overflow: hidden;
     background: var(--p-bg);
     box-sizing: border-box;
-    margin-top: 10vw;
+    margin-top: 15cqw;
     grid-template-rows: 100%;
     grid-template-columns: 1fr;
 }
@@ -106,7 +120,7 @@
     width: 100%;
     grid-area: 1 / 1;
     box-sizing: border-box;
-    padding: 6vw 2.6vw 4vw;
+    padding: 9cqw 2.6cqw 4cqw;
     font: 1.05vw 'Bai Jamjuree';
     color: var(--p-txt);
     z-index: 10;
@@ -114,15 +128,15 @@
     line-height: 1.6;
 }
 .ssr-py-hr {
-    margin: 1.25vw 0vw;
+    margin: 1.25cqw 0;
     background-color: var(--p-txt);
 }
 .ssr-py-note {
     width: fit-content;
     box-sizing: border-box;
-    padding: 0.4vw 0.85vw;
-    border: 0.1vw solid #fff;
-    border-radius: 0.6vw;
+    padding: 0.4cqw 0.85cqw;
+    border: 0.1cqw solid #fff;
+    border-radius: 0.6cqw;
     background: var(--p-grad2);
     grid-area: 1 / 2 / 3 / 3;
     align-self: end;
@@ -130,7 +144,7 @@
     z-index: 8;
     font: 1vw 'Bai Jamjuree';
     color: var(--p-addt);
-    margin-right: 2.4vw;
+    margin-right: 2.4cqw;
     max-width: 80%;
 }
 .ssr-py-locket {
@@ -140,8 +154,8 @@
     aspect-ratio: 1 / 1;
     justify-self: end;
     background: var(--p-locket);
-    margin-top: 1.6vw;
-    margin-right: -1vw;
+    margin-top: 1.6cqw;
+    margin-right: -1cqw;
     rotate: 10deg;
 }
 .ssr-py-wand {
@@ -152,8 +166,8 @@
     z-index: 4;
     align-self: end;
     rotate: -100deg;
-    margin-left: -8vw;
-    margin-bottom: 4.5vw;
+    margin-left: -8cqw;
+    margin-bottom: 4.5cqw;
 }
 .ssr-py-ssr {
     width: fit-content;
@@ -164,8 +178,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
-    margin-bottom: 9vw;
-    margin-left: 0.4vw;
+    margin-bottom: 9cqw;
+    margin-left: 0.4cqw;
     align-self: end;
 }
 .ssr-py-ssr::before {
@@ -178,8 +192,8 @@
     aspect-ratio: 1 / 1;
     mask: url(https://www.bbimg.org/images/2026/09/02/E-72.png) center / cover;
     z-index: 2;
-    margin-left: 3vw;
-    margin-top: 1vw;
+    margin-left: 3cqw;
+    margin-top: 1cqw;
 }
 
 #darkred {
@@ -349,115 +363,5 @@
 #customclr {
     --p-opa: 0.1;
     --p-overlay: #ffffff;
-}
-/* Layout normalization for wide screens: cap the component itself at 900px. */
-.ssr-py-container {
-    width: min(85%, 900px);
-    max-width: 900px;
-    box-sizing: border-box;
-    margin: 9px auto;
-    display: grid;
-    grid-template-columns: 4cqw minmax(0, 1fr) 4cqw;
-    grid-template-rows: auto 1cqw;
-    container-type: inline-size;
-}
-
-/* All spatial vw values below are tied to the component width, not the monitor. */
-.ssr-py-hd { margin-left: 4cqw; gap: 2.3cqw; }
-.ssr-py-pic { border-width: 0.1cqw; border-radius: 1.2cqw; margin-top: 1cqw; }
-.ssr-py-hdde { margin-top: 1.65cqw; }
-.ssr-py-name { margin-left: 5cqw; margin-top: -1.6cqw; }
-.ssr-py-add { gap: 1.5cqw; margin-top: 1.8cqw; }
-.ssr-py-addc { padding: 0.5cqw 0.85cqw; border-width: 0.1cqw; border-radius: 0.4cqw; }
-.ssr-py-content { min-width: 0; margin-top: 10cqw; border-width: 0.1cqw; border-radius: 0.85cqw; }
-.ssr-py-text { padding: 6cqw 2.6cqw 4cqw; }
-.ssr-py-hr { margin: 1.25cqw 0; }
-.ssr-py-note { padding: 0.4cqw 0.85cqw; border-width: 0.1cqw; border-radius: 0.6cqw; margin-right: 2.4cqw; }
-.ssr-py-locket { margin-top: 1.6cqw; margin-right: -1cqw; }
-.ssr-py-wand { margin-left: -8cqw; margin-bottom: 4.5cqw; }
-.ssr-py-ssr { margin-bottom: 9cqw; margin-left: 0.4cqw; }
-.ssr-py-sp { margin-left: 3cqw; margin-top: 1cqw; }
-
-/* Append after the existing rules in pyrptest.css. HTML can remain unchanged. */
-.ssr-py-container {
-    width: min(85%, 900px);
-    max-width: 900px;
-    box-sizing: border-box;
-    margin: 4cqw auto 1cqw;
-    container-type: inline-size;
-    grid-template-columns: 4cqw minmax(0, 1fr) 4cqw;
-}
-
-/* Keep every spatial measurement tied to this card, not the viewport. */
-.ssr-py-hd {
-    margin-left: 4cqw;
-    gap: 2.3cqw;
-}
-.ssr-py-pic {
-    border-width: 0.1cqw;
-    border-radius: 1.2cqw;
-    margin-top: 1cqw;
-}
-.ssr-py-hdde {
-    position: relative;
-    margin-top: 1.65cqw;
-    min-height: 12cqw;
-}
-.ssr-py-lastname {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-}
-.ssr-py-name {
-    position: absolute;
-    top: 1.2cqw;
-    left: 5cqw;
-    margin: 0;
-    /* Keep the existing inline font-size (e.g. 5vw) intact. */
-}
-.ssr-py-add {
-    position: absolute;
-    top: 10cqw;
-    left: 0;
-    width: max-content;
-    max-width: 100%;
-    gap: 1.5cqw;
-    margin: 0;
-}
-.ssr-py-addc {
-    padding: 0.5cqw 0.85cqw;
-    border-width: 0.1cqw;
-    border-radius: 0.4cqw;
-}
-.ssr-py-content {
-    min-width: 0;
-    width: 100%;
-    max-width: 660px;
-    justify-self: center;
-    margin-top: 10cqw;
-    border-width: 0.1cqw;
-    border-radius: 0.85cqw;
-}
-.ssr-py-text { padding: 6cqw 2.6cqw 4cqw; }
-.ssr-py-hr { margin: 1.25cqw 0; }
-.ssr-py-note {
-    padding: 0.4cqw 0.85cqw;
-    border-width: 0.1cqw;
-    border-radius: 0.6cqw;
-    margin-right: 2.4cqw;
-}
-.ssr-py-locket { margin-top: 1.6cqw; margin-right: -1cqw; }
-.ssr-py-wand { margin-left: -8cqw; margin-bottom: 4.5cqw; }
-.ssr-py-ssr { margin-bottom: 9cqw; margin-left: 0.4cqw; }
-.ssr-py-sp { margin-left: 3cqw; margin-top: 1cqw; }
-
-@container (max-width: 560px) {
-    .ssr-py-container {
-        width: 85%;
-        margin-top: 4cqw;
-        grid-template-columns: 4cqw minmax(0, 1fr) 4cqw;
-    }
-    .ssr-py-content { max-width: 100%; }
 }
 
