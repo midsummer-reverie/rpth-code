@@ -170,10 +170,14 @@
     margin-bottom: 4.5cqw;
 }
 .ssr-py-ssr {
-    width: fit-content;
+    width: max-content;
     grid-area: 1 / 3 / 2 / 4;
     font: 1.5vw 'Kaisei Decol';
-    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl !important;
+    writing-mode: vertical-rl !important;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
+    white-space: nowrap;
     background: var(--p-grad2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,6 +188,10 @@
 }
 .ssr-py-ssr::before {
     content: 'シュガシュガルーン';
+    -webkit-writing-mode: vertical-rl !important;
+    writing-mode: vertical-rl !important;
+    -webkit-text-orientation: upright;
+    text-orientation: upright;
 }
 .ssr-py-sp {
     width: 15%;
@@ -364,5 +372,6 @@
     --p-opa: 0.1;
     --p-overlay: #ffffff;
 }
+
 
 
