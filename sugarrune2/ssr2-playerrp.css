@@ -11,6 +11,7 @@
     display: grid;
     grid-template-columns: calc(4 * var(--u)) 1fr calc(4 * var(--u));
     grid-template-rows: auto calc(1 * var(--u));
+    max-width: 70rem;
 }
 .ssr-py-hd {
     width: 80%;
