@@ -3,7 +3,11 @@
 
 
 .efreg-container {
-    --efreg-black-75: #000000bf;
+    --efreg-black-75: color-mix(in srgb, #000000 75%, transparent);
+    --efreg-border-glow: color-mix(in srgb, var(--efreg-border) 75%, transparent);
+    --efreg-bg-op: color-mix(var(in srgb, --efreg-black) 60%, transparent);
+    --efreg-grad-end: transparent; 
+    --efreg-text-sh: #ffffffcc;
     width: 85%;
     margin: auto;
 }
@@ -17,7 +21,7 @@
 .efreg-char-box { width: 100%; box-sizing: border-box; margin-top: 1vw; box-shadow: 0px 0px 8px 0px var(--efreg-border-glow), 0px 0px 6px 0px var(--efreg-black-75) inset; -webkit-box-shadow: 0px 0px 6px 0px var(--efreg-border-glow), 0px 0px 6px 0px var(--efreg-black-75) inset; border: 0.04vw solid var(--efreg-border); border-radius: 1.3vw; display: grid; font: 1.1vw 'Google Sans'; color: #fff; line-height: 1.75; text-align: justify; text-shadow: 0px 0px 3px var(--efreg-text-sh); }
 .efreg-char-bg-wrap { width: 100%; display: flex; grid-area: 1/1; z-index: 2; border-radius: 1.3vw; box-sizing: border-box; }
 .efreg-char-bg-left { width: 60%; background: var(--efreg-black); border-radius: 1.3vw 0vw 0vw 1.3vw; }
-.efreg-char-bg-right { width: 40%; background: linear-gradient(90deg, var(--efreg-black) 0%, transparent 100%), var(--efreg-img-char) center/cover; border-radius: 0vw 1.3vw 1.3vw 0vw; }
+.efreg-char-bg-right { width: 40%; background: linear-gradient(90deg, var(--efreg-black) 0%, transparent 100%), var(--efreg-img-char); border-radius: 0vw 1.3vw 1.3vw 0vw; }
 .efreg-char-text-wrap { width: 100%; border-radius: 1.3vw; grid-area: 1/1; z-index: 4; box-sizing: border-box; padding: 1.7vw; }
 .efreg-char-text { width: 75%; }
 .efreg-flex-box { width: 100%; margin-top: 1.25vw; font: 1.1vw 'Google Sans'; color: #fff; line-height: 1.75; text-align: justify; display: flex; justify-content: space-between; }
