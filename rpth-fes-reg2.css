@@ -3,7 +3,7 @@
 
 
 .efreg-container {
-    --efreg-black-75: color-mix(in srgb, #000000 75%, transparent);
+    --efreg-black-75: color-mix(in srgb, var(--efreg-black) 75%, transparent);
     --efreg-border-glow: color-mix(in srgb, var(--efreg-border) 75%, transparent);
     --efreg-bg-op: color-mix(var(in srgb, --efreg-black) 60%, transparent);
     --efreg-grad-end: transparent; 
