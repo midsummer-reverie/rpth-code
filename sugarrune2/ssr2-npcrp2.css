@@ -12,7 +12,7 @@
 .ssr-npc2-namebox { width: 60%; grid-area: 3 / 2 / 4 / 3; z-index: 4; color: var(--npcnamecl); text-shadow: 0px 0px 4px var(--npcnamesh); margin: 2vw 2vw 0vw 6vw; justify-self: start; }
 .ssr-npc2-lastname { width: fit-content; max-width: 55%; font: 1.3vw 'The Seasons'; letter-spacing: 0.12vw; text-transform: uppercase; }
 .ssr-npc2-firstname { width: fit-content; max-width: 75%; font: 2.4vw 'The Seasons'; text-transform: uppercase; letter-spacing: 0.15vw; margin: -0.8vw 5.2vw 0vw 6vw; }
-.ssr-npc2-firstname::first-letter { font: 5.5vw 'Citadel'; }
+.ssr-npc2-firstname::first-letter { font: 5vw 'Citadel'; }
 .ssr-npc2-roleplay { width: 100%; box-sizing: border-box; grid-area: 4 / 2 / 5 / 3; z-index: 4; padding: 2.45vw; font: 1.05vw 'Bai Jamjuree'; color: var(--npctxtcl); text-align: justify; line-height: 1.4; }
 .ssr-npc2-picf { width: 40%; aspect-ratio: 16 / 24; margin-top: -14.2vw; margin-bottom: 0.5vw; position: relative; z-index: 6; float: right; margin-right: -6.45vw; margin-left: 1.5vw; }
 .ssr-npc2-deco1 { position: absolute; width: 17.5%; aspect-ratio: 0.21 / 1; top: 98%; background: var(--npcaccent); mask: url(https://iili.io/nFkE65Q.png) center / cover; -webkit-mask: url(https://iili.io/nFkE65Q.png) center / cover; z-index: 1; right: 3%; }
