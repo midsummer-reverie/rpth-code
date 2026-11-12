@@ -171,7 +171,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 500;
-    margin-bottom: calc(9 * var(--u));
+    margin-bottom: calc(5.5 * var(--u));
     margin-left: calc(0.4 * var(--u));
     align-self: end;
 }
