@@ -59,7 +59,7 @@
     width: 100%;
     display: flex;
     gap: calc(1.5 * var(--u));
-    font: calc(1 * var(--u)) 'Poppins';
+    font: calc(1 * var(--u)) 'Poppins','Google Sans';
     line-height: 1;
     margin-top: calc(1.8 * var(--u));
 }
