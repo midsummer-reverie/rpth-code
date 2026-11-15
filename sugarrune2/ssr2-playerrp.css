@@ -202,7 +202,7 @@ div.ssr-py-container {
     align-self: end;
     rotate: -100deg;
     margin-left: calc(-9 * var(--u));
-    margin-bottom: calc(5.5 * var(--u)); /* เดิม 4.5u + 1u ที่ย้ายมาจาก row ที่ตัดออก */
+    margin-bottom: calc(7.5 * var(--u)); /* เดิม 4.5u + 1u ที่ย้ายมาจาก row ที่ตัดออก */
 }
 .ssr-py-container .ssr-py-ssr {
     width: max-content;
