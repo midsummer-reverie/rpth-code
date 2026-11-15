@@ -4,6 +4,8 @@
 @import url(https://midsummer-reverie.github.io/font-face/aranta.css);
 @import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Kaisei+Decol:wght@400;500;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
+/* [FIX] ทุก selector ถูกเพิ่มความสำคัญ (.ssr-py-container ...) ให้ชนะไฟล์เดิมที่อาจถูกโหลดซ้ำจาก <link> ใน HTML ไม่ว่าลำดับโหลดจะเป็นอย่างไร */
+
 /* ===== [FIX] โครงหลัก =====
    - --u ของ container ยังเป็นหน่วย vw เหมือนเดิม (ใช้แค่คำนวณความกว้างการ์ด)
    - ลูกทุกตัวใช้ --u = 1/65 ของ "ความกว้างการ์ดจริง" (ดู @supports ด้านล่าง)
@@ -11,7 +13,7 @@
    - คอลัมน์ข้างเปลี่ยนจาก 4u เป็น % (4/65) ให้สเกลตามการ์ด
    - ตัด row ที่ 2 ออก ใช้ margin-bottom ของ .ssr-py-content แทน (ผลลัพธ์เท่าเดิม)
    - container-type + isolation: ให้ z-index ทั้งหมดอยู่ในกรอบของการ์ดนี้เอง */
-.ssr-py-container {
+div.ssr-py-container {
     --u: min(1vw, 1.25rem);
     width: min(85%, calc(70.3125 * var(--u)));
     margin: calc(1 * var(--u)) auto;
@@ -29,7 +31,7 @@
 }
 
 /* ===== ส่วนหัว (รูป + ชื่อ) ===== */
-.ssr-py-hd {
+.ssr-py-container .ssr-py-hd {
     width: 80%;
     margin-left: calc(4 * var(--u));
     display: flex;
@@ -41,7 +43,7 @@
     grid-area: 1 / 2 / 2 / 3;
     align-self: start;
 }
-.ssr-py-pic {
+.ssr-py-container .ssr-py-pic {
     width: 30%;
     aspect-ratio: 1 / 1.12;
     border: calc(0.1 * var(--u)) solid #fff;
@@ -52,7 +54,7 @@
 }
 /* [FIX] กล่องชื่อสูงคงที่ และให้ชื่อ "ชิดล่าง"
    ชื่อยาวจนขึ้นบรรทัดใหม่ → จะดันขึ้นด้านบน ไม่ดันลงมาทับป้าย/การ์ด */
-.ssr-py-hdde {
+.ssr-py-container .ssr-py-hdde {
     width: 65%;
     height: calc(7.1 * var(--u));
     margin-top: 0;
@@ -61,7 +63,7 @@
     justify-content: flex-end;
     align-items: flex-start;
 }
-.ssr-py-lastname {
+.ssr-py-container .ssr-py-lastname {
     width: fit-content;
     font: calc(1.6 * var(--u)) 'EB Garamond';
     line-height: 1.3; /* [FIX] ล็อกความสูงบรรทัด กันอิโมจิทำให้บรรทัดสูงขึ้น */
@@ -70,9 +72,9 @@
     text-transform: uppercase;
     font-style: italic;
 }
-.ssr-py-name {
+.ssr-py-container .ssr-py-name {
     width: fit-content;
-    font: calc(var(--name-size, 5) * var(--u)) 'Aranta'; /* ปรับขนาดชื่อได้ด้วย --name-size (ไม่ใส่ = 5 เหมือนเดิม) */
+    font: calc(5 * var(--u)) 'Aranta';
     line-height: 1; /* [FIX] ล็อกความสูงบรรทัด */
     overflow-wrap: anywhere;
     color: #ffffff;
@@ -84,19 +86,19 @@
 }
 /* [FIX] ป้าย (Class / School) ตรึงตำแหน่งให้คร่อมขอบบนของการ์ด (10u)
    ไม่ขึ้นกับความสูงของชื่ออีกต่อไป */
-.ssr-py-add {
-    position: absolute;
-    left: calc(30% + 2.3 * var(--u));
-    top: calc(10 * var(--u));
-    transform: translateY(-50%);
+.ssr-py-container .ssr-py-add {
+    position: absolute !important;
+    left: calc(30% + 2.3 * var(--u)) !important;
+    top: calc(10 * var(--u)) !important;
+    transform: translateY(-50%) !important;
+    margin: 0 !important;
     width: 65%;
     display: flex;
     gap: calc(1.5 * var(--u));
     font: calc(1 * var(--u)) 'Poppins','Google Sans';
     line-height: 1;
-    margin-top: 0;
 }
-.ssr-py-addc {
+.ssr-py-container .ssr-py-addc {
     width: fit-content;
     min-width: 0;
     overflow: hidden;
@@ -113,7 +115,7 @@
 /* ===== การ์ดเนื้อหา =====
    [FIX] เอา z-index ออกจาก .ssr-py-content เพื่อให้ text/grad ไปเรียงชั้นร่วมกับคฑาได้
    ลำดับชั้น: sp(-1) < พื้นการ์ด < grad(3) < locket/wand(4) < text(5) < hd(7) < note(8) */
-.ssr-py-content {
+.ssr-py-container .ssr-py-content {
     width: 100%;
     grid-area: 1 / 2 / 2 / 3;
     display: grid;
@@ -124,10 +126,11 @@
     box-sizing: border-box;
     margin-top: calc(10 * var(--u));
     margin-bottom: calc(1 * var(--u));
+    z-index: auto; /* [FIX] เขียนทับ z-index:3 ของไฟล์เดิม */
     grid-template-rows: 100%;
     grid-template-columns: 1fr;
 }
-.ssr-py-ovl {
+.ssr-py-container .ssr-py-ovl {
     width: 100%;
     height: 100%;
     background: var(--p-overlay);
@@ -136,7 +139,7 @@
     mix-blend-mode: soft-light;
     opacity: var(--opa);
 }
-.ssr-py-grad {
+.ssr-py-container .ssr-py-grad {
     width: 100%;
     aspect-ratio: 1.802 / 1;
     grid-area: 1 / 1;
@@ -145,7 +148,7 @@
     mask: url(https://iili.io/n9Z4ELF.png) center / cover;
     z-index: 3;
 }
-.ssr-py-text {
+.ssr-py-container .ssr-py-text {
     width: 100%;
     grid-area: 1 / 1;
     box-sizing: border-box;
@@ -156,11 +159,11 @@
     text-align: justify;
     line-height: 1.6;
 }
-.ssr-py-hr {
+.ssr-py-container .ssr-py-hr {
     margin: calc(1.25 * var(--u)) 0;
     background-color: var(--p-txt);
 }
-.ssr-py-note {
+.ssr-py-container .ssr-py-note {
     width: fit-content;
     box-sizing: border-box;
     padding: calc(0.4 * var(--u)) calc(0.85 * var(--u));
@@ -178,7 +181,7 @@
 }
 
 /* ===== ของตกแต่ง ===== */
-.ssr-py-locket {
+.ssr-py-container .ssr-py-locket {
     width: 28%;
     grid-area: 1 / 2 / 2 / 4;
     z-index: 4; /* [FIX] อยู่ใต้ text */
@@ -189,7 +192,7 @@
     margin-right: calc(-1 * var(--u));
     rotate: 10deg;
 }
-.ssr-py-wand {
+.ssr-py-container .ssr-py-wand {
     width: 45%;
     grid-area: 1 / 1 / 2 / 3;
     aspect-ratio: 3.87 / 1;
@@ -200,7 +203,7 @@
     margin-left: calc(-8 * var(--u));
     margin-bottom: calc(5.5 * var(--u)); /* เดิม 4.5u + 1u ที่ย้ายมาจาก row ที่ตัดออก */
 }
-.ssr-py-ssr {
+.ssr-py-container .ssr-py-ssr {
     width: max-content;
     grid-area: 1 / 3 / 2 / 4;
     font: calc(1.5 * var(--u)) 'Kaisei Decol';
@@ -217,14 +220,14 @@
     margin-left: calc(0.4 * var(--u));
     align-self: end;
 }
-.ssr-py-ssr::before {
+.ssr-py-container .ssr-py-ssr::before {
     content: 'シュガシュガルーン';
     -webkit-writing-mode: vertical-rl !important;
     writing-mode: vertical-rl !important;
     -webkit-text-orientation: upright;
     text-orientation: upright;
 }
-.ssr-py-sp {
+.ssr-py-container .ssr-py-sp {
     width: 15%;
     grid-area: 1 / 1 / 2 / 3;
     background: var(--p-grad1);
