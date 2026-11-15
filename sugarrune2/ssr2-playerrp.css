@@ -51,7 +51,7 @@ div.ssr-py-container {
     border-radius: calc(1.2 * var(--u));
     background: var(--p-pic);
     box-sizing: border-box;
-    margin-top: calc(1 * var(--u));
+    margin-top: calc(0 * var(--u));
 }
 /* [FIX] กล่องชื่อสูงคงที่ และให้ชื่อ "ชิดล่าง"
    ชื่อยาวจนขึ้นบรรทัดใหม่ → จะดันขึ้นด้านบน ไม่ดันลงมาทับป้าย/การ์ด */
