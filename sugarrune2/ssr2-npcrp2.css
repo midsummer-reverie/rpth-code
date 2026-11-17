@@ -71,7 +71,7 @@ div.ssr-npc2-container::before {
     width: 55%;
     display: flex;
     gap: calc(0.8 * var(--f));
-    z-index: 3;
+    z-index: 4; /* [FIX] เหนือ boxbg (3) กันป้ายจมหลังกล่อง */
     grid-area: 1 / 2 / 2 / 3;
     align-self: end;
     margin-bottom: calc(8.25 * var(--u)); /* ขอบล่างป้ายอยู่ที่ 6.3u เท่าเดิม */
@@ -113,8 +113,8 @@ div.ssr-npc2-container::before {
 .ssr-npc2-container .ssr-npc2-boxbg {
     width: 100%;
     box-sizing: border-box;
-    grid-area: 1 / 2 / 3 / 3; /* คร่อมแถว 1-2 */
-    margin-top: calc(6.3 * var(--u)); /* เริ่มที่ 6.3u เท่าเดิม */
+    grid-area: 2 / 2 / 3 / 3; /* [FIX] อยู่แค่แถว 2 แล้วดึงขึ้นด้วย margin ติดลบ (ไม่คร่อมแถว 1 อีก) */
+    margin-top: calc(-8.25 * var(--u)); /* เริ่มที่ 6.3u เท่าเดิม (14.55 - 8.25) */
     z-index: 3;
     border-width: calc(0.1 * var(--u)) calc(0.1 * var(--u)) 0 calc(0.1 * var(--u));
     border-style: solid;
@@ -196,7 +196,7 @@ div.ssr-npc2-container::before {
     position: relative;
     z-index: 6;
     float: right;
-    margin-right: calc(-7.45 * var(--u));
+    margin-right: calc(-6.45 * var(--u));
     margin-left: calc(1.5 * var(--u));
 }
 .ssr-npc2-container .ssr-npc2-deco1 {
