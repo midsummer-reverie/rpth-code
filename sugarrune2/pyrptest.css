@@ -6,6 +6,36 @@
 
 /* [FIX] ทุก selector ถูกเพิ่มความสำคัญ (.ssr-py-container ...) ให้ชนะไฟล์เดิมที่อาจถูกโหลดซ้ำจาก <link> ใน HTML ไม่ว่าลำดับโหลดจะเป็นอย่างไร */
 
+/* ===== [เพิ่มใหม่] สีตัวหนา / เอียง / ขีดเส้นใต้ / ลิงก์ ===== */
+
+
+/* ---------- .ssr-py-text ---------- */
+.ssr-py-container .ssr-py-text :is(strong, b) {
+    color: var(--p-bold, var(--p-txt));
+}
+.ssr-py-container .ssr-py-text :is(em, i) {
+    color: var(--p-italic, var(--p-txt));
+}
+
+/* ---------- .ssr-py-note ---------- */
+.ssr-py-container .ssr-py-note a {
+    color: var(--p-addt);
+    text-decoration-color: var(--p-addt);
+    transition: text-shadow 0.25s ease;
+}
+.ssr-py-container .ssr-py-note a:hover {
+    text-shadow:
+        0 0 0.3em var(--p-shadow),
+        0 0 0.8em var(--p-shadow),
+        0 0 1.4em var(--p-shadow);
+}
+
+/* กรณีซ้อนกัน เช่น ลิงก์ที่ครอบตัวหนา ให้ใช้สีลิงก์ */
+.ssr-py-container .ssr-py-text a :is(strong, b, em, i, u, ins),
+.ssr-py-container .ssr-py-note a :is(strong, b, em, i, u, ins) {
+    color: inherit;
+}
+
 /* ===== [FIX] โครงหลัก =====
    - --u ของ container ยังเป็นหน่วย vw เหมือนเดิม (ใช้แค่คำนวณความกว้างการ์ด)
    - ลูกทุกตัวใช้ --u = 1/65 ของ "ความกว้างการ์ดจริง" (ดู @supports ด้านล่าง)
@@ -51,7 +81,7 @@ div.ssr-py-container {
     border-radius: calc(1.2 * var(--u));
     background: var(--p-pic);
     box-sizing: border-box;
-    margin-top: calc(1 * var(--u));
+    margin-top: calc(0 * var(--u));
 }
 /* [FIX] กล่องชื่อสูงคงที่ และให้ชื่อ "ชิดล่าง"
    ชื่อยาวจนขึ้นบรรทัดใหม่ → จะดันขึ้นด้านบน ไม่ดันลงมาทับป้าย/การ์ด */
@@ -201,8 +231,8 @@ div.ssr-py-container {
     z-index: 4; /* [FIX] อยู่ใต้ text (เหนือพื้นการ์ดเหมือนเดิม) */
     align-self: end;
     rotate: -100deg;
-    margin-left: calc(-8 * var(--u));
-    margin-bottom: calc(5.5 * var(--u)); /* เดิม 4.5u + 1u ที่ย้ายมาจาก row ที่ตัดออก */
+    margin-left: calc(-9 * var(--u));
+    margin-bottom: calc(7.5 * var(--u)); /* เดิม 4.5u + 1u ที่ย้ายมาจาก row ที่ตัดออก */
 }
 .ssr-py-container .ssr-py-ssr {
     width: max-content;
