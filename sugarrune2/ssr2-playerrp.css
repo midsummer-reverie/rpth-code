@@ -6,6 +6,35 @@
 
 /* [FIX] ทุก selector ถูกเพิ่มความสำคัญ (.ssr-py-container ...) ให้ชนะไฟล์เดิมที่อาจถูกโหลดซ้ำจาก <link> ใน HTML ไม่ว่าลำดับโหลดจะเป็นอย่างไร */
 
+/* ===== [เพิ่มใหม่] สีตัวหนา / เอียง / ขีดเส้นใต้ / ลิงก์ ===== */
+/* ---------- .ssr-py-text ---------- */
+.ssr-py-container .ssr-py-text :is(strong, b, .mycode_b) {
+    color: var(--p-bold, var(--p-txt));
+}
+.ssr-py-container .ssr-py-text :is(em, i, .mycode_i) {
+    color: var(--p-italic, var(--p-txt));
+}
+
+/* ---------- .ssr-py-note ---------- */
+.ssr-py-container .ssr-py-note a {
+    color: var(--p-addt);
+    text-decoration-color: var(--p-addt);
+    transition: text-shadow 0.25s ease;
+}
+.ssr-py-container .ssr-py-note a :is(strong, b, em, i, u, ins, .mycode_b, .mycode_i, .mycode_u) {
+    color: inherit;
+    text-decoration-color: inherit;
+}
+.ssr-py-container .ssr-py-note a:hover {
+    --g: color-mix(in srgb, var(--p-addt) 70%, transparent);
+    text-shadow: 0 0 0.3em var(--g), 0 0 0.8em var(--g), 0 0 1.4em var(--g);
+}
+/* กรณีซ้อนกัน เช่น ลิงก์ที่ครอบตัวหนา ให้ใช้สีลิงก์ */
+.ssr-py-container .ssr-py-text a :is(strong, b, em, i, u, ins),
+.ssr-py-container .ssr-py-note a :is(strong, b, em, i, u, ins) {
+    color: inherit;
+}
+
 /* ===== [FIX] โครงหลัก =====
    - --u ของ container ยังเป็นหน่วย vw เหมือนเดิม (ใช้แค่คำนวณความกว้างการ์ด)
    - ลูกทุกตัวใช้ --u = 1/65 ของ "ความกว้างการ์ดจริง" (ดู @supports ด้านล่าง)
