@@ -68,27 +68,28 @@ div.ssr-npc1-container {
 /* ===== แถว 1 : บล็อกตัวละคร (เดิมคือแถว 1-3 = 27.5u) ===== */
 .ssr-npc1-container .ssr-npc1-char {
     width: 45%;
-    height: calc(27.3 * var(--u)); /* ตัวกำหนดความสูงแถว 1 (27.3 + margin 0.2 = 27.5u) */
+    height: calc(27.45 * var(--u)); /* ตัวกำหนดความสูงแถว 1 (เดิม 99.8% ของ 27.5u) */
     grid-area: 1 / 2 / 2 / 4;
     align-self: start;
     justify-self: end;
     z-index: 6;
     background: var(--npcpng);
-    margin: calc(0.1 * var(--u));
+    margin: calc(0.1 * var(--u)) calc(0.1 * var(--u)) 0 calc(0.1 * var(--u));
     border-radius: calc(0.85 * var(--u));
     box-sizing: border-box;
 }
 .ssr-npc1-container .ssr-npc1-bg {
     width: 45%;
-    height: calc(13.5 * var(--u)); /* เดิมแถว 2-3 = 3.5 + 10 */
+    height: calc(13.5 * var(--u)); /* เดิมแถว 2-3 = 3.5 + 10 (ไม่รวมเส้นขอบ เหมือนต้นฉบับ) */
     grid-area: 1 / 2 / 2 / 4;
-    align-self: end;
+    align-self: start;
+    margin-top: calc(14 * var(--u)); /* เริ่มที่ 14u เท่าเดิม */
     justify-self: end;
     z-index: 5;
     border: calc(0.1 * var(--u)) solid #ffffff;
     border-radius: calc(0.85 * var(--u));
     background: var(--npcbg);
-    box-sizing: border-box;
+    box-sizing: content-box; /* [FIX] ต้องเป็น content-box เหมือนต้นฉบับ ให้เส้นขอบอยู่นอกภาพตัวละคร */
 }
 .ssr-npc1-container .ssr-npc1-deflex {
     width: 55%;
