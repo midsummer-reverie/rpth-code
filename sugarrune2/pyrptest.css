@@ -75,6 +75,7 @@ div.ssr-npc1-container {
     z-index: 6;
     background: var(--npcpng);
     margin: calc(0.1 * var(--u)) calc(0.1 * var(--u)) 0 calc(0.1 * var(--u));
+    border: calc(0.1 * var(--u)) solid transparent;
     border-radius: calc(0.85 * var(--u));
     box-sizing: border-box;
 }
