@@ -11,10 +11,10 @@
 
 /* ---------- .ssr-py-text ---------- */
 .ssr-py-container .ssr-py-text :is(strong, b) {
-    color: var(--p-bold), var(--p-txt);
+    color: var(--p-bold, var(--p-txt));
 }
 .ssr-py-container .ssr-py-text :is(em, i) {
-    color: var(--p-italic), var(--p-txt);
+    color: var(--p-italic, var(--p-txt));
 }
 
 /* ---------- .ssr-py-note ---------- */
@@ -24,10 +24,8 @@
     transition: text-shadow 0.25s ease;
 }
 .ssr-py-container .ssr-py-note a:hover {
-    text-shadow:
-        0 0 0.3em var(--p-shadow),
-        0 0 0.8em var(--p-shadow),
-        0 0 1.4em var(--p-shadow);
+    --g: color-mix(in srgb, var(--p-addt) 70%, transparent);
+    text-shadow: 0 0 0.3em var(--g), 0 0 0.8em var(--g), 0 0 1.4em var(--g);
 }
 
 /* กรณีซ้อนกัน เช่น ลิงก์ที่ครอบตัวหนา ให้ใช้สีลิงก์ */
