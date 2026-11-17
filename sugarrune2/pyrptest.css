@@ -196,7 +196,7 @@ div.ssr-npc2-container::before {
     position: relative;
     z-index: 6;
     float: right;
-    margin-right: calc(-6.45 * var(--u));
+    margin-right: calc(-7.45 * var(--u));
     margin-left: calc(1.5 * var(--u));
 }
 .ssr-npc2-container .ssr-npc2-deco1 {
