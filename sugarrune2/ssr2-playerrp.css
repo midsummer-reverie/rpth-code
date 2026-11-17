@@ -18,6 +18,7 @@
 /* ---------- .ssr-py-note ---------- */
 .ssr-py-container .ssr-py-note a {
     color: var(--p-addt);
+    text-decoration: underline;
     text-decoration-color: var(--p-addt);
     transition: text-shadow 0.25s ease;
 }
