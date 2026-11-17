@@ -11,10 +11,10 @@
 
 /* ---------- .ssr-py-text ---------- */
 .ssr-py-container .ssr-py-text :is(strong, b) {
-    color: var(--p-bold, var(--p-txt));
+    color: var(--p-bold), var(--p-txt);
 }
 .ssr-py-container .ssr-py-text :is(em, i) {
-    color: var(--p-italic, var(--p-txt));
+    color: var(--p-italic), var(--p-txt);
 }
 
 /* ---------- .ssr-py-note ---------- */
