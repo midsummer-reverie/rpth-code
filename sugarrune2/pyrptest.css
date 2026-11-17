@@ -4,43 +4,50 @@
 @import url(https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Google+Sans:ital,opsz,wght,GRAD@0,17..18,400..700,-50..200;1,17..18,400..700,-50..200&family=Kaisei+Decol&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 
 /* ===== [เพิ่มใหม่] สีตัวหนา / เอียง / ลิงก์ =====
-   ใช้ตัวแปรเดิม --npcbold / --npcitalic (ไม่ตั้ง = ใช้สีข้อความปกติ --npctxtcl) */
-.ssr-npc2-container .ssr-npc2-roleplay :is(strong, b, .mycode_b) {
+   ตั้งสีได้ใน inline style ของ container: --npcbold / --npcitalic
+   ถ้าไม่ตั้ง จะใช้สีข้อความปกติ (--npctxtcl) */
+.ssr-npc1-container .ssr-npc1-roleplay :is(strong, b, .mycode_b) {
     color: var(--npcbold, var(--npctxtcl));
 }
-.ssr-npc2-container .ssr-npc2-roleplay :is(em, i, .mycode_i) {
+.ssr-npc1-container .ssr-npc1-roleplay :is(em, i, .mycode_i) {
     color: var(--npcitalic, var(--npctxtcl));
 }
-.ssr-npc2-container :is(.ssr-npc2-roleplay, .ssr-npc2-note) a {
+.ssr-npc1-container :is(.ssr-npc1-roleplay, .ssr-npc1-note) a {
     text-decoration: underline;
     transition: text-shadow 0.25s ease;
 }
-.ssr-npc2-container .ssr-npc2-roleplay a {
+.ssr-npc1-container .ssr-npc1-roleplay a {
     color: var(--npcaccent);
     text-decoration-color: var(--npcaccent);
 }
-.ssr-npc2-container .ssr-npc2-note a {
+.ssr-npc1-container .ssr-npc1-note a {
     color: var(--npcdetext);
     text-decoration-color: var(--npcdetext);
 }
-.ssr-npc2-container .ssr-npc2-roleplay a:hover,
-.ssr-npc2-container .ssr-npc2-note a:hover {
+.ssr-npc1-container .ssr-npc1-roleplay a:hover {
     --g: color-mix(in srgb, var(--npcaccent) 70%, transparent);
     text-shadow: 0 0 0.3em var(--g), 0 0 0.8em var(--g), 0 0 1.4em var(--g);
 }
-.ssr-npc2-container :is(.ssr-npc2-roleplay, .ssr-npc2-note) a :is(strong, b, em, i, u, ins, .mycode_b, .mycode_i, .mycode_u) {
+.ssr-npc1-container .ssr-npc1-note a:hover {
+    --g: color-mix(in srgb, var(--npcaccent) 70%, transparent);
+    text-shadow: 0 0 0.3em var(--g), 0 0 0.8em var(--g), 0 0 1.4em var(--g);
+}
+/* ตัวหนา/เอียง/ขีดเส้นใต้ที่อยู่ในลิงก์ ให้ใช้สีลิงก์ */
+.ssr-npc1-container :is(.ssr-npc1-roleplay, .ssr-npc1-note) a :is(strong, b, em, i, u, ins, .mycode_b, .mycode_i, .mycode_u) {
     color: inherit;
     text-decoration-color: inherit;
 }
 
 /* ===== [FIX] โครงหลัก =====
-   - ลูกทุกตัวใช้ --u = 1/65 ของความกว้างการ์ดจริง (cqw) ส่วน --f ใช้กับตัวอักษร/ป้าย
-   - แถว grid เหลือ 3 แถว:
-       แถว 1 = บล็อกบน (เดิมแถว 1-3 = 2.8 + 3.5 + 8.25 = 14.55u) กำหนดความสูงด้วย ::before (aspect-ratio)
-       แถว 2 = ข้อความ, แถว 3 = โน้ต (+ margin ล่าง 2.2u)
-   - รูป .ssr-npc2-picf ที่ลอยอยู่ในข้อความ ดึงขึ้นด้วย margin-top ติดลบ
-     จึงต้องให้แถว 1 สูง 14.55u เป๊ะ และ padding ของข้อความเป็นหน่วย u */
-div.ssr-npc2-container {
+   - --u ของ container ใช้แค่คำนวณความกว้างการ์ด (หน่วย vw แบบมีเพดาน)
+   - ลูกทุกตัวใช้ --u = 1/65 ของ "ความกว้างการ์ดจริง" (cqw)
+     ความสูงตัวละคร/ช่องไฟ/ตำแหน่งทั้งหมดจึงสเกลไปพร้อมความกว้างการ์ด
+     สัดส่วนการ์ดเท่ากันทุกจอ รูปตัวละครถูกตัดที่ตำแหน่งเดิมเสมอ
+   - --f = หน่วยของตัวอักษรและป้าย ใช้ค่าเดิม (ไม่สเกลตามการ์ด)
+   - แถว grid ลดจาก 6 เหลือ 3 เพราะ container ใช้ cqw กับตัวเองไม่ได้
+     แถวที่เคยกำหนดเป็น vw (14+3.5+10) ย้ายไปเป็น "ความสูงของกล่องตัวละคร" แทน
+   - คอลัมน์ข้างเปลี่ยนเป็น % (2.6/65 และ 4/65) ให้สเกลตามการ์ด */
+div.ssr-npc1-container {
     --u: min(1vw, 1.25rem);
     --f: min(1vw, 1.25rem);
     width: min(85%, calc(70.3125 * var(--u)));
@@ -53,33 +60,50 @@ div.ssr-npc2-container {
     isolation: isolate;
 }
 @supports (width: 1cqw) {
-    .ssr-npc2-container > * {
+    .ssr-npc1-container > * {
         --u: calc(100cqw / 65);
     }
 }
-/* ตัวกำหนดความสูงแถว 1 = 14.55/65 ของความกว้างการ์ด (ไม่ต้องใช้ cqw) */
-div.ssr-npc2-container::before {
-    content: "";
-    grid-area: 1 / 1 / 2 / 4;
-    width: 100%;
-    aspect-ratio: 65 / 14.55;
-    pointer-events: none;
-}
 
-/* ===== แถว 1 : บล็อกบน ===== */
-.ssr-npc2-container .ssr-npc2-deflex {
+/* ===== แถว 1 : บล็อกตัวละคร (เดิมคือแถว 1-3 = 27.5u) ===== */
+.ssr-npc1-container .ssr-npc1-char {
+    width: 45%;
+    height: calc(27.45 * var(--u)); /* ตัวกำหนดความสูงแถว 1 (เดิม 99.8% ของ 27.5u) */
+    grid-area: 1 / 2 / 2 / 4;
+    align-self: start;
+    justify-self: end;
+    z-index: 6;
+    background: var(--npcpng);
+    margin: calc(0.1 * var(--u)) calc(0.1 * var(--u)) 0 calc(0.1 * var(--u));
+    border-radius: calc(0.85 * var(--u));
+    box-sizing: border-box;
+}
+.ssr-npc1-container .ssr-npc1-bg {
+    width: 45%;
+    height: calc(13.5 * var(--u)); /* เดิมแถว 2-3 = 3.5 + 10 (ไม่รวมเส้นขอบ เหมือนต้นฉบับ) */
+    grid-area: 1 / 2 / 2 / 4;
+    align-self: start;
+    margin-top: calc(14 * var(--u)); /* เริ่มที่ 14u เท่าเดิม */
+    justify-self: end;
+    z-index: 5;
+    border: calc(0.1 * var(--u)) solid #ffffff;
+    border-radius: calc(0.85 * var(--u));
+    background: var(--npcbg);
+    box-sizing: content-box; /* [FIX] ต้องเป็น content-box เหมือนต้นฉบับ ให้เส้นขอบอยู่นอกภาพตัวละคร */
+}
+.ssr-npc1-container .ssr-npc1-deflex {
     width: 55%;
     display: flex;
     gap: calc(0.8 * var(--f));
-    z-index: 3;
-    grid-area: 1 / 2 / 2 / 3;
-    align-self: end;
-    margin-bottom: calc(8.25 * var(--u)); /* ขอบล่างป้ายอยู่ที่ 6.3u เท่าเดิม */
     justify-content: flex-start;
+    grid-area: 1 / 2 / 2 / 3;
+    z-index: 4; /* [FIX] เหนือ boxbg (3) กันป้ายจมหลังกล่อง */
+    align-self: end;
     justify-self: start;
     margin-left: calc(3.2 * var(--u));
+    margin-bottom: calc(10 * var(--u)); /* ให้ขอบล่างป้ายอยู่ที่ 17.5u เท่าเดิม */
 }
-.ssr-npc2-container .ssr-npc2-class {
+.ssr-npc1-container .ssr-npc1-class {
     width: fit-content;
     box-sizing: border-box;
     padding: calc(0.7 * var(--f)) calc(1 * var(--f));
@@ -94,7 +118,7 @@ div.ssr-npc2-container::before {
     border-radius: calc(0.65 * var(--f)) calc(0.65 * var(--f)) 0 0;
     background: var(--npcgrad);
 }
-.ssr-npc2-container .ssr-npc2-location {
+.ssr-npc1-container .ssr-npc1-location {
     width: fit-content;
     max-width: 70%;
     box-sizing: border-box;
@@ -110,11 +134,11 @@ div.ssr-npc2-container::before {
     border-radius: calc(0.65 * var(--f)) calc(0.65 * var(--f)) 0 0;
     background: var(--npcgrad);
 }
-.ssr-npc2-container .ssr-npc2-boxbg {
+.ssr-npc1-container .ssr-npc1-boxbg {
     width: 100%;
     box-sizing: border-box;
-    grid-area: 1 / 2 / 3 / 3; /* คร่อมแถว 1-2 */
-    margin-top: calc(6.3 * var(--u)); /* เริ่มที่ 6.3u เท่าเดิม */
+    grid-area: 2 / 2 / 3 / 3; /* [FIX] อยู่แค่แถว 2 แล้วดึงขึ้นด้วย margin ติดลบ (ไม่คร่อมแถว 1 อีก) */
+    margin-top: calc(-10 * var(--u)); /* เริ่มที่ 17.5u เท่าเดิม (27.5 - 10) */
     z-index: 3;
     border-width: calc(0.1 * var(--u)) calc(0.1 * var(--u)) 0 calc(0.1 * var(--u));
     border-style: solid;
@@ -124,7 +148,7 @@ div.ssr-npc2-container::before {
     display: grid;
     overflow: hidden;
 }
-.ssr-npc2-container .ssr-npc2-gradbg {
+.ssr-npc1-container .ssr-npc1-gradbg {
     width: 100%;
     grid-area: 1 / 1;
     aspect-ratio: 2.09 / 1;
@@ -134,94 +158,52 @@ div.ssr-npc2-container::before {
     -webkit-mask: url(https://iili.io/nFkEimB.png) center / cover;
     opacity: 0.6;
 }
-.ssr-npc2-container .ssr-npc2-namebox {
-    width: 60%;
-    height: calc(6.25 * var(--u)); /* เดิมแถว 3 = 8.25u - margin-top 2u */
+.ssr-npc1-container .ssr-npc1-namebox {
+    width: 50%;
+    height: calc(8 * var(--u)); /* เดิมแถว 3 = 10u - margin-top 2u */
     grid-area: 1 / 2 / 2 / 3;
     align-self: end;
+    justify-self: start;
     z-index: 4;
     color: var(--npcnamecl);
     text-shadow: 0 0 4px var(--npcnamesh);
-    margin: calc(2 * var(--u)) calc(2 * var(--u)) 0 calc(6 * var(--u));
-    justify-self: start;
+    margin-top: calc(2 * var(--u));
+    margin-left: calc(3.5 * var(--u));
 }
-.ssr-npc2-container .ssr-npc2-lastname {
+.ssr-npc1-container .ssr-npc1-lastname {
     width: fit-content;
     max-width: 55%;
     font: calc(1.3 * var(--f)) 'The Seasons';
     letter-spacing: calc(0.12 * var(--f));
     text-transform: uppercase;
 }
-.ssr-npc2-container .ssr-npc2-firstname {
+.ssr-npc1-container .ssr-npc1-firstname {
     width: fit-content;
     max-width: 75%;
+    margin: calc(-1.2 * var(--f)) calc(3.6 * var(--f)) 0 calc(3.5 * var(--f));
     font: calc(2.4 * var(--f)) 'The Seasons';
     text-transform: uppercase;
     letter-spacing: calc(0.15 * var(--f));
-    margin: calc(-0.8 * var(--f)) calc(5.2 * var(--f)) 0 calc(6 * var(--f));
 }
-.ssr-npc2-container .ssr-npc2-firstname::first-letter {
-    font: calc(5 * var(--f)) 'Citadel';
-}
-.ssr-npc2-container .ssr-npc2-deco2 {
-    width: 80%;
-    margin: calc(-1 * var(--u)) auto;
-    aspect-ratio: 3.09 / 1;
-    grid-area: 1 / 2 / 2 / 3;
-    z-index: 2;
-    background: var(--npcaccent);
-    mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat;
-    -webkit-mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat;
-    align-self: start;
-    rotate: -7deg;
+.ssr-npc1-container .ssr-npc1-firstname::first-letter {
+    font: calc(5.5 * var(--f)) 'Citadel';
 }
 
-/* ===== แถว 2 : ข้อความ + รูปที่ลอยอยู่ในข้อความ ===== */
-.ssr-npc2-container .ssr-npc2-roleplay {
+/* ===== แถว 2 : ข้อความ ===== */
+.ssr-npc1-container .ssr-npc1-roleplay {
     width: 100%;
     box-sizing: border-box;
     grid-area: 2 / 2 / 3 / 3;
     z-index: 4;
-    padding: calc(2.45 * var(--u)); /* [FIX] ใช้ u ให้ตำแหน่งรูปที่ดึงขึ้นไปคงที่ตามการ์ด */
+    padding: calc(2.45 * var(--f));
     font: calc(1.05 * var(--f)) 'Bai Jamjuree';
     color: var(--npctxtcl);
     text-align: justify;
     line-height: 1.4;
 }
-.ssr-npc2-container .ssr-npc2-picf {
-    width: calc(21.4 * var(--u)); /* เดิม 40% ของเนื้อที่ข้อความ (53.5u) → [FIX] ผูกกับการ์ดโดยตรง */
-    aspect-ratio: 16 / 24;
-    margin-top: calc(-14.2 * var(--u));
-    margin-bottom: calc(0.5 * var(--u));
-    position: relative;
-    z-index: 6;
-    float: right;
-    margin-right: calc(-7.45 * var(--u));
-    margin-left: calc(1.5 * var(--u));
-}
-.ssr-npc2-container .ssr-npc2-deco1 {
-    position: absolute;
-    width: 17.5%;
-    aspect-ratio: 0.21 / 1;
-    top: 98%;
-    background: var(--npcaccent);
-    mask: url(https://iili.io/nFkE65Q.png) center / cover;
-    -webkit-mask: url(https://iili.io/nFkE65Q.png) center / cover;
-    z-index: 1;
-    right: 3%;
-}
-.ssr-npc2-container .ssr-npc2-pic {
-    position: absolute;
-    inset: 0;
-    border: calc(0.1 * var(--u)) solid #ffffff;
-    border-radius: calc(0.85 * var(--u));
-    background: var(--npcpic);
-    box-sizing: border-box;
-    z-index: 2;
-}
 
-/* ===== แถว 3 : โน้ต (+ ช่องว่างล่าง 2.2u เดิมของแถว 6) ===== */
-.ssr-npc2-container .ssr-npc2-note {
+/* ===== แถว 3 : โน้ต (+ ช่องว่างล่าง 2.2u เดิมของแถว 6 ย้ายมาเป็น margin) ===== */
+.ssr-npc1-container .ssr-npc1-note {
     width: 100%;
     box-sizing: border-box;
     grid-area: 3 / 2 / 4 / 3;
@@ -235,40 +217,39 @@ div.ssr-npc2-container::before {
     display: grid;
     overflow: hidden;
     padding: calc(1 * var(--f)) calc(2 * var(--f));
-    font: calc(1.1 * var(--f)) 'Bai Jamjuree';
+    font: calc(1.05 * var(--f)) 'Bai Jamjuree';
     color: var(--npcdetext);
     font-weight: 500;
     text-align: right;
-    line-height: 1.4;
 }
 
 /* ===== วงกลมหัวใจ (เดิมแถว 4-6 → ตอนนี้แถว 2-3) ===== */
-.ssr-npc2-container .ssr-npc2-heartframe {
+.ssr-npc1-container .ssr-npc1-heartframe {
     width: 12%;
     box-sizing: border-box;
+    grid-area: 2 / 1 / 4 / 3;
     z-index: 6;
     aspect-ratio: 1 / 1;
     border-radius: 1000px;
     border: calc(0.2 * var(--u)) solid var(--npcaccent);
+    justify-self: start;
     align-self: end;
     background: var(--npcboxbg);
     margin-bottom: calc(1.25 * var(--u));
+    margin-left: calc(0.5 * var(--u));
     padding: calc(0.8 * var(--u));
     display: grid;
-    grid-area: 2 / 1 / 4 / 3;
-    justify-self: start;
-    margin-left: calc(0.5 * var(--u));
     position: relative;
     overflow: hidden;
 }
-.ssr-npc2-container .ssr-npc2-hbg {
+.ssr-npc1-container .ssr-npc1-hbg {
     width: 110%;
     height: 110%;
     position: absolute;
     background: var(--npcgradbg);
     mask: var(--npchbg);
 }
-.ssr-npc2-container .ssr-npc2-hde {
+.ssr-npc1-container .ssr-npc1-hde {
     width: 100%;
     height: 100%;
     grid-area: 1 / 1;
@@ -276,7 +257,7 @@ div.ssr-npc2-container::before {
     mask: url(https://iili.io/nFUaCp2.png) center / cover;
     -webkit-mask: url(https://iili.io/nFUaCp2.png) center / cover;
 }
-.ssr-npc2-container .ssr-npc2-heart {
+.ssr-npc1-container .ssr-npc1-heart {
     width: 100%;
     height: 100%;
     grid-area: 1 / 1;
@@ -286,36 +267,59 @@ div.ssr-npc2-container::before {
 }
 
 /* ===== ของตกแต่ง ===== */
-.ssr-npc2-container .ssr-npc2-decoflex {
+.ssr-npc1-container .ssr-npc1-deco1 {
+    width: 70%;
+    aspect-ratio: 0.21 / 1;
+    grid-area: 2 / 3 / 3 / 4;
+    z-index: 4;
+    margin-top: calc(-0.2 * var(--u));
+    background: var(--npcaccent);
+    mask: url(https://iili.io/nFkE65Q.png) center / cover;
+    -webkit-mask: url(https://iili.io/nFkE65Q.png) center / cover;
+    justify-self: center;
+}
+.ssr-npc1-container .ssr-npc1-deco2 {
+    width: 75%;
+    margin: calc(9 * var(--u)) calc(2 * var(--u)) calc(1.3 * var(--u)) calc(4 * var(--u));
+    aspect-ratio: 3.09 / 1;
+    grid-area: 1 / 2 / 2 / 3;
+    z-index: 2;
+    background: var(--npcaccent);
+    mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat;
+    -webkit-mask: url(https://iili.io/nFkEPeV.md.png) 50% 30% / 85% no-repeat;
+    align-self: start;
+    rotate: -6deg;
+}
+.ssr-npc1-container .ssr-npc1-decoflex {
     width: 70%;
     display: flex;
     gap: calc(0.8 * var(--u));
+    grid-area: 2 / 1 / 3 / 2;
     justify-self: center;
     margin-top: calc(-1 * var(--u));
     flex-direction: column;
     align-items: center;
-    grid-area: 2 / 1 / 3 / 2;
     align-self: center;
 }
-.ssr-npc2-container .ssr-npc2-decosp {
+.ssr-npc1-container .ssr-npc1-decosp {
     width: 100%;
     aspect-ratio: 1 / 1;
-    background: var(--npcgrad);
+    background: var(--npcgradbg);
     mask: url(https://iili.io/nFkE4dx.md.png) center / cover;
     -webkit-mask: url(https://iili.io/nFkE4dx.md.png) center / cover;
 }
-.ssr-npc2-container .ssr-npc2-ssr {
+.ssr-npc1-container .ssr-npc1-ssr {
     width: fit-content;
     font: calc(1.15 * var(--f)) 'Kaisei Decol';
     writing-mode: vertical-rl;
     font-weight: 500;
     color: #fff;
 }
-.ssr-npc2-container .ssr-npc2-ssr::before {
+.ssr-npc1-container .ssr-npc1-ssr::before {
     content: 'シュガシュガルーン';
 }
 
-/* ID หัวใจ (ไม่ได้แก้ไข) */
+/* ===== ธีมหัวใจ (ไม่ได้แก้ไข) ===== */
 #yellowheart { --npcdropheart: url(https://iili.io/nFk1woF.md.png) center/95% no-repeat; --npchbg: url(https://iili.io/nFkEimB.png) center / cover; }
 #orangeheart { --npcdropheart: url(https://iili.io/nFk1daR.md.png) center/95% no-repeat; --npchbg: url(https://iili.io/nFkEimB.png) center / cover; }
 #greenheart { --npcdropheart: url(https://iili.io/nFk1Zlf.md.png) center/95% no-repeat; --npchbg: url(https://iili.io/nFkEimB.png) center / cover; }
