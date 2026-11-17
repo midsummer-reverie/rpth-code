@@ -75,7 +75,6 @@ div.ssr-npc1-container {
     z-index: 6;
     background: var(--npcpng);
     margin: calc(0.1 * var(--u)) calc(0.1 * var(--u)) 0 calc(0.1 * var(--u));
-    border: calc(0.1 * var(--u)) solid transparent;
     border-radius: calc(0.85 * var(--u));
     box-sizing: border-box;
 }
@@ -98,7 +97,7 @@ div.ssr-npc1-container {
     gap: calc(0.8 * var(--f));
     justify-content: flex-start;
     grid-area: 1 / 2 / 2 / 3;
-    z-index: 3;
+    z-index: 4; /* [FIX] เหนือ boxbg (3) กันป้ายจมหลังกล่อง */
     align-self: end;
     justify-self: start;
     margin-left: calc(3.2 * var(--u));
@@ -138,8 +137,8 @@ div.ssr-npc1-container {
 .ssr-npc1-container .ssr-npc1-boxbg {
     width: 100%;
     box-sizing: border-box;
-    grid-area: 1 / 2 / 3 / 3; /* คร่อมแถว 1-2 */
-    margin-top: calc(17.5 * var(--u)); /* เริ่มที่ 17.5u เท่าเดิม */
+    grid-area: 2 / 2 / 3 / 3; /* [FIX] อยู่แค่แถว 2 แล้วดึงขึ้นด้วย margin ติดลบ (ไม่คร่อมแถว 1 อีก) */
+    margin-top: calc(-10 * var(--u)); /* เริ่มที่ 17.5u เท่าเดิม (27.5 - 10) */
     z-index: 3;
     border-width: calc(0.1 * var(--u)) calc(0.1 * var(--u)) 0 calc(0.1 * var(--u));
     border-style: solid;
