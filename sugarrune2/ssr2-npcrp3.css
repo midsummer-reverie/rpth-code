@@ -150,12 +150,12 @@ div.npc3-container::before {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    column-gap: calc(0.7 * var(--f));
+    column-gap: calc(1.7 * var(--f));
     max-width: 100%;
 }
 .npc3-container .npc3-npair {
     display: flex;
-    column-gap: calc(0.6 * var(--f));
+    column-gap: calc(1.2 * var(--f));
 }
 .npc3-container .npc3-nm {
     font: calc(1.85 * var(--f)) 'The Seasons';
