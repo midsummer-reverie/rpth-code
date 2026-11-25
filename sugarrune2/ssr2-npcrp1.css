@@ -68,7 +68,7 @@ div.ssr-npc1-container {
 /* ===== แถว 1 : บล็อกตัวละคร (เดิมคือแถว 1-3 = 27.5u) ===== */
 .ssr-npc1-container .ssr-npc1-char {
     width: 45%;
-    height: calc(27.45 * var(--u)); /* ตัวกำหนดความสูงแถว 1 (เดิม 99.8% ของ 27.5u) */
+    height: calc(29 * var(--u)); /* ตัวกำหนดความสูงแถว 1 (เดิม 99.8% ของ 27.5u) */
     grid-area: 1 / 2 / 2 / 4;
     align-self: start;
     justify-self: end;
